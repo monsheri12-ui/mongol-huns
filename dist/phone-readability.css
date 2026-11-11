@@ -7,7 +7,7 @@
 .po-dialog .client-phone-tabs button[aria-pressed=true]{color:#2e5639;background:#dce7c5}
 .po-dialog .po-repeat,.po-dialog .po-speed-label{font:600 15px/1.5 Arial,sans-serif;color:#3f603f}
 .po-dialog .po-repeat{font-size:15px!important;color:#3f603f!important;min-height:44px}
-.po-dialog .po-speed-label select{font-size:15px;color:#35563c;min-height:44px}
+.po-dialog .po-speed-label select{font-size:16px;color:#35563c;min-height:44px}
 .po-dialog .po-time,.po-dialog .po-timeline,.po-dialog [data-po=elapsed],.po-dialog [data-po=duration]{font-size:15px;color:#45613f;font-variant-numeric:tabular-nums}
 .po-dialog .po-time-row,.po-dialog .po-time-row span:last-child{font-size:15px;color:#45613f}
 .po-dialog [data-po=status]{font:500 14px/1.6 Arial,sans-serif;color:#4e6647}
@@ -23,4 +23,8 @@
 .po-dialog .po-speech-notice{font-size:12px!important;color:#69755c!important;line-height:1.6!important}
 .po-dialog .po-transcript{font-size:17px;line-height:1.75;color:#374f35}
 .po-dialog .po-transcript p{font-size:17px;line-height:1.75;color:#374f35}
+.po-dialog .po-bottom .po-reveal{width:100%;justify-content:center;min-height:48px;margin:0;padding:10px 12px;font-size:16px!important;font-weight:700;color:#34573c!important;background:#e4edcf!important;border-color:#a9bd92!important}
+.po-dialog .po-bottom .po-reveal .po-icon{width:20px;height:20px;flex:none}
+.po-dialog .po-bottom .po-dismiss{margin-top:9px}
+.po-dialog.client-sms-open .po-bottom .po-reveal{display:none!important}
 @media(max-width:420px){.po-dialog .po-contact-title h2{font-size:21px!important}.po-dialog .po-contact-title p{font-size:13px}.po-dialog .client-phone-tabs button{font-size:14px}.po-dialog .po-repeat,.po-dialog .po-speed-label{font-size:14px}.po-dialog .po-repeat{font-size:14px!important}.po-dialog .po-dismiss{font-size:15px}}

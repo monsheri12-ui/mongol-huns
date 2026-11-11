@@ -97,12 +97,10 @@
                 <div class="po-audio-tools"><button type="button" data-po="repeat" class="po-repeat" aria-label="Эхнээс нь дахин сонсох" disabled>${icon('repeat')}<span>Дахин сонсох</span></button><label class="po-speed-label">Хурд<select data-po="speed" aria-label="Дууны хурд"><option value="0.8">0.8×</option><option value="1">1×</option><option value="1.1">1.1×</option></select></label></div>
                 <p class="po-audio-status" data-po="status" role="status" aria-live="polite">Дуут захиалга хараахан ирээгүй байна.</p><button type="button" data-po="retry" class="po-retry" hidden>Дахин оролдох</button>
               </article>
-              <button type="button" data-po="reveal" class="po-reveal" aria-expanded="false" aria-controls="${this._prefix}-transcript" disabled>${icon('note')}Текст харах</button>
-              <details class="po-ru-hint ru-help" data-po="ru-hint" hidden><summary lang="ru">Русская подсказка</summary><p data-po="ru-text" lang="ru"></p></details>
-              <article class="po-transcript" id="${this._prefix}-transcript" data-po="transcript" hidden><span>Захиалгын бичвэр</span><p data-po="text"></p><p data-po="bilingual-text" class="po-bilingual-text" lang="ru" hidden></p></article>
+              <article class="po-transcript" id="${this._prefix}-transcript" data-po="transcript" hidden><span>Захиалгын бичвэр</span><p data-po="bilingual-text" class="po-bilingual-text" lang="ru" hidden></p><p data-po="text"></p><details class="po-ru-hint ru-help" data-po="ru-hint" hidden><summary lang="ru">Русская подсказка</summary><p data-po="ru-text" lang="ru"></p></details></article>
               <div class="po-heard" data-po="heard" hidden>${icon('check')}Сонсож дууссан</div>
             </div>
-            <footer class="po-bottom"><div class="po-task-note">${icon('ear')}<p>Захиалгаа сонсоод<br><strong>хүнсээ сонгоорой.</strong></p></div><button type="button" class="po-dismiss" data-po="dismiss"><span>Дуут зурвасыг хаах</span></button><p class="po-speech-notice">Дуу оруулгыг автоматаар үүсгэсэн.<br>Дуудлага нь ойролцоо.</p><i class="po-home-indicator" aria-hidden="true"></i></footer>
+            <footer class="po-bottom"><button type="button" data-po="reveal" class="po-reveal" aria-expanded="false" aria-controls="${this._prefix}-transcript" disabled>${icon('note')}Текст харах</button><button type="button" class="po-dismiss" data-po="dismiss"><span>Дуут зурвасыг хаах</span></button><p class="po-speech-notice">Дуу оруулгыг автоматаар үүсгэсэн.<br>Дуудлага нь ойролцоо.</p><i class="po-home-indicator" aria-hidden="true"></i></footer>
             <div class="po-media-holder" data-po="media" hidden></div>
           </div>
         </div>
@@ -152,7 +150,7 @@
       this._disposeAudio();
       this.order = order ? { ...order } : null; this.record = record ? { ...record } : null;
       this._heardFired = nextKey === previousKey && previouslyHeard; this._revealed = nextKey === previousKey && previouslyRevealed; this._duration = Number(record?.duration)>0 && Number.isFinite(Number(record.duration)) ? Number(record.duration) : 0;
-      this.ui.transcript.hidden=true;this.ui.reveal.setAttribute('aria-expanded','false');this.ui.reveal.innerHTML=`${icon('note')}Текст харах`;this.ui.heard.hidden=!this._heardFired;
+      this.ui.transcript.hidden=true;this.ui.reveal.setAttribute('aria-expanded','false');this.ui.reveal.innerHTML=`${icon('note')}${this._revealLabel(false)}`;this.ui.heard.hidden=!this._heardFired;
       const customer = typeof order?.customer==='string'&&order.customer.trim() ? order.customer.trim() : 'Захиалагч';
       this.ui.customer.textContent=order ? customer : 'Захиалгын утас';this.ui.avatar.textContent=customer.slice(0,1);this.ui['small-avatar'].textContent=customer.slice(0,1);
       this.ui['order-label'].textContent=order?.id!==undefined ? `№ ${String(order.number||order.id).padStart(3,'0')}` : '';
@@ -225,7 +223,16 @@
       this.ui.seek.setAttribute('aria-valuetext',`${formatTime(current)} өнгөрсөн, нийт ${duration?formatTime(duration):'хугацаа тодорхойгүй'}`);
       const ratio=duration?Math.min(1,current/duration):0;this.ui.seek.style.setProperty('--po-progress',`${ratio*100}%`);Array.from(this.ui.waveform.children).forEach((bar,i)=>bar.classList.toggle('po-bar-played',ratio>0&&i/32<ratio));
     }
-    _toggleTranscript(){if(!this._valid||this.ui.reveal.disabled)return;const reveal=this.ui.transcript.hidden;this.ui.transcript.hidden=!reveal;this.ui.reveal.setAttribute('aria-expanded',String(reveal));this.ui.reveal.innerHTML=`${icon('note')}${reveal?'Текст нуух':'Текст харах'}`;if(reveal&&!this._revealed){this._revealed=true;this._callback(this.onReveal);}if(reveal)this.ui.transcript.scrollIntoView({block:'nearest',behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}
+    _revealLabel(revealed){return global.GroceryLanguage?.isRussian()?revealed?'Скрыть текст':this.record?.bilingual?'Текст и перевод заказа':'Текст заказа':revealed?'Текст нуух':'Текст харах';}
+    _toggleTranscript(){
+      if(!this._valid||this.ui.reveal.disabled)return;
+      const reveal=this.ui.transcript.hidden;this.ui.transcript.hidden=!reveal;
+      this.ui.reveal.setAttribute('aria-expanded',String(reveal));this.ui.reveal.innerHTML=`${icon('note')}${this._revealLabel(reveal)}`;
+      if(reveal&&!this._revealed){this._revealed=true;this._callback(this.onReveal);}
+      // Scroll only the chat, never the outer page or the mobile viewport.
+      const top=reveal?this.ui.chat.scrollTop+this.ui.transcript.getBoundingClientRect().top-this.ui.chat.getBoundingClientRect().top-12:0;
+      this.ui.chat.scrollTo({top,behavior:'auto'});
+    }
     open(){if(this.destroyed)return false;if(!this.dialog.open){if(typeof this.dialog.showModal==='function')this.dialog.showModal();else this.dialog.setAttribute('open','');}this.trigger.setAttribute('aria-expanded','true');this._markUnread(false);this.ui.dismiss.focus({preventScroll:true});return true;}
     close(){if(this.destroyed)return;this._pause();if(this.dialog.open){if(typeof this.dialog.close==='function')this.dialog.close();else this.dialog.removeAttribute('open');}this.trigger.setAttribute('aria-expanded','false');this.trigger.focus({preventScroll:true});}
     stop(){if(this.destroyed)return;this._pause();if(this.audio){try{this.audio.currentTime=0;}catch(_){}}this.ui.play.innerHTML=icon('play');this.ui.play.setAttribute('aria-label','Дуу тоглуулах');this.ui.play.setAttribute('aria-pressed','false');this._updateTimeline();if(this.audio&&this._valid)this._status(this.audio.readyState<1?'loading':'ready');}

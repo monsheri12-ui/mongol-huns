@@ -57,11 +57,11 @@
  .world-mode .welcome-dialog .welcome-content h2{font-size:34px;letter-spacing:-.9px;min-height:78.2px}
  .world-mode .welcome-dialog .welcome-language{gap:10px;margin-bottom:14px;padding-bottom:12px;flex-direction:row}
  .welcome-intro>.eyebrow{display:none}
- .welcome-language-copy>span{font-size:13px}.welcome-language-copy small{font-size:12px}.welcome-language select{min-width:116px;max-width:128px;font-size:15px}
+ .welcome-language-copy>span{font-size:13px}.welcome-language-copy small{font-size:12px}.welcome-language select{min-width:116px;max-width:128px;font-size:16px}
  .welcome-language-copy>span{display:block;min-height:40px}.welcome-language-copy small{display:block;min-height:36px}
  .welcome-lead{display:none}.welcome-choice-row{grid-template-columns:1fr;gap:12px}.welcome-select-field select{font-size:17px;min-height:51px}.welcome-select-field>span{font-size:14px}
  .welcome-icon-select{min-height:64px}.welcome-level-field{padding-top:12px}.welcome-level-field .welcome-icon-select{min-height:112px}.welcome-select-visual>img,.welcome-select-visual>.welcome-choice-art{width:40px;height:40px}.welcome-select-visual>span:not(.welcome-select-chevron):not(.welcome-choice-art){font-size:16px}.welcome-level-field .welcome-select-visual>span:not(.welcome-select-chevron):not(.welcome-choice-art){font-size:15px}.welcome-select-visual{padding:8px 11px;gap:9px}
- .welcome-quick-help{font-size:14px;margin:12px 0 18px}.welcome-secondary-actions{gap:8px}.welcome-secondary-button{font-size:13px;padding:8px 7px;gap:5px}.welcome-secondary-button>.icon{width:17px;height:17px}.welcome-secondary-button[data-achievements-open]>b{font-size:13px}
+ .welcome-quick-help{font-size:14px;margin:12px 0 18px}.welcome-secondary-actions{gap:8px}.welcome-secondary-button{font-size:13px;padding:8px 7px;gap:5px;min-height:57px}.welcome-secondary-button>.icon{width:17px;height:17px}.welcome-secondary-button[data-achievements-open]>b{font-size:13px}
  .welcome-details{font-size:14px}.welcome-audio-note{font-size:12px}
  .world-mode .welcome-content #welcome-start{min-height:78px}
 }
@@ -74,4 +74,6 @@
 
 .welcome-play-actions:has(#welcome-resume:not([hidden])){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .welcome-play-actions button{min-width:0}
+.welcome-dialog[aria-busy=true] .welcome-play-actions button{cursor:progress;opacity:1}
+.world-mode .welcome-dialog :is(button,select){touch-action:manipulation}
 @media(max-width:560px){.world-mode .welcome-play-actions #welcome-resume{min-height:78px;padding:10px;font-size:14px}.world-mode .welcome-play-actions #welcome-start{font-size:17px;padding:10px}}

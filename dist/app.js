@@ -613,7 +613,7 @@
     settingsPreview();
     $('settings-dialog').showModal();
   }
-  function selectCampaign(nextMode, nextCounts = counts, receive = true) {
+  function selectCampaign(nextMode, nextCounts = counts, receive = true, refresh = true) {
     if(F.hasPending(service)&&(nextMode!==mode||G.normalizeCounts(nextCounts).some((n,i)=>n!==counts[i]))){const message=ui('Эхлээд хэрэглэгчийн хүсэлтийг шийдээрэй. Дараа нь захиалгын тоог өөрчилж болно.','Сначала решите обращение клиента, затем меняйте количество заказов.');if($('settings-dialog').open)$('settings-feedback').textContent=message;else toast(message);return;}
     save(); counts = G.normalizeCounts(nextCounts); mode = nextMode;
     if(mode==='text')deliveryMode='text';else if(mode==='campaign')deliveryMode='audio';
@@ -626,9 +626,9 @@
     let target = previousIndex >= 0 && (!dailyBests()[previousIndex] || replayInProgress) && canOpenOrder(previousIndex) ? previousIndex : orders.findIndex((o, i) => G.levelForOrder(o) === previousLevel && canOpenOrder(i) && !dailyBests()[i]);
     if (target < 0) target = orders.findIndex((_, i) => canOpenOrder(i) && !dailyBests()[i]);
     if (target < 0) target = 0;
-    loadOrder(target);if(receive&&document.body.classList.contains('game-started'))receiveOrder();if(receive)finishOrderSwitch();else{renderAll();syncPhone();window.dispatchEvent(new Event('grocery:inventory'));}
+    loadOrder(target);if(receive&&document.body.classList.contains('game-started'))receiveOrder();if(receive)finishOrderSwitch();else if(refresh){renderAll();syncPhone();window.dispatchEvent(new Event('grocery:inventory'));}
     $('settings-dialog').close();
-    toast('Тохиргоог хадгаллаа. Дууссан захиалгын одууд хадгалагдсан.');
+    if(refresh)toast('Тохиргоог хадгаллаа. Дууссан захиалгын одууд хадгалагдсан.');
   }
   fillIcons(); renderAll();window.GroceryAchievementUI.update(achievements);
   phone = new window.PhoneOrders({
@@ -857,7 +857,7 @@
   // Dismissing a completed order must leave a clear route to the next one.
   $('success-dialog').addEventListener('cancel', event => { event.preventDefault(); $('success-dialog').close(); showOrders(); });
   $('welcome-russian').disabled=L?.isRussian()===true;
-  window.addEventListener('grocery:language',()=>{if(L?.isRussian())russianHints=true;for(const id of ['welcome-russian','settings-russian']){$(id).checked=russianHints;$(id).disabled=L?.isRussian()===true;}save();renderAll();syncMessages();if($('prep-dialog').open)prepDesk?.render();if($('scale-dialog').open)renderScale(false);window.dispatchEvent(new Event('grocery:navigation-hints'));});
+  window.addEventListener('grocery:language',()=>{if(L?.isRussian())russianHints=true;for(const id of ['welcome-russian','settings-russian']){$(id).checked=russianHints;$(id).disabled=L?.isRussian()===true;}save();renderAll();syncMessages();if($('prep-dialog').open)prepDesk?.render();if($('scale-dialog').open)renderScale(false);if(document.body.classList.contains('game-started'))window.dispatchEvent(new Event('grocery:navigation-hints'));});
   const canResumeSession=()=>!market.closed&&(!!market.orderNumbers[orderKey(order.id)]||hasPreparation()||Object.keys(cart).length>0||attempts>0||F.hasPending(service));
   window.GrocerySession = { canResume:canResumeSession,shift:()=>({...playShift}), shiftProgress:format=>{const targetMode=format==='text'?'text':format==='audio'?'campaign':mode,list=targetMode===mode?orders:Rotation.select(fullCampaign(targetMode),counts,orderRotation,targetMode);return Shift.progress(list,Shift.dayBests(market,list,targetMode),playShift);}, marketDay:()=>({day:market.day,closed:market.closed,offer:Prices.offerForDay()}), archiveAvailable: classicAvailable || legacyAvailable, currentMode: () => mode,currentLevel:()=>G.levelForOrder(order), deliveryMode: () => deliveryMode, russianHints: () => russianHints };
   save(); // Save the first random schedule before the welcome screen can be reloaded.
@@ -865,8 +865,8 @@
     const resuming=event.detail?.resume===true;
     russianHints=L?.isRussian()||event.detail?.russianHints===true;
     const requestedMode=event.detail?.mode==='text'?'text':'campaign';
-    if(!resuming&&event.detail?.archive&&currentCampaign())selectCampaign(classicAvailable?'classic':'legacy',counts,false);
-    else if(!resuming&&!event.detail?.archive&&mode!==requestedMode)selectCampaign(requestedMode,counts,false);
+    if(!resuming&&event.detail?.archive&&currentCampaign())selectCampaign(classicAvailable?'classic':'legacy',counts,false,false);
+    else if(!resuming&&!event.detail?.archive&&mode!==requestedMode)selectCampaign(requestedMode,counts,false,false);
     const requestedShift=Shift.normalize({scope:event.detail?.scope,level:Number(event.detail?.level)||0});
     if(!resuming&&!event.detail?.archive&&currentCampaign()&&!F.hasPending(service)){
       if(canResumeSession())orderRotation=Rotation.received(orderRotation,mode,order,G.orderSignature(order));
