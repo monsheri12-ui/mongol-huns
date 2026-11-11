@@ -18,7 +18,8 @@ ok(G.BY_ID.vodka.category==='alcohol'&&G.BY_ID.whisky.category==='alcohol','Spir
 const orders=G.createCampaign([50,50,50,50]);
 ok(hash(orders)==='04481c7060b56299815c572f3944d7a615d9be845fd8c98e98d8aa68d5ae89c2','All200 original order objects remain byte-for-byte identical');
 const inventories=orders.flatMap(o=>G.createInventory(o));
-const oldLots=inventories.filter(l=>!G.BY_ID[l.productId].basicAssortment).sort((a,b)=>a.id.localeCompare(b.id));
+const beginnerIds=new Set(orders.filter(o=>o.levelIndex===0).map(o=>o.id));
+const oldLots=inventories.filter(l=>!G.BY_ID[l.productId].basicAssortment&&!l.id.includes('-beginner-expired-')).map(l=>beginnerIds.has(Number(l.id.match(/^o(\d+)-/)?.[1]))&&G.isUnfit(l)?{...l,hidden:true}:l).sort((a,b)=>a.id.localeCompare(b.id));
 ok(oldLots.length===28105&&hash(oldLots)==='88e64228edb3dc9aeb7308559ebf67101b4fa35dcbb6a0bae5be461ed655116c','All28105 old lots retain exact IDs, batches, dates and quantities');
 for(const order of [orders[0],orders[50],orders[100],orders[150]]){
  const lots=G.createInventory(order).filter(l=>!l.hidden),groups=new Map();
@@ -26,7 +27,7 @@ for(const order of [orders[0],orders[50],orders[100],orders[150]]){
  for(const [destination,stock] of groups){
   if(destination==='cold')continue;
   if(destination==='frozen-meat'){ok(shelfFamilies(stock).length<=9,'All frozen-meat types fit actual nine display positions');continue;}
-  const width=destination==='produce'?8.6:5.1,pages=shelfPages(stock,width);
+  const width=destination==='produce'?8.6:destination==='dairy'?5.95:5.1,pages=shelfPages(stock,width);
   ok(pages.length<=(destination==='pantry'?2:1),`${destination} has enough physical racks`);
   const keys=pages.flatMap(p=>p.families.map(f=>f.key));
   ok(keys.length===new Set(stock.map(l=>l.variantId||l.productId)).size,'No product family disappears during layout');

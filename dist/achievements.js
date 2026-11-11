@@ -8,7 +8,8 @@
     {id:'weighing',mn:'Жинлэх',ru:'Взвешивание',icon:'scale'},
     {id:'listening',mn:'Сонсох',ru:'Аудирование',icon:'sound'},
     {id:'assortment',mn:'Барааны төрөл',ru:'Ассортимент',icon:'grid'},
-    {id:'shifts',mn:'Түвшин ба ээлж',ru:'Уровни и смены',icon:'star'}
+    {id:'shifts',mn:'Түвшин ба ээлж',ru:'Уровни и смены',icon:'star'},
+    {id:'timing',mn:'Цагтай тоглох',ru:'На время',icon:'star'}
   ];
   const DEFINITIONS=[];
   const add=(id,group,metric,target,mn,ru,descriptionMn,descriptionRu)=>DEFINITIONS.push(Object.freeze({id,group,metric,target,mn,ru,descriptionMn,descriptionRu}));
@@ -34,6 +35,21 @@
   milestones('text-orders','assortment','textOrders',[1,10],[['Уншаад цуглууллаа','Прочитать и собрать'],['Номын санч гадил','Банан-библиотекарь']],n=>[`${n} бичвэр захиалгыг гүйцэтгээрэй.`,`Завершите ${n===1?'один текстовый заказ':n+' текстовых заказов'}.`]);
   [['Танилцах түвшин','Знакомство пройдено'],['Хугацаа шалгах түвшин','Сроки под контролем'],['Тооцооч төмс','Картофельный математик'],['Нарийн сонголттой алим','Яблочный гурман']].forEach((title,i)=>add('level-'+i,'shifts','level'+i,1,...title,`${i+1}-р түвшний нэг ээлжийн бүх захиалгыг гүйцэтгээрэй.`,`Завершите все заказы уровня ${i+1} в течение одной игровой смены.`));
   add('full-shift','shifts','fullShifts',1,'Бүтэн ээлж','Полная смена','Тоглоомын нэг өдрийн дөрвөн түвшний бүх захиалгыг гүйцэтгээрэй.','Завершите все четыре уровня за один игровой день в одном формате заказов.');
+  milestones('timed-orders','timing','timedOrders',[1,5,25],[['Амжлаа!','Успели!'],['Хурдан таван захиалга','Пакет на скорости'],['Шуурхай бэлтгэгч','Экспресс-сборщик']],n=>[`${n} захиалгыг цаг дуусахаас өмнө торгууль, гомдолгүй хүргээрэй.`,`Сдайте ${n===1?'один заказ':n+' заказов'} с таймером до окончания времени, без штрафов и жалоб.`]);
+  add('timed-perfect','timing','timedPerfect',5,'Хурдан бөгөөд алдаагүй','Быстро и без ошибок','Цагтай 5 захиалгад хугацаандаа амжиж гурван од аваарай.','Получите три звезды за пять заказов с таймером, успев до окончания времени.');
+  add('timed-reserve','timing','timedReserve',1,'Цагийн нөөцтэй','С запасом!','Цагийнхаа хагасыг ашиглахаас өмнө нэг захиалгыг алдаагүй хүргээрэй.','Сдайте заказ с таймером без штрафов и жалоб, использовав не больше половины времени.');
+  add('timed-streak','timing','timedStreak',5,'Цагаас түрүүлэв','Обгоняя часы','Цагтай 5 өөр захиалгыг дараалан хугацаанд нь алдаагүй хүргээрэй.','В режиме с таймером сдайте пять разных заказов подряд без опозданий, штрафов и жалоб.');
+  milestones('challenge','timing','challenges',[1,5],[['Галтай улаан лооль','Помидор в огне'],['Хурдны аварга','Повелитель челленджа']],n=>[`Челленжийн ${n} захиалгыг хугацаанд нь алдаагүй хүргээрэй.`,`Сдайте ${n===1?'один заказ':'пять заказов'} в режиме «Таймер-челлендж» до окончания времени, без штрафов и жалоб.`]);
+  milestones('shelf-return','quality','shelfReturns',[1,5,20],[['Байраа оллоо','Место найдено'],['Тавиурын дэг журам','Полочный порядок'],['Тавиурын хамгаалагч','Хранитель стеллажей']],n=>[`Буруу тавиурт байсан ${n} барааг зөв хэсэгт нь аваачиж тавиарай.`,`Верните ${n===1?'один товар':n+' товаров'} с чужого стеллажа на правильный. Взять товар в руки недостаточно.`]);
+  add('first-fine','quality','fines',1,'Эхний торгууль','Первый штраф','Эхний торгуулиа аваарай. Дараагийн удаа анхааралтай байгаарай.','Получите первый штраф. В следующий раз проверяйте внимательнее.');
+  milestones('large-fine','quality','largestFine',[5001,15001,50001],[['Үнэтэй алдаа','Дорогая невнимательность'],['Том торгууль','Счёт с характером'],['Торгуулийн шуурга','Финансовый ураган']],n=>[`Нэг удаа ${n-1} ₮-өөс их торгууль аваарай.`,`Получите один штраф свыше ${(n-1).toLocaleString('ru-RU')} ₮.`]);
+  add('biggest-fine','quality','largestFine',100001,'Торгуулийн аварга','Самый большой штраф','Нэг удаа 100 000 ₮-өөс их торгууль аваарай.','Получите один штраф свыше 100 000 ₮.');
+  add('disorder-fine','quality','disorderFines',1,'Буруу тавиур','Бардак случился','Барааг өөр буруу тавиурт тавиад эмх замбараагүй байдлын торгууль аваарай.','Поставьте взятый товар на неправильный стеллаж и получите штраф за беспорядок.');
+  add('first-salary','orders','paidOrders',1,'Эхний цалин','Первая зарплата','Дуусгасан захиалгын эхний хөлсөө аваарай.','Получите первую оплату за выполненный заказ.');
+  milestones('earnings','orders','earnings',[5001,25001,100001],[['Эхний орлого','Пакет с доходом'],['Орлого өсөж байна','Сборка приносит'],['Зуун мянгаас дээш','Заработано больше']],n=>[`Нийт ${n-1} ₮-өөс их хөлс аваарай. Торгуулийг энэ дүнгээс хасахгүй.`,`Получите за заказы суммарно больше ${(n-1).toLocaleString('ru-RU')} ₮ до вычета штрафов.`]);
+  add('earnings-big','orders','earnings',500001,'Хагас саяас дээш','Полмиллиона в пакете','Нийт 500 000 ₮-өөс их хөлс аваарай.','Получите за выполненные заказы суммарно больше 500 000 ₮ до вычета штрафов.');
+  milestones('positive-review','orders','positiveReviews',[1,5,20,50,100],[['Эхний талархал','Первое спасибо'],['Талархлын таван зурвас','Пять тёплых SMS'],['Хэрэглэгчдийн дуртай','Любимчик покупателей'],['Тавин талархал','Полсотни благодарностей'],['Зуун талархал','Сто добрых SMS']],n=>[`${n} эерэг сэтгэгдлийг SMS-ээр аваарай.`,`Получите ${n===1?'первый положительный отзыв':n+' положительных отзывов'} от покупателей по SMS.`]);
+  milestones('negative-review','quality','negativeReviews',[1,5,20,50,100],[['Эхний сануулга','Первый строгий отзыв'],['Сургамжтай зурвасууд','SMS с уроком'],['Дараагийн удаа дээр','Есть над чем работать'],['Тавин сургамж','Полсотни замечаний'],['Зуун сануулга','Сто поводов стать внимательнее']],n=>[`${n} сөрөг сэтгэгдлийг SMS-ээр аваарай.`,`Получите ${n===1?'первый отрицательный отзыв':n+' отрицательных отзывов'} от покупателей по SMS.`]);
   const BY_ID=Object.fromEntries(DEFINITIONS.map(d=>[d.id,d]));
   const LIMITS=Object.fromEntries(DEFINITIONS.filter(d=>!['products','categories'].includes(d.metric)&&!d.metric.startsWith('level')).map(d=>[d.metric,Math.max(d.target,...DEFINITIONS.filter(e=>e.metric===d.metric).map(e=>e.target))]));
   const CATEGORIES=['dairy','bread','produce','pantry','cold','meat','frozen','canned','ready','drinks','sweets','alcohol','household'];
@@ -50,7 +66,7 @@
       if(earned['dates-1'])earned['dates-any-1']=earned['dates-any-1']||earned['dates-1'];
       delete earned['dates-1'];counters.dairyDates=0;
     }
-    return {version:2,day:number(v.day)||1,counters,products:strings(v.products),categories:strings(v.categories).filter(s=>CATEGORIES.includes(s)),heardKeys:strings(v.heardKeys),levels:[...new Set((Array.isArray(v.levels)?v.levels:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],earned,seen:strings(v.seen,2000)};
+    return {version:2,day:number(v.day)||1,counters,products:strings(v.products),categories:strings(v.categories).filter(s=>CATEGORIES.includes(s)),heardKeys:strings(v.heardKeys),timedKeys:strings(v.timedKeys),levels:[...new Set((Array.isArray(v.levels)?v.levels:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],earned,seen:strings(v.seen,2000)};
   }
   function value(state,definition){const m=definition.metric;return m==='products'?state.products.length:m==='categories'?state.categories.length:m.startsWith('level')?Number(state.levels.includes(Number(m.slice(5)))):state.counters[m]||0;}
   function unlock(state,now=Date.now()){
@@ -78,12 +94,22 @@
     const token=event.type+':'+event.key;if(state.seen.includes(token))return {state,newly:[]};
     const inc=key=>{if(state.counters[key]<LIMITS[key])state.counters[key]++;};
     let relevant=false;
-    const metric={date:'dates',egg:'eggs',discard:'disposals',heard:'heard'}[event.type];
+    const metric={date:'dates',egg:'eggs',discard:'disposals',heard:'heard','shelf-return':'shelfReturns'}[event.type];
     if(metric&&state.counters[metric]<LIMITS[metric]){
       const recording=event.recording||event.key;
       if(metric!=='heard'||!state.heardKeys.includes(recording)){inc(metric);relevant=true;if(metric==='heard')state.heardKeys=strings([...state.heardKeys,recording]);}
     }
     if(event.type==='date'&&event.category==='dairy'&&typeof event.productId==='string'&&!NON_DAIRY.has(event.productId)&&state.counters.dairyDates<LIMITS.dairyDates){inc('dairyDates');relevant=true;}
+    if(event.type==='fine'&&Number.isSafeInteger(event.amount)&&event.amount>0){inc('fines');state.counters.largestFine=Math.max(state.counters.largestFine,Math.min(LIMITS.largestFine,event.amount));if(event.reason==='disorder')inc('disorderFines');relevant=true;}
+    if(event.type==='salary'&&Number.isSafeInteger(event.amount)&&event.amount>0){inc('paidOrders');state.counters.earnings=Math.min(LIMITS.earnings,state.counters.earnings+event.amount);relevant=true;}
+    if(event.type==='review'&&['positive','negative'].includes(event.reviewType)){inc(event.reviewType==='positive'?'positiveReviews':'negativeReviews');relevant=true;}
+    if(event.type==='timed'&&event.timed===true&&['timer','challenge'].includes(event.timingMode)&&Number.isFinite(event.elapsedMs)&&event.elapsedMs>=0&&Number.isFinite(event.limitMs)&&event.limitMs>0&&strings([event.orderKey]).length&&Number.isInteger(event.stars)&&event.stars>=1&&event.stars<=3){
+      relevant=true;
+      if(!event.clean||event.elapsedMs>=event.limitMs)state.counters.timedStreak=0;
+      else if(!state.timedKeys.includes(event.orderKey)){
+        state.timedKeys=strings([...state.timedKeys,event.orderKey]);inc('timedOrders');inc('timedStreak');if(event.stars===3)inc('timedPerfect');if(event.elapsedMs<=event.limitMs/2)inc('timedReserve');if(event.timingMode==='challenge')inc('challenges');
+      }
+    }
     if(event.type==='weigh'&&event.grams>0&&event.tied===true&&event.spelled===true){
       relevant=['weighed','weightWords','produceWeighed','sweetsWeighed'].some(k=>state.counters[k]<LIMITS[k]);
       inc('weighed');if(event.withoutHint)inc('weightWords');if(event.category==='produce')inc('produceWeighed');if(event.category==='sweets')inc('sweetsWeighed');

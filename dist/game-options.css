@@ -1,0 +1,99 @@
+/* One set of in-game pickers on every browser, including mobile Chrome. */
+.world-mode .welcome-icon-select>select[data-custom-choice],select[data-custom-choice][hidden]{display:none!important}
+.world-mode .welcome-icon-select>.choice-trigger{display:flex;align-items:stretch;width:100%;min-width:0;min-height:inherit;margin:0;padding:0;border:0;border-radius:inherit;background:transparent;color:#365c43;text-align:left;box-shadow:none}
+.choice-trigger:focus-visible{outline:3px solid #c6a46b;outline-offset:3px}
+.world-mode .language-icon-select{flex:0 0 145px;width:145px;min-height:48px;border-radius:12px}
+.language-icon-select .welcome-select-visual{gap:8px;padding:9px 11px}
+.language-icon-select .welcome-select-visual>.choice-caption{font-size:15px!important}
+.welcome-select-visual>.choice-flag{width:29px!important;height:20px!important;object-fit:cover;border:1px solid #c7b893;border-radius:3px;flex:none;box-shadow:0 1px 2px #31443122}
+.welcome-select-visual>.choice-tomato{width:58px;height:58px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 2px #77442c18)}
+.choice-tomato.is-resting{opacity:.65}
+.welcome-timer-field{margin-top:13px}.welcome-timer-field .welcome-icon-select{min-height:78px}
+.game-choice-menu{position:fixed;inset:auto;margin:0;padding:7px;border:1px solid #c7b17d;border-radius:17px;background:#fff8e7;color:#31533d;box-shadow:0 16px 50px #183b3540;overflow-y:auto;overscroll-behavior:contain;box-sizing:border-box;z-index:10000;scrollbar-gutter:stable}
+.game-choice-menu[hidden]{display:none!important}
+.world-mode .game-choice-menu>.game-choice-option{display:flex;align-items:center;gap:12px;width:100%;min-width:0;min-height:65px;margin:0;padding:10px 11px;text-align:left;border:1px solid transparent;border-radius:11px;background:transparent;color:#35543c;font:600 16px/1.45 Arial,sans-serif;box-sizing:border-box;white-space:normal}
+.game-choice-option:hover,.game-choice-option:focus-visible{background:#eeefd9!important;border-color:#bdc69d!important;outline:none}
+.game-choice-option[aria-selected=true]{background:#e5ebcf!important;border-color:#a9bd8e!important}
+.game-choice-option>.welcome-choice-art,.game-choice-option>.choice-tomato{display:block;flex:none;width:49px;height:49px;background-repeat:no-repeat;object-fit:contain}
+.game-choice-option>.choice-flag{width:30px;height:21px;object-fit:cover;flex:none;border:1px solid #c8b992;border-radius:3px}
+.game-choice-option>span:not(.welcome-choice-art){min-width:0;overflow-wrap:normal;word-break:normal}
+.game-choice-option .choice-selected-mark{margin-left:auto;flex:none;width:20px;color:#42724a;font-size:22px}
+.order-timer{display:flex;align-items:center;gap:7px;padding:8px 11px;border-bottom:1px dashed #c7b181;background:#eeeccb;color:#35583f;flex:none;min-width:0}
+.order-timer[hidden],.return-task[hidden]{display:none!important}
+.order-timer>img{width:37px;height:37px;object-fit:contain;flex:none}
+.order-timer>span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.order-timer strong{font:800 24px/1.1 Arial,sans-serif;font-variant-numeric:tabular-nums;white-space:nowrap}
+.order-timer small{font:600 11px/1.35 Arial,sans-serif;overflow-wrap:normal}
+.order-timer>small{margin-left:auto;max-width:95px;text-align:right}
+.order-timer[data-mode=challenge]{background:#ffead0}
+.order-timer[data-timer-state=expired]{background:#f3d8bf;color:#8c382c}
+.order-timer[data-timer-state=paused]{background:#e9eadb}
+.return-task{display:grid;gap:6px;flex:none;padding:11px;border-bottom:1px dashed #c7b181;background:#faf0d5;color:#3d6048;font:14px/1.45 Arial,sans-serif}
+.return-task>small{font-size:13px;color:#6b7454}.return-task>button{min-height:44px!important;font-size:14px!important;padding:8px!important;width:100%}
+.misplaced-note{margin:8px 20px 15px;padding:13px 15px;border:1px solid #cab480;border-radius:12px;background:#edf0d7;color:#3f6147;font:15px/1.5 Arial,sans-serif}
+.misplaced-note p{margin:5px 0 9px;font:inherit}.misplaced-note button{min-height:44px;font-size:15px}
+.success-timer{font:700 16px/1.5 Arial,sans-serif;color:#426548;background:#eeefd8;border-radius:10px;padding:10px}
+.po-dialog .client-phone-tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px}
+.po-dialog .client-phone-tabs.no-voice{grid-template-columns:repeat(2,minmax(0,1fr))}
+.po-dialog .client-phone-tabs>button[hidden]{display:none!important}
+.po-dialog .client-phone-tabs>button{font-size:13px;min-width:0;padding:11px 5px;overflow-wrap:normal;word-break:normal}
+.client-account-panel{display:none;color:#37503a;font:15px/1.5 Arial,sans-serif}
+.po-dialog.client-account-open .po-chat{display:block!important}
+.po-dialog.client-account-open .po-chat>:not(.client-account-panel){display:none!important}
+.po-dialog.client-account-open .client-account-panel{display:block}
+.po-dialog.client-account-open .po-bottom .po-reveal,.po-dialog.client-account-open .po-speech-notice{display:none!important}
+.account-summary{padding:17px;border:1px solid #b7c6a2;border-radius:15px;background:#e5edcf}
+.account-summary>small{font-size:14px;color:#5b7451}.account-summary>strong{display:block;font:800 30px/1.4 Arial,sans-serif;overflow-wrap:anywhere;color:#2e5e40}
+.account-summary.is-negative{background:#f5dfca;border-color:#d2ac88}.account-summary.is-negative>strong{color:#9d3e2f}
+.account-totals{display:grid;gap:6px;margin:12px 0 0;padding-top:11px;border-top:1px solid #b8c5a5}
+.account-totals>span{display:flex;justify-content:space-between;gap:10px;font-size:13px}.account-totals b{font-size:14px;white-space:nowrap}
+.account-entry{padding:13px 2px;border-bottom:1px solid #d9cba8;display:flex;gap:8px;align-items:flex-start}
+.account-entry>span{min-width:0;flex:1}.account-entry b{display:block;font:700 15px/1.45 Arial,sans-serif}.account-entry small{display:block;font:13px/1.5 Arial,sans-serif;color:#7b7e62}
+.account-entry>strong{font:800 16px/1.5 Arial,sans-serif;color:#39704b;white-space:nowrap;flex:none}.account-entry.is-fine>strong{color:#a14835}
+.account-empty{font:15px/1.6 Arial,sans-serif;margin:18px 2px;color:#6e765b}
+.account-show-more,.client-reviews-more{display:block;width:100%;min-height:44px;margin:14px 0 3px;padding:10px 13px;border:1px solid #b7bf98;border-radius:11px;background:#f7f0d9;color:#35583f;font:700 15px/1.4 Arial,sans-serif;text-align:center}
+.client-review-list{display:grid;gap:14px;min-width:0;margin-top:20px}
+.client-review-list>h3{margin:0 0 2px;font:700 19px/1.4 Arial,sans-serif;color:#36583e}
+.client-review-list .client-review{margin:0;min-width:0;padding:16px;border:1px solid #b7c69c;border-left:4px solid #698c51;border-radius:13px;background:#eef2dc;color:#344f38}
+.client-review-list .client-review.is-negative{border-color:#d4b395;border-left-color:#a66343;background:#f8ead8;color:#69422e}
+.client-review-list .client-message-meta{font:13px/1.5 Arial,sans-serif;color:#647150;overflow-wrap:break-word;margin-bottom:5px}
+.client-review-list .client-review.is-negative .client-message-meta{color:#846247}
+.client-review-list .client-review>strong{display:block;font:700 15px/1.45 Arial,sans-serif}
+.client-review-list .client-review>p{font:17px/1.6 Arial,sans-serif;overflow-wrap:break-word;margin:10px 0 0}
+.client-review-list .client-review>.client-message-ru{padding-top:10px;border-top:1px solid #cbd2b5;font-size:15px;color:#5b664d}
+.client-review-list .client-review.is-negative>.client-message-ru{border-color:#dbc7ac;color:#7b5d46}
+/* Two clear filters and comfortable cards; no theme or locked-only selector. */
+.achievements-dialog .achievement-controls{display:block;min-height:0}
+.achievements-dialog .achievement-filters{display:flex;gap:9px;flex-wrap:wrap}
+.achievements-dialog .achievement-filters>button{min-height:44px}
+.achievements-dialog .achievement-card h3{word-break:normal;overflow-wrap:normal;hyphens:none;min-width:0}
+@media(max-width:760px){
+ .world-mode .order-float:has(.return-task:not([hidden])):not(.collapsed){max-height:46dvh}
+ .achievements-dialog .achievement-grid{grid-template-columns:minmax(0,1fr)!important}
+ .achievements-dialog .achievements-header{padding:20px 22px;gap:12px}
+ .achievements-dialog .achievements-heading h2{font-size:30px!important;line-height:1.2}
+ .achievements-dialog .achievements-heading>p{font-size:15px;line-height:1.55}
+ .achievements-dialog .achievement-overview{padding:14px 22px}
+ .achievements-dialog .achievement-controls{padding:12px 22px}
+ .achievements-dialog .achievement-card h3{font-size:22px!important;line-height:1.35}
+ .achievements-dialog .achievement-card>p{font-size:17px;line-height:1.6}
+}
+@media(max-width:560px){
+ .world-mode .language-icon-select{width:137px;flex-basis:137px;min-height:48px}
+ .world-mode .language-icon-select .welcome-select-visual{gap:6px;padding:8px}
+ .language-icon-select .welcome-select-visual>.choice-caption{font-size:14px!important}
+ .welcome-timer-field .welcome-icon-select{min-height:74px}
+ .order-timer{gap:5px;padding:7px 9px;flex-wrap:wrap}.order-timer strong{font-size:22px}.order-timer>small{font-size:10px;max-width:75px}
+ .order-timer>img{width:32px;height:32px}.return-task{font-size:13px;padding:9px}.return-task>small{font-size:12px}
+ .po-dialog .client-phone-tabs>button{font-size:12px;min-height:48px;padding:10px 4px}
+ .achievements-dialog .achievements-header{padding:18px;align-items:flex-start}
+ .achievements-dialog .achievements-heading h2{font-size:27px!important}
+ .achievements-dialog .achievements-heading>p{display:none}
+ .achievements-dialog .achievement-card-top{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+ .achievements-dialog .achievement-medal{width:100px;height:100px;flex-basis:100px}
+ .achievements-dialog .achievement-medal.has-sticker>img{width:100px;height:100px}
+ .achievements-dialog .achievement-card-top>div{width:100%;min-width:0}
+ .achievements-dialog .achievement-card h3{font-size:23px!important;line-height:1.35}
+ .achievements-dialog .achievement-card{padding:18px}.achievements-dialog .achievement-grid{padding:14px 16px;gap:14px}
+ .account-summary{padding:13px}.account-summary>strong{font-size:28px}.account-entry{flex-wrap:wrap}.account-entry>strong{margin-left:auto}
+}

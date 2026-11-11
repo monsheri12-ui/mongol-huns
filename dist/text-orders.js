@@ -27,7 +27,7 @@
   return master.filter(o=>o.levelNumber<=normalized[o.levelIndex]).map((o,i)=>({...o,lines:o.lines.map(l=>({...l})),number:i+1,campaignIndex:i,levelCount:normalized[o.levelIndex]}));
  }
  function createInventory(G,order){
-  const recorded=new Set(G.ORDER_PRODUCTS.map(p=>p.id)),inventory=G.createInventory({...order,lines:order.lines.filter(l=>recorded.has(l.productId))});
+  const recorded=new Set(G.ORDER_PRODUCTS.map(p=>p.id)),inventory=G.createInventory({...order,qualityLines:order.lines,lines:order.lines.filter(l=>recorded.has(l.productId))});
   for(const line of order.lines.filter(l=>!recorded.has(l.productId))){
    const lot=inventory.find(l=>l.productId===line.productId);if(!lot)throw Error('Unstocked written-order product');
    lot.stock=Math.max(lot.stock,Math.ceil(line.amount/lot.pack)+1);

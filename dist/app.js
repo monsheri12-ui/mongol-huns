@@ -10,6 +10,7 @@
   const Rotation = window.GroceryOrderRotation;
   const Bag = window.GroceryBag;
   const Ach = window.GroceryAchievements;
+  const Timer=window.GroceryTimer,Layout=window.GroceryLayout,Misplaced=window.GroceryMisplaced,Account=window.GroceryAccount,Reviews=window.GroceryReviews;
   const ui = (mn, ru) => L?.isRussian() ? ru : mn;
   const $ = id => document.getElementById(id);
   // Preserve browser find and native clipboard actions before any game handler.
@@ -21,9 +22,11 @@
   const esc = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const desktopControls = window.matchMedia('(hover: hover) and (pointer: fine)');
   const updateControlLayout = () => {
-    const keyboard=desktopControls.matches && !(navigator.maxTouchPoints > 0);
+    const keyboard=desktopControls.matches;
     document.body.classList.toggle('keyboard-controls',keyboard);
-    $('world-canvas').setAttribute('aria-label',keyboard?ui('Алхах: W A S D. Эргэх: зүүн, баруун сум.','Движение: W A S D. Поворот: стрелки влево и вправо.'):ui('Дэлгэцийн сумыг дарж алхана. Чирж эргэн тойрноо харна.','Нажимайте экранные стрелки, чтобы идти. Проведите пальцем, чтобы осмотреться.'));
+    const pcCamera=ui('W A S D болон ↑, ↓ — алхана. Q, E эсвэл ←, → — камераа зүүн, баруун тийш эргүүлнэ. Хулганаар дэлгэцийг чирж бас харж болно. Enter — барааг үзэх.','W A S D и ↑, ↓ — движение. Q и E или ←, → — поворот камеры влево и вправо. Можно зажать кнопку мыши и потянуть изображение, чтобы осмотреться. Enter — осмотреть товар.');
+    $('world-canvas').setAttribute('aria-label',keyboard?pcCamera:ui('Дэлгэцийн сумыг дарж алхана. Чирж эргэн тойрноо харна.','Нажимайте экранные стрелки, чтобы идти. Проведите пальцем, чтобы осмотреться.'));
+    document.querySelectorAll('[data-pc-camera]').forEach(e=>e.textContent=pcCamera);document.querySelectorAll('[data-pc-movement]').forEach(e=>e.textContent=ui('W A S D болон ↑, ↓ — алхана.','W A S D и ↑, ↓ — движение.'));document.querySelectorAll('[data-pc-look]').forEach(e=>e.textContent=ui('Q, E эсвэл ←, → — камераа эргүүлнэ. Хулганаар дэлгэцийг чирж бас харж болно.','Q и E или ←, → — поворот камеры. Можно зажать кнопку мыши и потянуть изображение, чтобы осмотреться.'));
   };
   updateControlLayout();
   desktopControls.addEventListener('change', updateControlLayout);
@@ -44,9 +47,12 @@
   if (stored.bestById && typeof stored.bestById === 'object') Object.entries(stored.bestById).forEach(([key, value]) => { if (/^(campaign|text|classic|legacy):\d+$/.test(key) && Number.isInteger(value) && value >= 0 && value <= 3) bestById[key] = value; });
   G.LEGACY_ORDERS.forEach((o, i) => { const n = legacy.bests?.[i]; if (Number.isInteger(n) && n > 0 && n <= 3) bestById[`legacy:${o.id}`] = Math.max(n, bestById[`legacy:${o.id}`] || 0); });
   const freshOrderSeed=()=>{try{return Math.max(1,crypto.getRandomValues(new Uint32Array(1))[0]);}catch(_){return 1+Math.floor(Math.random()*0xfffffffe);}};
+  let shelfSeed=Number.isSafeInteger(stored.shelfSeed)&&stored.shelfSeed>0?stored.shelfSeed:1;
+  let layoutState=Layout.normalize(stored.storeLayout),timerMode=Timer.mode(stored.timerMode);
+  const promotionSeed=Number.isSafeInteger(stored.promotionSeed)&&stored.promotionSeed>0?stored.promotionSeed:freshOrderSeed();
   let market=Shift.normalizeMarket(stored.market,bestById,previousProfile.version||legacyAvailable?0:freshOrderSeed());
   let orderRotation=Rotation.normalize(stored.orderRotation,Object.keys({...bestById,...market.orderNumbers}));
-  Prices.setDay(market.day);
+  Prices.setDay(market.day,promotionSeed);
   const drafts = stored.drafts && typeof stored.drafts === 'object' && !Array.isArray(stored.drafts) ? stored.drafts : {};
   const activeByMode = stored.activeByMode && typeof stored.activeByMode === 'object' ? stored.activeByMode : {};
   const orderKey = id => `${mode}:${id}`;
@@ -61,7 +67,7 @@
     orderRotation=Rotation.plan(orderRotation,fullCampaign(),counts,mode,freshOrderSeed());
   }
   const campaignOrders=()=>mode==='legacy'?G.LEGACY_ORDERS:mode==='classic'?G.createClassicCampaign(counts):Rotation.select(fullCampaign(),counts,orderRotation,mode);
-  const orderInventory=order=>order.textOnly?window.GroceryTextOrders.createInventory(G,order):G.createInventory(order);
+  const orderInventory=order=>{const source={...order,qualitySeed:shelfSeed};return Misplaced.add(order.textOnly?window.GroceryTextOrders.createInventory(G,source):G.createInventory(source),order,shelfSeed);};
   let orders = campaignOrders();
   let bests = orders.map(o => bestById[orderKey(o.id)] || 0);
   const dailyBests=()=>Shift.dayBests(market,orders,mode);
@@ -82,10 +88,14 @@
   const oldNumber=market.day===1&&!market.scheduleSeed&&previousProfile.version?(Number(current.preparation?.number)||order.number||order.id):0;
   ({market,order}=Shift.numberOrder(market,mode,order,oldNumber,false));
   let inventory = orderInventory(order);
+  let timerRun=Timer.normalize(current.timerRun,order,timerMode,'t'+freshOrderSeed().toString(36));
+  let relocation=Misplaced.normalize(current.relocation,inventory),returnDepartment='';
+  let shelfDisorder=Number.isSafeInteger(current.shelfDisorder)&&current.shelfDisorder>=0?Math.min(9999,current.shelfDisorder):0;
   let cart = G.sanitizeCart(current.cart, inventory);
   let service = F.sanitizeService(current.service,order,inventory);
   let disposals = F.sanitizeDisposals(current.disposals,inventory,order.day);
-  let stats=F.initStats(stored.stats,drafts);
+  let stats=F.initStats(stored.stats,drafts),account=Account.normalize(stored.account),reviewsState=Reviews.normalize(stored.reviews);
+  let accountFromMenu=false;
   const achievementHistory=Shift.progress(orders,dailyBests(),{scope:'all'});
   let achievements=Ach.hydrate(stored.achievements,{day:market.day,totalCompleted:market.totalCompleted,perfect:Object.values(bestById).filter(n=>n===3).length,textOrders:Object.entries(bestById).filter(([key,n])=>key.startsWith('text:')&&n>0).length,heard:Object.values(stored.heard||{}).filter(n=>n===true).length,heardKeys:Object.entries(stored.heard||{}).filter(([,n])=>n===true).map(([key])=>key),levels:achievementHistory.levels.filter(l=>l.total>0&&l.done===l.total).map(l=>l.level),fullShift:achievementHistory.levels.every(l=>l.total>0&&l.done===l.total),completedKeys:Object.keys(market.completed).map(key=>market.day+':'+key)});
   const sanitizeAchievementRun=input=>({day:market.day,heard:input?.day===market.day&&input.heard===true,revealed:input?.day===market.day&&input.revealed===true,viewed:input?.day===market.day&&Array.isArray(input.viewed)?[...new Set(input.viewed.filter(id=>inventory.some(l=>l.id===id)))].slice(-300):[],weightHints:input?.day===market.day&&Array.isArray(input.weightHints)?[...new Set(input.weightHints.filter(id=>inventory.some(l=>l.id===id)))].slice(-300):[]});
@@ -147,9 +157,62 @@
     $('packing-title').textContent=packingStage==='sealed'?'Бэлэн уут':packingStage==='packed'?'Бараагаа уутлах':service.activeId?'Солих бараа':kind==='cart'?'Таны тэрэг':kind==='basket'?'Таны сагс':'Таны уут';
   }
   function save() {
-    drafts[orderKey(order.id)] = { cart: { ...cart }, disposals:{...disposals}, attempts, checked, delivered, preparation:{...preparation}, inspections:{...inspections},eggInspections:{...eggInspections},service,packingStage,fineReceipt,achievementRun };
+    drafts[orderKey(order.id)] = { cart: { ...cart }, disposals:{...disposals}, attempts, checked, delivered, preparation:{...preparation}, inspections:{...inspections},eggInspections:{...eggInspections},service,packingStage,fineReceipt,achievementRun,timerRun,relocation,shelfDisorder };
     activeByMode[mode] = order.id;
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, catalogVersion: window.GroceryProfile.CATALOG_VERSION, classicAvailable, counts, seed, mode, playShift, market, orderRotation,bestById, drafts, activeByMode, introSeen, controlsTutorialDay, sound, deliveryMode, revealed, heard, russianHints,scaleHints,stats,achievements,uiLanguage:L?.current()||'ru',uiLanguageChosen:L?.wasChosen?.()===true })); } catch (_) { /* Gameplay also works without storage. */ }
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, catalogVersion: window.GroceryProfile.CATALOG_VERSION, classicAvailable, counts, seed, mode, playShift, market, orderRotation,bestById, drafts, activeByMode, introSeen, controlsTutorialDay, sound, deliveryMode, revealed, heard, russianHints,scaleHints,stats,achievements,account,reviews:reviewsState,shelfSeed,storeLayout:layoutState,promotionSeed,timerMode,uiLanguage:L?.current()||'ru',uiLanguageChosen:L?.wasChosen?.()===true,uiLanguageChoiceVersion:L?.wasChosen?.()?1:0 })); } catch (_) { /* Gameplay also works without storage. */ }
+  }
+  function recordMoney(kind,amount,reason,suffix){
+    const entry={key:achievementKey()+':'+suffix,kind,amount,reason,number:F.orderNumber(order),day:market.day,customer:order.customer},result=Account.record(account,entry);account=result.state;
+    if(result.added){if(kind==='pay')achievementEvent('salary',entry.key,{amount});else{stats={...stats,fines:stats.fines+1,fineAmount:stats.fineAmount+amount};achievementEvent('fine',entry.key,{amount,reason});}}return result.added;
+  }
+  function chargeFine(amount,reason,suffix){return recordMoney('fine',amount,reason,suffix);}
+  function chargeQualityFines(){
+    // A repaired or refunded complaint is not a new faulty delivery. Charge an
+    // open complaint once per failed delivery attempt, before its SMS delay.
+    for(const complaint of service.complaints.filter(c=>c.status==='open'))chargeFine(Account.QUALITY_FINE,'quality','quality:'+complaint.id+':'+(complaint.attempts||0));
+  }
+  let timerStamp=performance.now(),timerWasRunning=false,timerPaint='',timerSaveAt=0;
+  const timerName=()=>timerMode==='challenge'?ui('Таймер-челленж','Таймер-челлендж'):ui('Таймер','Таймер');
+  function timerCanRun(){return timerRun.mode!=='off'&&timerRun.started&&!timerRun.finished&&!delivered&&!shipping&&!document.hidden&&document.body.classList.contains('game-started')&&!document.querySelector('#main-menu-dialog[open],#settings-dialog[open],#help-dialog[open],#achievements-dialog[open],#orders-dialog[open],#controls-tutorial-dialog[open],#welcome-dialog[open]');}
+  function renderTimer(){
+    const panel=$('order-timer');panel.hidden=timerRun.mode==='off';if(panel.hidden)return;
+    const left=Timer.remaining(timerRun),phase=timerRun.finished?'finished':!timerRun.started?'ready':left===0?'expired':timerCanRun()?'running':'paused',key=[timerRun.mode,Timer.format(left),phase,L.current()].join(':');
+    panel.dataset.timerState=phase;panel.dataset.timeLimit=String(timerRun.limitMs);panel.dataset.mode=timerRun.mode;
+    if(key===timerPaint)return;timerPaint=key;
+    const status=phase==='ready'?ui('Уут, сагсаа бэлтгээд эхэлнэ','Старт после подготовки'):phase==='paused'?ui('Түр зогссон','Пауза'):phase==='expired'?ui('Цаг дууссан','Время вышло'):ui('Үлдсэн хугацаа','Осталось');
+    panel.innerHTML=`<img src="${window.GroceryTimerArt[timerRun.mode==='challenge'?'challenge':'normal']}" alt="" width="40" height="40"><span><small>${timerName()}</small><strong>${Timer.format(left)}</strong></span><small>${status}</small>`;
+  }
+  function syncTimer(){
+    const now=performance.now();if(timerWasRunning)timerRun=Timer.advance(timerRun,Math.max(0,now-timerStamp));timerStamp=now;timerWasRunning=timerCanRun();
+    if(timerRun.started&&!timerRun.finished&&timerRun.mode!=='off'&&Timer.remaining(timerRun)===0&&!timerRun.warned){timerRun={...timerRun,warned:true};toast(ui('Цаг дууслаа. Захиалгаа үргэлжлүүлж болно; хурдны амжилт тооцохгүй.','Время вышло. Можно закончить заказ, но награда за скорость уже недоступна.'));save();}
+    renderTimer();if(timerWasRunning&&now-timerSaveAt>5000){timerSaveAt=now;save();}
+  }
+  function returnLot(){return inventory.find(l=>l.id===relocation.carrying);}
+  function renderReturnTask(){
+    const panel=$('return-task'),lot=returnLot();panel.hidden=!lot;if(!lot)return;
+    const destination=ui(G.CATEGORIES.find(c=>c.id===lot.correctDepartment)?.name||lot.correctDepartment,L.DEPARTMENTS[lot.correctDepartment]||lot.correctDepartment);
+    panel.innerHTML=`<span>${ui('Байранд нь буцаах','Вернуть на место')}: <b>${esc(L.isRussian()?R.name(lot):G.lotName(lot))}</b></span><small>${esc(destination)}</small><button type="button" class="secondary-button" id="return-place" ${Misplaced.canPlace(lot,relocation,returnDepartment,inventory)?'':'disabled'}>${ui('Тавиурт тавих','Поставить на полку')}</button>`;
+    $('return-place').addEventListener('click',()=>{
+      const current=returnLot();if(!Misplaced.canPlace(current,relocation,returnDepartment,inventory))return;
+      syncTimer();
+      if(Misplaced.canReturn(current,relocation,returnDepartment)){relocation={...relocation,carrying:null,returned:[...relocation.returned,current.id]};achievementEvent('shelf-return',current.id);toast(ui('Барааг зөв тавиурт буцаалаа.','Товар возвращён на правильный стеллаж.'));}
+      else{relocation={...relocation,carrying:null,placed:{...relocation.placed,[current.id]:returnDepartment}};shelfDisorder++;chargeFine(Account.DISORDER_FINE,'disorder','disorder:'+shelfDisorder);toast(ui('Буруу тавиур. Эмх замбараагүй байдлын торгууль: 1 500 ₮.','Неправильный стеллаж. Штраф за беспорядок: 1 500 ₮.'));}
+      save();renderStats();renderReturnTask();window.dispatchEvent(new Event('grocery:inventory'));
+    });
+  }
+  function takeMisplaced(lot){
+    if(!lot?.misplaced||relocation.returned.includes(lot.id)||relocation.carrying||(cart[lot.id]||0)>0)return;
+    closeInspect();if(!ensurePreparation(()=>takeMisplaced(lot)))return;
+    syncTimer();relocation={...relocation,carrying:lot.id};save();renderReturnTask();worldChanged();
+  }
+  function renderExtraHelp(){
+    $('timer-help-title').textContent=ui('Таймер ба челленж','Таймер и таймер-челлендж');
+    $('timer-help-text').textContent=ui('Дөрвөн түвшний алинд ч цаггүй, таймертай эсвэл богино хугацаатай челленжээр тоглож болно. Хугацааг тоглоом өөрөө тогтооно; өөрчилж болохгүй. Уут, сагсаа бэлтгэсний дараа тоолол эхэлнэ. Шошго шалгах, жинлэх, барааг байранд нь буцаахад цаг явна. Үндсэн цэс, заавар болон хөтчийн өөр цонх руу ороход түр зогсоно. Цаг дууссан ч захиалгаа дуусгаж болно. Хугацаандаа, алдаагүй хүргэвэл хурдны амжилт авна.','На каждом из четырёх уровней можно играть без таймера, с таймером или с более коротким лимитом в челлендже. Время назначает игра; менять минуты нельзя. Отсчёт начинается после подготовки пакетов и корзины. На проверку этикеток, взвешивание и возврат товара на стеллаж время расходуется. Главное меню, правила и переход на другую вкладку ставят таймер на паузу. Если время вышло, заказ можно закончить. За своевременную сборку без ошибок выдаются достижения.');
+    $('return-help-title').textContent=ui('Барааг байранд нь буцаах','Товар оказался на чужом стеллаже');
+    $('return-help-text').textContent=ui('Барааны шошгон дээрх буцаах товчийг дарж гартаа авна. Зөв хэсэгт нь өөрөө очоод «Тавиурт тавих» товчийг дараарай. Зөв газар тавьсны дараа л амжилт тооцно. Буруу тавиурт тавибал 1 500 ₮-ийн торгуультай, амжилт өгөхгүй. Таймертай үед барааг зөөхөд цаг явна.','Возьмите такой товар в руки через его карточку. Дойдите до нужного стеллажа и нажмите «Поставить на полку». Достижение засчитывается после возвращения товара на правильное место. За размещение на чужом стеллаже — штраф 1 500 ₮ без достижения. При включённом таймере время на переноску расходуется.');
+    if($('earnings-help-title'))$('earnings-help-title').textContent=ui('Цалин, торгууль ба сэтгэгдэл','Начисления, штрафы и отзывы');
+    if($('earnings-help-text'))$('earnings-help-text').textContent=ui('Дууссан захиалга бүрт 1 000 ₮ авна. Дутуу бараанд торгууль, муудсан эсвэл гэмтсэн бараанд 1 000 ₮-ийн торгууль тооцно. Давтан буруу сольсон бараанд дахин торгууль ногдоно. Үлдэгдэл хасах утгатай байж болно. Утасны «Тооцоо» хэсгээс орлого, торгуулиа харна. Текстэн горимд үндсэн цэсээр энэ хэсгийг нээнэ. Хэрэглэгч заримдаа эерэг эсвэл сөрөг сэтгэгдэл SMS-ээр илгээнэ. Сэтгэгдэл захиалга бүрт ирэхгүй.','За каждый завершённый заказ начисляется 1 000 ₮. За недостающие товары назначается штраф по их стоимости, за испорченный, просроченный или повреждённый товар — 1 000 ₮. Неудачная замена тоже штрафуется. Баланс может стать отрицательным. Доходы и штрафы видны во вкладке телефона «Начисления»; в текстовом режиме её можно открыть из главного меню. Иногда клиент присылает положительный или отрицательный отзыв по SMS. Отзывы приходят не после каждого заказа.');
+    if($('stars-help-text'))$('stars-help-text').textContent=ui('Алдаагүй захиалга хамгийн олон од авна. Дутуу бараа, чанарын гомдол болон буруу тавиурт тавьсан бараа үнэлгээг бууруулна. Тоглохын өмнө таймергүй, таймертай эсвэл челленж горимыг сонгож болно.','За заказ без ошибок начисляется больше звёзд. Недостающие товары, жалобы на качество и беспорядок на стеллажах снижают оценку. Перед началом можно выбрать игру без таймера, с таймером или таймер-челлендж.');
   }
   const photoFor = lot => window.ProducePhotos?.[G.photoKey(lot)] || window.ProductPhotos?.[G.photoKey(lot)] || window.ProductPhotos?.[lot.productId];
   const productArt = (lot, extra = '', original=false) => {
@@ -291,7 +354,7 @@
     $('pack-location').hidden = canPack;
     $('packing').querySelector('.packing-footnote').textContent=packingStage==='sealed'?'Уут бэлэн. Захиалгыг өгч болно.':packingStage==='packed'?'Одоо уутаа боогоорой.':checked?'Бараагаа уутанд хийгээрэй.':'Бэлэн болсон үедээ шалгаарай.';
   }
-  function renderAll() { renderTicket(); renderCategories(); renderShelves(); renderPacking(); soundUI(); }
+  function renderAll() { renderTicket(); renderCategories(); renderShelves(); renderPacking(); soundUI();renderTimer();renderReturnTask();renderExtraHelp();$('account-button').textContent=ui('Орлого, торгууль','Начисления');if(phone?.dialog.classList.contains('client-account-open'))clientMessages?.renderAccount(); }
   function changeCart(lotId, delta) {
     if(shipping||delivered)return;
     if(packingStage!=='collecting'){toast(ui('Эхлээд барааг сагсанд буцаагаарай.','Сначала верните товары в корзину.'));return;}
@@ -405,6 +468,11 @@
       const section=document.createElement('section');section.className='egg-inspection';section.innerHTML=`<button id="inspect-eggs" type="button" class="expiry-check" aria-expanded="false" aria-controls="egg-check-result">${ui('Хайрцгийг нээх','Открыть коробку')}</button><p class="expiry-hint">${ui('Өндөгний хальс бүтэн эсэхийг шалгаарай.','Проверьте, цела ли скорлупа у всех яиц.')}</p><div id="egg-check-result" hidden></div>`;$('inspect-content').querySelector('.product-label .barcode').before(section);
       $('inspect-eggs').addEventListener('click',()=>{achievementEvent('egg',lot.id);eggInspections[lot.id]=true;$('inspect-eggs').setAttribute('aria-expanded','true');$('inspect-eggs').textContent=ui('Хайрцгийг шалгасан','Коробка проверена');$('inspect-eggs').disabled=true;$('inspect-content').querySelector('.inspect-picture>.product-art').outerHTML=window.EggArt.carton(true,G.isDamaged(lot));$('egg-check-result').hidden=false;$('egg-check-result').textContent=G.isDamaged(lot)?ui('Хагарсан өндөг байна. Өөр хайрцаг сонгоорой.','В коробке есть треснувшие яйца. Выберите другую коробку.'):ui('Бүх өндөг бүтэн байна.','Скорлупа всех яиц целая.');$('egg-check-result').className=G.isDamaged(lot)?'egg-result is-damaged':'egg-result';checked=checked&&packingResult().canSend;if(!packingResult().canSend)packingStage='collecting';save();renderPacking();worldChanged();refreshDisposalAction();});
     }
+    if(lot.misplaced&&!relocation.returned.includes(lot.id)){
+      const notice=document.createElement('section');notice.className='misplaced-note';notice.dataset.learning='';
+      notice.innerHTML=`<strong>${ui('Бараа буруу тавиурт байна','Товар на чужом стеллаже')}</strong><p>${ui('Зөв хэсэгт нь аваачиж тавьж болно.','Можно взять его в руки и отнести на правильный стеллаж.')}</p><button type="button" class="secondary-button" id="misplaced-take" ${relocation.carrying||cart[lot.id]?'disabled':''}>${ui('Байранд нь буцаахаар авах','Взять и отнести на место')}</button>`;
+      $('inspect-content').querySelector('.inspect-grid').before(notice);$('misplaced-take').addEventListener('click',()=>takeMisplaced(lot));
+    }
     $('inspect-expiry')?.addEventListener('click', () => {
       $('inspect-dates').hidden = false;
       $('inspect-expiry').setAttribute('aria-expanded', 'true');
@@ -458,22 +526,28 @@
   function syncMessages() {
     const started=document.body.classList.contains('game-started');
     if(started)clientMessages?.setContext(order,service);
-    const available=started&&(mode==='campaign'&&deliveryMode==='audio'||service.hadComplaint);
+    const available=started&&(mode==='campaign'&&deliveryMode==='audio'||service.hadComplaint||reviewsState.reviews.some(r=>!r.read));
     $('phone-button').hidden=!available;
     $('phone-button').disabled=!available;
   }
   function closeWorkDialogs(){for(const id of ['packing-dialog','orders-dialog','inspect-dialog','scale-dialog','prep-dialog','settings-dialog'])if($(id).open)$(id).close();}
   function finishRun() {
-    const earned=F.runStars(attempts,service,fineReceipt.amount);
+    const earned=Math.min(F.runStars(attempts,service,fineReceipt.amount),shelfDisorder?2:3);
     bests[orderIndex]=Math.max(bests[orderIndex],earned);bestById[orderKey(order.id)]=bests[orderIndex];
     market=Shift.recordCompletion(market,orderKey(order.id),earned,order.customer);
     market=Shift.closeDay(market,orders,mode,shiftScope(),F.hasPending(service));
     const completedLevels=Shift.progress(orders,dailyBests(),{scope:'all'}).levels,selected=inventory.filter(l=>cart[l.id]>0),fresh=selected.filter(l=>!G.isUnfit(l,order.day));
-    const clean=!service.hadComplaint&&!fineReceipt.amount&&G.validateOrder(order,inventory,cart).ok;
+    const clean=!service.hadComplaint&&!fineReceipt.amount&&!shelfDisorder&&G.validateOrder(order,inventory,cart).ok;
+    recordMoney('pay',Account.PAY,'salary','pay');
+    const reviewReason=fineReceipt.amount?'missing':service.hadComplaint?(service.complaints[0]?.reason||'spoiled'):null;
+    const reviewResult=Reviews.finish(reviewsState,{key:achievementKey(),seed:shelfSeed,order:{...order,number:F.orderNumber(order)},reason:reviewReason});reviewsState=reviewResult.state;
+    if(reviewResult.review){achievementEvent('review',reviewResult.review.id,{reviewType:reviewResult.review.type});clientMessages?.notifyReview?.(reviewResult.review);}
+    if(timerRun.mode!=='off')achievementEvent('timed',timerRun.runId,{...Timer.outcome(timerRun),stars:earned,clean,orderKey:achievementKey()+':'+timerRun.mode});
     achievementEvent('complete','',{stars:earned,clean,checked:selected.length>0&&selected.every(l=>achievementRun.viewed.includes(l.id)&&(!l.expires||inspections[l.id])&&(l.productId!=='eggs'||eggInspections[l.id])),format:mode==='text'||deliveryMode==='text'?'text':'audio',heard:achievementRun.heard,revealed:achievementRun.revealed,products:fresh.map(l=>l.productId),categories:fresh.map(l=>G.BY_ID[l.productId].category),levels:completedLevels.filter(l=>l.total>0&&l.done===l.total).map(l=>l.level),fullShift:completedLevels.every(l=>l.total>0&&l.done===l.total)});
     delivered=true;checked=true;shipping=false;save();renderAll();syncMessages();window.dispatchEvent(new Event('grocery:transport'));closeWorkDialogs();showSuccess();
   }
   function notifyComplaint() {
+    chargeQualityFines();
     save();renderAll();syncMessages();
     if(F.hasPending(service)&&!service.activeId)clientMessages?.notify();
   }
@@ -500,9 +574,9 @@
     const result=packingResult();
     if(!checked||!result.canSend){checked=false;feedback=result;renderPacking();return;}
     const replacing=service.activeId,request=activeRequest(),shipped={...cart};
-    if(!replacing&&!fineReceipt.recorded){fineReceipt={amount:result.fine,missing:result.missing,recorded:true};if(result.fine){stats.fines++;stats.fineAmount+=result.fine;}}
-    if(!replacing){const complaints=F.complaintsFor(order,inventory,cart);service={...F.emptyService(),originalCart:{...cart},complaints,hadComplaint:complaints.length>0};}
-    delivered=true;shipping=true;phone?.stop();save();renderTicket();syncMessages();window.dispatchEvent(new Event('grocery:transport'));
+    if(!replacing&&!fineReceipt.recorded){fineReceipt={amount:result.fine,missing:result.missing,recorded:true};if(result.fine)chargeFine(result.fine,'missing','missing');}
+    if(!replacing){const complaints=F.complaintsFor(order,inventory,cart);service={...F.emptyService(),originalCart:{...cart},complaints,hadComplaint:complaints.length>0};chargeQualityFines();}
+    syncTimer();timerRun=Timer.finish(timerRun);delivered=true;shipping=true;phone?.stop();save();renderTicket();renderTimer();syncMessages();window.dispatchEvent(new Event('grocery:transport'));
     $('dispatch-button').disabled=true;$('dispatch-button').classList.add('is-shipping');$('bag-illustration').classList.add('shipping');chime('success');
     setTimeout(()=>{
       shipping=false;$('bag-illustration').classList.remove('shipping');$('dispatch-button').classList.remove('is-shipping');$('packing-dialog').close();
@@ -518,15 +592,17 @@
     },window.matchMedia('(prefers-reduced-motion: reduce)').matches?50:700);
   }
   function showSuccess() {
-    const earned = F.runStars(attempts,service,fineReceipt.amount);
-    const fineHTML=fineReceipt.amount?`<div class="fine-receipt"><b>${ui('Дутуу захиалгын торгууль','Штраф за неполный заказ')}: ${fineReceipt.amount.toLocaleString('ru-RU')} ₮</b><p>${fineReceipt.missing.map(l=>`${esc(L?.isRussian()?R.name(l):G.lotName(l))}: ${amountText(l.productId,l.amount)}`).join(' · ')}</p></div>`:'';
+    const earned = Math.min(F.runStars(attempts,service,fineReceipt.amount),shelfDisorder?2:3);
+    const missingFineHTML=fineReceipt.amount?`<div class="fine-receipt"><b>${ui('Дутуу захиалгын торгууль','Штраф за неполный заказ')}: ${fineReceipt.amount.toLocaleString('ru-RU')} ₮</b><p>${fineReceipt.missing.map(l=>`${esc(L?.isRussian()?R.name(l):G.lotName(l))}: ${amountText(l.productId,l.amount)}`).join(' · ')}</p></div>`:'';
+    const disorderFineHTML=shelfDisorder?`<div class="fine-receipt"><b>${ui('Эмх замбараагүй байдлын торгууль','Штраф за беспорядок')}: ${(shelfDisorder*Account.DISORDER_FINE).toLocaleString('ru-RU')} ₮</b><p>${ui('Барааг буруу тавиурт тавьсан тул үнэлгээ буурлаа.','Размещение товаров на чужом стеллаже снизило оценку.')}</p></div>`:'';
+    const fineHTML=missingFineHTML+disorderFineHTML;
     const shiftProgress=Shift.progress(orders,dailyBests(),shiftScope());
     const nextOrder=Shift.next(orders,dailyBests(),shiftScope(),market,mode);
     const allDone = nextOrder<0;
     const transition=nextOrder>=0&&currentCampaign()&&playShift.scope==='all'&&G.levelForOrder(orders[nextOrder])>G.levelForOrder(order);
     const levelOnly=currentCampaign()&&playShift.scope==='level';
     const today=dailyBests(),totalStars=Shift.indexes(orders,shiftScope()).reduce((sum,i)=>sum+today[i],0);
-    $('success-content').innerHTML = `<div class="success-illustration">${A.icon(allDone ? 'star' : 'truck')}</div><span class="eyebrow">${allDone ? levelOnly?ui('ТҮВШИН ДУУССАН','УРОВЕНЬ ПРОЙДЕН'):'БҮХ ЗАХИАЛГА ДУУССАН' : `ЗАХИАЛГА № ${String(F.orderNumber(order)).padStart(3, '0')}`}</span><h2 id="success-title">${allDone ? levelOnly?ui('Түвшнээ дуусгалаа!','Уровень пройден!'):'Сайн ажиллалаа!' : service.hadComplaint?'Хэрэглэгчийн хүсэлтийг шийдлээ!':'Хүргэлтэд гарлаа!'}</h2>${stars(earned)}${fineHTML}<p class="dialog-lead">${allDone ? levelOnly?ui('Энэ түвшний ээлж дууслаа. Дараагийн өдрийг эхлүүлж болно.','Смена на этом уровне завершена. Можно начать следующий игровой день.'):ui('Ээлж дууслаа. Захиалга, торгууль, буцаалтаа харна уу.','Смена завершена. Посмотрите итоги заказов, штрафов и возвратов.') : fineReceipt.amount?ui('Захиалгыг өглөө. Дутуу бараанд торгууль тооцов.','Заказ отдан. Начислен штраф за недостающие товары.'):service.hadComplaint?'Шинэ бараагаар сольсон эсвэл мөнгийг нь буцаасан.':'Захиалга бүрэн, тоо хэмжээ зөв.<br>Хугацаа нь дууссан, муудсан бараа байхгүй.'}</p>${F.refundTotal(service)?`<p class="refund-receipt">Мөнгийг буцаасан: ${F.refundTotal(service).toLocaleString("en-US")} ₮</p>`:""}<div class="success-meta"><span><strong>${shiftProgress.done}/${shiftProgress.total}</strong>Дууссан захиалга</span><span><strong>${totalStars}/${shiftProgress.total * 3}</strong>Нийт од</span><span><strong>${attempts}</strong>Шалгасан тоо</span><span><strong>${stats.fines}</strong>${ui("Торгууль","Штрафы")}</span><span><strong>${stats.refunds}</strong>${ui("Мөнгө буцаалт","Возвраты")}</span></div>${transition?`<div class="shift-transition"><b>${ui('Түвшин дууслаа','Уровень пройден')}</b><span>${G.levelForOrder(orders[nextOrder])+1} · ${esc(ui(G.LEVELS[G.levelForOrder(orders[nextOrder])].name,L.translateText(G.LEVELS[G.levelForOrder(orders[nextOrder])].name)))}</span></div>`:''}<button id="success-next" class="primary-button">${nextOrder>=0 ? transition ? ui('Дараагийн түвшинд орох','Перейти на следующий уровень') : 'Дараагийн захиалга' : ui('Дараагийн өдөр','Следующий игровой день')}${A.icon('arrow')}</button><button type="button" class="secondary-button success-achievements" data-achievements-open data-learning>Амжилтууд</button><button id="success-replay" class="text-button">Энэ захиалгыг дахин тоглох</button>`;
+    $('success-content').innerHTML = `<div class="success-illustration">${A.icon(allDone ? 'star' : 'truck')}</div><span class="eyebrow">${allDone ? levelOnly?ui('ТҮВШИН ДУУССАН','УРОВЕНЬ ПРОЙДЕН'):'БҮХ ЗАХИАЛГА ДУУССАН' : `ЗАХИАЛГА № ${String(F.orderNumber(order)).padStart(3, '0')}`}</span><h2 id="success-title">${allDone ? levelOnly?ui('Түвшнээ дуусгалаа!','Уровень пройден!'):'Сайн ажиллалаа!' : service.hadComplaint?'Хэрэглэгчийн хүсэлтийг шийдлээ!':'Хүргэлтэд гарлаа!'}</h2>${stars(earned)}${fineHTML}<p class="dialog-lead">${allDone ? levelOnly?ui('Энэ түвшний ээлж дууслаа. Дараагийн өдрийг эхлүүлж болно.','Смена на этом уровне завершена. Можно начать следующий игровой день.'):ui('Ээлж дууслаа. Захиалга, торгууль, буцаалтаа харна уу.','Смена завершена. Посмотрите итоги заказов, штрафов и возвратов.') : fineReceipt.amount?ui('Захиалгыг өглөө. Дутуу бараанд торгууль тооцов.','Заказ отдан. Начислен штраф за недостающие товары.'):service.hadComplaint?'Шинэ бараагаар сольсон эсвэл мөнгийг нь буцаасан.':'Захиалга бүрэн, тоо хэмжээ зөв.<br>Хугацаа нь дууссан, муудсан бараа байхгүй.'}</p>${F.refundTotal(service)?`<p class="refund-receipt">Мөнгийг буцаасан: ${F.refundTotal(service).toLocaleString("en-US")} ₮</p>`:""}${timerRun.mode!=='off'?`<p class="success-timer" data-learning>${timerName()}: ${Timer.format(timerRun.elapsedMs)} / ${Timer.format(timerRun.limitMs)} · ${Timer.outcome(timerRun).onTime?ui('Хугацаандаа амжсан','До окончания времени'):ui('Цаг дууссан','Лимит истёк')}</p>`:''}<div class="success-meta"><span><strong>${shiftProgress.done}/${shiftProgress.total}</strong>Дууссан захиалга</span><span><strong>${totalStars}/${shiftProgress.total * 3}</strong>Нийт од</span><span><strong>${attempts}</strong>Шалгасан тоо</span><span><strong>${stats.fines}</strong>${ui("Торгууль","Штрафы")}</span><span><strong>${stats.refunds}</strong>${ui("Мөнгө буцаалт","Возвраты")}</span></div>${transition?`<div class="shift-transition"><b>${ui('Түвшин дууслаа','Уровень пройден')}</b><span>${G.levelForOrder(orders[nextOrder])+1} · ${esc(ui(G.LEVELS[G.levelForOrder(orders[nextOrder])].name,L.translateText(G.LEVELS[G.levelForOrder(orders[nextOrder])].name)))}</span></div>`:''}<button id="success-next" class="primary-button">${nextOrder>=0 ? transition ? ui('Дараагийн түвшинд орох','Перейти на следующий уровень') : 'Дараагийн захиалга' : ui('Дараагийн өдөр','Следующий игровой день')}${A.icon('arrow')}</button><button type="button" class="secondary-button success-achievements" data-achievements-open data-learning>Амжилтууд</button><button id="success-replay" class="text-button">Энэ захиалгыг дахин тоглох</button>`;
     window.GroceryAchievementUI.update(achievements);
     $('success-next').addEventListener('click', () => {
       $('success-dialog').close();
@@ -551,6 +627,8 @@
     ({market,order}=Shift.numberOrder(market,mode,orders[index],oldLabel,false));inventory=orderInventory(order);russianOrderOpen=false;pendingPreparationAction=null;
     const savedService=F.sanitizeService(savedDraft?.service,order,inventory);
     const draft=resume&&(!bests[index]||savedDraft?.delivered===false||F.hasPending(savedService))?savedDraft:null;
+    shelfDisorder=Number.isSafeInteger(draft?.shelfDisorder)&&draft.shelfDisorder>=0?Math.min(9999,draft.shelfDisorder):0;
+    timerRun=Timer.normalize(draft?.timerRun,order,timerMode,'t'+freshOrderSeed().toString(36));timerStamp=performance.now();timerWasRunning=false;timerPaint='';relocation=Misplaced.normalize(draft?.relocation,inventory);returnDepartment='';
     service=draft?savedService:F.emptyService();disposals=F.sanitizeDisposals(draft?.disposals,inventory,order.day);inspections=F.sanitizeInspections(draft?.inspections,inventory);eggInspections=F.sanitizeEggInspections(draft?.eggInspections,inventory);
     cart=G.sanitizeCart(draft?.cart,inventory);
     achievementRun=sanitizeAchievementRun(draft?.achievementRun);
@@ -636,9 +714,9 @@
     onReveal: () => { revealed[orderKey(order.id)] = true;achievementRun.revealed=true;save(); renderTicket(); },
     onHeard: () => { heard[orderKey(order.id)] = true;achievementRun.heard=true;achievementEvent('heard','',{recording:orderKey(order.id)});save(); renderTicket(); }
   });
-  clientMessages=new window.ClientMessages(phone,{onReplace:startReplacement,onRefund:refundItem,russian:()=>russianHints||L?.isRussian()});
-  prepDesk=new window.PreparationDesk({getOrder:activeRequest,getPrep:()=>preparation,setPrep:value=>{preparation=F.sanitizePrep(activeRequest(),value);save();renderCarrier();window.dispatchEvent(new Event('grocery:transport'));},russian:()=>L?.isRussian(),onReady:()=>{const action=pendingPreparationAction;pendingPreparationAction=null;save();renderPacking();window.dispatchEvent(new Event('grocery:transport'));if(action)action();else focusWorld();}});
-  phone.dialog.addEventListener('close',()=>{if(document.body.classList.contains('game-started')&&!delivered&&!hasPreparation()&&!$('welcome-dialog').open)requestAnimationFrame(()=>{if(!delivered&&!hasPreparation()&&!document.querySelector('dialog[open]'))prepDesk.open();});});
+  clientMessages=new window.ClientMessages(phone,{onReplace:startReplacement,onRefund:refundItem,russian:()=>russianHints||L?.isRussian(),account:()=>account,reviews:()=>reviewsState.reviews,onReviewsRead:()=>{reviewsState=Reviews.read(reviewsState);save();syncMessages();}});
+  prepDesk=new window.PreparationDesk({getOrder:activeRequest,getPrep:()=>preparation,setPrep:value=>{preparation=F.sanitizePrep(activeRequest(),value);save();renderCarrier();window.dispatchEvent(new Event('grocery:transport'));},russian:()=>L?.isRussian(),onReady:()=>{timerRun=Timer.start(timerRun);syncTimer();const action=pendingPreparationAction;pendingPreparationAction=null;save();renderPacking();window.dispatchEvent(new Event('grocery:transport'));if(action)action();else focusWorld();}});
+  phone.dialog.addEventListener('close',()=>{if(accountFromMenu){accountFromMenu=false;openMainMenu();return;}if(document.body.classList.contains('game-started')&&!delivered&&!hasPreparation()&&!$('welcome-dialog').open)requestAnimationFrame(()=>{if(!delivered&&!hasPreparation()&&!document.querySelector('dialog[open]'))prepDesk.open();});});
   syncPhone();
   $('categories').addEventListener('click', event => {
     const button = event.target.closest('[data-category]'); if (!button) return;
@@ -810,9 +888,12 @@
   function showCompactReceipt(){if(!compactHud.matches)return;document.querySelector('.order-float').classList.remove('collapsed');$('ticket-toggle').setAttribute('aria-expanded','true');}
   compactHud.addEventListener('change',showCompactReceipt);showCompactReceipt();
   window.GameWorldBridge = {
+    shelfSeed:()=>shelfSeed,layout:()=>({...layoutState}),
+    department:lot=>Misplaced.department(lot,relocation),returnCargo:()=>returnLot(),
+    atDepartment:id=>{if(returnDepartment===id)return;returnDepartment=id;renderReturnTask();},
     atmosphere:()=>{const p=Shift.progress(orders,dailyBests(),shiftScope());return {day:market.day,progress:p.total?p.done/p.total:0};},
     inventory: () => inventory,
-    count: id => (cart[id]||0)+(disposals[id]||0)+(service.sentCart[id]||0)+(service.activeId?(service.originalCart[id]||0):0),
+    count: id => (cart[id]||0)+(disposals[id]||0)+(service.sentCart[id]||0)+(service.activeId?(service.originalCart[id]||0):0)+(relocation.carrying===id?1:0),
     transport:()=>hasPreparation()?preparation.transport:'',
     label:()=>({number:F.orderNumber(order),customer:order.customer,bags:delivered?0:preparation.bags}),
     carried:()=>delivered||packingStage!=='collecting'?[]:inventory.filter(l=>cart[l.id]),
@@ -833,6 +914,7 @@
   }
   $('welcome-guide').addEventListener('click',()=>{helpFromMenu=false;$('help-dialog').showModal();});
   $('home-button').addEventListener('click',event=>{event.preventDefault();if(window.GroceryInput.menuClick(event))openMainMenu();});
+  $('account-button').addEventListener('click',()=>{accountFromMenu=true;$('main-menu-dialog').close();clientMessages.setContext(order,service);clientMessages.showTab('account');phone.open();});
   $('menu-resume').addEventListener('click',()=>{$('main-menu-dialog').close();focusWorld();});
   $('menu-finish').addEventListener('click',()=>{
     save();settingsFromMenu=false;$('main-menu-dialog').close();
@@ -859,7 +941,8 @@
   $('welcome-russian').disabled=L?.isRussian()===true;
   window.addEventListener('grocery:language',()=>{if(L?.isRussian())russianHints=true;for(const id of ['welcome-russian','settings-russian']){$(id).checked=russianHints;$(id).disabled=L?.isRussian()===true;}save();renderAll();syncMessages();if($('prep-dialog').open)prepDesk?.render();if($('scale-dialog').open)renderScale(false);if(document.body.classList.contains('game-started'))window.dispatchEvent(new Event('grocery:navigation-hints'));});
   const canResumeSession=()=>!market.closed&&(!!market.orderNumbers[orderKey(order.id)]||hasPreparation()||Object.keys(cart).length>0||attempts>0||F.hasPending(service));
-  window.GrocerySession = { canResume:canResumeSession,shift:()=>({...playShift}), shiftProgress:format=>{const targetMode=format==='text'?'text':format==='audio'?'campaign':mode,list=targetMode===mode?orders:Rotation.select(fullCampaign(targetMode),counts,orderRotation,targetMode);return Shift.progress(list,Shift.dayBests(market,list,targetMode),playShift);}, marketDay:()=>({day:market.day,closed:market.closed,offer:Prices.offerForDay()}), archiveAvailable: classicAvailable || legacyAvailable, currentMode: () => mode,currentLevel:()=>G.levelForOrder(order), deliveryMode: () => deliveryMode, russianHints: () => russianHints };
+  window.GrocerySession = { timerMode:()=>timerMode,canResume:canResumeSession,shift:()=>({...playShift}), shiftProgress:format=>{const targetMode=format==='text'?'text':format==='audio'?'campaign':mode,list=targetMode===mode?orders:Rotation.select(fullCampaign(targetMode),counts,orderRotation,targetMode);return Shift.progress(list,Shift.dayBests(market,list,targetMode),playShift);}, marketDay:()=>({day:market.day,closed:market.closed,offer:Prices.offerForDay()}), archiveAvailable: classicAvailable || legacyAvailable, currentMode: () => mode,currentLevel:()=>G.levelForOrder(order), deliveryMode: () => deliveryMode, russianHints: () => russianHints };
+  chargeQualityFines();
   save(); // Save the first random schedule before the welcome screen can be reloaded.
   window.addEventListener('grocery:start', event => {
     const resuming=event.detail?.resume===true;
@@ -870,6 +953,7 @@
     const requestedShift=Shift.normalize({scope:event.detail?.scope,level:Number(event.detail?.level)||0});
     if(!resuming&&!event.detail?.archive&&currentCampaign()&&!F.hasPending(service)){
       if(canResumeSession())orderRotation=Rotation.received(orderRotation,mode,order,G.orderSignature(order));
+      syncTimer();timerMode=Timer.mode(event.detail?.timerMode);shelfSeed=freshOrderSeed();layoutState=Layout.next(layoutState,freshOrderSeed());
       save();playShift=requestedShift;const advanced=advanceDay();
       if(!advanced)planFreshOrders();
       market={...market,completed:Object.fromEntries(Object.entries(market.completed).filter(([key])=>!key.startsWith(mode+':'))),orderNumbers:{},closed:false};
@@ -877,6 +961,7 @@
       const target=Shift.next(orders,dailyBests(),playShift,market,mode);
       if(target>=0){loadOrder(target,false);phone?.close();closeWorkDialogs();renderAll();window.dispatchEvent(new Event('grocery:inventory'));window.dispatchEvent(new Event('grocery:transport'));}
     }
+    if(hasPreparation())timerRun=Timer.start(timerRun);
     receiveOrder();introSeen = true; save(); renderTicket(); syncPhone();window.dispatchEvent(new Event('grocery:navigation-hints'));
     const openReceivedOrder=()=>{
       if(delivered&&F.hasPending(service))clientMessages.open();
@@ -890,4 +975,7 @@
       $('controls-tutorial-dialog').showModal();
     }else openReceivedOrder();
   });
+  const timerObserver=new MutationObserver(syncTimer);for(const d of document.querySelectorAll('dialog'))timerObserver.observe(d,{attributes:true,attributeFilter:['open']});timerObserver.observe(document.body,{attributes:true,attributeFilter:['class']});
+  document.addEventListener('visibilitychange',()=>{syncTimer();save();});window.addEventListener('pagehide',()=>{syncTimer();save();});
+  setInterval(syncTimer,250);
 })();

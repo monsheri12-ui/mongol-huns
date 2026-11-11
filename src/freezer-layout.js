@@ -1,8 +1,9 @@
+import {rowShuffle} from './shelf-shuffle.js';
 import * as THREE from 'three';
 import {createProductModel,fitModelInside} from './product-presentation.js';
 import {shelfFamilies} from './shelf-stock.js';
-export function chestLayout(lots){
- const families=shelfFamilies(lots);if(!families.length)return {bins:[],labels:[]};
+export function chestLayout(lots,seed=0,shelf='chest'){
+ const families=rowShuffle(shelfFamilies(lots),4,seed,shelf);if(!families.length)return {bins:[],labels:[]};
  if(families.length>8)throw Error('A freezer chest has eight physical compartments');
  const bins=Array.from({length:8},(_,i)=>({family:families[i%families.length],x:(i%4-1.5)*.78,z:i<4?.29:-.29,y:.815}));
  const columns=Math.min(4,families.length),width=families.length<=2?1.20:.70;

@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import {rowShuffle} from './shelf-shuffle.js';
 import {createSlidingDoor} from './fridge-door.js';
 import {chestLayout,createFreezerPack,produceSlots} from './freezer-layout.js';
 import {createStoreWindows,atmosphereState,EXTERIOR_TIMES} from './window-atmosphere.js';
@@ -25,9 +26,9 @@ const canvas = document.getElementById('world-canvas');
 const $ = id => document.getElementById(id);
 const ROOM = { width: 32, depth: 26, halfWidth: 16, halfDepth: 13 };
 const STATION = { x: 6.5, z: 10.8 };
-const zones = {
+const BASE_ZONES = {
   meat: { name: 'МАХ, ЗАГАС', x: -12, z: -12, rotation: 0, width: 5.1, to: [-12, -9.2], yaw: 0 },
-  dairy: { name: 'СҮҮ, ӨНДӨГ', x: -6, z: -12, rotation: 0, width: 5.1, to: [-6, -9.2], yaw: 0 },
+  dairy: { name: 'СҮҮ, ӨНДӨГ', x: -6, z: -12, rotation: 0, width: 5.95, to: [-6, -9.2], yaw: 0 },
   bread: { name: 'ШИНЭ ТАЛХ', x: 0, z: -12, rotation: 0, width: 5.1, to: [0, -9.2], yaw: 0 },
   pantry: { name: 'ӨДӨР ТУТМЫН ХҮНС', x: 6, z: -12, rotation: 0, width: 5.1, to: [6, -9.2], yaw: 0 },
   canned: { name: 'ЛААЗАЛСАН ХҮНС, СОУС', x: 12, z: -12, rotation: 0, width: 5.1, to: [12, -9.2], yaw: 0 },
@@ -46,6 +47,8 @@ const zones = {
   'pantry-2': {name:'ХҮНС, АМТЛАГЧ',category:'pantry',x:5.5,z:-4.6,rotation:0,width:5.1,to:[5.5,-1.6],yaw:0},
   packing: { name: 'БЭЛТГЭХ ШИРЭЭ', to: [6.5, 8.4], yaw: Math.PI }
 };
+const zones=window.GroceryLayout.arrange(BASE_ZONES,bridge.layout?.());
+let layoutGeneration=bridge.layout?.().generation||0;
 let renderer;
 try {
   renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
@@ -123,7 +126,7 @@ async function init() {
   }
   function addFridgeDoor(parent,cabinet,x,y,z,width,height,column,side=1){
     const door=createSlidingDoor(width,height,column===2?-1:1);door.cabinet=cabinet;door.id=fridgeDoors.length;door.setClosedPosition(x,y,z,side<0?Math.PI:0);parent.add(door.group);
-    door.pane.userData.fridgeDoor=door.id;door.handle.userData.fridgeDoor=door.id;door.center=new THREE.Vector3(x,y,z);parent.localToWorld(door.center);fridgeDoors.push(door);return door;
+    door.pane.userData.fridgeDoor=door.id;door.handle.userData.fridgeDoor=door.id;door.localCenter=new THREE.Vector3(x,y,z);door.rackParent=parent;door.center=door.localCenter.clone();parent.localToWorld(door.center);fridgeDoors.push(door);return door;
   }
   function fridgeForLot(id){
     const row=rows.get(id);if(!row)return null;const cabinet=departmentFor(G.BY_ID[row.lot.productId]);
@@ -219,7 +222,7 @@ async function init() {
     if (!high) { const shadow = floorShadow(1.6,1.5,.22); shadow.position.set(x,.013,z); scene.add(shadow); }
   }
   plant(-14, 11.6); plant(14, 11.6); plant(-8, 12.2, true); plant(-3.8, 12.2, true);
-  const racks = {};
+  const racks = {},rackShadows={},rackColliders={};
   function buildColdDepartment(zone) {
     const group=new THREE.Group();group.position.set(zone.x,0,zone.z);group.rotation.y=zone.rotation;scene.add(group);racks.cold=group;
     const frame=mat('#426457',.42,.22),inside=mat('#e5eeea',.56),white=mat('#dce8e2',.38,.1);
@@ -312,8 +315,8 @@ async function init() {
         if(island){if(i<doors-1)box(.028,2.84,.045,mat('#7f9585',.32,.65),x+doorW/2,1.64,-1.205,group);const backHandle=handle.clone();backHandle.position.z=-1.295;group.add(backHandle);for(const dy of [-.12,.12])box(.024,.022,.085,mat('#c4d2cc',.25,.75),gripX,gripY+dy,-1.25,group);}
       }
     }
-    const shadow=floorShadow(zone.width+1.1,island?3.4:2.6,.20);shadow.position.set(zone.x,.013,zone.z+(island?-.28:.25));shadow.rotation.z=zone.rotation;scene.add(shadow);
-    colliders.push(rackFootprint(id,zone));
+    const shadow=floorShadow(zone.width+1.1,island?3.4:2.6,.20);shadow.position.set(zone.x,.013,zone.z+(island?-.28:.25));shadow.rotation.z=zone.rotation;scene.add(shadow);rackShadows[id]=shadow;
+    const bounds=rackFootprint(id,zone);colliders.push(bounds);rackColliders[id]=bounds;
   }
   Object.entries(zones).forEach(([id, zone]) => { if (id !== 'packing'&&id!=='frozen-meat') buildRack(id, zone); });
   // Delivery counter, complete with a real place to return and pack the order.
@@ -403,14 +406,14 @@ async function init() {
   function paintProductTag(ctx,w,h,lot){
     ctx.save();ctx.scale(w/1024,h/480);w=1024;h=480;
     const p=G.BY_ID[lot.productId],hints=bridge.russianHints?.();
-    ctx.fillStyle='#fffef3';ctx.fillRect(0,0,w,h);ctx.strokeStyle='#a59165';ctx.lineWidth=5;ctx.strokeRect(3,3,w-6,h-6);ctx.textAlign='center';ctx.textBaseline='middle';
+    const sale=Prices.quote(lot);ctx.fillStyle=sale.sale?'#fff0bd':'#fffef3';ctx.fillRect(0,0,w,h);ctx.strokeStyle=sale.sale?'#bb6339':'#a59165';ctx.lineWidth=sale.sale?12:5;ctx.strokeRect(3,3,w-6,h-6);ctx.textAlign='center';ctx.textBaseline='middle';
     const secondary=hints?(G.BREAD_BY_ID[lot.variantId]?`${window.GroceryRussian.name(lot)} · ${window.GroceryRussian.name(p.id)}`:window.GroceryRussian.name(lot)):G.BREAD_BY_ID[lot.variantId]?p.name:'';
     ctx.fillStyle='#163d2a';drawCenteredText(ctx,G.lotName(lot),w/2,secondary?104:165,w-64,2,secondary?80:102,38);
     if(secondary){ctx.fillStyle='#3d5238';drawCenteredText(ctx,secondary,w/2,258,w-64,2,48,32);}
     ctx.strokeStyle='#cfbf96';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(26,318);ctx.lineTo(w-26,318);ctx.stroke();
     const price=Prices.quote(lot);ctx.fillStyle='#67522d';ctx.font='600 36px Arial,sans-serif';ctx.fillText(price.bulk?'1 кг':G.lotUnit(lot),w/2,341,w-40);
     if(price.sale){
-      ctx.fillStyle='#ffe4a0';ctx.fillRect(6,365,w-12,109);ctx.fillStyle='#af3d31';ctx.fillRect(22,387,150,61);ctx.fillStyle='#fff7e8';ctx.font='700 44px Arial,sans-serif';ctx.fillText(`−${price.percent}%`,97,420,140);
+      ctx.fillStyle='#ffd477';ctx.fillRect(6,365,w-12,109);ctx.fillStyle='#af3d31';ctx.fillRect(22,387,150,61);ctx.fillStyle='#fff7e8';ctx.font='700 44px Arial,sans-serif';ctx.fillText(`−${price.percent}%`,97,420,140);
       const old=Prices.money(price.regular);ctx.font='500 52px Arial,sans-serif';ctx.fillStyle='#726b60';ctx.fillText(old,350,420,266);const length=Math.min(266,ctx.measureText(old).width);ctx.strokeStyle='#847469';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(350-length/2,417);ctx.lineTo(350+length/2,417);ctx.stroke();
       ctx.fillStyle='#9e3028';ctx.font='800 84px Arial,sans-serif';ctx.fillText(Prices.money(price.price),760,418,440);
     }else{ctx.fillStyle='#214c36';ctx.font='800 84px Arial,sans-serif';ctx.fillText(Prices.money(price.price),w/2,418,w-60);}
@@ -447,6 +450,7 @@ async function init() {
     scene.updateMatrixWorld(true);
     scene.traverse(mesh=>{if(!mesh.isMesh||!mesh.visible)return;bounds.setFromObject(mesh);bounds.getCenter(center);if(bounds.max.y>4.4||Math.abs(center.z)>12.45||Math.abs(center.x)>15.65){hidden.push(mesh);mesh.visible=false;}});
     if(carryGroup?.visible){hidden.push(carryGroup);carryGroup.visible=false;}
+    if(returnCargoGroup?.visible){hidden.push(returnCargoGroup);returnCargoGroup.visible=false;}
     const shadowUpdate=renderer.shadowMap.needsUpdate;
     try{
       renderer.shadowMap.needsUpdate=false;renderer.setRenderTarget(mapRenderTarget);renderer.render(scene,mapCamera);
@@ -459,7 +463,7 @@ async function init() {
   let navigationHintKey='';
   function updateNavigationHints(){
     const hints=bridge.russianHints?.(),ru=window.GroceryLanguage?.DEPARTMENTS||{};
-    const key=`${!!hints}:${Prices.offerForDay().day}`;
+    const key=`${!!hints}:${Prices.offerForDay().day}:${Prices.offerForDay().productId||'none'}`;
     // New product tags already paint themselves. Reuse unchanged bilingual
     // shelf labels instead of redrawing hundreds of canvases at every start.
     if(key!==navigationHintKey){
@@ -543,7 +547,29 @@ async function init() {
     model=facing?createStockFacing(lot,texture,width,false,fit):createProductModel(G.BY_ID[lot.productId],lot,texture,width,fit);
     holder.add(model.group);fit();return {group:holder,front:model.front};
   }
+  function applyStoreLayout(){
+    const state=bridge.layout?.();if(!state||state.generation===layoutGeneration)return;
+    const next=window.GroceryLayout.arrange(BASE_ZONES,state);
+    for(const [id,zone] of Object.entries(next)){
+      const old=zones[id];if(!old)continue;
+      if(racks[id]){racks[id].position.set(zone.x,0,zone.z);racks[id].rotation.y=zone.rotation;}
+      if(rackShadows[id]){rackShadows[id].position.x+=zone.x-old.x;rackShadows[id].position.z+=zone.z-old.z;}
+      if(rackColliders[id])Object.assign(rackColliders[id],rackFootprint(id,zone));
+      Object.assign(old,zone);
+    }
+    scene.updateMatrixWorld(true);for(const door of fridgeDoors){door.center.copy(door.localCenter);door.rackParent.localToWorld(door.center);}
+    layoutGeneration=state.generation;navigation=null;clearPath();held.clear();camera.position.set(0,1.64,10.8);yaw=-.1;pitch=-.03;mapDirty=true;renderer.shadowMap.needsUpdate=true;needsRender=true;
+  }
+  const returnCargoGroup=new THREE.Group();camera.add(returnCargoGroup);let returnCargoId='';
+  function updateReturnCargo(){
+    const lot=bridge.returnCargo?.();returnCargoGroup.visible=!!lot;needsRender=true;if(!lot)return;
+    const aspect=window.innerWidth/window.innerHeight;returnCargoGroup.position.set(Math.min(.30,.22*aspect),-.31,-.78);
+    const fitKey=lot.id+':'+Math.round(aspect*1000);if(returnCargoId===fitKey)return;returnCargoId=fitKey;disposeCarried(returnCargoGroup);returnCargoGroup.clear();
+    const texture=loadPhoto(lot),width=Math.min(.24,.27*aspect),model=refrigeratedModel(lot,texture,width,.25,.14);returnCargoGroup.add(model.group);needsRender=true;
+  }
   function buildProducts() {
+    applyStoreLayout();
+
     const disposedMaterials = new Set();
     productGroup.traverse(o => {
       if (!o.isMesh) return;
@@ -554,13 +580,13 @@ async function init() {
     scene.remove(productGroup); productGroup = new THREE.Group(); scene.add(productGroup);
     targets.splice(0,targets.length,tableTarget,wasteTarget); rows.clear();
     const groups = {};
-    bridge.inventory().filter(lot => !lot.hidden).forEach(lot => {const id=departmentFor(G.BY_ID[lot.productId]);if(id==='frozen-meat')return;(groups[id] ||= []).push(lot);});
+    bridge.inventory().filter(lot => !lot.hidden).forEach(lot => {const id=bridge.department?.(lot)||departmentFor(G.BY_ID[lot.productId]);if(id==='frozen-meat')return;(groups[id] ||= []).push(lot);});
     for (const [category, lots] of Object.entries(groups)) {
       const zone = zones[category]; if (!zone) continue;
       let shelfGroup = new THREE.Group(); shelfGroup.position.set(zone.x, 0, zone.z); shelfGroup.rotation.y = zone.rotation; productGroup.add(shelfGroup);
       lots.sort((a, b) => (a.variantId || a.productId).localeCompare(b.variantId || b.productId) || a.batch.localeCompare(b.batch));
       if(zone.chest){
-        const layout=chestLayout(lots);
+        const layout=chestLayout(lots,bridge.shelfSeed?.()||0,category);
         for(const bin of layout.bins){
           const copies=Math.max(3,bin.family.lots.length);
           for(let n=0;n<copies;n++){
@@ -585,7 +611,7 @@ async function init() {
         if(water.length)for(let i=0;i<6;i++){
           const lot=water[i%water.length],x=-1.5+(i%2? .47:-.47),y=.465+Math.floor(i/2)*.88;coldItem(lot,x,y,.4,.78);productTag(lot,.74,shelfGroup,x,y-.07,.69);
         }
-        for(const bin of icecreamBins(icecream)){
+        for(const bin of icecreamBins(icecream,bridge.shelfSeed?.()||0)){
           const copies=Math.max(3,bin.family.lots.length);
           for(let n=0;n<copies;n++){
             const lot=bin.family.lots[n%bin.family.lots.length],slot=new THREE.Group();slot.position.set(bin.x+(n%2? .045:-.045),bin.y+n*.012,bin.z-(Math.floor(n/2))*.035);shelfGroup.add(slot);
@@ -602,7 +628,7 @@ async function init() {
         const shelfId=pageIndex?`${category}-${pageIndex+1}`:category,shelfZone=zones[shelfId];if(!shelfZone)throw new Error(`No physical shelf for ${category} page${pageIndex+1}`);
         shelfSides(shelfId,shelfZone).forEach(pose=>{
         const faceGroup=new THREE.Group();faceGroup.position.set(pose.x,0,pose.z);faceGroup.rotation.y=pose.rotation;productGroup.add(faceGroup);
-        const slots=Array.from({length:columns*3},(_,index)=>families[index%families.length]);
+        const slots=rowShuffle(Array.from({length:columns*3},(_,index)=>families[index%families.length]),columns,bridge.shelfSeed?.()||0,shelfId);
         slots.forEach((family,index)=>{
           const column=index%columns,row=Math.floor(index/columns),x=-.5*(columns-1)*spacing+column*spacing,y=.465+row*.88;
           const tray=new THREE.Group();tray.position.set(x,y,.12);faceGroup.add(tray);
@@ -720,6 +746,7 @@ async function init() {
     if (station !== nearStation) { nearStation = station; bridge.atStation(station); }
     let nearestZone = station ? 'packing' : Object.keys(zones).filter(id => id !== 'packing').sort((a, b) => Math.hypot(position.x - zones[a].to[0], position.z - zones[a].to[1]) - Math.hypot(position.x - zones[b].to[0], position.z - zones[b].to[1]))[0];
     if (currentZone !== nearestZone) { currentZone = nearestZone; $('location-name').innerHTML = `<span data-learning>${zones[nearestZone].name}</span>${bridge.russianHints?.()?`<small class="department-ru" lang="ru">${window.GroceryLanguage?.DEPARTMENTS[nearestZone]||''}</small>`:''}`; }
+    const zone=zones[nearestZone],closeToShelf=!station&&Math.hypot(position.x-zone.to[0],position.z-zone.to[1])<3.0;bridge.atDepartment?.(closeToShelf?(zone.category||nearestZone):'');
     const forward = new THREE.Vector3(-Math.sin(yaw), 0, -Math.cos(yaw));
     const candidates = [...rows.values()].filter(row => row.group.visible).map(row => { const closest = row.positions.map(point => ({ distance: Math.hypot(point.x - position.x, point.z - position.z), dot: new THREE.Vector3(point.x - position.x, 0, point.z - position.z).normalize().dot(forward) })).filter(item => item.dot > .18).sort((a, b) => a.distance - b.distance)[0]; return closest ? { ...row, ...closest } : null; }).filter(row => row && row.distance < 3.55).sort((a, b) => a.distance - b.distance);
     const showDepartment=!station&&candidates.some(row=>row.dot>.3&&row.distance<(departmentVisible?3.25:2.75));
@@ -786,8 +813,8 @@ async function init() {
   canvas.addEventListener('lostpointercapture', cancelLook);
   window.addEventListener('keydown', event => {
     if (document.querySelector('dialog[open]') || !window.GroceryInput.gameKey(event)) return;
-    if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.code)) { event.preventDefault(); held.add(event.code); navigation = null; clearPath(); }
-    if (event.code === 'KeyE' || event.code === 'Enter' && document.activeElement === canvas) { event.preventDefault(); interact(currentTarget); }
+    if (['KeyW', 'KeyA', 'KeyS', 'KeyD', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'KeyQ', 'KeyE'].includes(event.code)) { event.preventDefault(); held.add(event.code); navigation = null; clearPath(); }
+    if (event.code === 'Enter' && document.activeElement === canvas) { event.preventDefault(); interact(currentTarget); }
   });
   window.addEventListener('keyup', event => held.delete(event.code));
   let holdControls;
@@ -805,16 +832,16 @@ async function init() {
   $('interact-button').addEventListener('click',()=>{if(shelfFocus)setShelfFocus(false);else if(transport()&&currentTarget?.doorId===undefined&&!currentTarget?.station&&!currentTarget?.waste)setShelfFocus(true);else interact(currentTarget);});
   $('map-button').addEventListener('click',()=>requestAnimationFrame(renderStoreMap));
   document.querySelectorAll('[data-destination]').forEach(button => button.addEventListener('click', () => { const id = button.dataset.destination; document.querySelectorAll('dialog[open]').forEach(d => { if (d.id === 'map-dialog' || d.id === 'packing-dialog') d.close(); }); navigate(id); }));
-  window.addEventListener('grocery:inventory', () => { buildProducts();updateNavigationHints();updateCarrier();updateAtmosphere(); lastNearby = ''; });
+  window.addEventListener('grocery:inventory', () => { buildProducts();updateReturnCargo();updateNavigationHints();updateCarrier();updateAtmosphere(); lastNearby = ''; });
   window.addEventListener('grocery:cart', () => {updateStock();updateCarrier();});
   window.addEventListener('grocery:texturepreview',()=>{needsRender=true;});
-  window.addEventListener('grocery:transport',()=>{updateCarrier();updateAtmosphere();});
+  window.addEventListener('grocery:transport',()=>{updateCarrier();updateReturnCargo();updateAtmosphere();});
   window.addEventListener('grocery:navigation-hints',updateNavigationHints);
-  window.addEventListener('resize', () => { releaseControls(); camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight);positionCarrier();updateCarrier(); needsRender = true; });
+  window.addEventListener('resize', () => { releaseControls(); camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight);positionCarrier();updateCarrier();updateReturnCargo(); needsRender = true; });
   window.ShopWorld = { navigate, atStation: () => nearStation };
   prepare('stock',50);await paint();
   Object.keys(window.GroceryBagAssets||{}).forEach(loadBagTexture);
-  buildProducts();prepare('cold',80);await paint();
+  buildProducts();updateReturnCargo();prepare('cold',80);await paint();
   updateNavigationHints();updateCarrier();updateNearby();prepare('bags',95);
   const windowDirection=new THREE.Vector3();
   function tick(now) {
@@ -824,8 +851,8 @@ async function init() {
     if (!paused) {
       let forward = (held.has('KeyW') || held.has('ArrowUp') ? 1 : 0) - (held.has('KeyS') || held.has('ArrowDown') ? 1 : 0);
       let side = (held.has('KeyD') ? 1 : 0) - (held.has('KeyA') ? 1 : 0);
-      if (held.has('ArrowLeft')) rotate(dt * 1.55);
-      if (held.has('ArrowRight')) rotate(-dt * 1.55);
+      if (held.has('ArrowLeft')||held.has('KeyQ')) rotate(dt * 1.55);
+      if (held.has('ArrowRight')||held.has('KeyE')) rotate(-dt * 1.55);
       if (forward || side) { const length = Math.hypot(forward, side); forward /= length; side /= length; move((-Math.sin(yaw) * forward + Math.cos(yaw) * side) * dt * 2.65, (-Math.cos(yaw) * forward - Math.sin(yaw) * side) * dt * 2.65); bobTime += dt * 10; }
       else if (navigation) {
         const next = navigation.path[navigation.index];

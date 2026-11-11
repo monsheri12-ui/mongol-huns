@@ -61,7 +61,7 @@ for (const seed of [G.DEFAULT_SEED, 0, 1, 123456, 4294967295]) {
     ok(new Set(inventory.map(l => l.id)).size === inventory.length, 'Unique lot IDs');
     ok(inventory.every(l=>!l.manufactured||l.manufactured<=order.day), 'New stock cannot be manufactured after the shopping day');
     ok(new Set(inventory.filter(l=>G.BREAD_BY_ID[l.variantId]).map(l=>l.variantId)).size === 6, 'Every bread SKU is stocked');
-    if (order.levelIndex === 0) ok(inventory.filter(l => !l.hidden).every(l => !G.isExpired(l, order.day)), 'Beginner shelf uses only fresh batches');
+    if (order.levelIndex === 0) ok(inventory.filter(l => !l.hidden && G.isUnfit(l, order.day)).length <= 1, 'Beginner shelf can contain at most one optional bad lot');
     if (order.levelIndex >= 1) for (const line of order.lines.filter(l => G.BY_ID[l.productId].hasExpiry !== false)) {
       const alternatives = inventory.filter(l => l.productId === line.productId && l.pack === G.BY_ID[line.productId].pack && (!line.variantId || line.variantId === l.variantId));
       ok(alternatives.some(l => G.isExpired(l, order.day)) && alternatives.some(l => !G.isExpired(l, order.day)), 'A same-product expiry choice exists');
