@@ -5,7 +5,13 @@
   const ui=(mn,ru)=>window.GroceryLanguage?.isRussian()?ru:mn;
   const preparation={room:['Дэлгүүрээ бэлтгэж байна…','Готовим магазин к открытию…'],stock:['Бараагаа тавиур дээр өрж байна…','Раскладываем товары по стеллажам…'],cold:['Хөргөгч, хөлдөөгчөө дүүргэж байна…','Наполняем холодильники и морозильники…'],bags:['Захиалгын уутаа бэлтгэж байна…','Готовим пакеты для заказов…'],ready:['Дэлгүүр бэлэн боллоо!','Магазин готов!']};
   let preparationStage='room';
-  function preparationCaption(){const words=preparation[preparationStage]||preparation.room;$('loading-caption').textContent=ui(...words);}
+  function preparationCaption(){
+    const words=preparation[preparationStage]||preparation.room;
+    $('loading-caption').textContent=ui(...words);
+    $('loading-title').textContent=ui('Дэлгүүрээ нээж байна…','Открываем магазин…');
+    $('loading-kicker').textContent=ui('ХҮНСНИЙ ХҮРГЭЛТ','ДОСТАВКА ПРОДУКТОВ');
+    $('loading-progress').setAttribute('aria-label',ui('Дэлгүүр ачаалах явц','Подготовка магазина'));
+  }
   const levelName=level=>ui(level.name,window.GroceryLanguage.translateText(level.name));
   const levelChoice=i=>[
     levelName(window.GroceryGame.LEVELS[0]),
