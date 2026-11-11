@@ -123,7 +123,15 @@
   if(doc){
     set(language,false);doc.querySelectorAll('#settings-language,#welcome-language').forEach(e=>e.addEventListener('change',()=>set(e.value)));
     const pending=new Set();let scheduled=false;
-    new root.MutationObserver(records=>{for(const r of records){if(r.type==='characterData')pending.add(r.target);else if(r.type==='attributes')pending.add(r.target);else{pending.add(r.target);r.addedNodes.forEach(n=>pending.add(n));}}if(!scheduled){scheduled=true;root.requestAnimationFrame(()=>{scheduled=false;const nodes=[...pending];pending.clear();nodes.forEach(apply);});}}).observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title']});
+    new root.MutationObserver(records=>{for(const r of records){if(r.type==='characterData')pending.add(r.target);else if(r.type==='attributes')pending.add(r.target);else{pending.add(r.target);r.addedNodes.forEach(n=>pending.add(n));}}if(!scheduled){scheduled=true;root.requestAnimationFrame(()=>{
+      scheduled=false;const nodes=new Set(pending);pending.clear();
+      for(const node of nodes){
+        if(!node.isConnected)continue;
+        let ancestor=node.parentNode,nested=false;
+        while(ancestor){if(nodes.has(ancestor)){nested=true;break;}ancestor=ancestor.parentNode;}
+        if(!nested)apply(node);
+      }
+    });}}).observe(doc.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','title']});
   }
   return {current:()=>language,wasChosen:()=>languageChosen,isRussian:()=>language==='ru',set,apply,translateText,DEPARTMENTS,DICTIONARY:D};
 });

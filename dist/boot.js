@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
-  let ready=false,mode='audio',scope='all',selectedLevel=0,optionLanguage='',choiceScrollTop=null,choiceScrollBaseline=0,choiceScrollRevision=0;
+  let ready=false,starting=false,mode='audio',scope='all',selectedLevel=0,optionLanguage='',choiceScrollTop=null,choiceScrollBaseline=0,choiceScrollRevision=0;
   const ui=(mn,ru)=>window.GroceryLanguage?.isRussian()?ru:mn;
   const preparation={room:['Дэлгүүрээ бэлтгэж байна…','Готовим магазин к открытию…'],stock:['Бараагаа тавиур дээр өрж байна…','Раскладываем товары по стеллажам…'],cold:['Хөргөгч, хөлдөөгчөө дүүргэж байна…','Наполняем холодильники и морозильники…'],bags:['Захиалгын уутаа бэлтгэж байна…','Готовим пакеты для заказов…'],ready:['Дэлгүүр бэлэн боллоо!','Магазин готов!']};
   let preparationStage='room';
@@ -44,7 +44,9 @@
     $('welcome-level-field').hidden=false;
     $('welcome-short-lead').textContent=ui('Захиалгаа монгол хэлээр цуглуулаарай.','Соберите заказ на монгольском.');
     $('welcome-details-title').textContent=ui('Нэмэлт','Дополнительно');
-    $('welcome-details').hidden=window.GroceryLanguage?.isRussian()===true&&!session?.archiveAvailable;
+    // Optional Russian hints remain in Settings. Language changes must not add
+    // or remove a block and change the height of the mobile launch form.
+    $('welcome-details').hidden=!session?.archiveAvailable;
     $('welcome-speech-short').textContent=ui('Дууг автоматаар үүсгэсэн; дуудлага нь ойролцоо.','Озвучка создана ИИ; возможны неточности.');
     $('welcome-speech-details').textContent=ui('Дуудлагын тухай','Подробнее о произношении');
     $('welcome-audio-note').hidden=mode!=='audio';
@@ -98,11 +100,22 @@
   $('loading-retry').addEventListener('click', () => location.reload());
   window.addEventListener('grocery:welcome', welcome);
   $('welcome-dialog').addEventListener('cancel', event => event.preventDefault());
-  function start(archive = false, resume = false) {
-    $('welcome-dialog').close();
-    document.body.classList.add('game-started');
-    window.dispatchEvent(new CustomEvent('grocery:start', { detail: { mode,archive,resume,scope,level:selectedLevel,russianHints:$('welcome-russian').checked } }));
-    if (mode === 'text' || archive) $('world-canvas').focus({ preventScroll: true });
+  async function start(archive = false, resume = false) {
+    if(starting||!ready)return;
+    starting=true;
+    const dialog=$('welcome-dialog'),button=$(archive?'welcome-archive':resume?'welcome-resume':'welcome-start');
+    const controls=[...dialog.querySelectorAll('button,select,input')],disabled=controls.map(e=>e.disabled),caption=button.textContent;
+    controls.forEach(e=>e.disabled=true);dialog.setAttribute('aria-busy','true');
+    button.textContent=ui('Захиалгаа бэлтгэж байна…','Готовим заказ…');
+    // Paint the acknowledgement before synchronous order/scene preparation.
+    await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
+    try{
+      dialog.close();document.body.classList.add('game-started');
+      window.dispatchEvent(new CustomEvent('grocery:start', { detail: { mode,archive,resume,scope,level:selectedLevel,russianHints:$('welcome-russian').checked } }));
+      if (mode === 'text' || archive) $('world-canvas').focus({ preventScroll: true });
+    }finally{
+      controls.forEach((e,i)=>e.disabled=disabled[i]);button.textContent=caption;dialog.removeAttribute('aria-busy');starting=false;
+    }
   }
   $('welcome-start').addEventListener('click', () => start(false));
   $('welcome-resume').addEventListener('click', () => start(false,true));

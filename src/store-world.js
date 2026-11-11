@@ -15,6 +15,7 @@ import { createFlower, createHangingPlant } from './flower.js';
 import { timberMaterial, plasterMaterial, roundedBox, floorShadow } from './store-materials.js';
 import { photoRecord, loadProductTexture, focusProductDetails, createProductModel, createStockFacing, createProduceBatch, createContactShadow, fitModelInside } from './product-presentation.js';
 import { CARRIERS, poseFree, movePose, turnPose, circleFree } from './world-movement.js';
+import {bindHoldControls} from './hold-controls.js';
 
 const G = window.GroceryGame;
 const Prices=window.GroceryPrices;
@@ -103,7 +104,6 @@ async function init() {
   let nearbyDirty = true;
   let bobTime = 0;
   const held = new Set();
-  const walkPointers = new Map();
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const raycaster = new THREE.Raycaster();
   const carryPickBounds=new THREE.Box3();
@@ -456,8 +456,14 @@ async function init() {
       ctx.putImageData(frame,0,0);mapDirty=false;
     }finally{hidden.forEach(mesh=>{mesh.visible=true;});renderer.setRenderTarget(previousTarget);renderer.shadowMap.needsUpdate=shadowUpdate;needsRender=true;}
   }
+  let navigationHintKey='';
   function updateNavigationHints(){
     const hints=bridge.russianHints?.(),ru=window.GroceryLanguage?.DEPARTMENTS||{};
+    const key=`${!!hints}:${Prices.offerForDay().day}`;
+    // New product tags already paint themselves. Reuse unchanged bilingual
+    // shelf labels instead of redrawing hundreds of canvases at every start.
+    if(key!==navigationHintKey){
+    navigationHintKey=key;
     scene.traverse(mesh=>{
       const id=mesh.userData.department,texture=mesh.material?.map;if(!id||!texture?.image?.getContext)return;
       const c=texture.image,ctx=c.getContext('2d'),w=c.width,h=c.height;
@@ -467,6 +473,7 @@ async function init() {
     const mapProducts={'frozen-dumplings':'buuz','frozen-bakery':'mini-khuushuur','frozen-vegetables':'frozen-broccoli','frozen-meat':'goat-meat','pantry-2':'rolled-oats',meat:'chicken-thigh',dairy:'milk',bread:'white-bread',pantry:'rice',canned:'canned-tuna',frozen:'shrimp',cold:'icecream',household:'dish-soap',drinks:'fruit-juice',sweets:'milk-biscuits',alcohol:'beer-sengur',produce:'red-apple',ready:'mantuu'};
     document.querySelectorAll('#map-dialog .zone-links [data-destination]').forEach((button,i)=>{const id=button.dataset.destination,pid=mapProducts[id];button.innerHTML=`<span class="map-directory-number">${String(i+1).padStart(2,'0')}</span><span class="map-directory-photo" aria-hidden="true">${pid&&G.BY_ID[pid]?window.GroceryArt.product(pid):window.GroceryArt.icon('bag')}</span><span class="zone-label" data-learning>${navigationLabels[id]}${hints?`<small lang="ru">${ru[id]||''}</small>`:''}</span><span aria-hidden="true">→</span>`;});
     mapDirty=true;if($('map-dialog').open)renderStoreMap();
+    }
     currentZone='';lastNearby='';nearestTick=0;nearbyDirty=true;needsRender=true;
   }
   function disposeCarried(group){if(!group)return;const disposed=new Set();group.traverse(o=>{if(o.geometry&&!disposed.has(o.geometry)){disposed.add(o.geometry);o.geometry.dispose();}if(o.isInstancedMesh)o.dispose();const materials=Array.isArray(o.material)?o.material:[o.material];materials.forEach(m=>{if(m?.userData?.owned&&!disposed.has(m)){disposed.add(m);if(m.map?.userData?.owned&&!disposed.has(m.map)){disposed.add(m.map);m.map.dispose();}m.dispose();}});});}
@@ -783,19 +790,15 @@ async function init() {
     if (event.code === 'KeyE' || event.code === 'Enter' && document.activeElement === canvas) { event.preventDefault(); interact(currentTarget); }
   });
   window.addEventListener('keyup', event => held.delete(event.code));
-  const releaseControls = () => { held.clear(); walkPointers.clear(); pointer = null; };
+  let holdControls;
+  const releaseControls = () => { held.clear(); holdControls?.release(); pointer = null; };
   window.addEventListener('grocery:releasecontrols',releaseControls);
   window.addEventListener('blur', releaseControls);
   document.addEventListener('visibilitychange', () => { releaseControls(); if (!document.hidden) { lastTick = performance.now(); needsRender = true; } });
   canvas.addEventListener('webglcontextrestored', () => { renderer.shadowMap.needsUpdate = true; needsRender = true; });
-  document.querySelectorAll('[data-walk]').forEach(button => {
-    const code = button.dataset.walk;
-    button.addEventListener('pointerdown', event => { if (event.button !== 0 || walkPointers.has(code)) return; event.preventDefault(); walkPointers.set(code, { id: event.pointerId, at: performance.now() }); button.setPointerCapture(event.pointerId); held.add(code); navigation = null; clearPath(); });
-    const up = event => { const active = walkPointers.get(code); if (active?.id !== event.pointerId) return; walkPointers.delete(code); held.delete(code); if (performance.now() - active.at < 130) { const step = .38; if (code === 'ArrowLeft') rotate(.18); else if (code === 'ArrowRight') rotate(-.18); else { const forward = code === 'KeyW' ? 1 : code === 'KeyS' ? -1 : 0; const side = code === 'KeyD' ? 1 : code === 'KeyA' ? -1 : 0; move((-Math.sin(yaw) * forward + Math.cos(yaw) * side) * step, (-Math.cos(yaw) * forward - Math.sin(yaw) * side) * step); } needsRender = true; nearestTick = 0; } };
-    const cancel = event => { if (walkPointers.get(code)?.id === event.pointerId) { walkPointers.delete(code); held.delete(code); } };
-    button.addEventListener('pointerup', up); button.addEventListener('pointercancel', cancel); button.addEventListener('lostpointercapture', cancel);
-    button.addEventListener('keydown', event => { if (window.GroceryInput.gameKey(event)&&(event.code === 'Space' || event.code === 'Enter')) { held.add(code); event.preventDefault(); } });
-    button.addEventListener('keyup', event => { if (event.code === 'Space' || event.code === 'Enter') held.delete(code); });
+  holdControls=bindHoldControls({buttons:document.querySelectorAll('[data-walk]'),held,
+    onPress:()=>{navigation=null;clearPath();},
+    onTap:code=>{const step=.38;if(code==='ArrowLeft')rotate(.18);else if(code==='ArrowRight')rotate(-.18);else{const forward=code==='KeyW'?1:code==='KeyS'?-1:0,side=code==='KeyD'?1:code==='KeyA'?-1:0;move((-Math.sin(yaw)*forward+Math.cos(yaw)*side)*step,(-Math.cos(yaw)*forward-Math.sin(yaw)*side)*step);}needsRender=true;nearestTick=0;}
   });
   $('nearby-toggle').addEventListener('click',()=>{setNearbyExpanded(!nearbyExpanded);nearestTick=0;needsRender=true;});
   $('nearby-products').addEventListener('click', event => { const button = event.target.closest('[data-world-lot]'); if (button && rows.has(button.dataset.worldLot)) interact({ lotId: button.dataset.worldLot }); });
@@ -817,6 +820,7 @@ async function init() {
   function tick(now) {
     const dt = Math.min(.04, (now - lastTick) / 1000); lastTick = now;
     const paused = !!document.querySelector('dialog[open]') || document.hidden || !document.body.classList.contains('game-started');
+    if(paused)releaseControls();
     if (!paused) {
       let forward = (held.has('KeyW') || held.has('ArrowUp') ? 1 : 0) - (held.has('KeyS') || held.has('ArrowDown') ? 1 : 0);
       let side = (held.has('KeyD') ? 1 : 0) - (held.has('KeyA') ? 1 : 0);

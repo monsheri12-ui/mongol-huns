@@ -162,3 +162,11 @@
   .nearby-panel { width: 178px; }
   .world-prompt { width: calc(100% - 422px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); max-width: calc(100% - 422px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); }
 }
+/* A held game control is an action, not a text-selection gesture. Text inputs
+   and learning text retain normal selection, copy and paste. */
+.world-mode button,.world-mode button *,.world-mode select,.world-mode .welcome-select-visual,.world-mode .walk-controls{
+  -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;touch-action:manipulation;
+}
+.world-mode .walk-controls button{touch-action:none}
+.world-mode:not(.keyboard-controls) .world-reticle{display:none}
+@media(max-width:900px) and (orientation:portrait){.world-mode .world-reticle{display:none}}
