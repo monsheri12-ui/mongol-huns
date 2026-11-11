@@ -1,0 +1,1052 @@
+{
+  "orders-1": {
+    "path": "assets/achievements/orders-1.9afd64316c34153f.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 27538,
+    "sha256": "9afd64316c34153f3b6c57e545e9da8b1fe50a29721210c56f70d25bc58696d2",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "orders-5": {
+    "path": "assets/achievements/orders-5.ce633c54804cb4aa.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 32666,
+    "sha256": "ce633c54804cb4aac86397ee6ad071124babcf64ec54a50c2d83db7b9e5bc736",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 397,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "orders-10": {
+    "path": "assets/achievements/orders-10.346439c7338bc9d9.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 39910,
+    "sha256": "346439c7338bc9d9dd8e95e1ad67f7d6f6f0a0f21b16f3b12fa6ca6ac8e51d70",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "orders-25": {
+    "path": "assets/achievements/orders-25.fd0aa315cfd8ddcc.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30112,
+    "sha256": "fd0aa315cfd8ddcc306992af1486273492a603ab49c3713ba23b94ad26005ef4",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "orders-50": {
+    "path": "assets/achievements/orders-50.731d6653667c47ff.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30758,
+    "sha256": "731d6653667c47ff5fa9fcf7bfb2f5d41f29aeec0c89772b50355d4efa766a35",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "orders-100": {
+    "path": "assets/achievements/orders-100.af2da9687d1fe075.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30932,
+    "sha256": "af2da9687d1fe0759cb6e7f61ad277b954b0ac9b125108c8a02e00a18a52fca2",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 397,
+      "width": 383,
+      "height": 396
+    },
+    "generated": true
+  },
+  "orders-200": {
+    "path": "assets/achievements/orders-200.d0ab96d1f9dec96e.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 38318,
+    "sha256": "d0ab96d1f9dec96ea187cb9439eea01cc4966de80674a537ccb02bda2549dbf7",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 383,
+      "top": 397,
+      "width": 410,
+      "height": 396
+    },
+    "generated": true
+  },
+  "stars-1": {
+    "path": "assets/achievements/stars-1.43fd2b69372f96b7.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 33852,
+    "sha256": "43fd2b69372f96b73a22fb212a4f84c322d986a4c8af6d771ec4c47adc770625",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "stars-10": {
+    "path": "assets/achievements/stars-10.2395b890b7b7c3e3.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 32390,
+    "sha256": "2395b890b7b7c3e3e25241f0d46a8ae9e4c694f7bde835a0fb6f38047935c815",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 397,
+      "width": 396,
+      "height": 396
+    },
+    "generated": true
+  },
+  "stars-25": {
+    "path": "assets/achievements/stars-25.76a6387db95e9516.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30438,
+    "sha256": "76a6387db95e9516c750bdfb0cfe62b18300750d5991d373f04a7029b96f5647",
+    "source": "art/achievement-stickers/sheet-1.png",
+    "cell": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "stars-50": {
+    "path": "assets/achievements/stars-50.c59d68c5dd20192b.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 24564,
+    "sha256": "c59d68c5dd20192b22434c889ede164e76a773347e7d9a77a6555ccede1efeea",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "clean-streak": {
+    "path": "assets/achievements/clean-streak.cbd8d16aa98ef427.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30048,
+    "sha256": "cbd8d16aa98ef4277e5fa88e2ae402a8052236771d0739b607c6baec3eb1240f",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 397,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "dates-1": {
+    "path": "assets/achievements/dates-1.c85d5235817b619a.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 22518,
+    "sha256": "c85d5235817b619a5eec00da52f4a63ad7a7b97285bde5714fbb0aaf47eb510f",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "dates-10": {
+    "path": "assets/achievements/dates-10.c86c173b9234c5b8.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 21748,
+    "sha256": "c86c173b9234c5b8ebfba99e226ee19a74acef57945bfce030183ad42dca6616",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "dates-50": {
+    "path": "assets/achievements/dates-50.546e39b41865fc3e.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 23918,
+    "sha256": "546e39b41865fc3e79a78c49ddcddd04c7b21517db35df756333f20ef1f6f1ff",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "eggs-1": {
+    "path": "assets/achievements/eggs-1.9f951d4e563b214d.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 24146,
+    "sha256": "9f951d4e563b214d7251ef0807e7d48d2d7ca4b97c93d8fb02c2ebcb85b7008e",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 397,
+      "width": 393,
+      "height": 396
+    },
+    "generated": true
+  },
+  "eggs-10": {
+    "path": "assets/achievements/eggs-10.d93fc32250e4f1bf.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 24628,
+    "sha256": "d93fc32250e4f1bf2f71cd23dff3d760e68d1610737ada7cb8d7495019b53ed7",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 393,
+      "top": 397,
+      "width": 400,
+      "height": 396
+    },
+    "generated": true
+  },
+  "disposal-1": {
+    "path": "assets/achievements/disposal-1.d1b9d5552215f074.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 20988,
+    "sha256": "d1b9d5552215f07403ce198113c729ba06fcaf7742bd697223293153be616b8b",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 397,
+      "width": 392,
+      "height": 396
+    },
+    "generated": true
+  },
+  "disposal-10": {
+    "path": "assets/achievements/disposal-10.a5e2cc8a42a442a2.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 26638,
+    "sha256": "a5e2cc8a42a442a2f83f1ecf0b9e942a60e00ccc89d65c6030b6b3455b875f36",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1185,
+      "top": 397,
+      "width": 401,
+      "height": 396
+    },
+    "generated": true
+  },
+  "checked-1": {
+    "path": "assets/achievements/checked-1.5bbb63db660ce93e.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30076,
+    "sha256": "5bbb63db660ce93eb3cf2fc72986709c9dca6bd1fe88cc0c69c7f37f1216eb95",
+    "source": "art/achievement-stickers/sheet-2.png",
+    "cell": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "checked-10": {
+    "path": "assets/achievements/checked-10.d441ac52cbf951e0.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 25898,
+    "sha256": "d441ac52cbf951e0342cf27a52bea44c41ef257ac7cfa06c3a11f9c57ff57b7e",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "weighed-1": {
+    "path": "assets/achievements/weighed-1.34e839dd336b1152.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 25454,
+    "sha256": "34e839dd336b1152e265c63eec30806184ef331a765e2ce924cc7357fc494b5e",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 397,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "weighed-5": {
+    "path": "assets/achievements/weighed-5.3c4a980f50fa6069.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 26094,
+    "sha256": "3c4a980f50fa6069aac1227e5b291933e1bd53d3c3f0f5600fa950fa4632a91e",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "weighed-20": {
+    "path": "assets/achievements/weighed-20.043f3cc67786cef5.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 26818,
+    "sha256": "043f3cc67786cef575e0642b503d6250891734db43e018b3178e792892045671",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "weighed-50": {
+    "path": "assets/achievements/weighed-50.dca5a92e72dad23f.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 32436,
+    "sha256": "dca5a92e72dad23fc3f50dfd931951201e42b42747f8e3e2ce8cb1eae07a7644",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "weight-words-1": {
+    "path": "assets/achievements/weight-words-1.a4d2e05c61a2360d.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 25862,
+    "sha256": "a4d2e05c61a2360d47318f03f42cec6afef7aee30bbd51535d7a93c3fe1e37c7",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 397,
+      "width": 373,
+      "height": 396
+    },
+    "generated": true
+  },
+  "weight-words-10": {
+    "path": "assets/achievements/weight-words-10.a34d96804e2c25ba.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 29742,
+    "sha256": "a34d96804e2c25ba2a54644ffec328b76f564012629d8964d5a97714f0296325",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 373,
+      "top": 397,
+      "width": 420,
+      "height": 396
+    },
+    "generated": true
+  },
+  "produce-weighed": {
+    "path": "assets/achievements/produce-weighed.b503794650799633.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 27606,
+    "sha256": "b503794650799633d19df181728e37f0e78caacd26768e33d0a689d0051c8034",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "sweets-weighed": {
+    "path": "assets/achievements/sweets-weighed.db2934c93c1cb8ab.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30414,
+    "sha256": "db2934c93c1cb8ab04c035f17657f7c14bcb4bacca9ecd71016fe6f6ce3e8be7",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 397,
+      "width": 396,
+      "height": 396
+    },
+    "generated": true
+  },
+  "heard-1": {
+    "path": "assets/achievements/heard-1.bc02a614fec60dcf.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 25952,
+    "sha256": "bc02a614fec60dcfefcd08f15b2ee6e8a20a2f0fcc295e96fee7a4563a3b1b9e",
+    "source": "art/achievement-stickers/sheet-3.png",
+    "cell": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "heard-10": {
+    "path": "assets/achievements/heard-10.c5fd593df7f2625f.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 21886,
+    "sha256": "c5fd593df7f2625f49e4ca5abb06b625cb59fc189bdeba37352bd5d52ae6bfbb",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 393,
+      "height": 397
+    },
+    "generated": true
+  },
+  "heard-50": {
+    "path": "assets/achievements/heard-50.bc6736fa193014ee.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 16006,
+    "sha256": "bc6736fa193014eed1d421d21f57b91b104bb6226749f2b533c6abe5b0bf1c79",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 393,
+      "top": 0,
+      "width": 400,
+      "height": 397
+    },
+    "generated": true
+  },
+  "heard-100": {
+    "path": "assets/achievements/heard-100.def2fa92ba990e6b.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 19068,
+    "sha256": "def2fa92ba990e6bfe6f9be1466854a316072e1847ea9957a87ab034f5eb16fb",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "audio-orders-1": {
+    "path": "assets/achievements/audio-orders-1.6a184d0767e0667f.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 18928,
+    "sha256": "6a184d0767e0667f3cee7c4c80939f3c0bb811c52f0441f254511c16a4fdc8ed",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1190,
+      "top": 0,
+      "width": 396,
+      "height": 397
+    },
+    "generated": true
+  },
+  "audio-orders-10": {
+    "path": "assets/achievements/audio-orders-10.4210d29fa3d60901.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 17120,
+    "sha256": "4210d29fa3d60901b333f11eaf98c9ae415fba5b7b070e0b10f9ae29381b983e",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "without-text-1": {
+    "path": "assets/achievements/without-text-1.c9c54e0ad4416572.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 17626,
+    "sha256": "c9c54e0ad4416572301ee8e84d944ff1f1996dfb208baeae20b7406f0b613c61",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 397,
+      "width": 397,
+      "height": 396
+    },
+    "generated": true
+  },
+  "without-text-10": {
+    "path": "assets/achievements/without-text-10.80359322e0d7aec8.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 21726,
+    "sha256": "80359322e0d7aec86ef3d4c6742082beed34ad1d40a59fa28928b9a5d4c9c245",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 397,
+      "top": 397,
+      "width": 396,
+      "height": 396
+    },
+    "generated": true
+  },
+  "products-10": {
+    "path": "assets/achievements/products-10.2c3c2be38f1a0d02.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 18462,
+    "sha256": "2c3c2be38f1a0d028bc913c65253ad2f05c015586c533255c170ddd7f31639c4",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 793,
+      "top": 397,
+      "width": 388,
+      "height": 396
+    },
+    "generated": true
+  },
+  "products-25": {
+    "path": "assets/achievements/products-25.5a6c6c45e0a548dc.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 19744,
+    "sha256": "5a6c6c45e0a548dcc1d4c91328ffe8c70870712f3ce01dff13ec8da993d68329",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1181,
+      "top": 397,
+      "width": 400,
+      "height": 396
+    },
+    "generated": true
+  },
+  "products-50": {
+    "path": "assets/achievements/products-50.a6aee8aabebe793c.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 18554,
+    "sha256": "a6aee8aabebe793c9450ed0d8293a018ee3360b620e61ead89cc2952f6648c50",
+    "source": "art/achievement-stickers/sheet-4-v2.png",
+    "cell": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1581,
+      "top": 397,
+      "width": 402,
+      "height": 396
+    },
+    "generated": true
+  },
+  "products-100": {
+    "path": "assets/achievements/products-100.f6de37187efc0a9b.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 27868,
+    "sha256": "f6de37187efc0a9bfe4635c9217d71ba9a7cde2d6ff3d84af1def286f38b904f",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 0,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "departments-6": {
+    "path": "assets/achievements/departments-6.6c08bd6e207d9552.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 32266,
+    "sha256": "6c08bd6e207d9552e215b1f570c11ff02e6db6fcf22e7de992544c707d5a5ba9",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 1,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 397,
+      "top": 0,
+      "width": 387,
+      "height": 397
+    },
+    "generated": true
+  },
+  "departments-13": {
+    "path": "assets/achievements/departments-13.7a16be76cf2cf8de.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 39666,
+    "sha256": "7a16be76cf2cf8de24fbced90f83e08b0acd114a5d88e45bb156a4adcc7426eb",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 2,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 784,
+      "top": 0,
+      "width": 415,
+      "height": 397
+    },
+    "generated": true
+  },
+  "text-orders-1": {
+    "path": "assets/achievements/text-orders-1.4d4c2cc6105d388c.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 27040,
+    "sha256": "4d4c2cc6105d388c595217c1a8c8db90f807054863c6b207a711dcff5b914bd7",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 3,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1199,
+      "top": 0,
+      "width": 387,
+      "height": 397
+    },
+    "generated": true
+  },
+  "text-orders-10": {
+    "path": "assets/achievements/text-orders-10.1c13ef72580d502c.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30300,
+    "sha256": "1c13ef72580d502cc268352125378adfe6461277c5d079539c4c1d9c8c734ff5",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 4,
+      "row": 0,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1586,
+      "top": 0,
+      "width": 397,
+      "height": 397
+    },
+    "generated": true
+  },
+  "level-0": {
+    "path": "assets/achievements/level-0.30ba07b05d09a8c4.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 25212,
+    "sha256": "30ba07b05d09a8c47b270a7309cad2b4dd4ffd664b486de5cec0f53e6649069a",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 0,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 0,
+      "top": 397,
+      "width": 390,
+      "height": 396
+    },
+    "generated": true
+  },
+  "level-1": {
+    "path": "assets/achievements/level-1.e993c21683518a2d.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 31846,
+    "sha256": "e993c21683518a2d7ef41e5a4fea3667f370ca9dc8a448d3de2bdd92c9720677",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 1,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 390,
+      "top": 397,
+      "width": 400,
+      "height": 396
+    },
+    "generated": true
+  },
+  "level-2": {
+    "path": "assets/achievements/level-2.899a0701a81389c6.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 29008,
+    "sha256": "899a0701a81389c611719e04e7c1fe8108696bf51ce447442e10e4f2e9c5c3f9",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 2,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 790,
+      "top": 397,
+      "width": 381,
+      "height": 396
+    },
+    "generated": true
+  },
+  "level-3": {
+    "path": "assets/achievements/level-3.5b22cd1fc576063a.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30968,
+    "sha256": "5b22cd1fc576063a6937836c1abe4b232cb2967ee5dbc3f48f945117c84368dd",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 3,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1171,
+      "top": 397,
+      "width": 391,
+      "height": 396
+    },
+    "generated": true
+  },
+  "full-shift": {
+    "path": "assets/achievements/full-shift.c843f950daec9293.256.webp",
+    "width": 256,
+    "height": 256,
+    "bytes": 30182,
+    "sha256": "c843f950daec9293a084ca7e60c0338a0d34efc244b31ad6e566a1607136bc1a",
+    "source": "art/achievement-stickers/sheet-5.png",
+    "cell": {
+      "column": 4,
+      "row": 1,
+      "columns": 5,
+      "rows": 2
+    },
+    "crop": {
+      "left": 1562,
+      "top": 397,
+      "width": 421,
+      "height": 396
+    },
+    "generated": true
+  }
+}

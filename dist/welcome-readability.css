@@ -1,0 +1,44 @@
+/* Menu explanations must be readable at normal browser zoom in both languages. */
+.world-mode .welcome-dialog{width:1160px;max-width:calc(100vw - 24px);grid-template-columns:25% 75%}
+.world-mode .welcome-dialog .welcome-content{padding:30px 34px;min-width:0}
+.world-mode .welcome-dialog .welcome-content h2{font-size:44px;line-height:1.18;margin:14px 0 18px}
+.welcome-content>.eyebrow{font-size:12px;letter-spacing:1.7px}
+.welcome-lead{font:18px/1.65 Arial,sans-serif;color:#6c5a3e;margin-bottom:24px}
+.welcome-language.interface-language-choice{padding:13px 15px;gap:16px;flex-wrap:wrap}
+.welcome-language-copy>span{font-size:16px;line-height:1.45}
+.welcome-language-copy small{font-size:14px;line-height:1.5}
+.welcome-language select{font-size:17px;min-height:48px;min-width:155px}
+.welcome-select-field{gap:9px;margin:22px 0 12px}
+.welcome-select-field>span{font-size:17px;line-height:1.5}
+.welcome-select-field select{font-size:19px;line-height:1.5;min-height:56px;padding:12px 15px}
+.welcome-choice-explanation{font-size:17px;line-height:1.65;padding:16px 18px;color:#4f6048}
+.welcome-choice-explanation ol{margin-top:15px;padding-left:25px}
+.welcome-choice-explanation li{margin:13px 0}
+.welcome-choice-explanation li span{font-size:16px;line-height:1.65;margin-top:3px}
+.welcome-select-hint,.welcome-shift-summary{font-size:16px;line-height:1.6;color:#6d6046}
+.welcome-content>.primary-button{font-size:19px;min-height:58px}
+.welcome-content>.text-button{font-size:16px;padding:13px}
+.welcome-note{font-size:15px;line-height:1.7;color:#756347}
+.welcome-russian strong{font-size:17px}.welcome-russian small{font-size:15px}
+.world-loading p{font-size:18px;line-height:1.65;max-width:440px;color:#f3e9cc}
+.loading-kicker{font-size:12px;letter-spacing:2px}
+#loading-percent{font-size:15px}
+@media(max-width:900px){
+  .world-mode .welcome-dialog{display:block;width:740px;max-width:calc(100vw - 18px)}
+  .world-mode .welcome-dialog .welcome-content{padding:25px}
+  .world-mode .welcome-dialog .welcome-content h2{font-size:38px}
+}
+@media(max-width:480px){
+  .world-mode .welcome-dialog .welcome-content{padding:19px 17px}
+  .world-mode .welcome-dialog .welcome-content h2{font-size:32px;letter-spacing:-.8px}
+  .welcome-lead{font-size:17px}
+  .world-mode .welcome-dialog .welcome-language{flex-direction:column;align-items:stretch;gap:10px;padding:12px}
+  .welcome-language-copy{flex:0 0 auto;width:100%}
+  .welcome-language select{width:100%;max-width:none;min-width:0;font-size:17px}
+  .welcome-select-field>span{font-size:16px}
+  .welcome-select-field select{font-size:17px;padding:12px 10px}
+  .welcome-choice-explanation{font-size:16px;padding:13px 12px}
+  .welcome-choice-explanation li span{font-size:16px}
+  .welcome-note{font-size:14px}
+  .world-loading{padding:24px}.world-loading h1{font-size:25px}.world-loading p{font-size:17px}
+}

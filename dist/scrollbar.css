@@ -1,0 +1,9 @@
+/* A bread-shaped thumb keeps native scrolling, dragging and keyboard access. */
+@supports selector(::-webkit-scrollbar){
+ .world-mode *{scrollbar-width:auto!important;scrollbar-color:auto!important}
+ .world-mode *::-webkit-scrollbar{width:16px;height:10px}
+ .world-mode *::-webkit-scrollbar-track:vertical{background:#f5edd8;border-radius:10px}
+ .world-mode *::-webkit-scrollbar-thumb:vertical{min-height:48px;border:2px solid #f5edd8;border-radius:999px;background:repeating-linear-gradient(145deg,transparent 0 14px,#fff0bf 15px 18px,#ba772d 19px,transparent 20px 31px),linear-gradient(90deg,#b56f2d,#eebc61 44%,#f7d68c 62%,#b77731);box-shadow:inset 1px 0 1px #fff0bd,inset -1px 0 1px #9c5e2b}
+ .world-mode *::-webkit-scrollbar-thumb:vertical:hover{background:repeating-linear-gradient(145deg,transparent 0 14px,#fff4ce 15px 18px,#bd792f 19px,transparent 20px 31px),linear-gradient(90deg,#c48035,#f5c971 44%,#ffe1a1 62%,#c08438)}
+}
+@supports not selector(::-webkit-scrollbar){.world-mode *{scrollbar-width:auto!important;scrollbar-color:#d69a48 #f5edd8!important}}

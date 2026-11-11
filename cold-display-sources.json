@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-11",
+  "icecream_reference": "https://corvacold.be/en/ice-cream-display-freezer-ic402sceb/",
+  "observed": "Angled glass sliding lids, wire baskets, grouped packages and interior LED lighting; adapted to existing game geometry, no brand asset copied.",
+  "meat_reference": "https://www.arneg.com/en/products/santiago-2",
+  "canned_tuna": "https://nomin.mn/p/1133006",
+  "shrimp_existing_photo": "https://nomin.mn/p/1154860",
+  "shrimp_market_confirmation": "https://amtatmall.mn/product/232076",
+  "ready_mantuu": {
+    "url": "https://nomin.mn/p/1139052",
+    "storage": "0 to +5 C",
+    "use": "ready to eat or reheat",
+    "note": "Existing audio quantities and lot identities stay unchanged. This ready product remains in the refrigerated ready-food department."
+  },
+  "frozen_baking_existing": "https://goodpricemarket.mn/mn/product/ukhriin-makhtai-mini-khuushuur-900gr-8656021232634",
+  "frozen_vegetables": [
+    "https://amtatmall.mn/product/196227",
+    "https://amtatmall.mn/product/196189",
+    "https://efoods.khanburgedei.mn/product/414503",
+    "https://efoods.khanburgedei.mn/product/414498",
+    "https://efoods.khanburgedei.mn/product/414496",
+    "https://efoods.khanburgedei.mn/product/414489",
+    "https://efoods.khanburgedei.mn/product/414394"
+  ],
+  "no_new_recordings": true,
+  "whole_fruit_sprites": {
+    "tool": "built-in imagegen",
+    "products": [
+      "avocado",
+      "kiwi",
+      "mango",
+      "mandarin"
+    ],
+    "provenance": "dist/assets/product-sources.json",
+    "original_photos_preserved": true
+  }
+}

@@ -1,0 +1,3694 @@
+{
+  "products": [
+    {
+      "id": "energy-redbull",
+      "nameMN": "Red Bull энергийн ундаа",
+      "nameRU": "Энергетик Red Bull",
+      "category": "drinks",
+      "unit": "ml",
+      "pack": 250,
+      "productUrl": "https://nomin.mn/p/1189473",
+      "imageUrl": "https://assets.nomin.mn/preview/7f/uk_rbed_250_single-unit_close_ambient_original_canwidth500px__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x",
+      "storage": "ambient",
+      "notes": "Nomin card explicitly says 250 мл; image is visually verified single original can. No health-benefit claims from retailer copied.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/redbull.webp",
+      "bytes": 115682,
+      "sha256": "38a75bb28d6ddea96403faaed797479895871b9cc1ce927c4d6499e3f8065011",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "energy-monster",
+      "nameMN": "Monster энергийн ундаа",
+      "nameRU": "Энергетик Monster",
+      "category": "drinks",
+      "unit": "ml",
+      "pack": 500,
+      "productUrl": "https://goodpricemarket.mn/mn/product/monster-enyergiin-undaa-0-5l-5060335635228-217b",
+      "imageUrl": "https://cdnp.cody.mn/spree/images/2247954/large/data.?1710217365",
+      "storage": "ambient",
+      "render_crop": {
+        "x": 0.435,
+        "y": 0.34,
+        "width": 0.14,
+        "height": 0.32
+      },
+      "notes": "Single black/green Monster can; retailer title 500мл. Original image has large white margins; use render_crop or renderer white-background crop, not full square.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/monster.jpg",
+      "bytes": 8332,
+      "sha256": "1a673c0d209ee14d8563aad556d00a7038dbb1c58f07569caa95ddb3e66dd4e4",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "energy-target-zero",
+      "nameMN": "Target Zero чихэргүй энергийн ундаа",
+      "nameRU": "Энергетик Target Zero без сахара",
+      "category": "drinks",
+      "unit": "ml",
+      "pack": 450,
+      "productUrl": "https://khantaishir.mn/products/210929/575059",
+      "imageUrl": "https://cdn.zochil.shop/487c9fb9-bd1b-42cd-8f83-cc97c98b01ce_t1500.jpg",
+      "storage": "ambient",
+      "notes": "Title confirms450мл; photographed label says ZERO SUGAR. Use specific Zero name, not Original/Mango.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/target.jpg",
+      "bytes": 145296,
+      "sha256": "1b347c570cd685ce4fc77d8a352043635b9705eb968651c3a6d175ac318e5ae5",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "horse-meat",
+      "nameMN": "Адууны цул мах",
+      "nameRU": "Конина без кости",
+      "category": "meat",
+      "unit": "g",
+      "pack": 1000,
+      "soldByWeight": true,
+      "productUrl": "https://dornodmeat.mn/en/products/horse-meat",
+      "evidenceUrl": "https://dornodmeat.mn/en/products",
+      "imageUrl": "https://dornodmeat.mn/storage/uploads/content/products/horse/shulsan.jpg",
+      "storage": "frozen",
+      "notes": "Manufacturer labels image Butchered horse meat. Photo is a cut on board with garnish, not packaged stock. Manufacturer general Products page explicitly describes freezing and supplying boneless horse meat domestically.1000g is a GAME WEIGHED PORTION, not claimed factory package. Type availability also corroborated by primary retail manufacturer ErdenetMakhMarket https://emm.ezweb.mn/ with price perkg. Prefer transparent bag/tray render around crop; do not label garnish as included.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/horse-meat.jpg",
+      "bytes": 82834,
+      "sha256": "37596b8b3c04f904b332d36377ea9a046931778d4b1b7ebeda5cb9eb52065eb4",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "goat-meat",
+      "nameMN": "Ямааны цул мах",
+      "nameRU": "Козлятина без кости",
+      "category": "meat",
+      "unit": "g",
+      "pack": 1000,
+      "soldByWeight": true,
+      "productUrl": "https://dornodmeat.mn/en/products/goat-meat",
+      "evidenceUrl": "https://dornodmeat.mn/en/products",
+      "imageUrl": "https://dornodmeat.mn/storage/uploads/content/products/goat/shulsan.jpg",
+      "storage": "frozen",
+      "notes": "Manufacturer labels photograph Butchered goat meat. Photo shows two cuts on board with garnish, not packaged stock.1000g is GAME WEIGHED PORTION, not factory pack. Products page describes freezing goat meat and processing at purchasers request. Primary retail manufacturer ErdenetMakhMarket https://emm.ezweb.mn/ advertises goat perkg.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/goat-meat.jpg",
+      "bytes": 55587,
+      "sha256": "90d8f7a84dfe627203258599d64afc8a2299df6977291cc56cd826a1a2fc844e",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "pork-tenderloin",
+      "nameMN": "Гахайн гол мах",
+      "nameRU": "Свиная вырезка",
+      "category": "meat",
+      "unit": "g",
+      "pack": 1000,
+      "soldByWeight": true,
+      "productUrl": "https://amtatmall.mn/product/611131",
+      "imageUrl": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20260722172658_59356bc2516e840ffd1b3bf6eec16d6d.jpeg",
+      "storage": "frozen",
+      "notes": "Retailer says Мираторг Гахайн гол мах /1кг/, explicitly price perkg and choose number ofkg. Actual vacuum package variable weight, so game1kg is weighed portion. Photo visually verified Miratorg tenderloin, no fixed pack weight asserted. Frozen storage inferred from retailer frozen meat category; actual label details too small to verify exact storage temperature.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/pork.jpeg",
+      "bytes": 13907,
+      "sha256": "10c7c3756ca05c1db606adf8fc1351ba66f0dbedb88768fa5cfa77faf5bedb01",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "fish-flounder",
+      "nameMN": "Хөлдөөсөн кажами загас",
+      "nameRU": "Замороженная камбала",
+      "category": "frozen",
+      "unit": "g",
+      "pack": 900,
+      "productUrl": "https://amtatmall.mn/product/232017",
+      "imageUrl": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220920154348_6cf2b175e6f27d2b2220c4d990ccd124.png",
+      "storage": "frozen",
+      "notes": "Retailer title Хөлдүү загас900грКажами. Chosen gallery photo is closed orange ThankYou Korean pack, label가자미(flatfish/flounder),900g. First gallery image is plated raw fish, rejected for packaged shelf. Historical printed date remains in source photograph; game batch dates must be treated as simulation.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/fish-kajami-pack.png",
+      "bytes": 238552,
+      "sha256": "6f305922c6bfd2d6c6fcf1ae6b3d51c03962d70e050c2e2ad748aea7d6da0f7d",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "fish-mackerel",
+      "nameMN": "Хөлдөөсөн макрель загас",
+      "nameRU": "Замороженная скумбрия",
+      "category": "frozen",
+      "unit": "g",
+      "pack": 900,
+      "productUrl": "https://amtatmall.mn/product/232018",
+      "imageUrl": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220920155003_54ac362d8cecb8836b57ce8584c9591d.png",
+      "storage": "frozen",
+      "notes": "Title Хөлдүү загас900грМакрель/шөлнийх/; visually verified orange ThankYou closed bag,label고등어(mackerel),900g. Chosen packaged gallery image; plated first photo rejected. Historical printed2019MFG is visible in source photograph; simulation batch date overlay should be physical on package if used.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/fish-mackerel-pack.png",
+      "bytes": 247756,
+      "sha256": "2d01bd3e25338ced365e80d5510fb9d6b8a837cca62ed6b00b1948f12a7caf25",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "fish-saury",
+      "nameMN": "Хөлдөөсөн сайра загас",
+      "nameRU": "Замороженная сайра",
+      "category": "frozen",
+      "unit": "g",
+      "pack": 900,
+      "productUrl": "https://amtatmall.mn/product/232024",
+      "imageUrl": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220920160815_7f3f4e80d40559d4dcf8b3c04ccda623.png",
+      "storage": "frozen",
+      "notes": "Retailer title Хөлдүү загас900грСари. Visually verified closed orange ThankYou bag, label꽁치(Pacific saury),900g. Source uses Сари spelling; translated as сайра.",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/fish-sari.png",
+      "bytes": 220410,
+      "sha256": "78d3bc42b1ac89ded6c6d5bc0403e1852d8222a8e1c15d6299efff6744393bbd",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "turkey-whole",
+      "nameMN": "Бүхэл цацагт хяруулын мах",
+      "nameRU": "Индейка целиком",
+      "category": "meat",
+      "unit": "g",
+      "pack": 5200,
+      "soldByWeight": false,
+      "productUrl": "https://amtatmall.mn/product/300553?page=1",
+      "imageUrl": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20230830123120_a4c6bc3b3db1f6259aef12e033d1baa0.png",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/turkey.png",
+      "storage": "frozen",
+      "notes": "Retailer explicitly title DOUX whole turkey with giblets5.2kg; photo verified DOUX sealed whole turkey with giblets. /product/300553 returns404 without ?page=1 but exact list link withquery serves currentpage; browser/searchcache card also confirms. No smaller cut substituted. Storage frozen inferred from retailer frozen-meat listing; precise temperature not inspected.",
+      "bytes": 170156,
+      "sha256": "b7465c984740e09c6879157259cc1bf6ff34288dccf468f93b09da6faf5e4939",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "duck-smoked",
+      "nameMN": "Ясгүй утсан нугасны мах",
+      "nameRU": "Копчёная утка без кости",
+      "category": "meat",
+      "unit": "g",
+      "pack": 450,
+      "soldByWeight": false,
+      "productUrl": "https://www.freshpack.mn/product/67ad915997ad715c8eb1b846",
+      "evidenceUrl": "https://www.freshpack.mn/vendor/136642?type=delivery",
+      "imageUrl": "https://cdnd.techpack.mn/uploads/uQke84tHtCMTH67mEg3kz",
+      "localPath": "/Users/yael/Documents/Codex/2026-11-09/new-chat-4/work/catalogue-expansion/duck-smoked.png",
+      "storage": "frozen",
+      "notes": "FreshPack Medal Duck Mongolia currentvendor listing Утсан нугас/ясгүй/450гр; publicly exposed search API /api/query?keyword=Нугас links exact product ID andphoto. Downloaded package visually says Smoked boneless DUCK, NETWEIGHT450gr. Vendor PickPack cold warehouse; pictogram and package context indicates frozen (precise temperature small); do not call raw duck.",
+      "bytes": 179209,
+      "sha256": "12ec17cdb31de741aac1e23d7816564adfe8f939dd0e91cc4f110d3719e44fda",
+      "retrieved_at": "2026-11-10",
+      "visual_qa": "checked-local-photo"
+    },
+    {
+      "id": "rolled-oats",
+      "name": "Овьёос",
+      "source_page": "https://nomin.mn/p/1150559",
+      "image_url": "https://assets.nomin.mn/preview/ad/untitled-1_0116_8656020836857__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/ad/untitled-1_0116_8656020836857__preview.png",
+      "path": "assets/products/rolled-oats.jpg",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 115626,
+      "sha256": "2126d5617dba5c617e0ccfb01ae923f4db3e47fdf025371cdc31df7b4e50dc20",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Слава овьёос, 400 гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Слава овьёос, 400 гр",
+          "Слава овьёос, 400 гр",
+          "400 гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed retail bag of oat flakes, visibly ГЕРКУЛЕС 400гр. Original Seamild1.5kg card rejected because photographed bonus-size pack reads1688g.",
+      "render_crop": {
+        "x": 0.25,
+        "y": 0.1,
+        "width": 0.52,
+        "height": 0.74
+      }
+    },
+    {
+      "id": "millet",
+      "name": "Шар будаа",
+      "source_page": "https://nomin.mn/p/1185575",
+      "image_url": "https://assets.nomin.mn/preview/9b/_0003_za-shar-budaa-1__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/9b/_0003_za-shar-budaa-1__preview.png",
+      "path": "assets/products/millet.png",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 526429,
+      "sha256": "8d193773cd0b12323394101f8f87e603ff6538bae8c29a49631e7a4f98f9b167",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "За шар будаа, 1 кг | Номин - Хүний хэрэгцээ цөм багтсан",
+          "За шар будаа, 1 кг",
+          "За шар будаа, 1 кг",
+          "1 кг"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "Single sealed millet bag; 1 кг is clear on the front.",
+      "render_crop": {
+        "x": 0.23,
+        "y": 0.14,
+        "width": 0.54,
+        "height": 0.73
+      }
+    },
+    {
+      "id": "pearl-barley",
+      "name": "Хөц будаа",
+      "source_page": "https://nomin.mn/p/1293629",
+      "image_url": "https://assets.nomin.mn/preview/56/4603134002214__preview.jpg",
+      "original_image_url": "https://assets.nomin.mn/preview/56/4603134002214__preview.jpg",
+      "path": "assets/products/pearl-barley.jpg",
+      "actual_pack": {
+        "amount": 800,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 54008,
+      "sha256": "23fd241295592e5aaf9f0daf4833e5d4483552ea8f74e82156f9ad45d45dc1a1",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Царь Хөц будаа, 800гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Царь Хөц будаа, 800гр",
+          "Царь Хөц будаа, 800гр",
+          "800гр"
+        ],
+        "photo_mass_readable": false
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "Single pearl-barley bag, Царь brand. Weight800g is explicit on the selected store card; front photo weight is not visible. Original Ярмарка800g card rejected because photo says700g.",
+      "render_crop": {
+        "x": 0.28,
+        "y": 0.17,
+        "width": 0.44,
+        "height": 0.67
+      }
+    },
+    {
+      "id": "red-lentils",
+      "name": "Улаан сэвэг зарам",
+      "source_page": "https://nomin.mn/p/1157357",
+      "image_url": "https://assets.nomin.mn/preview/81/1_4602248003865__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/81/1_4602248003865__preview.png",
+      "path": "assets/products/red-lentils.png",
+      "actual_pack": {
+        "amount": 350,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        1000,
+        667
+      ],
+      "bytes": 510288,
+      "sha256": "14967bd2954103bf7231a85f93531dbb26fa28eb75aca2b3682011affe000494",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Ярмарка Bravolli Улаан сэвэг зарам, 350гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Ярмарка Bravolli Улаан сэвэг зарам, 350гр",
+          "Ярмарка Bravolli Улаан сэвэг зарам, 350гр",
+          "350 гр"
+        ],
+        "photo_mass_readable": false
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "Sealed bag visibly says ЧЕЧЕВИЦА КРАСНАЯ. Selected card explicitly says350g. No attempt to pass off the rejected green-lentil card with a red-lentil photo.",
+      "render_crop": {
+        "x": 0.31,
+        "y": 0.02,
+        "width": 0.4,
+        "height": 0.97
+      }
+    },
+    {
+      "id": "honey",
+      "name": "Зөгийн бал",
+      "source_page": "https://nomin.mn/p/1134122",
+      "image_url": "https://assets.nomin.mn/preview/42/screenshot_2022-03-17_183449__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/42/screenshot_2022-03-17_183449__preview.png",
+      "path": "assets/products/honey.png",
+      "actual_pack": {
+        "amount": 250,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        368,
+        344
+      ],
+      "bytes": 132841,
+      "sha256": "0e1cd1b11e5ba3517af44a6414cc622a8673f5b4cb0162bf1880f3a4b76f264d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Сэлэнгэ зөгийн бал, 250 гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Сэлэнгэ зөгийн бал, 250 гр",
+          "Сэлэнгэ зөгийн бал, 250 гр",
+          "250 гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed glass honey jar. Front says Цэвэр жин:0.25кг, matching250g.",
+      "render_crop": {
+        "x": 0.17,
+        "y": 0.1,
+        "width": 0.6,
+        "height": 0.86
+      }
+    },
+    {
+      "id": "tomato-paste",
+      "name": "Улаан лоолийн паста",
+      "source_page": "https://nomin.mn/p/1152915",
+      "image_url": "https://assets.nomin.mn/preview/61/1152915__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/61/1152915__preview.png",
+      "path": "assets/products/tomato-paste.jpg",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        632,
+        889
+      ],
+      "bytes": 96120,
+      "sha256": "64e48e53fe6d76155cdfff8f2755cf3f42889b8fcf8a54b8e166675cc07d2eae",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Agro Улаан лоолийн паста, 400г | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Agro Улаан лоолийн паста, 400г",
+          "Agro Улаан лоолийн паста, 400г",
+          "400г"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed red metal can of tomato paste.400g clearly printed on front.",
+      "render_crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "id": "canned-peas",
+      "name": "Нөөшилсөн ногоон вандуй",
+      "source_page": "https://nomin.mn/p/1124172",
+      "image_url": "https://assets.nomin.mn/preview/39/green_peas_ace__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/39/green_peas_ace__preview.png",
+      "path": "assets/products/canned-peas.png",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 667942,
+      "sha256": "1e543529d1891f43005bc7b0ce4cfc303fc602cb74d8437943df37d180df6b6e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Ace Нөөшилсөн Ногоон Вандуй, 400гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Ace Нөөшилсөн Ногоон Вандуй, 400гр",
+          "Ace Нөөшилсөн Ногоон Вандуй, 400гр",
+          "400гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed metal can;400g is clearly printed on front.",
+      "render_crop": {
+        "x": 0.3125,
+        "y": 0.406667,
+        "width": 0.4125,
+        "height": 0.446667
+      }
+    },
+    {
+      "id": "canned-corn",
+      "name": "Нөөшилсөн амтат эрдэнэшиш",
+      "source_page": "https://nomin.mn/p/1060062",
+      "image_url": "https://assets.nomin.mn/preview/c6/front_de.53.full__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/c6/front_de.53.full__preview.png",
+      "path": "assets/products/canned-corn.jpg",
+      "actual_pack": {
+        "amount": 150,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        455,
+        540
+      ],
+      "bytes": 51510,
+      "sha256": "6d79405bd43b67785d4864aaf94c3991e0e9332da145ad6fa1866d74db4c1fe3",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Bonduelle Goldmais нөөшилсөн амтат эрдэнэшиш, 150гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Bonduelle Goldmais нөөшилсөн амтат эрдэнэшиш, 150гр",
+          "Bonduelle Goldmais нөөшилсөн амтат эрдэнэшиш, 150гр",
+          "150 гр"
+        ],
+        "photo_mass_readable": false
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed sweetcorn can. Selected card title and net-weight table say150g. Front weight not visible. Store brand field incorrectly saysEdeka; use photographed Bonduelle.",
+      "render_crop": {
+        "x": 0.04,
+        "y": 0,
+        "width": 0.9,
+        "height": 1
+      }
+    },
+    {
+      "id": "canned-red-beans",
+      "name": "Лаазалсан улаан шош",
+      "source_page": "https://nomin.mn/p/1187137",
+      "image_url": "https://assets.nomin.mn/preview/4f/ace_red_kidney_beans__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/4f/ace_red_kidney_beans__preview.png",
+      "path": "assets/products/canned-red-beans.png",
+      "actual_pack": {
+        "amount": 425,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 917322,
+      "sha256": "4b982077499438a5fb966dd5f262eb039316efe2320ce35e123ebfe56be68bc5",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Ace Улаан Шош, Лаазалсан, 425гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Ace Улаан Шош, Лаазалсан, 425гр",
+          "Ace Улаан Шош, Лаазалсан, 425гр",
+          "425гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed can of Red Kidney Beans in brine.425g printed on front.",
+      "render_crop": {
+        "x": 0.286667,
+        "y": 0.275833,
+        "width": 0.413333,
+        "height": 0.6525
+      }
+    },
+    {
+      "id": "canned-mushrooms",
+      "name": "Лаазалсан бүхэл мөөг",
+      "source_page": "https://nomin.mn/p/1140387",
+      "image_url": "https://assets.nomin.mn/preview/35/mushrooms__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/35/mushrooms__preview.png",
+      "path": "assets/products/canned-mushrooms.png",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 869071,
+      "sha256": "96564ce7b3a1e554f5a5c6ef27b12d0636a2e06956a0e6bf3047e8696260b624",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Ace лаазалсан бүхэл мөөг, 400гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Ace лаазалсан бүхэл мөөг, 400гр",
+          "Ace лаазалсан бүхэл мөөг, 400гр",
+          "400 гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One closed whole-mushroom can.400g printed on front.",
+      "render_crop": {
+        "x": 0.288333,
+        "y": 0.276667,
+        "width": 0.403333,
+        "height": 0.649167
+      }
+    },
+    {
+      "id": "apple-vinegar",
+      "name": "Алимны цуу",
+      "source_page": "https://nomin.mn/p/1181242",
+      "image_url": "https://assets.nomin.mn/preview/82/8801007168753__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/82/8801007168753__preview.png",
+      "path": "assets/products/apple-vinegar.jpg",
+      "actual_pack": {
+        "amount": 900,
+        "unit": "ml",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        700,
+        700
+      ],
+      "bytes": 23395,
+      "sha256": "105071c6b64ca824b2514d73572da9c418639185bf701a44ee82440cc40acbd5",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "900 мл"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One capped bottle of apple vinegar.900ml printed on front.",
+      "render_crop": {
+        "x": 0.37,
+        "y": 0.055,
+        "width": 0.25,
+        "height": 0.89
+      }
+    },
+    {
+      "id": "paprika",
+      "name": "Нунтагласан паприка",
+      "source_page": "https://nomin.mn/p/1116706",
+      "image_url": "https://assets.nomin.mn/preview/1a/152528_1-800x800__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/1a/152528_1-800x800__preview.png",
+      "path": "assets/products/paprika.png",
+      "actual_pack": {
+        "amount": 10,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 1095844,
+      "sha256": "754a392200f7bb680d90b498cc5ecdc1ce050ab8f91e984ecfdd703d806e5a50",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Приправыч нунтагласан паприка амтлагч, 10гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Приправыч нунтагласан паприка амтлагч, 10гр",
+          "Приправыч нунтагласан паприка амтлагч, 10гр",
+          "10"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed sachet of ground sweet paprika.10г clearly printed on front.",
+      "render_crop": {
+        "x": 0.1,
+        "y": 0.01,
+        "width": 0.8,
+        "height": 0.98
+      }
+    },
+    {
+      "id": "garlic-powder",
+      "name": "Нунтаг сармис",
+      "source_page": "https://nomin.mn/p/1116741",
+      "image_url": "https://assets.nomin.mn/preview/46/_________________4b519b879480c__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/46/_________________4b519b879480c__preview.png",
+      "path": "assets/products/garlic-powder.png",
+      "actual_pack": {
+        "amount": 10,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        223,
+        223
+      ],
+      "bytes": 106610,
+      "sha256": "fd1b7f4584ff4f61237ae406659ad63301d9d8ccc4d80c218d5a4c39e13291a8",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "10",
+          "10 гр",
+          "10 гр",
+          "100% байгалийн сармис"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed sachet says ЧЕСНОК СУШЕНЫЙ МОЛОТЫЙ10г; native image223px, front still readable.",
+      "render_crop": {
+        "x": 0.09,
+        "y": 0.01,
+        "width": 0.84,
+        "height": 0.98
+      }
+    },
+    {
+      "id": "potato-starch",
+      "name": "Төмсний цардуул",
+      "source_page": "https://nomin.mn/p/1116663",
+      "image_url": "https://assets.nomin.mn/preview/be/large_d34bc804362aad18c7eb9637023645556f0a62aaa62ce8aa4609a19d3791738f__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/be/large_d34bc804362aad18c7eb9637023645556f0a62aaa62ce8aa4609a19d3791738f__preview.png",
+      "path": "assets/products/potato-starch.jpg",
+      "actual_pack": {
+        "amount": 70,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        480,
+        480
+      ],
+      "bytes": 36011,
+      "sha256": "b0d2aedbd8537c0c106f12313c818999a7ccb5f5424cfe447ad3fee5064be432",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Приправыч Төмсний цардуул, 70гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Приправыч Төмсний цардуул, 70гр",
+          "Приправыч Төмсний цардуул, 70гр",
+          "70гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed potato-starch sachet.70г clearly printed on front.",
+      "render_crop": {
+        "x": 0.1,
+        "y": 0.01,
+        "width": 0.8,
+        "height": 0.98
+      }
+    },
+    {
+      "id": "dry-yeast",
+      "name": "Хуурай исгэгч",
+      "source_page": "https://nomin.mn/p/1135139",
+      "image_url": "https://assets.nomin.mn/preview/33/566989d3dfff6924204c5f40__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/33/566989d3dfff6924204c5f40__preview.png",
+      "path": "assets/products/dry-yeast.jpg",
+      "actual_pack": {
+        "amount": 10,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        675,
+        900
+      ],
+      "bytes": 113088,
+      "sha256": "8edef03c3cd329e5f6b2cb03ba986cd0164f52bffec8178f04079dfb723b1474",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Приправыч хуурай исгэгч (дрожжи), 10 гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Приправыч хуурай исгэгч (дрожжи), 10 гр",
+          "Приправыч хуурай исгэгч (дрожжи), 10 гр",
+          "10 гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed active dry-yeast sachet.10г clearly printed on front.",
+      "render_crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "id": "glass-noodles",
+      "name": "Амтат төмсний пүнтүүз",
+      "source_page": "https://nomin.mn/p/1153713",
+      "image_url": "https://assets.nomin.mn/preview/d0/1611561750__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/d0/1611561750__preview.png",
+      "path": "assets/products/glass-noodles.jpg",
+      "actual_pack": {
+        "amount": 300,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 130403,
+      "sha256": "580b272c12abf183f1724014828e657d011199dd015a31d64cb380c81f7b2207",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "300гр",
+          "CJ Beksul Пүнтүүз (Glass Noodles), 300гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed bag of Sweet Potato Starch Noodles,300G clearly printed on front.",
+      "render_crop": {
+        "x": 0.25,
+        "y": 0.01,
+        "width": 0.48,
+        "height": 0.98
+      }
+    },
+    {
+      "id": "kimchi",
+      "name": "Кимчи",
+      "source_page": "https://nomin.mn/p/1135847",
+      "image_url": "https://assets.nomin.mn/preview/f1/untitled-1_0092_8658000645640__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/f1/untitled-1_0092_8658000645640__preview.png",
+      "path": "assets/products/kimchi.jpg",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1200,
+        1200
+      ],
+      "bytes": 129897,
+      "sha256": "bf3805c305f98d016c8dc36e7e5dc5a9de640d1474c528e18bd0b8bdf01fb76d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Nice Кимчи, 500гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Nice Кимчи, 500гр",
+          "Nice Кимчи, 500гр"
+        ],
+        "photo_mass_readable": false
+      },
+      "storage_evidence": "Хадгалах горим:0-5градуст;30хоног",
+      "note": "One closed food container of local kimchi.500g is explicit on the product card. Both page and photographed label specify0–5°C and30days.",
+      "render_crop": {
+        "x": 0.04,
+        "y": 0.17,
+        "width": 0.94,
+        "height": 0.66
+      }
+    },
+    {
+      "id": "marinated-tofu",
+      "name": "Амталсан дүпү",
+      "source_page": "https://nomin.mn/p/1129489",
+      "image_url": "https://assets.nomin.mn/preview/6a/1129489__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/6a/1129489__preview.png",
+      "path": "assets/products/marinated-tofu.jpg",
+      "actual_pack": {
+        "amount": 200,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        620,
+        905
+      ],
+      "bytes": 121740,
+      "sha256": "90afc4ce8d67c6c890577101ba50b2c5131d4f595b17360977efde42790f4665",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Амталсан дүпү 200гр | Номин - Хүний хэрэгцээ цөм багтсан",
+          "Амталсан дүпү 200гр",
+          "Амталсан дүпү 200гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Хадгалах горим:-2°C-аас+8°C",
+      "note": "Vacuum-packed seasoned tofu. Front label shows200±10г; commercial nominal mass200g. Source photo is tightly framed and includes a sliver of adjacent pack at lower right.",
+      "render_crop": {
+        "x": 0,
+        "y": 0,
+        "width": 1,
+        "height": 1
+      }
+    },
+    {
+      "id": "roasted-seaweed",
+      "name": "Шарж амталсан далайн байцаа",
+      "source_page": "https://nomin.mn/p/1128660",
+      "image_url": "https://assets.nomin.mn/preview/00/dsc_6119__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/00/dsc_6119__preview.png",
+      "path": "assets/products/roasted-seaweed.png",
+      "actual_pack": {
+        "amount": 30,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        533,
+        533
+      ],
+      "bytes": 246741,
+      "sha256": "d1bcaf1149c87a45de0e3c3de948a5b012e8a437e1fc215c6de09febc17271de",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "photo_mass_readable": true,
+        "correction": "Retailer card35g conflicts with original photo30g; render the pictured30g pack."
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed bag of roasted seaweed. Front says35g(10Sheets).",
+      "render_crop": {
+        "x": 0.23,
+        "y": 0.19,
+        "width": 0.57,
+        "height": 0.65
+      },
+      "photo_printed_dates": [
+        {
+          "text": "2022.05.12 / 2021.02.07",
+          "role": "Historical source-photo stamps; hidden by a game batch sticker."
+        }
+      ],
+      "render_labels": [
+        {
+          "rect": [
+            0.65,
+            0.696,
+            0.1,
+            0.061
+          ],
+          "text": "ШОШГО"
+        }
+      ]
+    },
+    {
+      "id": "mini-khuushuur",
+      "name": "Үхрийн махтай мини хуушуур",
+      "source_page": "https://goodpricemarket.mn/mn/product/ukhriin-makhtai-mini-khuushuur-900gr-8656021232634",
+      "image_url": "https://cdnp.cody.mn/spree/images/1837493/large/open-uri20230705-707202-1ubd5p9.",
+      "original_image_url": "https://cdnp.cody.mn/spree/images/1837493/large/open-uri20230705-707202-1ubd5p9.",
+      "path": "assets/products/mini-khuushuur.jpg",
+      "actual_pack": {
+        "amount": 900,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        647,
+        647
+      ],
+      "bytes": 37432,
+      "sha256": "ca48226922746c6c8c5e054c3cb98dc5f67c194fd5884e9681f3f8bd5565a61d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "ХУУШУУРХАН МИНИ ХУУШУУР ҮХРИЙН МАХТАЙ 900ГР",
+          "ХУУШУУРХАН МИНИ ХУУШУУР ҮХРИЙН МАХТАЙ 900ГР",
+          "ХУУШУУРХАН МИНИ ХУУШУУР ҮХРИЙН МАХТАЙ 900ГР",
+          "ХУУШУУРХАН МИНИ ХУУШУУР ҮХРИЙН МАХТАЙ 900ГР"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Frozen product named Хөлдүү or Хөлдөөсөн by the retail source; keep in a freezer.",
+      "note": "One sealed bag of frozen mini beefkhuushuur;900гр printed lower-left. Source photograph includes a translucent GOODPRICEMARKET watermark.",
+      "render_crop": {
+        "x": 0.22,
+        "y": 0.11,
+        "width": 0.56,
+        "height": 0.78
+      },
+      "photo_printed_dates": [
+        {
+          "text": "2021.04…",
+          "role": "Faint historic stamp, partially legible; not treated as current live expiry",
+          "position": "upper-left bag seam"
+        }
+      ],
+      "render_labels": [
+        {
+          "rect": [
+            0.3,
+            0.199,
+            0.107,
+            0.045
+          ],
+          "text": "ШОШГО"
+        }
+      ]
+    },
+    {
+      "id": "frozen-fries",
+      "name": "Хөлдөөсөн шарсан төмс",
+      "source_page": "https://amtatmall.mn/product/620623",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20260905152752_73e47f057ffd853814fac16e6b6ae75f.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20260905152752_73e47f057ffd853814fac16e6b6ae75f.jpg",
+      "path": "assets/products/frozen-fries.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        881,
+        929
+      ],
+      "bytes": 135823,
+      "sha256": "569f74363ff6f97fa869e7fd301a4973cddd6818dc7496da16b595e4592155c6",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Хөлдүү төмс french fries 1кг | amtatmall",
+          "Хөлдүү төмс french fries 1кг",
+          "Хөлдүү төмс french fries 1кг",
+          "Удэн холимог 1кг"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Frozen product named Хөлдүү or Хөлдөөсөн by the retail source; keep in a freezer.",
+      "note": "Front central sealed bag clearly says NETWEIGHT1KG. Source photo contains other bags behind it; crop preserves the whole central package. PICO2.5kg alternate not selected due unclear photo mass.",
+      "render_crop": {
+        "x": 0.05,
+        "y": 0.025,
+        "width": 0.9,
+        "height": 0.965
+      }
+    },
+    {
+      "id": "frozen-broccoli",
+      "name": "Хөлдөөсөн брокколи",
+      "source_page": "https://amtatmall.mn/product/196227",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220408154918_00ad81c70cca35b02222a6f711ae0b03.png",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220408154918_00ad81c70cca35b02222a6f711ae0b03.png",
+      "path": "assets/products/frozen-broccoli.png",
+      "actual_pack": {
+        "amount": 2500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        192,
+        278
+      ],
+      "bytes": 77385,
+      "sha256": "1cf33204a8dea12a25f82501ae03230200e5640b57e3a6bd272039a570c23e2d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Хөлдүү ногоо /Броккли/  2,5кг | amtatmall",
+          "Хөлдүү ногоо /Броккли/  2,5кг",
+          "Хөлдүү ногоо /Броккли/  2,5кг"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Frozen product named Хөлдүү or Хөлдөөсөн by the retail source; keep in a freezer.",
+      "note": "One sealed bag of Brokuly różyczki (broccoli florets);2.5kg printed on front. Crop excludes editorial caption below packet.",
+      "render_crop": {
+        "x": 0.04,
+        "y": 0.02,
+        "width": 0.78,
+        "height": 0.89
+      }
+    },
+    {
+      "id": "frozen-peas",
+      "name": "Хөлдөөсөн ногоон вандуй",
+      "source_page": "https://amtatmall.mn/product/196189",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220408121346_211315b46b54752d67d503ba38227126.png",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/photos/module_product/20220408121346_211315b46b54752d67d503ba38227126.png",
+      "path": "assets/products/frozen-peas.png",
+      "actual_pack": {
+        "amount": 450,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        219,
+        272
+      ],
+      "bytes": 82524,
+      "sha256": "f9abe6e1190089601e60d023c2a148ac9aded0e9a6ae42743e822efc73fa0ae9",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Хөлдүү ногоо /Ногоон вандуй/ 450гр | amtatmall",
+          "Хөлдүү ногоо /Ногоон вандуй/ 450гр",
+          "Хөлдүү ногоо /Ногоон вандуй/ 450гр"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Frozen product named Хөлдүү or Хөлдөөсөн by the retail source; keep in a freezer.",
+      "note": "One sealed bag of greenpeas;450g printed lower-left. Photo brand World of Taste; importer page places it underIglotex. Crop excludes caption below packet.",
+      "render_crop": {
+        "x": 0.02,
+        "y": 0.02,
+        "width": 0.94,
+        "height": 0.91
+      }
+    },
+    {
+      "id": "semolina",
+      "name": "Хүүхдийн будаа",
+      "source_page": "https://erp.afta.mn/shop/55010026-700-1144-103644?page=6&category=173&order=list_price+desc",
+      "image_url": "https://erp.afta.mn/web/image/product.product/94025/image_1024/%5B55010026%5D%20%D0%AF%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%20%D0%A5%D2%AF%D2%AF%D1%85%D0%B4%D0%B8%D0%B9%D0%BD%20%D0%BA%D0%B0%D1%88%20700%D0%B3%D1%80%20-%20%D0%BC%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20-1144",
+      "original_image_url": "https://erp.afta.mn/web/image/product.product/94025/image_1024/%5B55010026%5D%20%D0%AF%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%BE%20%D0%A5%D2%AF%D2%AF%D1%85%D0%B4%D0%B8%D0%B9%D0%BD%20%D0%BA%D0%B0%D1%88%20700%D0%B3%D1%80%20-%20%D0%BC%D0%B0%D0%BD%D0%BD%D0%B0%D1%8F%20-1144",
+      "path": "assets/products/semolina.jpg",
+      "actual_pack": {
+        "amount": 700,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        512,
+        512
+      ],
+      "bytes": 47177,
+      "sha256": "c22b7f355e7e925ce37d779c29fa59ca5fe28cb89d3fbbe2e8b00755bd753a6a",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "Ярмарко Хүүхдийн каш 700гр / манная /1144 | Афта",
+          "Ярмарко Хүүхдийн каш 700гр / манная /1144",
+          "Ярмарко Эрдэнэшиш будаа 700гр  /кукурузная крупа /0369",
+          "Ярмарко Хүүхдийн каш 700гр / манная /1144"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed MANHАЯКРУПА bag, visibly700г. The Mongolian store uses Хүүхдийнкаш but the actual product is plain semolina, not milk-based babyformula.",
+      "render_crop": {
+        "x": 0.33,
+        "y": 0.2,
+        "width": 0.34,
+        "height": 0.6
+      }
+    },
+    {
+      "id": "split-peas",
+      "name": "Хуваасан вандуй",
+      "source_page": "https://goodpricemarket.mn/en/product/gudvill-vandui-gorokh-khuvaasan-800gr-4607120230957",
+      "image_url": "https://cdnp.cody.mn/spree/images/1958963/large/open-uri20231009-43867-fueqp8.",
+      "original_image_url": "https://cdnp.cody.mn/spree/images/1958963/large/open-uri20231009-43867-fueqp8.",
+      "path": "assets/products/split-peas.jpg",
+      "actual_pack": {
+        "amount": 800,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        647,
+        647
+      ],
+      "bytes": 39129,
+      "sha256": "cced0bf37c3f33c8762f0afa207b8fce5a7bed075118e05a85a75ee2a9034f83",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": {
+        "page": [
+          "ГУДВИЛЛ ВАНДУЙ ХУВААСАН 800ГР",
+          "ГУДВИЛЛ ВАНДУЙ ХУВААСАН 800ГР",
+          "ГУДВИЛЛ ВАНДУЙ ХУВААСАН 800ГР",
+          "ГУДВИЛЛ ВАНДУЙ ХУВААСАН 800ГР"
+        ],
+        "photo_mass_readable": true
+      },
+      "storage_evidence": "Sealed shelf-stable retail food; ambient category classification. No specific expiry date invented.",
+      "note": "One sealed ГОРОХ КОЛОТЫЙ bag.800г printed clearly on front. Source includes a translucent GOODPRICEMARKET watermark.",
+      "render_crop": {
+        "x": 0.28,
+        "y": 0.125,
+        "width": 0.43,
+        "height": 0.74
+      }
+    },
+    {
+      "id": "cream",
+      "name": "Сүүн крем",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/af/5e74e118d060782c6f325b34a7116ff463e7d6b8__preview.jpeg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/af/5e74e118d060782c6f325b34a7116ff463e7d6b8__preview.jpeg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/cream.webp",
+      "actual_pack": {
+        "amount": 480,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 36858,
+      "sha256": "80fdc96ead958237df13eb8f2ad69c8429c5282709279daff623991c193ff013",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "The actual source photo is aДомик в деревне20% сливки carton. It confirms cream rather than sour cream. Source catalog states480g; omit the conflicting8.2% from its description.",
+      "render_crop": {
+        "x": 0.23625,
+        "y": 0.00625,
+        "width": 0.515,
+        "height": 0.99
+      }
+    },
+    {
+      "id": "fresh-curds",
+      "name": "Ээдэм",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/b9/eedem-chihergui__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/b9/eedem-chihergui__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/fresh-curds.webp",
+      "actual_pack": {
+        "amount": 100,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 17080,
+      "sha256": "679b9e860d7c65ecd6d789a1989d07930be1f75419990ecb5b015ddc8d521f0d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.2025,
+        "y": 0.13875,
+        "width": 0.595,
+        "height": 0.7875
+      }
+    },
+    {
+      "id": "urum",
+      "name": "Өрөм",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/ba/өрөм__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/ba/өрөм__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/urum.webp",
+      "actual_pack": {
+        "amount": 300,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        740
+      ],
+      "bytes": 51008,
+      "sha256": "e7cf0bf8a5ed869fbdd0366fb802be5b5a91075aa04d01f97a3a07d1a3c1209e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "margarine",
+      "name": "Маргарин",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/d3/караваи-масло-1кг__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/d3/караваи-масло-1кг__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/margarine.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 19534,
+      "sha256": "7c7ff0366ebc64a06be2299d3fb16a7c5bad7c4a3e0b57b0abd90aa7ad2ad112",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.09625,
+        "y": 0.25125,
+        "width": 0.81625,
+        "height": 0.49625
+      }
+    },
+    {
+      "id": "cream-cheese",
+      "name": "Крем бяслаг",
+      "source_page": "https://nomin.mn/p/1223224",
+      "image_url": "https://assets.nomin.mn/preview/a7/tmp5704025018457__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/a7/tmp5704025018457__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/cream-cheese.webp",
+      "actual_pack": {
+        "amount": 200,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 65576,
+      "sha256": "ccbe17f205e7c2a12e36204ce2fc81b0b4bdd3408a8a3ca7c69573690fce36fb",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.0025,
+        "y": 0.13125,
+        "width": 0.9975,
+        "height": 0.73
+      }
+    },
+    {
+      "id": "processed-cheese",
+      "name": "Хайлмал бяслаг",
+      "source_page": "https://nomin.mn/p/1123983",
+      "image_url": "https://assets.nomin.mn/preview/ac/huudsan_viola__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/ac/huudsan_viola__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/processed-cheese.webp",
+      "actual_pack": {
+        "amount": 150,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        653
+      ],
+      "bytes": 39040,
+      "sha256": "ebe2d0560fba2e7b49cbc1976444216e3be61d065eba7ae98e31dfcb34e0cb57",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Nomin product page confirms processed cheese, sliced, 8 slices, total150g. Game uses weight150g, not slices8.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "feta",
+      "name": "Фета бяслаг",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/fd/viber_image_2025-09-18_10-58-04-058__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/fd/viber_image_2025-09-18_10-58-04-058__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/feta.webp",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        788
+      ],
+      "bytes": 107516,
+      "sha256": "48fc4ddb1bd06623724d8940c6b02dd3d2076c9530dbcb1221e908e3ca44a4d9",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.04375,
+        "y": 0.04315,
+        "width": 0.94625,
+        "height": 0.86929
+      }
+    },
+    {
+      "id": "quail-eggs",
+      "name": "Бөднө шувууны өндөг",
+      "source_page": "https://nomin.mn/p/1152171",
+      "image_url": "https://assets.nomin.mn/preview/b7/1152171__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/b7/1152171__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/quail-eggs.webp",
+      "actual_pack": {
+        "amount": 30,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 30332,
+      "sha256": "8398b252a3180c2c4f79435a9099b4688d917a092e43de9ee43de724f33aed8d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Nominproductpageinstructsfridgestorage.",
+      "note": "Actual source shows thirty quail eggs in a clear protective retail tray, matching the declared30-piece SKU.",
+      "render_crop": {
+        "x": 0.1025,
+        "y": 0.305,
+        "width": 0.8,
+        "height": 0.4125
+      }
+    },
+    {
+      "id": "sausages",
+      "name": "Зайдас",
+      "source_page": "https://nomin.mn/p/1133145",
+      "image_url": "https://assets.nomin.mn/preview/e3/1133145__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/e3/1133145__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/sausages.webp",
+      "actual_pack": {
+        "amount": 415,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        576
+      ],
+      "bytes": 27382,
+      "sha256": "fd658d5f9beeaf235762dd1ecd0e0137fe48592344facb23a8d5b29532005ce2",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Nominproductpageexplicit0–4°C.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.04875,
+        "y": 0.07292,
+        "width": 0.9,
+        "height": 0.75
+      }
+    },
+    {
+      "id": "boiled-sausage",
+      "name": "Чанамал хиам",
+      "source_page": "https://nomin.mn/p/1170931",
+      "image_url": "https://assets.nomin.mn/preview/4b/tmpbb8c84f8-57d1-42cf-bfc0-5ad0ca145230__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/4b/tmpbb8c84f8-57d1-42cf-bfc0-5ad0ca145230__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/boiled-sausage.webp",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 23956,
+      "sha256": "e8ce6a97eb04f4712d8805bb67c8146490b06a18e137b4dbe24703dff2716651",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Nominproductpageexplicit0–4°C.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "meat-aspic",
+      "name": "Царцаамаг",
+      "source_page": "https://nomin.mn/p/1180590",
+      "image_url": "https://assets.nomin.mn/preview/81/tmpaa76508d-f4ce-4745-b5b5-7cb8afb06da7__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/81/tmpaa76508d-f4ce-4745-b5b5-7cb8afb06da7__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/meat-aspic.webp",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 19234,
+      "sha256": "f9971b975aabe1fc4143a784cd7ce55dd7d3ce705f39c7fe755af5dddb4d5853",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.32875,
+        "y": 0.11,
+        "width": 0.34625,
+        "height": 0.775
+      }
+    },
+    {
+      "id": "bacon",
+      "name": "Гахайн утсан алаг мах",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/c7/0.035558001651043056__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/c7/0.035558001651043056__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/bacon.webp",
+      "actual_pack": {
+        "amount": 200,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 62158,
+      "sha256": "10973ef0ab9008084e74851c64bc4e8d32a1a5162f2bdb8bc3376aa78f277df0",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "The original contains two200g packets. Render only the top packet using the supplied crop. Both labels clearly say200гр; the crop excludes the second meat packet.",
+      "render_crop": {
+        "x": 0.12,
+        "y": 0.0475,
+        "width": 0.765,
+        "height": 0.35375
+      }
+    },
+    {
+      "id": "salted-herring",
+      "name": "Давсалсан май загас",
+      "source_page": "https://nomin.mn/p/1138028",
+      "image_url": "https://assets.nomin.mn/preview/73/1138028__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/73/1138028__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/salted-herring.webp",
+      "actual_pack": {
+        "amount": 250,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        803
+      ],
+      "bytes": 23010,
+      "sha256": "308db5757d1a8fb0f9821a8a74267aaf31c6328055b4ecf90a6a556c6c28c5c9",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.2375,
+        "y": 0.07721,
+        "width": 0.525,
+        "height": 0.85679
+      }
+    },
+    {
+      "id": "salmon-roe",
+      "name": "Улаан түрс",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/df/1247813__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/df/1247813__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/salmon-roe.webp",
+      "actual_pack": {
+        "amount": 90,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 21892,
+      "sha256": "0d9f220d3f4c66930d2dcd518a956d4ddc37a53430df66acc95f0c57e65118f7",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.17125,
+        "y": 0.23625,
+        "width": 0.6775,
+        "height": 0.55875
+      }
+    },
+    {
+      "id": "boortsog",
+      "name": "Боорцог",
+      "source_page": "https://nomin.mn/p/1141545",
+      "image_url": "https://assets.nomin.mn/preview/34/1141545_1_1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/34/1141545_1_1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/boortsog.webp",
+      "actual_pack": {
+        "amount": 750,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 19588,
+      "sha256": "cd2f798356af47ef8ca3be77fa95699febd29913324d9a0e552e86114424ee04",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Full800px photo label inspected:750г±1%, matching the primary product description. The earlier800g suspicion from the small contact sheet was incorrect; keep this750g source.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "garlic-baguette",
+      "name": "Сармистай багет талх",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/9e/tmp3d1613d8-20cb-48fa-99d4-36cbee39c802__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/9e/tmp3d1613d8-20cb-48fa-99d4-36cbee39c802__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/garlic-baguette.webp",
+      "actual_pack": {
+        "amount": 250,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 12696,
+      "sha256": "eb6b12e072f3cfefb558b3e13e385e56d0eb4b20264cc4d00601107426c51fc3",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.41375,
+        "y": 0.10625,
+        "width": 0.17125,
+        "height": 0.78625
+      }
+    },
+    {
+      "id": "crispbread",
+      "name": "Хатаасан талх",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/c8/4012970011722__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/c8/4012970011722__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/crispbread.webp",
+      "actual_pack": {
+        "amount": 250,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 55734,
+      "sha256": "dec7c8bde9b4c2df27520a552ae9ab70158518241ae78f6f5ce5b680dee6a536",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog name/description; integer grams, millilitres or piece count exactly as stated.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "The actual source isBurger Das Landknäcke Mit Milch crispbread,250g; correct хлебцы, not a loaf of sliced bread.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0975,
+        "width": 1.0,
+        "height": 0.8825
+      }
+    },
+    {
+      "id": "burger-buns",
+      "name": "Гамбургерын талх",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/ff/tmpfac5e4c1-457b-4b89-b88d-0ff458e85afd__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/ff/tmpfac5e4c1-457b-4b89-b88d-0ff458e85afd__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/burger-buns.webp",
+      "actual_pack": {
+        "amount": 4,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 26332,
+      "sha256": "52f28d8255690098e0d71e2e334fb8735054189368f6658f2cd3931b6f7ff3b8",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Nomin public catalog states4pieces. The package photo explicitly shows×4 and total mass260±8g. Game measure ispieces,pack4.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Inspected full-size original: one real sealed Khaan burger-bun retail bag. The label clearly shows×4 and260±8гр. Product type and quantity match the public catalog.",
+      "render_crop": {
+        "x": 0.2125,
+        "y": 0.105,
+        "width": 0.58,
+        "height": 0.79375
+      }
+    },
+    {
+      "id": "cream-pastry",
+      "name": "Цөцгийтэй хөмөл боов",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/de/1121753__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/de/1121753__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/cream-pastry.webp",
+      "actual_pack": {
+        "amount": 600,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 39708,
+      "sha256": "6bbf1920c84c6e879962470f20a257ba7bb8f14cf99399293c573fba683f6528",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Both Nomin public catalog and actual lower-left package label state600гр; package type isЦөцгийт Хөмөл боов, not soft булочка.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.0975,
+        "y": 0.03875,
+        "width": 0.84,
+        "height": 0.86375
+      }
+    },
+    {
+      "id": "yeeven",
+      "name": "Үзэмтэй еэвэн",
+      "source_page": "https://nomin.mn/p/1141657",
+      "image_url": "https://assets.nomin.mn/preview/44/1141657__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/44/1141657__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/yeeven.webp",
+      "actual_pack": {
+        "amount": 1,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 35324,
+      "sha256": "1dc4cc61895850a60c8993b95cccf1ffb4106c97df753e1fb1d0893ae1a5213b",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "CatalogtitleӨгөөжЕэвэн(Үзэмтэйшанзтай,том); description1ширхэг. Usepieces1, no invented gram weight.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "The source is a product pack plus two serving-example pastries. Select only the complete front-left singleеэвэн using the supplied polygon and crop; this representspieces1 without duplicating pastries.",
+      "render_crop": {
+        "x": 0.05,
+        "y": 0.555,
+        "width": 0.41875,
+        "height": 0.37125
+      },
+      "render_polygon": [
+        [
+          0.24375,
+          0.575
+        ],
+        [
+          0.29,
+          0.5675
+        ],
+        [
+          0.3475,
+          0.5775
+        ],
+        [
+          0.38,
+          0.6
+        ],
+        [
+          0.40125,
+          0.625
+        ],
+        [
+          0.4125,
+          0.6475
+        ],
+        [
+          0.4375,
+          0.67
+        ],
+        [
+          0.4575,
+          0.6975
+        ],
+        [
+          0.46,
+          0.7175
+        ],
+        [
+          0.44625,
+          0.73625
+        ],
+        [
+          0.43625,
+          0.7575
+        ],
+        [
+          0.42,
+          0.78
+        ],
+        [
+          0.39875,
+          0.80625
+        ],
+        [
+          0.375,
+          0.83
+        ],
+        [
+          0.34875,
+          0.85625
+        ],
+        [
+          0.32,
+          0.87625
+        ],
+        [
+          0.29,
+          0.895
+        ],
+        [
+          0.25875,
+          0.90625
+        ],
+        [
+          0.225,
+          0.91125
+        ],
+        [
+          0.1875,
+          0.90375
+        ],
+        [
+          0.1525,
+          0.8925
+        ],
+        [
+          0.11875,
+          0.87625
+        ],
+        [
+          0.09625,
+          0.855
+        ],
+        [
+          0.08125,
+          0.82625
+        ],
+        [
+          0.07125,
+          0.79875
+        ],
+        [
+          0.06625,
+          0.7575
+        ],
+        [
+          0.0625,
+          0.7275
+        ],
+        [
+          0.06875,
+          0.6975
+        ],
+        [
+          0.08625,
+          0.675
+        ],
+        [
+          0.1125,
+          0.65
+        ],
+        [
+          0.145,
+          0.62125
+        ],
+        [
+          0.18875,
+          0.59625
+        ]
+      ]
+    },
+    {
+      "id": "ciabatta",
+      "name": "Чиабатта талх",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/98/7928313629073335177_800_x_800-removebg-preview__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/98/7928313629073335177_800_x_800-removebg-preview__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/ciabatta.webp",
+      "actual_pack": {
+        "amount": 6,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 78238,
+      "sha256": "915ceec780291715aa2f60ce4d6a89bcd3c4639079f1bb044cd21748be5c956f",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "CatalogtitleЧиабаттахолимог390гр(6ширхэг); pieces6, total390g. Fixedfactorypack, not loose.",
+      "storage_evidence": "Game storage placement inferred from product type; not a verified shelf-life or label instruction unless overridden below.",
+      "note": "The actual plastic bread bag clearly shows×6 and390г, matching the six-piece390g public catalog SKU.",
+      "render_crop": {
+        "x": 0.10625,
+        "y": 0.0,
+        "width": 0.81125,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "mozzarella",
+      "name": "Моцарелла бяслаг",
+      "source_page": "https://nomin.mn/p/1123790",
+      "image_url": "https://assets.nomin.mn/preview/d1/arla-arlamozzarellablock200g-5760466735940-1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "original_image_url": "https://assets.nomin.mn/preview/d1/arla-arlamozzarellablock200g-5760466735940-1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "path": "assets/products/mozzarella.webp",
+      "actual_pack": {
+        "amount": 200,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 60932,
+      "sha256": "631d427eb267970b199724766c68a4ae226efd113c5884a2657b8212dc9c8235",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "NominproductpageЦэвэржин200гр.",
+      "storage_evidence": "NominproductpageХөргөгчиндхадгалах.",
+      "note": "Original photo inspected at full size or on the contact sheet; product type matches catalog. No source bytes edited.",
+      "render_crop": {
+        "x": 0.06875,
+        "y": 0.00875,
+        "width": 0.8925,
+        "height": 0.9775
+      }
+    },
+    {
+      "id": "ghee",
+      "name": "Шар тос",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/71/image__05__preview.avif?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/71/image__05__preview.avif?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/ghee.webp",
+      "actual_pack": {
+        "amount": 150,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        797
+      ],
+      "bytes": 28062,
+      "sha256": "d374e99427478e785adfea1d6dbd41cf90ef8648e6d5b10cfbfba90c0afb5a10",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Primary Nomin public_catalog title/description confirms this exact pack size.",
+      "storage_evidence": "Chilled game placement inferred from product type; the public catalog does not state a storage temperature.",
+      "note": "Inspected full-size original: one real transparent jar labeledОрганик Шар тос.150g is stated in the primary Nomin public catalog; the tiny printed weight on the photograph is blurred and not confidently legible. The old200g/280g infographic is excluded.",
+      "render_crop": {
+        "x": 0.14875,
+        "y": 0.05019,
+        "width": 0.69125,
+        "height": 0.91593
+      }
+    },
+    {
+      "id": "aarts",
+      "name": "Аарц",
+      "source_page": "https://nomin.mn/p/4000150",
+      "image_url": "https://assets.nomin.mn/preview/b8/screenshot_2022-03-17_174605__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "original_image_url": "https://assets.nomin.mn/preview/b8/screenshot_2022-03-17_174605__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "path": "assets/products/aarts.webp",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        952
+      ],
+      "bytes": 88766,
+      "sha256": "85864dd0b056d507dafb10fc3c05d6271536fe7dafccde759daf4ada9bebe1ff",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "NominproductpageЦэвэржин500гр; Гялгаруут; unsweetenedwithbutter.",
+      "storage_evidence": "Package photograph says–15°C for3months; Nomin product page says–10to–15°C for3months.",
+      "note": "Original full-size photo is a clean blue-and-whiteСүү package, not a browser screenshot.500г clearly visible; correct аарц product. The label shows frozen storage–15°C.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.01996,
+        "width": 1.0,
+        "height": 0.98004
+      }
+    },
+    {
+      "id": "chicken-breast",
+      "name": "Тахианы цээж мах",
+      "source_page": "https://buudai-tuv.mn/products/607580",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/1871/product/new_263c85c5ce2ad155c8ba69a7f2a8ec78048c8950.png",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/1871/product/new_263c85c5ce2ad155c8ba69a7f2a8ec78048c8950.png",
+      "path": "assets/products/chicken-breast.webp",
+      "actual_pack": {
+        "amount": 2000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        1024,
+        1024
+      ],
+      "bytes": 445380,
+      "sha256": "830fac52d303bb31591ce20ed68c2c1449c904e174b190402248c745276bd706",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "RetailerpubliccategorySKU103-063statesindividual2kgpack;6packsinwholesalebox. DoNOTuse12kgforindividualgamepack.",
+      "storage_evidence": "FrozenplacementinferredfromimportedErlianpoultrypack; temperature notgivenonsource.",
+      "note": "The source is a clean photograph of a raw chicken breast fillet, not a wrapped factory pack. The retailer catalog explicitly states2kg per pack,6packs/box; do not infer that one physical fillet weighs2kg.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.31055,
+        "width": 1.0,
+        "height": 0.68945
+      }
+    },
+    {
+      "id": "chicken-wings",
+      "name": "Тахианы далавч",
+      "source_page": "https://buudai-tuv.mn/products/590336",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/1871/product/new_b1f6548cffa5d76e42139a9e3720898471a2bead.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/1871/product/new_b1f6548cffa5d76e42139a9e3720898471a2bead.jpg",
+      "path": "assets/products/chicken-wings.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "bytes": 750008,
+      "sha256": "545ec93db5966cec7558f31cbef70df874cb757daf0ff6b8618852b0f4a71dd9",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "Both retailer catalog and original bag label confirm1kg.",
+      "storage_evidence": "Original package label explicitly:Stored Below–18°C.",
+      "note": "Full1920px photograph inspected. The sealed bag contains chicken mid-joint wings. The printed English label explicitly saysNet Weight1kgs, frozen chicken products, stored below–18°C, destinationMongolia.",
+      "render_crop": {
+        "x": 0.21302,
+        "y": 0.1151,
+        "width": 0.55417,
+        "height": 0.73229
+      }
+    },
+    {
+      "id": "aaruul",
+      "name": "Ааруул",
+      "source_page": "https://nomin.mn/p/4000125",
+      "image_url": "https://assets.nomin.mn/preview/1b/untitled-1_0053_8658000656417__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "original_image_url": "https://assets.nomin.mn/preview/1b/untitled-1_0053_8658000656417__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/800x=",
+      "path": "assets/products/aaruul.webp",
+      "actual_pack": {
+        "amount": 450,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 40364,
+      "sha256": "021f2785c740810128d90ff764435fc8829fade4f2d4060093b8c9e76e138745",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "NominproductpageЦэвэржин450гр, yakmilk,sweet, shaped; handledplasticbag.",
+      "storage_evidence": "Chilledplacementconservativegamechoice; samebrandааруул4000124sourceexplicit0–4°C; thisspecific450gpageomitsstorage.",
+      "note": "Inspected full-size source: one real sealed green handledХөвчийн Гэгээ plastic bag of shaped traditionalааруул. Product type matches Nomin450g listing. It is distinct from existing dried-curd29g instantаарц powder.",
+      "render_crop": {
+        "x": 0.18875,
+        "y": 0.0725,
+        "width": 0.61875,
+        "height": 0.8375
+      }
+    },
+    {
+      "id": "garlic",
+      "name": "Сармис",
+      "source_page": "https://amtatmall.mn/product/188722",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_6cd3588e020978a835500b9cc63cbe07d238262b.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_6cd3588e020978a835500b9cc63cbe07d238262b.jpg",
+      "path": "assets/products/garlic.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 28053,
+      "sha256": "efeb5d7e84de32761fa092497f55636df32e9cdafdedd71ef86a835083dfbac2",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.065,
+        "y": 0.136667,
+        "width": 0.895,
+        "height": 0.786667
+      }
+    },
+    {
+      "id": "beetroot",
+      "name": "Хүрэн манжин",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/18/15317-removebg-preview__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/18/15317-removebg-preview__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/beetroot.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        267
+      ],
+      "bytes": 30274,
+      "sha256": "e5aa1e65d1fe9ab01d97795fb4f734498e85d56f316fa55ff6a1665523503d5c",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "bell-pepper",
+      "name": "Ногоон амтат чинжүү",
+      "source_page": "https://amtatmall.mn/product/177072",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_afa28c79cc13d1d030df90b1a989c513496c3263.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_afa28c79cc13d1d030df90b1a989c513496c3263.jpg",
+      "path": "assets/products/bell-pepper.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        693,
+        350
+      ],
+      "bytes": 24090,
+      "sha256": "cf34c86a73872cfd6f69781fa3b1c861e6c12205cc10507574e9c689e8757483",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.070707,
+        "y": 0.0,
+        "width": 0.864358,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "lettuce",
+      "name": "Салатны навч",
+      "source_page": "https://amtatmall.mn/product/188717",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_5d4b2793b36a49386351d5e2d08e3c261f63125d.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_5d4b2793b36a49386351d5e2d08e3c261f63125d.jpg",
+      "path": "assets/products/lettuce.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 62417,
+      "sha256": "d3f1a4f03c5fa02fa0cd2d872e1db0aeeae8d161ee19395d186db81a828c0327",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "broccoli",
+      "name": "Брокколи",
+      "source_page": "https://amtatmall.mn/product/176991",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_daa2089740b9738a465e8042b0e4c10d2a30f731.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_daa2089740b9738a465e8042b0e4c10d2a30f731.jpg",
+      "path": "assets/products/broccoli.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        550,
+        550
+      ],
+      "bytes": 39508,
+      "sha256": "69d35dbea8c2d121a6ba774e90f3175bb464a28224b424811552dec4b355787f",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.081818,
+        "y": 0.198182,
+        "width": 0.84,
+        "height": 0.587273
+      }
+    },
+    {
+      "id": "cauliflower",
+      "name": "Цэцэгт байцаа",
+      "source_page": "https://amtatmall.mn/product/188621",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_6e1c85e064641e816d2267402ce41517e72db940.png",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_6e1c85e064641e816d2267402ce41517e72db940.png",
+      "path": "assets/products/cauliflower.png",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        500,
+        444
+      ],
+      "bytes": 226839,
+      "sha256": "a8d4a552016b1e848659779550981335f884fcd624393d04a1b92439e30c6a4e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.086,
+        "y": 0.117117,
+        "width": 0.914,
+        "height": 0.882883
+      }
+    },
+    {
+      "id": "zucchini",
+      "name": "Ногоон хулуу",
+      "source_page": "https://amtatmall.mn/product/177095",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_f38eb693933705c9edd8f0f5d135ef58f6bfa577.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_f38eb693933705c9edd8f0f5d135ef58f6bfa577.jpg",
+      "path": "assets/products/zucchini.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        500,
+        333
+      ],
+      "bytes": 28395,
+      "sha256": "acb9bf6a2b7c5c22c6d27654e19b064527316494aeb8f89b26b596fa3bfd11c9",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.034,
+        "y": 0.0,
+        "width": 0.932,
+        "height": 1.0
+      },
+      "render_polygon": [
+        [
+          0.054,
+          0.435435
+        ],
+        [
+          0.18,
+          0.459459
+        ],
+        [
+          0.326,
+          0.474474
+        ],
+        [
+          0.32,
+          0.384384
+        ],
+        [
+          0.338,
+          0.315315
+        ],
+        [
+          0.4,
+          0.261261
+        ],
+        [
+          0.474,
+          0.267267
+        ],
+        [
+          0.57,
+          0.315315
+        ],
+        [
+          0.742,
+          0.411411
+        ],
+        [
+          0.926,
+          0.522523
+        ],
+        [
+          0.952,
+          0.552553
+        ],
+        [
+          0.952,
+          0.678679
+        ],
+        [
+          0.93,
+          0.726727
+        ],
+        [
+          0.85,
+          0.738739
+        ],
+        [
+          0.712,
+          0.708709
+        ],
+        [
+          0.612,
+          0.66967
+        ],
+        [
+          0.626,
+          0.735736
+        ],
+        [
+          0.616,
+          0.801802
+        ],
+        [
+          0.586,
+          0.837838
+        ],
+        [
+          0.518,
+          0.861862
+        ],
+        [
+          0.442,
+          0.858859
+        ],
+        [
+          0.348,
+          0.825826
+        ],
+        [
+          0.188,
+          0.735736
+        ],
+        [
+          0.056,
+          0.654655
+        ],
+        [
+          0.054,
+          0.582583
+        ]
+      ]
+    },
+    {
+      "id": "mushroom",
+      "name": "Бор мөөг",
+      "source_page": "https://amtatmall.mn/product/188638",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_1b92e8a6eb4d0d6783e6b6d4cae2f109a8cbdde4.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_1b92e8a6eb4d0d6783e6b6d4cae2f109a8cbdde4.jpg",
+      "path": "assets/products/mushroom.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 42083,
+      "sha256": "0e66f32f582bec214175b11a83327438b814e4a3ce4f3c0baa30f74a11772e7b",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.056667,
+        "width": 1.0,
+        "height": 0.85
+      }
+    },
+    {
+      "id": "ginger",
+      "name": "Цагаан гаа",
+      "source_page": "https://amtatmall.mn/product/188744",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_e3f4fddf271b3597283eec28bf4561176a77f7d4.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_e3f4fddf271b3597283eec28bf4561176a77f7d4.jpg",
+      "path": "assets/products/ginger.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 42279,
+      "sha256": "66b0d898e9bbca8227695d28e019df30e963229acabb699d065c3e08f569f059",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.013333,
+        "width": 1.0,
+        "height": 0.986667
+      }
+    },
+    {
+      "id": "pumpkin",
+      "name": "Шар хулуу",
+      "source_page": "https://amtatmall.mn/product/188742",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_fe205c6bee4729eaa74e88d1abdedebb03f1b4c3.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_fe205c6bee4729eaa74e88d1abdedebb03f1b4c3.jpg",
+      "path": "assets/products/pumpkin.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 34047,
+      "sha256": "554f76392aeab2d7a00f06d8e2001108a17ddb38a5fc1fb805a9d75e33b022d7",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0025,
+        "y": 0.103333,
+        "width": 0.9925,
+        "height": 0.776667
+      }
+    },
+    {
+      "id": "spring-onion",
+      "name": "Ногоон сонгино",
+      "source_page": "https://amtatmall.mn/product/188733",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_f38571d07c177cb5d593eb90864e62d9c04248eb.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_f38571d07c177cb5d593eb90864e62d9c04248eb.jpg",
+      "path": "assets/products/spring-onion.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        400,
+        300
+      ],
+      "bytes": 23987,
+      "sha256": "1cd9826768125993fdfc14c564acb78895779e8865bcbf79a1f5d37a239bd2d2",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.163333,
+        "width": 1.0,
+        "height": 0.74
+      }
+    },
+    {
+      "id": "parsley",
+      "name": "Яншуй",
+      "source_page": "https://amtatmall.mn/product/188753",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_2b9c770a3a7c557aff857109c706b8ecada4d9e3.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_2b9c770a3a7c557aff857109c706b8ecada4d9e3.jpg",
+      "path": "assets/products/parsley.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        800,
+        600
+      ],
+      "bytes": 103551,
+      "sha256": "0ef348048882d77103a0cdae15ae8aaf78e35b6400df99a7d38675dc94dc0778",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.13875,
+        "y": 0.16,
+        "width": 0.72625,
+        "height": 0.67
+      }
+    },
+    {
+      "id": "lemon",
+      "name": "Нимбэг",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/18/c105517__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/18/c105517__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/lemon.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 4644,
+      "sha256": "30f53c6fe1fbf7608858acf26cfd52423f50b09ad76495910b42dc962fcf7494",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.15,
+        "y": 0.3025,
+        "width": 0.6875,
+        "height": 0.4325
+      }
+    },
+    {
+      "id": "mandarin",
+      "name": "Мандарин",
+      "source_page": "https://amtatmall.mn/product/61357",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_d0b1676274bf8b1685252001e45fa09a0c99357e.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_d0b1676274bf8b1685252001e45fa09a0c99357e.jpg",
+      "path": "assets/products/mandarin.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        587,
+        524
+      ],
+      "bytes": 33145,
+      "sha256": "26878548a0f27125b0023659b20794f8c6c6adc948e0ad280feb9339f338f6a0",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.076661,
+        "y": 0.131679,
+        "width": 0.892675,
+        "height": 0.803435
+      }
+    },
+    {
+      "id": "pear",
+      "name": "Лийр",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/a4/image_1024-2__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/a4/image_1024-2__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/pear.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 5100,
+      "sha256": "65745fbcea2382af120053e97e74275b1a241bc5dc7c4e5819e26d7294d50c96",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.115,
+        "y": 0.22,
+        "width": 0.7925,
+        "height": 0.61
+      }
+    },
+    {
+      "id": "grape",
+      "name": "Усан үзэм",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/e9/c107464__preview.jfif.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/e9/c107464__preview.jfif.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/grape.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 8666,
+      "sha256": "280a5d7c48dd53b3544fd784258c77d959b8c041d3a5ca5704b4cf974996792a",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.1225,
+        "y": 0.2275,
+        "width": 0.7675,
+        "height": 0.575
+      }
+    },
+    {
+      "id": "kiwi",
+      "name": "Киви",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/15/1200px-kiwi__actinidia_chinensis__1_luc_viatour_edit__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/15/1200px-kiwi__actinidia_chinensis__1_luc_viatour_edit__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/kiwi.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        273
+      ],
+      "bytes": 13836,
+      "sha256": "065d5503c8b92e8f9b4e414718e9dc14a0ded4d541e1ed0b94346dc1e8908a3b",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.04,
+        "y": 0.03663,
+        "width": 0.96,
+        "height": 0.96337
+      }
+    },
+    {
+      "id": "peach",
+      "name": "Тоор",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/50/image_1024-2__preview.jfif.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/50/image_1024-2__preview.jfif.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/peach.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 5654,
+      "sha256": "03937e68dbd875f08c6a167aebc57b5af4dddd15e021ac11382bbd7c725cf060",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.105,
+        "y": 0.225,
+        "width": 0.7475,
+        "height": 0.595
+      }
+    },
+    {
+      "id": "pineapple",
+      "name": "Ханборгоцой",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/11/content_53a3115dbb92c_image__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/11/content_53a3115dbb92c_image__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/pineapple.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        268
+      ],
+      "bytes": 12700,
+      "sha256": "20e3322f6479a2309c01239ff96883b903d73f058fcbcc8edd3163dec9b13a63",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.055,
+        "y": 0.0,
+        "width": 0.885,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "mango",
+      "name": "Манго",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/95/c104756__preview.webp?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/95/c104756__preview.webp?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/mango.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 28252,
+      "sha256": "faeeedc7fea5cca5ac5397954608526b9c7742eed95eaa13c9d07b0ca4ab1f7e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.1325,
+        "width": 0.9925,
+        "height": 0.7425
+      }
+    },
+    {
+      "id": "avocado",
+      "name": "Авокадо",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/b2/download_3_134__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/b2/download_3_134__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/avocado.webp",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": true
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        286
+      ],
+      "bytes": 8804,
+      "sha256": "478b2b0b58ad1a7309e018e9f9204fd70b2236e3f093a44e103f478b0f12c1b1",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0225,
+        "y": 0.038462,
+        "width": 0.935,
+        "height": 0.961538
+      }
+    },
+    {
+      "id": "strawberry",
+      "name": "Гүзээлзгэнэ",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/19/c103800__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/19/c103800__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/strawberry.webp",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        308
+      ],
+      "bytes": 15460,
+      "sha256": "a1e57b903d571be6146794c1f548169c9feb8bb929ff8f426935c22bab502f96",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected. Retailer photograph shows bare fruit. Game adds a neutral clear punnet; package mass comes from the retailer card.",
+      "render_crop": {
+        "x": 0.0975,
+        "y": 0.077922,
+        "width": 0.805,
+        "height": 0.847403
+      }
+    },
+    {
+      "id": "blueberry",
+      "name": "Нэрс",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/66/c105573__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/66/c105573__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/blueberry.webp",
+      "actual_pack": {
+        "amount": 125,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 5022,
+      "sha256": "04d8af42be13d85ccb11b6e75655e1ac7539264bf9a6727ec1e980813a0dc5e0",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected. Retailer photograph shows bare fruit. Game adds a neutral clear punnet; package mass comes from the retailer card.",
+      "render_crop": {
+        "x": 0.15,
+        "y": 0.325,
+        "width": 0.705,
+        "height": 0.335
+      }
+    },
+    {
+      "id": "peanuts",
+      "name": "Хуурсан газрын самар",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/5e/1375308__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/5e/1375308__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/peanuts.webp",
+      "actual_pack": {
+        "amount": 1130,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 30144,
+      "sha256": "4053b12be877cd85b178bb56db2dace46f341a609252f8d4ee1330c85460ea2b",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0475,
+        "width": 1.0,
+        "height": 0.9075
+      }
+    },
+    {
+      "id": "walnuts",
+      "name": "Хушга",
+      "source_page": "https://amtatmall.mn/product/622535",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_9b7c29d6f092d9f5f33ea46ef6f967c98d37287e.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_9b7c29d6f092d9f5f33ea46ef6f967c98d37287e.jpg",
+      "path": "assets/products/walnuts.jpg",
+      "actual_pack": {
+        "amount": 454,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        977,
+        1303
+      ],
+      "bytes": 461570,
+      "sha256": "d4d53a98f2e94845a83bdc0cf246c85bd36b588c96a3ddada75c15fe27955090",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.023541,
+        "y": 0.004605,
+        "width": 0.953941,
+        "height": 0.993093
+      }
+    },
+    {
+      "id": "almonds",
+      "name": "Бүйлс",
+      "source_page": "https://amtatmall.mn/product/625119",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_96c334d78554c0a1ff0f8f144cb00d5aae51fa48.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_96c334d78554c0a1ff0f8f144cb00d5aae51fa48.jpg",
+      "path": "assets/products/almonds.jpg",
+      "actual_pack": {
+        "amount": 1000,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 169283,
+      "sha256": "91a3f7092eae137f06c44df095d25321b5794b02e9d4a7638caaf473d3028c55",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.12875,
+        "y": 0.04125,
+        "width": 0.74,
+        "height": 0.92
+      }
+    },
+    {
+      "id": "raisins",
+      "name": "Хатаасан үзэм",
+      "source_page": "https://amtatmall.mn/product/622529",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_fa10eeb9265581266147e40d9bd1460f003e714d.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_fa10eeb9265581266147e40d9bd1460f003e714d.jpg",
+      "path": "assets/products/raisins.jpg",
+      "actual_pack": {
+        "amount": 454,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        977,
+        1303
+      ],
+      "bytes": 568478,
+      "sha256": "75dc70438e3a3413bac7117a22938e1538c24963748b7d60276650a93e9b64e1",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.058342,
+        "y": 0.0,
+        "width": 0.885363,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "dried-apricots",
+      "name": "Хатаасан чангаанз",
+      "source_page": "https://amtatmall.mn/product/622533",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_005884aeeb5de3077c05a638faa0364825405cb7.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_005884aeeb5de3077c05a638faa0364825405cb7.jpg",
+      "path": "assets/products/dried-apricots.jpg",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        977,
+        1303
+      ],
+      "bytes": 455193,
+      "sha256": "b47c7941e1d402f3c16d50a4d21539bc80b7289d6e3011fae3878aabe5f1497e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.050154,
+        "y": 0.0,
+        "width": 0.899693,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "potato-chips",
+      "name": "Төмсний чипс",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/bc/21684__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/bc/21684__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/potato-chips.webp",
+      "actual_pack": {
+        "amount": 140,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        559
+      ],
+      "bytes": 51822,
+      "sha256": "c65c2b82d894651aa661352e1255a6f8ecfe5cc0a7f04e6ec1f31f7611557771",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "dark-chocolate",
+      "name": "Хар шоколад",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/86/96ee0c10-886c-4591-9df5-cd177f190a1e__preview.webp?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/86/96ee0c10-886c-4591-9df5-cd177f190a1e__preview.webp?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/dark-chocolate.webp",
+      "actual_pack": {
+        "amount": 100,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        400
+      ],
+      "bytes": 20240,
+      "sha256": "b59dc3c14a3c8c4ccce703f0dd058dc02b22e60cf2d185200e50e17a0addd7bb",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.245,
+        "y": 0.0375,
+        "width": 0.51,
+        "height": 0.9225
+      }
+    },
+    {
+      "id": "chocolate-bar",
+      "name": "Самартай шоколадан батончик",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/43/image-24-1__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/43/image-24-1__preview.jpg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/chocolate-bar.webp",
+      "actual_pack": {
+        "amount": 45,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        288
+      ],
+      "bytes": 8018,
+      "sha256": "94d5f8c784bff3af5a142963a48c407d9e8d20799bcf3df26df818d911e19ca7",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "canned-coffee",
+      "name": "Лаазтай хар кофе",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/d2/1af9c70f-8b91-486d-83b2-06e4d52f0740__preview.jpeg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/d2/1af9c70f-8b91-486d-83b2-06e4d52f0740__preview.jpeg?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/canned-coffee.webp",
+      "actual_pack": {
+        "amount": 240,
+        "unit": "ml",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        1032
+      ],
+      "bytes": 18692,
+      "sha256": "09310d34dfcaea04e65587b949d0371784ef18f42a7a9f5e339461a8aa4c65e2",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "black-tea",
+      "name": "Хар цай",
+      "source_page": "https://amtatmall.mn/product/457152",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_e6dc7876f6ec55c4d1711a36e2ca629b859e217a.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_e6dc7876f6ec55c4d1711a36e2ca629b859e217a.jpg",
+      "path": "assets/products/black-tea.jpg",
+      "actual_pack": {
+        "amount": 250,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        658,
+        658
+      ],
+      "bytes": 92849,
+      "sha256": "dbc4898eb20dc1d6afe2edcd4666ae8e9ea6f01ec537c640cf9da251e5fe65c4",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.205167,
+        "y": 0.077508,
+        "width": 0.591185,
+        "height": 0.863222
+      }
+    },
+    {
+      "id": "cocoa-powder",
+      "name": "Какаоны нунтаг",
+      "source_page": "https://amtatmall.mn/product/42046",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_8537e78a48879681b7a1b868787366be211a8597.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_8537e78a48879681b7a1b868787366be211a8597.jpg",
+      "path": "assets/products/cocoa-powder.jpg",
+      "actual_pack": {
+        "amount": 50,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        351,
+        512
+      ],
+      "bytes": 39056,
+      "sha256": "d05b6b005e66cebce306ab4f96305f6768e01f4d17a5b764833cc3f51a8831bd",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.022792,
+        "y": 0.082031,
+        "width": 0.951567,
+        "height": 0.841797
+      }
+    },
+    {
+      "id": "coffee-beans",
+      "name": "Үрлэн кофе",
+      "source_page": "https://amtatmall.mn/product/417562",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_8ab8cf7854463cde99db053be1e27c7934a66fb6.jpg",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/930/product/new_8ab8cf7854463cde99db053be1e27c7934a66fb6.jpg",
+      "path": "assets/products/coffee-beans.jpg",
+      "actual_pack": {
+        "amount": 1130,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1530,
+        1855
+      ],
+      "bytes": 385924,
+      "sha256": "9f493416f1d2615b2740406a80c8963880c0aedf7dc9c80baa6ae31f691da504",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title, exact g/ml/pcs; loose produce uses kg reference",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.072776,
+        "width": 1.0,
+        "height": 0.927224
+      },
+      "render_polygon": [
+        [
+          0.2,
+          0.102
+        ],
+        [
+          0.736,
+          0.1
+        ],
+        [
+          0.78,
+          0.145
+        ],
+        [
+          0.801,
+          0.245
+        ],
+        [
+          0.802,
+          0.47
+        ],
+        [
+          0.792,
+          0.74
+        ],
+        [
+          0.79,
+          0.987
+        ],
+        [
+          0.75,
+          1
+        ],
+        [
+          0.2,
+          1
+        ],
+        [
+          0.18,
+          0.97
+        ],
+        [
+          0.16,
+          0.7
+        ],
+        [
+          0.15,
+          0.44
+        ],
+        [
+          0.15,
+          0.27
+        ],
+        [
+          0.17,
+          0.16
+        ]
+      ]
+    },
+    {
+      "id": "wet-wipes",
+      "name": "Нойтон салфетка",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/f2/8801166053679-2-1-1-1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/f2/8801166053679-2-1-1-1__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/wet-wipes.webp",
+      "actual_pack": {
+        "amount": 72,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        184
+      ],
+      "bytes": 12728,
+      "sha256": "7b48089f86f84f438ccb6bd5780f26f20436b8fc45f98a90f96416f305886c6f",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "toothpaste",
+      "name": "Шүдний оо",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/a7/screenshot-2026-03-25-163940__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/a7/screenshot-2026-03-25-163940__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/toothpaste.webp",
+      "actual_pack": {
+        "amount": 125,
+        "unit": "ml",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        120
+      ],
+      "bytes": 14108,
+      "sha256": "438ec73ae7bed5cbf9c1a0c3ae238e85e10ebc557a9059091780f474d56c8f3d",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "toothbrush",
+      "name": "Шүдний сойз",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "image_url": "https://assets.nomin.mn/preview/06/picture4__03__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "original_image_url": "https://assets.nomin.mn/preview/06/picture4__03__preview.png?imageMogr2/format/webp/interlace/0/quality/90/thumbnail/400x",
+      "path": "assets/products/toothbrush.webp",
+      "actual_pack": {
+        "amount": 1,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/webp",
+      "source_size": [
+        400,
+        1323
+      ],
+      "bytes": 63402,
+      "sha256": "4f03190c42ff81fbb2ceac13162702087575d1a406ee66992f2b1d3aacf88520",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer title/description; verify visible label separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.115,
+        "y": 0.0,
+        "width": 0.7575,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "toilet-paper",
+      "name": "Ариун цэврийн цаас",
+      "source_page": "https://nomin.mn/p/1117690",
+      "image_url": "https://assets.nomin.mn/preview/37/1117690__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/37/1117690__preview.png",
+      "path": "assets/products/toilet-paper.png",
+      "actual_pack": {
+        "amount": 10,
+        "unit": "pieces",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        750,
+        750
+      ],
+      "bytes": 194582,
+      "sha256": "ca3f3adb408dcd17046b29bbbe0ec90972d5f013f4362f532c4997ed7b0a47f5",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title and structured product specifications",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.157333,
+        "y": 0.36,
+        "width": 0.677333,
+        "height": 0.304
+      }
+    },
+    {
+      "id": "laundry-detergent",
+      "name": "Угаалгын нунтаг",
+      "source_page": "https://namuun.mn/products/469",
+      "image_url": "https://ds4f7nxi9tv17.cloudfront.net/product/%D0%B1%D1%83%D1%81%D0%B0%D0%B4-%D0%B7%D1%83%D1%80%D0%B0%D0%B3-20260303/1772471407898_10199.png",
+      "original_image_url": "https://ds4f7nxi9tv17.cloudfront.net/product/%D0%B1%D1%83%D1%81%D0%B0%D0%B4-%D0%B7%D1%83%D1%80%D0%B0%D0%B3-20260303/1772471407898_10199.png",
+      "path": "assets/products/laundry-detergent.png",
+      "actual_pack": {
+        "amount": 400,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        567,
+        778
+      ],
+      "bytes": 889175,
+      "sha256": "5957f74fb95cdc89fda5b6902767e81d58f8e92746955cefb9976b16ce91562e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer page title; visible pack must be checked separately",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.0,
+        "y": 0.0,
+        "width": 1.0,
+        "height": 1.0
+      }
+    },
+    {
+      "id": "vodka",
+      "name": "Цагаан архи",
+      "source_page": "https://nomin.mn/p/1118023",
+      "image_url": "https://assets.nomin.mn/preview/4a/arkhi_wheat-0.5_8.654.000.106.471__preview__preview.png",
+      "original_image_url": "https://assets.nomin.mn/preview/4a/arkhi_wheat-0.5_8.654.000.106.471__preview__preview.png",
+      "path": "assets/products/vodka.png",
+      "actual_pack": {
+        "amount": 500,
+        "unit": "ml",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/png",
+      "source_size": [
+        800,
+        800
+      ],
+      "bytes": 151676,
+      "sha256": "66b799135b0721ff871a9e3a5f2645dd92d47ae0fc131f95553bee8a1e703a3e",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title and structured product specifications",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.39125,
+        "y": 0.1275,
+        "width": 0.18875,
+        "height": 0.77875
+      }
+    },
+    {
+      "id": "whisky",
+      "name": "Виски",
+      "source_page": "https://www.e-afta.mn/shop/53030002-jack-daniels-whiskey-700-105910?category=1340",
+      "image_url": "https://www.e-afta.mn/web/image/product.template/105910/image_1024?unique=ebd2ac6",
+      "original_image_url": "https://www.e-afta.mn/web/image/product.template/105910/image_1024?unique=ebd2ac6",
+      "path": "assets/products/whisky.jpg",
+      "actual_pack": {
+        "amount": 700,
+        "unit": "ml",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        512,
+        512
+      ],
+      "bytes": 23064,
+      "sha256": "cbf57e2c70b6b37a48788b8c1c979f7cfda58408397c3eb755f27896c431d7ca",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "retailer product title and structured product specifications",
+      "storage_evidence": "Game placement inferred from the product type; no shelf-life duration or label storage claim is inferred.",
+      "note": "Product identity checked in contact sheet; selected detailed label/shape inspections; no product substitution detected.",
+      "render_crop": {
+        "x": 0.378906,
+        "y": 0.179688,
+        "width": 0.240234,
+        "height": 0.646484
+      }
+    },
+    {
+      "id": "stewed-beef",
+      "name": "Үхрийн жигнэсэн мах",
+      "source_page": "https://www.khatansuikh.mn/product/8286",
+      "image_url": "https://cdn.greensoft.mn/uploads/site/82/photos/module_product/20190411170239_27da8c25f68d531bf9490011effff47b.JPG",
+      "original_image_url": "https://cdn.greensoft.mn/uploads/site/82/photos/module_product/20190411170239_27da8c25f68d531bf9490011effff47b.JPG",
+      "path": "assets/products/stewed-beef.jpg",
+      "actual_pack": {
+        "amount": 430,
+        "unit": "g",
+        "sold_by_weight": false
+      },
+      "mime_type": "image/jpeg",
+      "source_size": [
+        1920,
+        977
+      ],
+      "bytes": 220496,
+      "sha256": "4dce8e84c3cc8e9ffe3f83014a233e8b5076ba32133c08fb6fb64d2e54cad29f",
+      "retrieved_at": "2026-11-11",
+      "basic_assortment": true,
+      "pack_evidence": "The430±5g net weight is explicitly in the manufacturer table; no net-weight number is readable on the visible face of the photographed can. Do not claim the weight was read from image.",
+      "storage_evidence": {
+        "temperature_c": [
+          18,
+          20
+        ],
+        "shelf_life_years": 2
+      },
+      "note": "Original photograph inspected2026-11-11: closed metal cans, red/green label Үхрийн жигнэсэн мах, HASU, cow and STEWED BEEF. Crop selects exactly the upright can at right, leaving the other two cans outside. No plate or opened product.",
+      "render_crop": {
+        "x": 0.615,
+        "y": 0.3,
+        "width": 0.375,
+        "height": 0.665
+      }
+    }
+  ],
+  "pending": [],
+  "excluded": [
+    {
+      "type": "yak/camel",
+      "reason": "No verified Mongolian retail product card with usable true photo found yet. No substitute beef image used."
+    },
+    {
+      "type": "horse-kazy",
+      "url": "https://trusttrade.mn/product/203",
+      "reason": "Title says horse kazy but downloaded label lists beef/pork. Rejected for instructional accuracy."
+    }
+  ],
+  "scope_note": "106 supplemental product types;197 total game products. Existing91-product speech pool,200 recorded orders and stable lot IDs are preserved. Broad basic Mongolian grocery range, not every brand or seasonal SKU.",
+  "research_limitations": [
+    {
+      "type": "yak",
+      "result": "No verified primary Mongolian online grocery card with usable true product photograph found in Nomin/GoodPrice/retail search. Presence in cuisine/livestock sources does not establish a particular retailSKU."
+    },
+    {
+      "type": "camel",
+      "result": "Primary ministry price page names camel meat but current values blank; secondary market reports describe limited/order-only sales. No verified packaged retailSKU/photo found, so do not substitute beef image."
+    },
+    {
+      "type": "young-lamb",
+      "result": "No distinct verified young-lamb supermarketSKU/photo found. Existing mutton retained; do not translate all хонины мах as young lamb."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "version": 2,
+  "generator": "built-in image_gen__imagegen with transparent_background=true",
+  "files": [
+    "assets/bags/produce-bag-open-v2.png",
+    "assets/bags/produce-bag-tied-v2.png"
+  ],
+  "pixelDimensions": [
+    1254,
+    1254
+  ],
+  "safeFoodRectNormalized": {
+    "left": 0.2,
+    "top": 0.43,
+    "right": 0.8,
+    "bottom": 0.93
+  },
+  "renderOpacity": {
+    "open": 0.25,
+    "tied": 0.88
+  },
+  "references": [
+    {
+      "url": "https://teraplast.com.ua/ua/p2227342057-paket-majka-prozrachnyj.html",
+      "use": "Visual comparison only: bananas fill the bottom, long front creases, transparent taut film around fruit. No source image copied into the game."
+    },
+    {
+      "url": "https://allpack.biz/paket-polietylenovyi-ld-4060-004900048/",
+      "use": "Visual comparison only: empty bag volume, front creases and folded base."
+    }
+  ],
+  "promptSet": {
+    "open": "Use case: precise-object-edit.\nInput image is the edit target: clear empty polyethylene bag tied at the top.\nCreate the matching OPEN state of this exact bag. Change ONLY the upper neck above y30%: untie the knot and open the small mouth into a natural loose oval clear-film rim, approximately x34–66%, y10–25%, with a slightly irregular back and front lip. Preserve the square canvas, exact wide lower pouch contour and pixel position, broad shoulders starting at y30–35%, sides and bottom, diagonal creases across the front, side gussets and optical transparency. Do not narrow, shrink or lengthen the body. Keep x20–80%,y37–87% fully inside its broad lower pouch. The bag is EMPTY because separate fruit photographs will be composited underneath.\n\nMaintain actual alpha transparency and all low-opacity front-wall wrinkles. The clear plastic base must be very nearly invisible with delicate thin gray crease shadows and white reflective lines across its CENTER as well as edges. No milky film or thick white edge. No clean erased central hole. No food, fruit, object, hands, handles, prop, text, print, logos, labels, paper, ribbon, zipper, background or cast shadow outside. Exactly one bag, full view. ONLY transform tied neck into open mouth, keep the roomy body unchanged.\n",
+    "tied": "Use case: product-mockup.\nOne square PNG with an isolated transparent tied supermarket produce bag, photorealistic. THIS IS AN RGBA FILM OVERLAY for compositing over fruit photographs, with actual alpha transparency. Show only extremely thin CLEAR COLORLESS polyethylene film, with realistic volume and wrinkles. EMPTY bag: no food or any objects in it.\n\nThe plastic pouch is broad and full-shaped from the shoulders at y34% to the bottom at y94%, with a rounded lower body. Bag body outline: top neck x50%, y20%; shoulders already broad near x13% and x87% at y35%; left and right sides x11% and x89% from y45 to84%; gently curved base y94%. Small real tied knot x50% y19–23%, two tiny loose crumpled film flaps above it at y8–18%. A generous unobstructed rectangular food area x20–80%, y37–87% lies entirely INSIDE the body; don't make a narrow cone. Natural small side gussets and slightly curved bottom seam, rather than an inflated balloon.\n\nMaterial: optically CLEAR film with just a few long fine diagonal and curved creases crossing the FRONT of the pouch. Nearly invisible center with a thin transparent sheen and long sparse wrinkle lines over it. Gray, almost hairline, low-opacity contours distinguish the edges. The film is largely see-through (about 90–97% transparent); front wrinkle lines are also delicate and translucent. Matte gray shadows are limited to the finest creases. No broad white patches, NO milky film, NO thick white border. Clear natural plastic should reveal an underlying fruit photo with almost all its original color and detail. Do not cut a clean empty hole in the middle; retain subtle front-wall wrinkle details across the whole pouch. Real thin grocery bag, not a solid white bag or a bag-shaped frame.\n\nActual alpha = 0 outside the bag, alpha very low through the clear film. Preserve subtle gray lines even though the background is transparent. No painted gray, white, black or checkered background. No floor or external cast shadow. No food, handles, ribbon, paper, zipper, props, text, logo, labels, print, watermark or collage. Exactly one complete tied bag.\n"
+  },
+  "verification": [
+    {
+      "name": "open-v2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "safe_mean_alpha": 109.49,
+      "safe_alpha_median": 103,
+      "safe_alpha_p90": 199,
+      "safe_fraction_nonzero": 1,
+      "safe_rect_normalized": {
+        "left": 0.2,
+        "top": 0.37,
+        "right": 0.8,
+        "bottom": 0.87
+      }
+    },
+    {
+      "name": "tied-v2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "alpha_range": [
+        0,
+        252
+      ],
+      "corners_alpha": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "safe_rect_normalized": {
+        "left": 0.2,
+        "top": 0.37,
+        "right": 0.8,
+        "bottom": 0.87
+      },
+      "safe_rect_pixels": [
+        250,
+        463,
+        1003,
+        1090
+      ],
+      "safe_mean_alpha": 26.75,
+      "safe_alpha_median": 7,
+      "safe_alpha_p90": 86,
+      "safe_fraction_nonzero": 0.9958,
+      "safe_fraction_alpha_le64": 0.8465
+    }
+  ],
+  "placement": "Whole product silhouette fits within shared food region. Render a thin contrasting contour and side shading. Do not brighten the film. The 3D basket uses a low-poly volume plus a curved image surface. Final UI lowers food to the base (top .43, bottom .93); measured tied mean alpha in this final rectangle is25.73/255."
+}

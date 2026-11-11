@@ -1,0 +1,7108 @@
+[
+  {
+    "id": 1,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 0,
+    "levelNumber": 1,
+    "customer": "Тэмүүлэн",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      }
+    ],
+    "signature": "eggs:6:|milk:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 0,
+    "number": 1
+  },
+  {
+    "id": 2,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 1,
+    "levelNumber": 2,
+    "customer": "Хулан",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      }
+    ],
+    "signature": "banana:1000:|red-apple:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 1,
+    "number": 2
+  },
+  {
+    "id": 3,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 2,
+    "levelNumber": 3,
+    "customer": "Дөлгөөн",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "pasta:500:|water:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 2,
+    "number": 3
+  },
+  {
+    "id": 4,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 3,
+    "levelNumber": 4,
+    "customer": "Мөнх",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "green-apple:500:|white-bread:1:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 3,
+    "number": 4
+  },
+  {
+    "id": 5,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 4,
+    "levelNumber": 5,
+    "customer": "Марал",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|rice:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 4,
+    "number": 5
+  },
+  {
+    "id": 6,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 5,
+    "levelNumber": 6,
+    "customer": "Билгүүн",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "butter:200:|icecream:60:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 5,
+    "number": 6
+  },
+  {
+    "id": 7,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 6,
+    "levelNumber": 7,
+    "customer": "Солонго",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|potato:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 6,
+    "number": 7
+  },
+  {
+    "id": 8,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 7,
+    "levelNumber": 8,
+    "customer": "Оюун",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      }
+    ],
+    "signature": "eggs:6:|sugar:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 7,
+    "number": 8
+  },
+  {
+    "id": 9,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 8,
+    "levelNumber": 9,
+    "customer": "Болд",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "icecream:60:|oil:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 8,
+    "number": 9
+  },
+  {
+    "id": 10,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 9,
+    "levelNumber": 10,
+    "customer": "Ариун",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      }
+    ],
+    "signature": "milk:1000:|rice:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 9,
+    "number": 10
+  },
+  {
+    "id": 11,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 10,
+    "levelNumber": 11,
+    "customer": "Туул",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:1:|butter:200:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 10,
+    "number": 11
+  },
+  {
+    "id": 12,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 11,
+    "levelNumber": 12,
+    "customer": "Номин",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "brown-bread:1:|cabbage:1000:|icecream:60:",
+    "levelCount": 50,
+    "campaignIndex": 11,
+    "number": 12
+  },
+  {
+    "id": 13,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 12,
+    "levelNumber": 13,
+    "customer": "Ану",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "salt:1000:|water:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 12,
+    "number": 13
+  },
+  {
+    "id": 14,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 13,
+    "levelNumber": 14,
+    "customer": "Бат",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|potato:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 13,
+    "number": 14
+  },
+  {
+    "id": 15,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 14,
+    "levelNumber": 15,
+    "customer": "Саруул",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      }
+    ],
+    "signature": "cabbage:1000:|flour:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 14,
+    "number": 15
+  },
+  {
+    "id": 16,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 15,
+    "levelNumber": 16,
+    "customer": "Энхжин",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      }
+    ],
+    "signature": "butter:200:|pasta:500:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 15,
+    "number": 16
+  },
+  {
+    "id": 17,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 16,
+    "levelNumber": 17,
+    "customer": "Тэмүүлэн",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|oil:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 16,
+    "number": 17
+  },
+  {
+    "id": 18,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 17,
+    "levelNumber": 18,
+    "customer": "Хулан",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|milk:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 17,
+    "number": 18
+  },
+  {
+    "id": 19,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 18,
+    "levelNumber": 19,
+    "customer": "Дөлгөөн",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      }
+    ],
+    "signature": "onion:1000:|water:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 18,
+    "number": 19
+  },
+  {
+    "id": 20,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 19,
+    "levelNumber": 20,
+    "customer": "Мөнх",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "banana:1000:|brown-bread:1:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 19,
+    "number": 20
+  },
+  {
+    "id": 21,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 20,
+    "levelNumber": 21,
+    "customer": "Марал",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      }
+    ],
+    "signature": "pasta:500:|white-bread:1:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 20,
+    "number": 21
+  },
+  {
+    "id": 22,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 21,
+    "levelNumber": 22,
+    "customer": "Билгүүн",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|icecream:60:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 21,
+    "number": 22
+  },
+  {
+    "id": 23,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 22,
+    "levelNumber": 23,
+    "customer": "Солонго",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "salt:1000:|water:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 22,
+    "number": 23
+  },
+  {
+    "id": 24,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 23,
+    "levelNumber": 24,
+    "customer": "Оюун",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|eggs:6:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 23,
+    "number": 24
+  },
+  {
+    "id": 25,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 24,
+    "levelNumber": 25,
+    "customer": "Болд",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|oil:1000:|red-apple:1000:",
+    "levelCount": 50,
+    "campaignIndex": 24,
+    "number": 25
+  },
+  {
+    "id": 26,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 25,
+    "levelNumber": 26,
+    "customer": "Ариун",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|rice:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 25,
+    "number": 26
+  },
+  {
+    "id": 27,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 26,
+    "levelNumber": 27,
+    "customer": "Туул",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|rice:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 26,
+    "number": 27
+  },
+  {
+    "id": 28,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 27,
+    "levelNumber": 28,
+    "customer": "Номин",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      }
+    ],
+    "signature": "eggs:6:|icecream:60:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 27,
+    "number": 28
+  },
+  {
+    "id": 29,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 28,
+    "levelNumber": 29,
+    "customer": "Ану",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "red-apple:1000:|water:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 28,
+    "number": 29
+  },
+  {
+    "id": 30,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 29,
+    "levelNumber": 30,
+    "customer": "Бат",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|rice:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 29,
+    "number": 30
+  },
+  {
+    "id": 31,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 30,
+    "levelNumber": 31,
+    "customer": "Саруул",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cheese:200:|icecream:60:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 30,
+    "number": 31
+  },
+  {
+    "id": 32,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 31,
+    "levelNumber": 32,
+    "customer": "Энхжин",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cheese:200:|icecream:60:|potato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 31,
+    "number": 32
+  },
+  {
+    "id": 33,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 32,
+    "levelNumber": 33,
+    "customer": "Тэмүүлэн",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      }
+    ],
+    "signature": "butter:200:|onion:1000:|pasta:500:",
+    "levelCount": 50,
+    "campaignIndex": 32,
+    "number": 33
+  },
+  {
+    "id": 34,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 33,
+    "levelNumber": 34,
+    "customer": "Хулан",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|brown-bread:1:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 33,
+    "number": 34
+  },
+  {
+    "id": 35,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 34,
+    "levelNumber": 35,
+    "customer": "Дөлгөөн",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      }
+    ],
+    "signature": "potato:1000:|salt:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 34,
+    "number": 35
+  },
+  {
+    "id": 36,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 35,
+    "levelNumber": 36,
+    "customer": "Мөнх",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|icecream:60:|onion:1000:",
+    "levelCount": 50,
+    "campaignIndex": 35,
+    "number": 36
+  },
+  {
+    "id": 37,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 36,
+    "levelNumber": 37,
+    "customer": "Марал",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cabbage:1000:|icecream:60:|milk:1000:",
+    "levelCount": 50,
+    "campaignIndex": 36,
+    "number": 37
+  },
+  {
+    "id": 38,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 37,
+    "levelNumber": 38,
+    "customer": "Билгүүн",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|flour:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 37,
+    "number": 38
+  },
+  {
+    "id": 39,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 38,
+    "levelNumber": 39,
+    "customer": "Солонго",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|icecream:60:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 38,
+    "number": 39
+  },
+  {
+    "id": 40,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 39,
+    "levelNumber": 40,
+    "customer": "Оюун",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|tomato:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 39,
+    "number": 40
+  },
+  {
+    "id": 41,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 40,
+    "levelNumber": 41,
+    "customer": "Болд",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "eggs:6:|rice:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 40,
+    "number": 41
+  },
+  {
+    "id": 42,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 41,
+    "levelNumber": 42,
+    "customer": "Ариун",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|onion:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 41,
+    "number": 42
+  },
+  {
+    "id": 43,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 42,
+    "levelNumber": 43,
+    "customer": "Туул",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:1:|eggs:6:|oil:1000:",
+    "levelCount": 50,
+    "campaignIndex": 42,
+    "number": 43
+  },
+  {
+    "id": 44,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 43,
+    "levelNumber": 44,
+    "customer": "Номин",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|potato:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 43,
+    "number": 44
+  },
+  {
+    "id": 45,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 44,
+    "levelNumber": 45,
+    "customer": "Ану",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cheese:200:|icecream:60:|oil:1000:",
+    "levelCount": 50,
+    "campaignIndex": 44,
+    "number": 45
+  },
+  {
+    "id": 46,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 45,
+    "levelNumber": 46,
+    "customer": "Бат",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|cucumber:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 45,
+    "number": 46
+  },
+  {
+    "id": 47,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 46,
+    "levelNumber": 47,
+    "customer": "Саруул",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      }
+    ],
+    "signature": "brown-bread:1:|eggs:6:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 46,
+    "number": 47
+  },
+  {
+    "id": 48,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 47,
+    "levelNumber": 48,
+    "customer": "Энхжин",
+    "title": "Танилцах",
+    "message": "Өдөр тутмын хүнсээ захиалъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|tomato:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 47,
+    "number": 48
+  },
+  {
+    "id": 49,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 48,
+    "levelNumber": 49,
+    "customer": "Тэмүүлэн",
+    "title": "Танилцах",
+    "message": "Гурван бүтээгдэхүүн авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      }
+    ],
+    "signature": "butter:200:|sugar:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 48,
+    "number": 49
+  },
+  {
+    "id": 50,
+    "levelIndex": 0,
+    "level": 1,
+    "stageId": "learn",
+    "levelOrderIndex": 49,
+    "levelNumber": 50,
+    "customer": "Хулан",
+    "title": "Танилцах",
+    "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|icecream:60:|red-apple:1000:",
+    "levelCount": 50,
+    "campaignIndex": 49,
+    "number": 50
+  },
+  {
+    "id": 101,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 0,
+    "levelNumber": 1,
+    "customer": "Мөнх",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|orange:1000:|salt:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 50,
+    "number": 51
+  },
+  {
+    "id": 102,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 1,
+    "levelNumber": 2,
+    "customer": "Марал",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|butter:200:|sugar:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 51,
+    "number": 52
+  },
+  {
+    "id": 103,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 2,
+    "levelNumber": 3,
+    "customer": "Билгүүн",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      }
+    ],
+    "signature": "milk:1000:|rice:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 52,
+    "number": 53
+  },
+  {
+    "id": 104,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 3,
+    "levelNumber": 4,
+    "customer": "Солонго",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "butter:200:|salt:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 53,
+    "number": 54
+  },
+  {
+    "id": 105,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 4,
+    "levelNumber": 5,
+    "customer": "Оюун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "milk:1000:|red-apple:1000:|water:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 54,
+    "number": 55
+  },
+  {
+    "id": 106,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 5,
+    "levelNumber": 6,
+    "customer": "Болд",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|pasta:500:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 55,
+    "number": 56
+  },
+  {
+    "id": 107,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 6,
+    "levelNumber": 7,
+    "customer": "Ариун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|oil:1000:|orange:1000:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 56,
+    "number": 57
+  },
+  {
+    "id": 108,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 7,
+    "levelNumber": 8,
+    "customer": "Туул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      }
+    ],
+    "signature": "brown-bread:1:|green-apple:500:|red-apple:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 57,
+    "number": 58
+  },
+  {
+    "id": 109,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 8,
+    "levelNumber": 9,
+    "customer": "Номин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|milk:1000:|orange:1000:",
+    "levelCount": 50,
+    "campaignIndex": 58,
+    "number": 59
+  },
+  {
+    "id": 110,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 9,
+    "levelNumber": 10,
+    "customer": "Ану",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "cucumber:1000:|oil:1000:|sugar:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 59,
+    "number": 60
+  },
+  {
+    "id": 111,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 10,
+    "levelNumber": 11,
+    "customer": "Бат",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|oil:1000:|onion:1000:|orange:1000:",
+    "levelCount": 50,
+    "campaignIndex": 60,
+    "number": 61
+  },
+  {
+    "id": 112,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 11,
+    "levelNumber": 12,
+    "customer": "Саруул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|cucumber:1000:|icecream:60:|orange:1000:",
+    "levelCount": 50,
+    "campaignIndex": 61,
+    "number": 62
+  },
+  {
+    "id": 113,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 12,
+    "levelNumber": 13,
+    "customer": "Энхжин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|cucumber:1000:|rice:1000:|white-bread:1:",
+    "levelCount": 50,
+    "campaignIndex": 62,
+    "number": 63
+  },
+  {
+    "id": 114,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 13,
+    "levelNumber": 14,
+    "customer": "Тэмүүлэн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|rice:1000:|sugar:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 63,
+    "number": 64
+  },
+  {
+    "id": 115,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 14,
+    "levelNumber": 15,
+    "customer": "Хулан",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|carrot:1000:|rice:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 64,
+    "number": 65
+  },
+  {
+    "id": 116,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 15,
+    "levelNumber": 16,
+    "customer": "Дөлгөөн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|green-apple:500:|sugar:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 65,
+    "number": 66
+  },
+  {
+    "id": 117,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 16,
+    "levelNumber": 17,
+    "customer": "Мөнх",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "green-apple:500:|onion:1000:|red-apple:1000:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 66,
+    "number": 67
+  },
+  {
+    "id": 118,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 17,
+    "levelNumber": 18,
+    "customer": "Марал",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "icecream:60:|milk:1000:|potato:1000:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 67,
+    "number": 68
+  },
+  {
+    "id": 119,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 18,
+    "levelNumber": 19,
+    "customer": "Билгүүн",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "eggs:6:|red-apple:1000:|salt:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 68,
+    "number": 69
+  },
+  {
+    "id": 120,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 19,
+    "levelNumber": 20,
+    "customer": "Солонго",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|oil:1000:|salt:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 69,
+    "number": 70
+  },
+  {
+    "id": 121,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 20,
+    "levelNumber": 21,
+    "customer": "Оюун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:1:|butter:200:|green-apple:500:",
+    "levelCount": 50,
+    "campaignIndex": 70,
+    "number": 71
+  },
+  {
+    "id": 122,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 21,
+    "levelNumber": 22,
+    "customer": "Болд",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "eggs:6:|icecream:60:|red-apple:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 71,
+    "number": 72
+  },
+  {
+    "id": 123,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 22,
+    "levelNumber": 23,
+    "customer": "Ариун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "butter:200:|cabbage:1000:|pasta:500:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 72,
+    "number": 73
+  },
+  {
+    "id": 124,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 23,
+    "levelNumber": 24,
+    "customer": "Туул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "cheese:200:|potato:1000:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 73,
+    "number": 74
+  },
+  {
+    "id": 125,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 24,
+    "levelNumber": 25,
+    "customer": "Номин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      }
+    ],
+    "signature": "orange:1000:|potato:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 74,
+    "number": 75
+  },
+  {
+    "id": 126,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 25,
+    "levelNumber": 26,
+    "customer": "Ану",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:1:|cucumber:1000:|milk:1000:",
+    "levelCount": 50,
+    "campaignIndex": 75,
+    "number": 76
+  },
+  {
+    "id": 127,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 26,
+    "levelNumber": 27,
+    "customer": "Бат",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "carrot:1000:|cucumber:1000:|eggs:6:|orange:1000:",
+    "levelCount": 50,
+    "campaignIndex": 76,
+    "number": 77
+  },
+  {
+    "id": 128,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 27,
+    "levelNumber": 28,
+    "customer": "Саруул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "flour:1000:|oil:1000:|pasta:500:|rice:1000:",
+    "levelCount": 50,
+    "campaignIndex": 77,
+    "number": 78
+  },
+  {
+    "id": 129,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 28,
+    "levelNumber": 29,
+    "customer": "Энхжин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      }
+    ],
+    "signature": "banana:1000:|orange:1000:|pasta:500:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 78,
+    "number": 79
+  },
+  {
+    "id": 130,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 29,
+    "levelNumber": 30,
+    "customer": "Тэмүүлэн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      }
+    ],
+    "signature": "potato:1000:|salt:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 79,
+    "number": 80
+  },
+  {
+    "id": 131,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 30,
+    "levelNumber": 31,
+    "customer": "Хулан",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|flour:1000:|onion:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 80,
+    "number": 81
+  },
+  {
+    "id": 132,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 31,
+    "levelNumber": 32,
+    "customer": "Дөлгөөн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      }
+    ],
+    "signature": "milk:1000:|oil:1000:|pasta:500:",
+    "levelCount": 50,
+    "campaignIndex": 81,
+    "number": 82
+  },
+  {
+    "id": 133,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 32,
+    "levelNumber": 33,
+    "customer": "Мөнх",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      }
+    ],
+    "signature": "green-apple:500:|icecream:60:|orange:1000:|pasta:500:",
+    "levelCount": 50,
+    "campaignIndex": 82,
+    "number": 83
+  },
+  {
+    "id": 134,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 33,
+    "levelNumber": 34,
+    "customer": "Марал",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "onion:1000:|pasta:500:|salt:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 83,
+    "number": 84
+  },
+  {
+    "id": 135,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 34,
+    "levelNumber": 35,
+    "customer": "Билгүүн",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "butter:200:|cucumber:1000:|onion:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 84,
+    "number": 85
+  },
+  {
+    "id": 136,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 35,
+    "levelNumber": 36,
+    "customer": "Солонго",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      }
+    ],
+    "signature": "icecream:60:|orange:1000:|water:1000:",
+    "levelCount": 50,
+    "campaignIndex": 85,
+    "number": 86
+  },
+  {
+    "id": 137,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 36,
+    "levelNumber": 37,
+    "customer": "Оюун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      }
+    ],
+    "signature": "oil:1000:|orange:1000:|rice:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 86,
+    "number": 87
+  },
+  {
+    "id": 138,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 37,
+    "levelNumber": 38,
+    "customer": "Болд",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "cucumber:1000:|red-apple:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 87,
+    "number": 88
+  },
+  {
+    "id": 139,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 38,
+    "levelNumber": 39,
+    "customer": "Ариун",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|cabbage:1000:|icecream:60:",
+    "levelCount": 50,
+    "campaignIndex": 88,
+    "number": 89
+  },
+  {
+    "id": 140,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 39,
+    "levelNumber": 40,
+    "customer": "Туул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:1000:|orange:1000:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 89,
+    "number": 90
+  },
+  {
+    "id": 141,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 40,
+    "levelNumber": 41,
+    "customer": "Номин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      }
+    ],
+    "signature": "green-apple:500:|salt:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 90,
+    "number": 91
+  },
+  {
+    "id": 142,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 41,
+    "levelNumber": 42,
+    "customer": "Ану",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      }
+    ],
+    "signature": "eggs:6:|rice:1000:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 91,
+    "number": 92
+  },
+  {
+    "id": 143,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 42,
+    "levelNumber": 43,
+    "customer": "Бат",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:1:|carrot:1000:|flour:1000:|red-apple:1000:",
+    "levelCount": 50,
+    "campaignIndex": 92,
+    "number": 93
+  },
+  {
+    "id": 144,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 43,
+    "levelNumber": 44,
+    "customer": "Саруул",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      }
+    ],
+    "signature": "eggs:6:|green-apple:500:|milk:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 93,
+    "number": 94
+  },
+  {
+    "id": 145,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 44,
+    "levelNumber": 45,
+    "customer": "Энхжин",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      }
+    ],
+    "signature": "pasta:500:|rice:1000:|sugar:1000:",
+    "levelCount": 50,
+    "campaignIndex": 94,
+    "number": 95
+  },
+  {
+    "id": 146,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 45,
+    "levelNumber": 46,
+    "customer": "Тэмүүлэн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      }
+    ],
+    "signature": "milk:1000:|orange:1000:|salt:1000:|tomato:1000:",
+    "levelCount": 50,
+    "campaignIndex": 95,
+    "number": 96
+  },
+  {
+    "id": 147,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 46,
+    "levelNumber": 47,
+    "customer": "Хулан",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      }
+    ],
+    "signature": "carrot:1000:|oil:1000:|white-bread:1:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 96,
+    "number": 97
+  },
+  {
+    "id": 148,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 47,
+    "levelNumber": 48,
+    "customer": "Дөлгөөн",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      }
+    ],
+    "signature": "carrot:1000:|green-apple:500:|pasta:500:|yogurt:500:",
+    "levelCount": 50,
+    "campaignIndex": 97,
+    "number": 98
+  },
+  {
+    "id": 149,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 48,
+    "levelNumber": 49,
+    "customer": "Мөнх",
+    "title": "Хугацаа шалгах",
+    "message": "Барааны хугацааг сайн шалгаарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:1:|eggs:6:|oil:1000:|pasta:500:",
+    "levelCount": 50,
+    "campaignIndex": 98,
+    "number": 99
+  },
+  {
+    "id": 150,
+    "levelIndex": 1,
+    "level": 2,
+    "stageId": "expiry",
+    "levelOrderIndex": 49,
+    "levelNumber": 50,
+    "customer": "Марал",
+    "title": "Хугацаа шалгах",
+    "message": "Хугацаа нь дуусаагүй бүтээгдэхүүн аваарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      }
+    ],
+    "signature": "cucumber:1000:|oil:1000:|salt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 99,
+    "number": 100
+  },
+  {
+    "id": 201,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 0,
+    "levelNumber": 1,
+    "customer": "Солонго",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      }
+    ],
+    "signature": "butter:600:|carrot:2000:|flour:2000:|green-apple:1500:",
+    "levelCount": 50,
+    "campaignIndex": 100,
+    "number": 101
+  },
+  {
+    "id": 202,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 1,
+    "levelNumber": 2,
+    "customer": "Оюун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      }
+    ],
+    "signature": "brown-bread:2:|carrot:3000:|icecream:120:|pasta:1000:|salt:2000:",
+    "levelCount": 50,
+    "campaignIndex": 101,
+    "number": 102
+  },
+  {
+    "id": 203,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 2,
+    "levelNumber": 3,
+    "customer": "Болд",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      }
+    ],
+    "signature": "carrot:2000:|flour:3000:|onion:3000:|pasta:1000:|salt:2000:",
+    "levelCount": 50,
+    "campaignIndex": 102,
+    "number": 103
+  },
+  {
+    "id": 204,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 3,
+    "levelNumber": 4,
+    "customer": "Ариун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      }
+    ],
+    "signature": "carrot:2000:|oil:2000:|pasta:1000:|red-apple:2000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 103,
+    "number": 104
+  },
+  {
+    "id": 205,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 4,
+    "levelNumber": 5,
+    "customer": "Туул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      }
+    ],
+    "signature": "pasta:1000:|salt:3000:|tomato:3000:|water:2000:",
+    "levelCount": 50,
+    "campaignIndex": 104,
+    "number": 105
+  },
+  {
+    "id": 206,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 5,
+    "levelNumber": 6,
+    "customer": "Номин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 2000
+      },
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      }
+    ],
+    "signature": "cabbage:2000:|cheese:400:|pasta:1500:|potato:2000:|salt:2000:",
+    "levelCount": 50,
+    "campaignIndex": 105,
+    "number": 106
+  },
+  {
+    "id": 207,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 6,
+    "levelNumber": 7,
+    "customer": "Ану",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      }
+    ],
+    "signature": "brown-bread:3:|butter:400:|oil:3000:|onion:3000:|sugar:2000:",
+    "levelCount": 50,
+    "campaignIndex": 106,
+    "number": 107
+  },
+  {
+    "id": 208,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 7,
+    "levelNumber": 8,
+    "customer": "Бат",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      }
+    ],
+    "signature": "cabbage:3000:|carrot:3000:|icecream:180:|white-bread:2:",
+    "levelCount": 50,
+    "campaignIndex": 107,
+    "number": 108
+  },
+  {
+    "id": 209,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 8,
+    "levelNumber": 9,
+    "customer": "Саруул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      },
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "potato",
+        "amount": 2000
+      }
+    ],
+    "signature": "cheese:400:|milk:2000:|oil:3000:|potato:2000:",
+    "levelCount": 50,
+    "campaignIndex": 108,
+    "number": 109
+  },
+  {
+    "id": 210,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 9,
+    "levelNumber": 10,
+    "customer": "Энхжин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      }
+    ],
+    "signature": "banana:2000:|cabbage:2000:|cucumber:2000:|eggs:12:",
+    "levelCount": 50,
+    "campaignIndex": 109,
+    "number": 110
+  },
+  {
+    "id": 211,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 10,
+    "levelNumber": 11,
+    "customer": "Тэмүүлэн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "potato",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      }
+    ],
+    "signature": "cabbage:3000:|carrot:3000:|pasta:1500:|potato:3000:",
+    "levelCount": 50,
+    "campaignIndex": 110,
+    "number": 111
+  },
+  {
+    "id": 212,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 11,
+    "levelNumber": 12,
+    "customer": "Хулан",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 18
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 3
+      }
+    ],
+    "signature": "brown-bread:3:|eggs:18:|milk:2000:|pasta:1000:|white-bread:3:",
+    "levelCount": 50,
+    "campaignIndex": 111,
+    "number": 112
+  },
+  {
+    "id": 213,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 12,
+    "levelNumber": 13,
+    "customer": "Дөлгөөн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      }
+    ],
+    "signature": "carrot:2000:|cucumber:2000:|milk:3000:|red-apple:2000:",
+    "levelCount": 50,
+    "campaignIndex": 112,
+    "number": 113
+  },
+  {
+    "id": 214,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 13,
+    "levelNumber": 14,
+    "customer": "Мөнх",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 3
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:2000:|cabbage:3000:|orange:2000:|white-bread:3:",
+    "levelCount": 50,
+    "campaignIndex": 113,
+    "number": 114
+  },
+  {
+    "id": 215,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 14,
+    "levelNumber": 15,
+    "customer": "Марал",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "salt",
+        "amount": 3000
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      }
+    ],
+    "signature": "cucumber:2000:|flour:2000:|onion:3000:|salt:3000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 114,
+    "number": 115
+  },
+  {
+    "id": 216,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 15,
+    "levelNumber": 16,
+    "customer": "Билгүүн",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 3
+      },
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      }
+    ],
+    "signature": "red-apple:3000:|salt:2000:|white-bread:3:|yogurt:1500:",
+    "levelCount": 50,
+    "campaignIndex": 115,
+    "number": 116
+  },
+  {
+    "id": 217,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 16,
+    "levelNumber": 17,
+    "customer": "Солонго",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      },
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "rice",
+        "amount": 3000
+      }
+    ],
+    "signature": "cabbage:3000:|cheese:400:|icecream:120:|rice:3000:|yogurt:1500:",
+    "levelCount": 50,
+    "campaignIndex": 116,
+    "number": 117
+  },
+  {
+    "id": 218,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 17,
+    "levelNumber": 18,
+    "customer": "Оюун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "rice",
+        "amount": 3000
+      },
+      {
+        "productId": "sugar",
+        "amount": 3000
+      },
+      {
+        "productId": "potato",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      }
+    ],
+    "signature": "potato:2000:|red-apple:2000:|rice:3000:|sugar:3000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 117,
+    "number": 118
+  },
+  {
+    "id": 219,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 18,
+    "levelNumber": 19,
+    "customer": "Болд",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "banana",
+        "amount": 3000
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:3000:|green-apple:1500:|onion:2000:|water:2000:",
+    "levelCount": 50,
+    "campaignIndex": 118,
+    "number": 119
+  },
+  {
+    "id": 220,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 19,
+    "levelNumber": 20,
+    "customer": "Ариун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      }
+    ],
+    "signature": "flour:3000:|icecream:180:|rice:2000:|salt:2000:",
+    "levelCount": 50,
+    "campaignIndex": 119,
+    "number": 120
+  },
+  {
+    "id": 221,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 20,
+    "levelNumber": 21,
+    "customer": "Туул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "banana",
+        "amount": 3000
+      }
+    ],
+    "signature": "banana:3000:|butter:600:|green-apple:1500:|icecream:180:|pasta:1000:",
+    "levelCount": 50,
+    "campaignIndex": 120,
+    "number": 121
+  },
+  {
+    "id": 222,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 21,
+    "levelNumber": 22,
+    "customer": "Номин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      }
+    ],
+    "signature": "butter:600:|onion:2000:|water:2000:|white-bread:2:",
+    "levelCount": 50,
+    "campaignIndex": 121,
+    "number": 122
+  },
+  {
+    "id": 223,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 22,
+    "levelNumber": 23,
+    "customer": "Ану",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 2000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 3000
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      }
+    ],
+    "signature": "carrot:2000:|flour:2000:|onion:3000:|potato:3000:|tomato:2000:",
+    "levelCount": 50,
+    "campaignIndex": 122,
+    "number": 123
+  },
+  {
+    "id": 224,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 23,
+    "levelNumber": 24,
+    "customer": "Бат",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "potato",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      }
+    ],
+    "signature": "green-apple:1000:|onion:2000:|potato:3000:|white-bread:2:|yogurt:1500:",
+    "levelCount": 50,
+    "campaignIndex": 123,
+    "number": 124
+  },
+  {
+    "id": 225,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 24,
+    "levelNumber": 25,
+    "customer": "Саруул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 3
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:3:|cucumber:3000:|sugar:2000:|white-bread:3:",
+    "levelCount": 50,
+    "campaignIndex": 124,
+    "number": 125
+  },
+  {
+    "id": 226,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 25,
+    "levelNumber": 26,
+    "customer": "Энхжин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      }
+    ],
+    "signature": "cabbage:3000:|green-apple:1000:|icecream:180:|salt:2000:|tomato:3000:",
+    "levelCount": 50,
+    "campaignIndex": 125,
+    "number": 126
+  },
+  {
+    "id": 227,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 26,
+    "levelNumber": 27,
+    "customer": "Тэмүүлэн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "potato",
+        "amount": 2000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      }
+    ],
+    "signature": "cheese:600:|milk:2000:|orange:2000:|potato:2000:|yogurt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 126,
+    "number": 127
+  },
+  {
+    "id": 228,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 27,
+    "levelNumber": 28,
+    "customer": "Хулан",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      }
+    ],
+    "signature": "eggs:12:|green-apple:1000:|tomato:3000:|water:2000:",
+    "levelCount": 50,
+    "campaignIndex": 127,
+    "number": 128
+  },
+  {
+    "id": 229,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 28,
+    "levelNumber": 29,
+    "customer": "Дөлгөөн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 2000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      }
+    ],
+    "signature": "brown-bread:2:|flour:2000:|potato:2000:|red-apple:2000:",
+    "levelCount": 50,
+    "campaignIndex": 128,
+    "number": 129
+  },
+  {
+    "id": 230,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 29,
+    "levelNumber": 30,
+    "customer": "Мөнх",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      }
+    ],
+    "signature": "carrot:3000:|cucumber:2000:|onion:2000:|rice:2000:",
+    "levelCount": 50,
+    "campaignIndex": 129,
+    "number": 130
+  },
+  {
+    "id": 231,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 30,
+    "levelNumber": 31,
+    "customer": "Марал",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      }
+    ],
+    "signature": "butter:400:|carrot:2000:|cheese:600:|cucumber:3000:|flour:2000:",
+    "levelCount": 50,
+    "campaignIndex": 130,
+    "number": 131
+  },
+  {
+    "id": 232,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 31,
+    "levelNumber": 32,
+    "customer": "Билгүүн",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 3000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      }
+    ],
+    "signature": "cabbage:2000:|carrot:2000:|sugar:3000:|yogurt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 131,
+    "number": 132
+  },
+  {
+    "id": 233,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 32,
+    "levelNumber": 33,
+    "customer": "Солонго",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "banana",
+        "amount": 3000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      }
+    ],
+    "signature": "banana:3000:|brown-bread:2:|cheese:600:|icecream:120:|yogurt:1500:",
+    "levelCount": 50,
+    "campaignIndex": 132,
+    "number": 133
+  },
+  {
+    "id": 234,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 33,
+    "levelNumber": 34,
+    "customer": "Оюун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      }
+    ],
+    "signature": "cheese:600:|icecream:180:|oil:2000:|salt:2000:",
+    "levelCount": 50,
+    "campaignIndex": 133,
+    "number": 134
+  },
+  {
+    "id": 235,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 34,
+    "levelNumber": 35,
+    "customer": "Болд",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      }
+    ],
+    "signature": "cucumber:3000:|icecream:180:|milk:2000:|oil:3000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 134,
+    "number": 135
+  },
+  {
+    "id": 236,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 35,
+    "levelNumber": 36,
+    "customer": "Ариун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "salt",
+        "amount": 3000
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      }
+    ],
+    "signature": "cheese:600:|icecream:180:|oil:2000:|onion:3000:|salt:3000:",
+    "levelCount": 50,
+    "campaignIndex": 135,
+    "number": 136
+  },
+  {
+    "id": 237,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 36,
+    "levelNumber": 37,
+    "customer": "Туул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "potato",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:2:|cabbage:2000:|potato:3000:|salt:2000:|sugar:2000:",
+    "levelCount": 50,
+    "campaignIndex": 136,
+    "number": 137
+  },
+  {
+    "id": 238,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 37,
+    "levelNumber": 38,
+    "customer": "Номин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "eggs",
+        "amount": 18
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      }
+    ],
+    "signature": "banana:2000:|brown-bread:2:|butter:600:|eggs:18:|water:2000:",
+    "levelCount": 50,
+    "campaignIndex": 137,
+    "number": 138
+  },
+  {
+    "id": 239,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 38,
+    "levelNumber": 39,
+    "customer": "Ану",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "eggs",
+        "amount": 18
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      }
+    ],
+    "signature": "cabbage:3000:|eggs:18:|flour:2000:|onion:3000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 138,
+    "number": 139
+  },
+  {
+    "id": 240,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 39,
+    "levelNumber": 40,
+    "customer": "Бат",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "white-bread",
+        "amount": 3
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      }
+    ],
+    "signature": "brown-bread:2:|cheese:600:|milk:3000:|onion:2000:|white-bread:3:",
+    "levelCount": 50,
+    "campaignIndex": 139,
+    "number": 140
+  },
+  {
+    "id": 241,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 40,
+    "levelNumber": 41,
+    "customer": "Саруул",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      }
+    ],
+    "signature": "brown-bread:3:|cheese:600:|cucumber:3000:|oil:2000:|sugar:2000:",
+    "levelCount": 50,
+    "campaignIndex": 140,
+    "number": 141
+  },
+  {
+    "id": 242,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 41,
+    "levelNumber": 42,
+    "customer": "Энхжин",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "rice",
+        "amount": 3000
+      }
+    ],
+    "signature": "green-apple:1500:|milk:3000:|rice:3000:|tomato:3000:",
+    "levelCount": 50,
+    "campaignIndex": 141,
+    "number": 142
+  },
+  {
+    "id": 243,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 42,
+    "levelNumber": 43,
+    "customer": "Тэмүүлэн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      }
+    ],
+    "signature": "cheese:600:|cucumber:3000:|green-apple:1500:|sugar:2000:|water:3000:",
+    "levelCount": 50,
+    "campaignIndex": 142,
+    "number": 143
+  },
+  {
+    "id": 244,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 43,
+    "levelNumber": 44,
+    "customer": "Хулан",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      }
+    ],
+    "signature": "eggs:12:|milk:2000:|onion:2000:|tomato:2000:",
+    "levelCount": 50,
+    "campaignIndex": 143,
+    "number": 144
+  },
+  {
+    "id": 245,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 44,
+    "levelNumber": 45,
+    "customer": "Дөлгөөн",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 2000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:2000:|red-apple:3000:|sugar:2000:|tomato:2000:",
+    "levelCount": 50,
+    "campaignIndex": 144,
+    "number": 145
+  },
+  {
+    "id": 246,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 45,
+    "levelNumber": 46,
+    "customer": "Мөнх",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      }
+    ],
+    "signature": "oil:2000:|pasta:1500:|red-apple:3000:|tomato:3000:|yogurt:1500:",
+    "levelCount": 50,
+    "campaignIndex": 145,
+    "number": 146
+  },
+  {
+    "id": 247,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 46,
+    "levelNumber": 47,
+    "customer": "Марал",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      }
+    ],
+    "signature": "green-apple:1000:|salt:2000:|sugar:2000:|tomato:3000:|yogurt:1000:",
+    "levelCount": 50,
+    "campaignIndex": 146,
+    "number": 147
+  },
+  {
+    "id": 248,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 47,
+    "levelNumber": 48,
+    "customer": "Билгүүн",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      }
+    ],
+    "signature": "butter:400:|red-apple:3000:|rice:2000:|sugar:2000:",
+    "levelCount": 50,
+    "campaignIndex": 147,
+    "number": 148
+  },
+  {
+    "id": 249,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 48,
+    "levelNumber": 49,
+    "customer": "Солонго",
+    "title": "Тоо хэмжээ",
+    "message": "Жагсаалтын тоо, хэмжээг анхаараарай.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      }
+    ],
+    "signature": "butter:400:|oil:2000:|onion:2000:|red-apple:2000:",
+    "levelCount": 50,
+    "campaignIndex": 148,
+    "number": 149
+  },
+  {
+    "id": 250,
+    "levelIndex": 2,
+    "level": 3,
+    "stageId": "quantity",
+    "levelOrderIndex": 49,
+    "levelNumber": 50,
+    "customer": "Оюун",
+    "title": "Тоо хэмжээ",
+    "message": "Бүх бүтээгдэхүүнийг бүрэн бэлтгэж өгнө үү.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "eggs",
+        "amount": 18
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "banana",
+        "amount": 3000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      }
+    ],
+    "signature": "banana:3000:|carrot:2000:|eggs:18:|icecream:180:|tomato:3000:",
+    "levelCount": 50,
+    "campaignIndex": 149,
+    "number": 150
+  },
+  {
+    "id": 301,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 0,
+    "levelNumber": 1,
+    "customer": "Ариун",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 3
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      },
+      {
+        "productId": "sugar",
+        "amount": 3000
+      }
+    ],
+    "signature": "carrot:3000:|flour:3000:|green-apple:1000:|sugar:3000:|white-bread:3:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 150,
+    "number": 151
+  },
+  {
+    "id": 302,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 1,
+    "levelNumber": 2,
+    "customer": "Туул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "sugar",
+        "amount": 3000
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      }
+    ],
+    "signature": "carrot:2000:|flour:2000:|red-apple:3000:|sugar:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 151,
+    "number": 152
+  },
+  {
+    "id": 303,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 2,
+    "levelNumber": 3,
+    "customer": "Номин",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cheese:600:|green-apple:1000:|icecream:60:|water:2000:|white-bread:1:bread-atar",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 152,
+    "number": 153
+  },
+  {
+    "id": 304,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 3,
+    "levelNumber": 4,
+    "customer": "Ану",
+    "title": "Тусгай хүсэлт",
+    "message": "Өгөөж хөх тарианы талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1,
+        "variantId": "bread-rye"
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      }
+    ],
+    "signature": "brown-bread:1:bread-rye|green-apple:500:|milk:1000:|water:2000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-rye",
+      "text": "Өгөөж хөх тарианы талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 153,
+    "number": 154
+  },
+  {
+    "id": 305,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 4,
+    "levelNumber": 5,
+    "customer": "Бат",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      }
+    ],
+    "signature": "cheese:200:|green-apple:1000:|pasta:1000:|tomato:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 154,
+    "number": 155
+  },
+  {
+    "id": 306,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 5,
+    "levelNumber": 6,
+    "customer": "Саруул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      }
+    ],
+    "signature": "butter:600:|oil:1000:|red-apple:2000:|tomato:2000:|water:2000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 155,
+    "number": 156
+  },
+  {
+    "id": 307,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 6,
+    "levelNumber": 7,
+    "customer": "Энхжин",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 2,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "eggs",
+        "amount": 6
+      },
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 2
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:2:|cheese:400:|eggs:6:|orange:2000:|potato:3000:|white-bread:2:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 156,
+    "number": 157
+  },
+  {
+    "id": 308,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 7,
+    "levelNumber": 8,
+    "customer": "Тэмүүлэн",
+    "title": "Тусгай хүсэлт",
+    "message": "Зууван чех талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3,
+        "variantId": "bread-chekh"
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 500
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      }
+    ],
+    "signature": "brown-bread:3:bread-chekh|carrot:3000:|onion:1000:|pasta:500:|yogurt:1500:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-chekh",
+      "text": "Зууван чех талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 157,
+    "number": 158
+  },
+  {
+    "id": 309,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 8,
+    "levelNumber": 9,
+    "customer": "Хулан",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      }
+    ],
+    "signature": "cabbage:2000:|eggs:12:|green-apple:1500:|potato:2000:|tomato:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 158,
+    "number": 159
+  },
+  {
+    "id": 310,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 9,
+    "levelNumber": 10,
+    "customer": "Дөлгөөн",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      },
+      {
+        "productId": "tomato",
+        "amount": 2000
+      }
+    ],
+    "signature": "cabbage:3000:|red-apple:3000:|tomato:2000:|yogurt:1500:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 159,
+    "number": 160
+  },
+  {
+    "id": 311,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 10,
+    "levelNumber": 11,
+    "customer": "Мөнх",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      }
+    ],
+    "signature": "cabbage:3000:|carrot:1000:|oil:3000:|pasta:1500:|white-bread:1:bread-atar",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 160,
+    "number": 161
+  },
+  {
+    "id": 312,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 11,
+    "levelNumber": 12,
+    "customer": "Марал",
+    "title": "Тусгай хүсэлт",
+    "message": "Мишээл талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3,
+        "variantId": "bread-misheel"
+      },
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:3:bread-misheel|cucumber:1000:|oil:3000:|pasta:1500:|tomato:3000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-misheel",
+      "text": "Мишээл талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 161,
+    "number": 162
+  },
+  {
+    "id": 313,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 12,
+    "levelNumber": 13,
+    "customer": "Билгүүн",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      }
+    ],
+    "signature": "cucumber:2000:|flour:3000:|green-apple:500:|icecream:60:|milk:2000:|water:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 162,
+    "number": 163
+  },
+  {
+    "id": 314,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 13,
+    "levelNumber": 14,
+    "customer": "Солонго",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:2000:|oil:2000:|red-apple:2000:|white-bread:1:|yogurt:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 163,
+    "number": 164
+  },
+  {
+    "id": 315,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 14,
+    "levelNumber": 15,
+    "customer": "Оюун",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 3,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      }
+    ],
+    "signature": "cabbage:1000:|milk:3000:|orange:1000:|rice:2000:|white-bread:3:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 164,
+    "number": 165
+  },
+  {
+    "id": 316,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 15,
+    "levelNumber": 16,
+    "customer": "Болд",
+    "title": "Тусгай хүсэлт",
+    "message": "Тамир талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3,
+        "variantId": "bread-tamir"
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:3:bread-tamir|butter:400:|flour:3000:|potato:1000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-tamir",
+      "text": "Тамир талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 165,
+    "number": 166
+  },
+  {
+    "id": 317,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 16,
+    "levelNumber": 17,
+    "customer": "Ариун",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:3000:|cabbage:1000:|flour:1000:|green-apple:500:|onion:1000:|orange:2000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 166,
+    "number": 167
+  },
+  {
+    "id": 318,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 17,
+    "levelNumber": 18,
+    "customer": "Туул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 1000
+      }
+    ],
+    "signature": "carrot:2000:|cheese:600:|flour:1000:|pasta:1500:|red-apple:2000:|water:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 167,
+    "number": 168
+  },
+  {
+    "id": 319,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 18,
+    "levelNumber": 19,
+    "customer": "Номин",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 500
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      }
+    ],
+    "signature": "brown-bread:3:|oil:2000:|orange:1000:|white-bread:1:bread-atar|yogurt:500:",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 168,
+    "number": 169
+  },
+  {
+    "id": 320,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 19,
+    "levelNumber": 20,
+    "customer": "Ану",
+    "title": "Тусгай хүсэлт",
+    "message": "Өгөөж хөх тарианы талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1,
+        "variantId": "bread-rye"
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      },
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:1:bread-rye|cheese:400:|flour:3000:|oil:1000:|rice:2000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-rye",
+      "text": "Өгөөж хөх тарианы талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 169,
+    "number": 170
+  },
+  {
+    "id": 321,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 20,
+    "levelNumber": 21,
+    "customer": "Бат",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 3
+      }
+    ],
+    "signature": "green-apple:1000:|milk:3000:|oil:2000:|white-bread:3:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 170,
+    "number": 171
+  },
+  {
+    "id": 322,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 21,
+    "levelNumber": 22,
+    "customer": "Саруул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "onion",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "green-apple:1500:|onion:1000:|red-apple:2000:|tomato:1000:|white-bread:2:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 171,
+    "number": 172
+  },
+  {
+    "id": 323,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 22,
+    "levelNumber": 23,
+    "customer": "Энхжин",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "sugar",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:2000:|potato:1000:|sugar:2000:|white-bread:1:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 172,
+    "number": 173
+  },
+  {
+    "id": 324,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 23,
+    "levelNumber": 24,
+    "customer": "Тэмүүлэн",
+    "title": "Тусгай хүсэлт",
+    "message": "Зууван чех талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3,
+        "variantId": "bread-chekh"
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 2000
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      }
+    ],
+    "signature": "brown-bread:3:bread-chekh|oil:2000:|rice:2000:|yogurt:1000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-chekh",
+      "text": "Зууван чех талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 173,
+    "number": 174
+  },
+  {
+    "id": 325,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 24,
+    "levelNumber": 25,
+    "customer": "Хулан",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "cheese",
+        "amount": 400
+      },
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "butter",
+        "amount": 400
+      }
+    ],
+    "signature": "butter:400:|cheese:400:|green-apple:500:|red-apple:2000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 174,
+    "number": 175
+  },
+  {
+    "id": 326,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 25,
+    "levelNumber": 26,
+    "customer": "Дөлгөөн",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "cucumber",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "butter",
+        "amount": 600
+      }
+    ],
+    "signature": "butter:600:|cucumber:2000:|green-apple:1500:|milk:3000:|onion:2000:|red-apple:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 175,
+    "number": 176
+  },
+  {
+    "id": 327,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 26,
+    "levelNumber": 27,
+    "customer": "Мөнх",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "onion",
+        "amount": 2000
+      }
+    ],
+    "signature": "brown-bread:3:|cabbage:3000:|icecream:120:|onion:2000:|white-bread:1:bread-atar",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 176,
+    "number": 177
+  },
+  {
+    "id": 328,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 27,
+    "levelNumber": 28,
+    "customer": "Марал",
+    "title": "Тусгай хүсэлт",
+    "message": "Мишээл талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1,
+        "variantId": "bread-misheel"
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      }
+    ],
+    "signature": "brown-bread:1:bread-misheel|green-apple:1500:|icecream:120:|white-bread:2:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-misheel",
+      "text": "Мишээл талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 177,
+    "number": 178
+  },
+  {
+    "id": 329,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 28,
+    "levelNumber": 29,
+    "customer": "Билгүүн",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "flour",
+        "amount": 2000
+      },
+      {
+        "productId": "cheese",
+        "amount": 600
+      }
+    ],
+    "signature": "cheese:600:|flour:2000:|green-apple:500:|tomato:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 178,
+    "number": 179
+  },
+  {
+    "id": 330,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 29,
+    "levelNumber": 30,
+    "customer": "Солонго",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "onion",
+        "amount": 3000
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      }
+    ],
+    "signature": "cheese:200:|eggs:12:|onion:3000:|red-apple:2000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 179,
+    "number": 180
+  },
+  {
+    "id": 331,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 30,
+    "levelNumber": 31,
+    "customer": "Оюун",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 2,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "icecream",
+        "amount": 120
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      }
+    ],
+    "signature": "eggs:12:|icecream:120:|milk:3000:|water:2000:|white-bread:2:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 180,
+    "number": 181
+  },
+  {
+    "id": 332,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 31,
+    "levelNumber": 32,
+    "customer": "Болд",
+    "title": "Тусгай хүсэлт",
+    "message": "Тамир талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 2,
+        "variantId": "bread-tamir"
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 1000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      },
+      {
+        "productId": "rice",
+        "amount": 2000
+      }
+    ],
+    "signature": "brown-bread:2:bread-tamir|cabbage:1000:|oil:1000:|rice:2000:|sugar:1000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-tamir",
+      "text": "Тамир талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 181,
+    "number": 182
+  },
+  {
+    "id": 333,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 32,
+    "levelNumber": 33,
+    "customer": "Ариун",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1500
+      },
+      {
+        "productId": "sugar",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      }
+    ],
+    "signature": "brown-bread:3:|flour:1000:|green-apple:1500:|icecream:180:|sugar:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 182,
+    "number": 183
+  },
+  {
+    "id": 334,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 33,
+    "levelNumber": 34,
+    "customer": "Туул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "sugar",
+        "amount": 3000
+      },
+      {
+        "productId": "pasta",
+        "amount": 1000
+      },
+      {
+        "productId": "cabbage",
+        "amount": 1000
+      }
+    ],
+    "signature": "cabbage:1000:|pasta:1000:|red-apple:1000:|sugar:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 183,
+    "number": 184
+  },
+  {
+    "id": 335,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 34,
+    "levelNumber": 35,
+    "customer": "Номин",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 2,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 3
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "salt",
+        "amount": 2000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      }
+    ],
+    "signature": "banana:2000:|brown-bread:3:|green-apple:500:|salt:2000:|white-bread:2:bread-atar|yogurt:1500:",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 184,
+    "number": 185
+  },
+  {
+    "id": 336,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 35,
+    "levelNumber": 36,
+    "customer": "Ану",
+    "title": "Тусгай хүсэлт",
+    "message": "Өгөөж хөх тарианы талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 3,
+        "variantId": "bread-rye"
+      },
+      {
+        "productId": "white-bread",
+        "amount": 2
+      },
+      {
+        "productId": "rice",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      },
+      {
+        "productId": "eggs",
+        "amount": 18
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      }
+    ],
+    "signature": "brown-bread:3:bread-rye|cheese:200:|cucumber:3000:|eggs:18:|rice:1000:|white-bread:2:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-rye",
+      "text": "Өгөөж хөх тарианы талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 185,
+    "number": 186
+  },
+  {
+    "id": 337,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 36,
+    "levelNumber": 37,
+    "customer": "Бат",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "flour",
+        "amount": 3000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      }
+    ],
+    "signature": "cheese:200:|flour:3000:|green-apple:1000:|tomato:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 186,
+    "number": 187
+  },
+  {
+    "id": 338,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 37,
+    "levelNumber": 38,
+    "customer": "Саруул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "banana",
+        "amount": 3000
+      },
+      {
+        "productId": "milk",
+        "amount": 1000
+      },
+      {
+        "productId": "carrot",
+        "amount": 1000
+      },
+      {
+        "productId": "cucumber",
+        "amount": 1000
+      }
+    ],
+    "signature": "banana:3000:|carrot:1000:|cucumber:1000:|milk:1000:|red-apple:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 187,
+    "number": 188
+  },
+  {
+    "id": 339,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 38,
+    "levelNumber": 39,
+    "customer": "Энхжин",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "carrot",
+        "amount": 2000
+      },
+      {
+        "productId": "water",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 3000
+      }
+    ],
+    "signature": "carrot:2000:|salt:3000:|water:3000:|white-bread:1:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 188,
+    "number": 189
+  },
+  {
+    "id": 340,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 39,
+    "levelNumber": 40,
+    "customer": "Тэмүүлэн",
+    "title": "Тусгай хүсэлт",
+    "message": "Зууван чех талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 2,
+        "variantId": "bread-chekh"
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 1000
+      },
+      {
+        "productId": "milk",
+        "amount": 3000
+      },
+      {
+        "productId": "white-bread",
+        "amount": 1
+      }
+    ],
+    "signature": "brown-bread:2:bread-chekh|flour:1000:|milk:3000:|orange:1000:|white-bread:1:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-chekh",
+      "text": "Зууван чех талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 189,
+    "number": 190
+  },
+  {
+    "id": 341,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 40,
+    "levelNumber": 41,
+    "customer": "Хулан",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "cheese",
+        "amount": 200
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      }
+    ],
+    "signature": "cheese:200:|flour:1000:|green-apple:500:|icecream:60:|tomato:1000:|yogurt:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 190,
+    "number": 191
+  },
+  {
+    "id": 342,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 41,
+    "levelNumber": 42,
+    "customer": "Дөлгөөн",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "brown-bread",
+        "amount": 1
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "cucumber",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:1:|cucumber:3000:|green-apple:500:|orange:2000:|red-apple:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 191,
+    "number": 192
+  },
+  {
+    "id": 343,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 42,
+    "levelNumber": 43,
+    "customer": "Мөнх",
+    "title": "Тусгай хүсэлт",
+    "message": "Атар талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 2,
+        "variantId": "bread-atar"
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "water",
+        "amount": 2000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      },
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      }
+    ],
+    "signature": "butter:200:|green-apple:1000:|red-apple:1000:|tomato:3000:|water:2000:|white-bread:2:bread-atar",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-atar",
+      "text": "Атар талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 192,
+    "number": 193
+  },
+  {
+    "id": 344,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 43,
+    "levelNumber": 44,
+    "customer": "Марал",
+    "title": "Тусгай хүсэлт",
+    "message": "Мишээл талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 2,
+        "variantId": "bread-misheel"
+      },
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "oil",
+        "amount": 3000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      }
+    ],
+    "signature": "brown-bread:2:bread-misheel|oil:3000:|red-apple:1000:|yogurt:1000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-misheel",
+      "text": "Мишээл талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 193,
+    "number": 194
+  },
+  {
+    "id": 345,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 44,
+    "levelNumber": 45,
+    "customer": "Билгүүн",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 500
+      },
+      {
+        "productId": "cabbage",
+        "amount": 2000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "milk",
+        "amount": 2000
+      }
+    ],
+    "signature": "banana:2000:|cabbage:2000:|green-apple:500:|milk:2000:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 194,
+    "number": 195
+  },
+  {
+    "id": 346,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 45,
+    "levelNumber": 46,
+    "customer": "Солонго",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 2000
+      },
+      {
+        "productId": "potato",
+        "amount": 1000
+      },
+      {
+        "productId": "eggs",
+        "amount": 12
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1000
+      }
+    ],
+    "signature": "eggs:12:|icecream:180:|potato:1000:|red-apple:2000:|salt:1000:|yogurt:1000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 195,
+    "number": 196
+  },
+  {
+    "id": 347,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 46,
+    "levelNumber": 47,
+    "customer": "Оюун",
+    "title": "Тусгай хүсэлт",
+    "message": "Табита талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "white-bread",
+        "amount": 1,
+        "variantId": "bread-tabita"
+      },
+      {
+        "productId": "pasta",
+        "amount": 1500
+      },
+      {
+        "productId": "orange",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 1000
+      }
+    ],
+    "signature": "orange:2000:|pasta:1500:|tomato:1000:|white-bread:1:bread-tabita",
+    "preference": {
+      "kind": "brand",
+      "productId": "white-bread",
+      "variantId": "bread-tabita",
+      "text": "Табита талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 196,
+    "number": 197
+  },
+  {
+    "id": 348,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 47,
+    "levelNumber": 48,
+    "customer": "Болд",
+    "title": "Тусгай хүсэлт",
+    "message": "Тамир талх авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "brown-bread",
+        "amount": 1,
+        "variantId": "bread-tamir"
+      },
+      {
+        "productId": "flour",
+        "amount": 1000
+      },
+      {
+        "productId": "orange",
+        "amount": 3000
+      },
+      {
+        "productId": "tomato",
+        "amount": 2000
+      },
+      {
+        "productId": "red-apple",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 3000
+      }
+    ],
+    "signature": "brown-bread:1:bread-tamir|flour:1000:|orange:3000:|red-apple:3000:|salt:3000:|tomato:2000:",
+    "preference": {
+      "kind": "brand",
+      "productId": "brown-bread",
+      "variantId": "bread-tamir",
+      "text": "Тамир талх авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 197,
+    "number": 198
+  },
+  {
+    "id": 349,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 48,
+    "levelNumber": 49,
+    "customer": "Ариун",
+    "title": "Тусгай хүсэлт",
+    "message": "Ногоон алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "green-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 180
+      },
+      {
+        "productId": "butter",
+        "amount": 200
+      },
+      {
+        "productId": "yogurt",
+        "amount": 1500
+      }
+    ],
+    "signature": "butter:200:|green-apple:1000:|icecream:180:|yogurt:1500:",
+    "preference": {
+      "kind": "color",
+      "productId": "green-apple",
+      "text": "Ногоон алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 198,
+    "number": 199
+  },
+  {
+    "id": 350,
+    "levelIndex": 3,
+    "level": 4,
+    "stageId": "preferences",
+    "levelOrderIndex": 49,
+    "levelNumber": 50,
+    "customer": "Туул",
+    "title": "Тусгай хүсэлт",
+    "message": "Улаан алим авъя.",
+    "day": "2026-11-09",
+    "lines": [
+      {
+        "productId": "red-apple",
+        "amount": 1000
+      },
+      {
+        "productId": "icecream",
+        "amount": 60
+      },
+      {
+        "productId": "cabbage",
+        "amount": 3000
+      },
+      {
+        "productId": "salt",
+        "amount": 1000
+      },
+      {
+        "productId": "banana",
+        "amount": 2000
+      },
+      {
+        "productId": "tomato",
+        "amount": 3000
+      }
+    ],
+    "signature": "banana:2000:|cabbage:3000:|icecream:60:|red-apple:1000:|salt:1000:|tomato:3000:",
+    "preference": {
+      "kind": "color",
+      "productId": "red-apple",
+      "text": "Улаан алим авъя."
+    },
+    "levelCount": 50,
+    "campaignIndex": 199,
+    "number": 200
+  }
+]

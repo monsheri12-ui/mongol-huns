@@ -1,0 +1,14 @@
+{
+  "generator": "Built-in ImageGen",
+  "created": "2026-11-10",
+  "asset": "produce-atlas.png",
+  "sha256": "6d7027c3b4abcc6c3642dd85a62a436fc85ed756b7ff120eb104ef85fee120be",
+  "size": [
+    1536,
+    1024
+  ],
+  "columns": 6,
+  "rows": 4,
+  "alphaPreserved": true,
+  "prompt": "Use case: product-mockup / game sprite atlas. Create ONE production game texture atlas: EXACTLY 6 columns by 4 rows, 24 equally sized square cells, total image aspect ratio 3:2. Transparent background and transparent generous gutters inside every cell. No background, no grid lines, no cell frames, no shadows outside objects, NO TEXT, NO LABELS, NO numbers. Photorealistic high quality close-up grocery produce cutouts, neutral soft studio lighting. Camera three-quarter front with entire item visible, all cells centered and isolated, no objects crossing cell edges. Each item occupies about 72% of its cell. Fresh items have natural clean healthy surfaces. Rotten items have unmistakable advanced localized rot and furry white/green mold patches, some dark sunken wet decaying areas, still recognizably the same food; do not depict mere harmless natural speckles as rot. Do not use grey desaturation as the only difference. All produce are WHOLE, not cut. Follow exact cell order LEFT TO RIGHT each row. ROW 1: (1) fresh shiny red apple with stem; (2) red apple with broad visible rotten brown areas and fuzzy mold; (3) fresh green apple; (4) green apple with visible rotten sunken patch and mold; (5) two fresh yellow bananas joined at stem; (6) two rotten bananas with substantial dark decay and furry mold, not just ripe freckles. ROW 2: (1) fresh orange; (2) orange with visible white and green fuzzy mold; (3) fresh carrot with green leafy tops; (4) rotten carrot with shrivelled blackened soft sections and mold; (5) fresh clean potato; (6) rotten potato with dark sunken decaying flesh and fuzzy mold. ROW 3: (1) fresh red tomato with small green calyx; (2) tomato with a broad wet brown rotten area and fuzzy mold; (3) fresh green cucumber; (4) soft shrivelled cucumber with dark decaying end and white mold; (5) fresh golden onion; (6) rotten onion with dark soft decay, peeling damaged skin and white mold. ROW 4: (1) fresh pale green whole cabbage head; (2) decaying cabbage head with wilted dark brown outer leaves and visible mold; (3) a small pile of assorted individually wrapped chocolate candies in rich gold and burgundy foil wrappers, no branding or text; (4) a small pile of white creamy round aarts dried curd candy pellets; (5) four fresh red apples in an orange mesh net produce bag, tied at top with a small plain cream label containing NO text; (6) four fresh oranges in an orange mesh net produce bag, tied at top with a small plain cream label containing NO text. Professional realistic grocery game asset, detailed recognizable textures, coherent scale within each fresh/rotten pair. Actual transparency required."
+}

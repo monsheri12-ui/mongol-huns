@@ -1,0 +1,164 @@
+/* Touch controls and short viewports. Keep this after the shared game styles. */
+@media (max-width: 1000px) {
+  .world-mode .dialog-close,
+  .world-mode .inspect-header .icon-button { width: 44px; height: 44px; }
+  .world-mode .zoom-photo-button { min-height: 44px; font-size: 10px; padding: 8px; }
+  .world-mode .zone-links button { min-height: 44px; }
+  .world-mode .qty-control button { width: 44px; height: 44px; flex: none; }
+  .world-mode .qty-control { gap: 6px; flex: none; }
+  .world-mode .cart-preview { min-height: 44px; overflow-wrap: anywhere; }
+  .world-mode .ru-help > summary { min-height: 44px; align-content: center; }
+  .world-mode .inspect-actions { position: sticky; bottom: 0; z-index: 2; }
+  .world-mode .inspect-header { position: sticky; top: 0; z-index: 3; background: #fff2d9; padding-top: 8px; padding-bottom: 8px; }
+  .settings-range input[type=range] { min-height: 44px; }
+  .settings-range input[type=number] { min-height: 44px; }
+  .settings-sound { min-height: 44px; }
+  .settings-bottom button { min-height: 44px; font-size: 11px; }
+  .po-icon-button { width: 44px; min-height: 44px; }
+  .po-play { width: 44px; height: 44px; }
+  .po-repeat { min-height: 44px; font-size: 11px !important; }
+  .po-speed-label { font-size: 10px; }
+  .po-speed-label select { min-height: 44px; font-size: 12px; }
+  .po-reveal { min-height: 44px; font-size: 12px !important; }
+  .po-retry { min-height: 44px; }
+  .po-seek { height: 44px; touch-action: none; }
+  .po-seek::-webkit-slider-thumb { width: 18px; height: 18px; margin-top: -8px; }
+  .po-seek::-moz-range-thumb { width: 16px; height: 16px; }
+  .po-time-row, .po-audio-status { font-size: 10px; }
+  .po-dialog .po-ru-hint > summary { min-height: 44px; }
+}
+
+@media (max-width: 620px) {
+  .world-hud { left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); top: max(12px, env(safe-area-inset-top)); gap: 6px; }
+  .world-hud .brand { max-width: calc(100% - 206px); min-width: 0; min-height: 44px; }
+  .world-hud .brand-title { overflow-wrap: anywhere; }
+  .world-header-actions { gap: 6px; flex: none; }
+  .world-header-actions #phone-button,
+  .world-header-actions #map-button,
+  .world-header-actions #settings-button { width: 44px; min-width: 44px; height: 44px; min-height: 44px; }
+  .world-header-actions #bag-button { min-width: 50px; min-height: 44px; }
+  .world-hud .location-plaque { left: auto; right: 0; transform: none; max-width: calc(100% - 164px); }
+  .world-mode .order-float { top: calc(max(12px, env(safe-area-inset-top)) + 62px); width: 156px; max-height: max(110px, calc(100dvh - 378px - max(12px, env(safe-area-inset-top)) - env(safe-area-inset-bottom))); }
+  .world-mode .order-float.collapsed { width: 112px; }
+  .order-float .ticket-toggle { min-height: 44px; font-size: 12px; }
+  .order-float .order-line { font-size: 11px; }
+  .order-float .order-amount { font-size: 9px; }
+  .order-float .customer strong { font-size: 11px; }
+  .order-float .ticket-listen-hint { font-size: 9px; }
+  .order-float .ticket-ru > summary { font-size: 10px; }
+  .order-float .ticket-ru .ru-order-text { font-size: 10px; }
+  .world-orders-link { min-height: 44px; font-size: 10px; }
+  .ticket-voice { min-height: 44px; font-size: 10px; }
+  .walk-controls { left: max(12px, env(safe-area-inset-left)); bottom: max(20px, env(safe-area-inset-bottom)); width: 156px; gap: 6px; }
+  .walk-pad { grid-template-columns: repeat(3, 44px); grid-template-rows: repeat(2, 44px); gap: 6px; }
+  .walk-caption { font-size: 8px; }
+  .turn-pad { gap: 9px; font-size: 8px; }
+  .turn-pad button { width: 44px; height: 44px; }
+  .nearby-panel { right: max(12px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); width: calc(100% - 188px); max-height: 178px; padding: 10px; }
+  .nearby-panel h2 { font-size: 11px; }
+  #nearby-products { max-height: 136px; overscroll-behavior: contain; }
+  #nearby-products > button { min-height: 44px; font-size: 11px; }
+  #nearby-products img { width: 33px; height: 33px; flex: none; }
+  #nearby-products small { font-size: 9px; }
+  .world-prompt { width: calc(100% - 24px); max-width: calc(100% - 24px); bottom: max(210px, calc(190px + env(safe-area-inset-bottom))); }
+  .world-prompt p { font-size: 11px; }
+  .world-prompt .primary-button { min-height: 44px; font-size: 12px; }
+  .photo-info { top: calc(max(12px, env(safe-area-inset-top)) + 115px); bottom: auto; right: max(12px, env(safe-area-inset-right)); max-width: calc(100% - 190px); min-height: 44px; padding: 7px 9px; font-size: 9px; }
+  .world-mode .toast { bottom: 285px; }
+  .world-mode .inspect-grid { grid-template-columns: minmax(0, 38%) minmax(0, 62%); }
+  .world-mode .product-label { padding: 12px; min-width: 0; overflow-wrap: anywhere; }
+  .world-mode .cart-line { flex-wrap: wrap; gap: 8px; }
+  .world-mode .cart-preview { flex-basis: 145px; }
+  .world-mode .packing-panel .bag-scene { height: 100px; }
+  .po-chat { padding: 16px 12px; }
+  .po-day-chip { margin-bottom: 16px; }
+}
+
+@media (max-width: 380px) {
+  .world-hud .brand-mark, .world-hud .brand-subtitle { display: none; }
+  .world-hud .brand-title { font-size: 10px; }
+  .world-mode .inspect-grid { padding-left: 10px; padding-right: 10px; }
+  .world-mode .inspect-picture > .product-art { width: 110px; }
+}
+
+/* A new-message banner uses the spare corner without covering the order. */
+@media (max-width: 620px) and (min-height: 501px) {
+  .po-incoming { top: calc(max(12px, env(safe-area-inset-top)) + 115px); right: max(12px, env(safe-area-inset-right)); width: calc(100% - 188px); max-width: none; padding: 10px; gap: 7px; }
+  .po-incoming-icon { width: 28px; height: 32px; }
+  .po-incoming-icon .po-icon { width: 21px; height: 21px; }
+  .po-incoming strong { font-size: 12px; }
+  .world-mode:has(.po-incoming:not([hidden])) .photo-info { visibility: hidden; }
+}
+
+/* On a horizontal phone, reserve separate columns for walking, hints and stock. */
+@media (min-width: 501px) and (max-width: 1000px) and (max-height: 500px) {
+  .world-hud { top: max(10px, env(safe-area-inset-top)); left: max(12px, env(safe-area-inset-left)); right: max(12px, env(safe-area-inset-right)); }
+  .world-hud .brand { min-height: 44px; padding: 8px 10px; }
+  .world-hud .brand-title { font-size: 13px; }
+  .world-hud .brand-subtitle { display: none; }
+  .world-hud .location-plaque { top: 0; left: 50%; right: auto; transform: translateX(-50%); max-width: 170px; padding: 8px 12px; }
+  .world-hud .location-plaque strong { font-size: 10px; }
+  .world-header-actions #phone-button,
+  .world-header-actions #map-button,
+  .world-header-actions #settings-button { width: 44px; min-width: 44px; min-height: 44px; height: 44px; justify-content: center; padding: 7px; }
+  .world-header-actions #phone-button > span,
+  .world-header-actions #map-button > span:nth-child(2),
+  .world-header-actions #bag-button > span:nth-child(2) { display: none; }
+  .world-header-actions #bag-button { min-width: 50px; min-height: 44px; }
+  .world-mode .order-float { top: calc(max(10px, env(safe-area-inset-top)) + 58px); left: max(12px, env(safe-area-inset-left)); width: 210px; max-height: calc(100dvh - 184px - max(10px, env(safe-area-inset-top)) - env(safe-area-inset-bottom)); }
+  .order-float .ticket-toggle { min-height: 44px; font-size: 12px; padding: 8px 12px; }
+  .world-orders-link { min-height: 44px; font-size: 10px; }
+  .walk-controls { left: max(12px, env(safe-area-inset-left)); bottom: max(16px, env(safe-area-inset-bottom)); width: 200px; flex-direction: row; gap: 12px; }
+  .walk-caption, .keyboard-hint { display: none; }
+  .walk-pad { grid-template-columns: repeat(3, 44px); grid-template-rows: repeat(2, 44px); gap: 6px; }
+  .turn-pad { flex-direction: column; gap: 6px; font-size: 0; letter-spacing: 0; line-height: 0; }
+  .turn-pad button { width: 44px; height: 44px; flex: none; }
+  .nearby-panel { right: max(12px, env(safe-area-inset-right)); bottom: max(16px, env(safe-area-inset-bottom)); width: 210px; padding: 10px; max-height: 178px; }
+  .nearby-panel h2 { font-size: 11px; }
+  .nearby-panel h2 small { display: none; }
+  #nearby-products { max-height: 136px; }
+  #nearby-products > button { min-height: 44px; font-size: 11px; }
+  #nearby-products small { font-size: 9px; }
+  .world-prompt { bottom: max(18px, env(safe-area-inset-bottom)); left: calc(50% + (max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))) / 2); width: calc(100% - 454px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); max-width: calc(100% - 454px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); }
+  .world-prompt p { font-size: 10px; padding: 7px 10px; }
+  .world-prompt .primary-button { min-height: 44px; font-size: 11px; }
+  .photo-info { top: calc(max(10px, env(safe-area-inset-top)) + 58px); bottom: auto; right: max(12px, env(safe-area-inset-right)); max-width: 210px; min-height: 44px; font-size: 9px; padding: 7px 9px; }
+  .world-mode .toast { bottom: 160px; }
+  .po-incoming { top: 68px; left: 50%; right: auto; transform: translateX(-50%); width: 230px; }
+  .world-mode .inspect-grid { grid-template-columns: minmax(0, 40%) minmax(0, 60%); }
+  .world-mode .inspect-picture { min-height: 170px; }
+  .world-mode .inspect-picture > .product-art { height: 165px; width: 175px; }
+  dialog.po-dialog, .world-mode dialog.po-dialog { width: 680px; max-width: calc(100vw - 16px); max-height: calc(100dvh - 8px); }
+  .po-stage { padding: 4px; }
+  .po-hand, .po-side-key { display: none; }
+  .po-phone { width: 660px; max-width: calc(100vw - 28px); height: calc(100dvh - 16px); transform: none; border-radius: 28px; padding: 7px; }
+  .po-screen { border-radius: 20px; }
+  .po-statusbar { height: 24px; min-height: 24px; }
+  .po-speaker { top: 5px; }
+  .po-contact-header { padding: 3px 12px 5px 8px; flex: none; }
+  .po-chat { min-height: 0; padding: 10px 12px; display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 8px 12px; align-content: start; align-items: start; }
+  .po-day-chip, .po-message-intro { display: none; }
+  .po-message { grid-column: 1; grid-row: 1 / span 4; margin: 0; padding: 10px 12px; }
+  .po-message-top { margin-bottom: 6px; }
+  .po-waveform { height: 22px; }
+  .po-audio-tools { margin-top: 5px; padding-top: 4px; }
+  .po-audio-status { margin-top: 6px; }
+  .po-reveal, .po-ru-hint, .po-transcript, .po-heard { grid-column: 2; margin: 0; }
+  .po-bottom { padding: 3px 12px 4px; }
+  .po-task-note { display: none; }
+  .po-speech-notice { margin: 0 !important; font-size: 8px !important; }
+  .po-speech-notice br { display: none; }
+  .po-home-indicator { margin-top: 3px; height: 3px; }
+}
+
+@media (min-width: 501px) and (max-width: 700px) and (max-height: 500px) {
+  .po-incoming { display: none; }
+  .world-hud .brand { max-width: 145px; }
+  .world-hud .brand-mark { display: none; }
+  .world-hud .brand-title { font-size: 10px; }
+  .world-hud .location-plaque { max-width: 130px; gap: 5px; padding: 7px 9px; }
+  .world-hud .location-plaque strong { font-size: 8px; }
+  .world-hud .location-plaque > span { display: none; }
+  .nearby-panel { width: 178px; }
+  .world-prompt { width: calc(100% - 422px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); max-width: calc(100% - 422px - max(12px, env(safe-area-inset-left)) - max(12px, env(safe-area-inset-right))); }
+}

@@ -1,0 +1,26 @@
+'use strict';
+const assert=require('node:assert/strict'),G=require('../dist/game-core.js'),F=require('../dist/fulfilment.js'),I=require('../dist/input-policy.js');
+let checks=0;const ok=(v,m)=>{checks++;assert.ok(v,m);},eq=(a,b,m)=>{checks++;assert.deepEqual(a,b,m);};
+const order=G.createCampaign([50,50,50,50])[0],inventory=G.createInventory(order),cart={};
+for(const line of order.lines){const lot=inventory.find(l=>l.productId===line.productId&&!l.hidden&&!G.isUnfit(l)&&l.pack===G.BY_ID[l.productId].pack);cart[lot.id]=line.amount/lot.pack;}
+ok(F.deliveryReview(order,inventory,cart).ok,'Full fresh order is complete');
+eq(F.deliveryReview(order,inventory,cart).fine,0,'Full order has no fine');
+ok(F.lineProgress(order,inventory,cart).every(l=>l.complete),'Every collected line can be crossed out');
+const milk=inventory.find(l=>cart[l.id]&&l.productId==='milk'),partial={...cart};delete partial[milk.id];
+const review=F.deliveryReview(order,inventory,partial);
+ok(review.canSend&&!review.ok,'Incomplete order can be handed over');eq(review.fine,4800,'Fine is fictional value of missing milk only');
+ok(!F.deliveryReview(order,inventory,partial,{},false).canSend,'Replacement must actually replace the requested amount');
+ok(!F.lineProgress(order,inventory,partial).find(l=>l.productId==='milk').complete,'Returning a product removes its checklist mark');
+eq(F.sanitizePacking('sealed',review),'sealed','Sealed incomplete order can be restored');
+eq(F.sanitizeFine({...review,recorded:true},order),{amount:4800,missing:review.missing,recorded:true},'Fine receipt survives reload');
+ok(F.runStars(1,F.emptyService(),review.fine)===1,'Incomplete delivery receives one star');
+ok(F.deliveryReview(order,inventory,{}).fine>review.fine,'An empty handover incurs the whole missing order value');
+const brown=inventory.find(l=>l.productId==='brown-bread'&&!G.isExpired(l));ok(!F.deliveryReview(order,inventory,{...cart,[brown.id]:1}).canSend,'Wrong bread is not treated as merely missing bread');
+eq(F.initStats(null,{a:{service:{complaints:[{productId:'milk',amount:1000,status:'refunded'}]}}}),{fines:0,fineAmount:0,refunds:1,refundAmount:4800},'Existing refund is counted on profile upgrade');
+eq(F.initStats({fines:2,fineAmount:500,refunds:3,refundAmount:900}),{fines:2,fineAmount:500,refunds:3,refundAmount:900},'Counters retain their totals');
+for(const key of ['KeyF','KeyV','KeyC','KeyW','ArrowLeft','Enter','Space'])for(const modifier of ['ctrlKey','metaKey'])ok(!I.gameKey({code:key,[modifier]:true}),'Browser find, copy/paste and modified keys are never game actions');
+ok(!I.menuClick({button:0,metaKey:true}),'Command click cannot open the game menu');ok(!I.menuClick({button:0,ctrlKey:true}),'Control click cannot open the game menu');ok(I.menuClick({button:0}),'Ordinary explicit menu click works');
+ok(!I.gameKey({target:{closest:()=>true}}),'Typing in a field never walks the character');
+const white=inventory.filter(l=>l.productId==='white-bread'&&!l.hidden&&!G.isExpired(l));ok(white.length>=2,'White bread is visibly stocked with multiple fresh brands');ok(white.every(l=>G.BREAD_BY_ID[l.variantId].productId==='white-bread'),'White bread is not substituted with brown bread');
+const loose=inventory.filter(l=>G.isBulk(l)&&G.BY_ID[l.productId].category==='produce');ok(loose.every(l=>!l.expires&&!l.manufactured),'Loose produce has no visible expiry metadata');
+console.log(`PASS: ${checks} checklist, partial handover, fine, packing, counters, clipboard and white-bread checks.`);

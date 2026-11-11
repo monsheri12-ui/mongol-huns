@@ -1,0 +1,13 @@
+/* Closed cartons on the shelf; the shell check opens the actual six-egg box. */
+(function(root){
+  'use strict';let serial=0;
+  function carton(open=false,damaged=false,extra=''){
+    const id=`egg-carton-${++serial}`;
+    const defs=`<defs><linearGradient id="${id}-paper" x2="0" y2="1"><stop stop-color="#e7dfc5"/><stop offset="1" stop-color="#b9ad88"/></linearGradient><radialGradient id="${id}-shell" cx=".32" cy=".22" r=".8"><stop stop-color="#fffdf3"/><stop offset=".52" stop-color="#f3e6cd"/><stop offset="1" stop-color="#cdbb99"/></radialGradient><filter id="${id}-shadow" x="-.25" y="-.3" width="1.5" height="1.7"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#574829" flood-opacity=".22"/></filter></defs>`;
+    const closed=`<g filter="url(#${id}-shadow)"><path d="M31 133 64 90H250L286 135 274 207H44Z" fill="#b3a37c" stroke="#938560" stroke-width="2"/><path d="M31 133H286L279 163H38Z" fill="#c5b68f"/><path d="M31 133 64 82H250L286 133 276 153H42Z" fill="url(#${id}-paper)" stroke="#aa9b73" stroke-width="2"/><path d="M53 124 76 92H239L263 124Z" fill="#d4c8a6"/><path d="M106 88H205L224 146H87Z" fill="#3e624e"/><text x="156" y="111" text-anchor="middle" fill="#fff8e0" font-family="Arial,sans-serif" font-size="15" font-weight="700">ӨНДӨГ</text><text x="157" y="132" text-anchor="middle" fill="#f3e2b5" font-family="Arial,sans-serif" font-size="12">6 ширхэг</text><path d="M126 166H190L186 179H130Z" fill="#ab9a71"/><path d="M50 186H267" stroke="#a69670" stroke-width="2"/></g>`;
+    const eggs=Array.from({length:6},(_,i)=>{const x=80+i%3*78,y=i<3?125:186;return `<g><ellipse cx="${x}" cy="${y+17}" rx="31" ry="15" fill="#827551" opacity=".36"/><ellipse cx="${x}" cy="${y-4}" rx="26" ry="35" fill="url(#${id}-shell)" stroke="#cfbf9e" stroke-width="1.2"/>${damaged&&i===4?`<path d="m${x-8} ${y-27} 8 12-6 9 15 9-5 12" fill="none" stroke="#745b3f" stroke-width="2.8" stroke-linejoin="round"/>`:''}</g>`;}).join('');
+    const inside=`<g filter="url(#${id}-shadow)"><path d="M43 91 58 20H264L281 91Z" fill="url(#${id}-paper)" stroke="#b4a480" stroke-width="2"/><path d="M68 40H253L261 76H60Z" fill="#c7bb99"/><text x="160" y="64" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#5c6c4d">ӨНДӨГ · 6 ширхэг</text><path d="M30 96H289L281 239H39Z" fill="#b6a781" stroke="#93835f" stroke-width="2"/><path d="M43 99H276L268 226H51Z" fill="#c8bc98"/>${eggs}<path d="M39 224H281L278 246H43Z" fill="url(#${id}-paper)" stroke="#ab9b73"/></g>`;
+    return `<svg class="product-art egg-carton-art ${extra}" viewBox="0 0 320 270" data-learning aria-hidden="true">${defs}${open?inside:closed}</svg>`;
+  }
+  root.EggArt={carton};
+})(typeof window!=='undefined'?window:globalThis);

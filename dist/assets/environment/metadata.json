@@ -1,0 +1,82 @@
+{
+  "citySummerMorning": {
+    "path": "assets/environment/city-summer-morning.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "summer",
+    "time": "morning",
+    "width": 2172,
+    "height": 724
+  },
+  "citySummerDay": {
+    "path": "assets/environment/city-summer-day.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "summer",
+    "time": "day",
+    "width": 2172,
+    "height": 724
+  },
+  "citySummerEvening": {
+    "path": "assets/environment/city-summer-evening.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-09",
+    "season": "summer",
+    "time": "evening",
+    "width": 2172,
+    "height": 724
+  },
+  "citySummerNight": {
+    "path": "assets/environment/city-summer-night.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "summer",
+    "time": "night",
+    "width": 2172,
+    "height": 724
+  },
+  "cityWinterMorning": {
+    "path": "assets/environment/city-winter-morning.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "winter",
+    "time": "morning",
+    "width": 2172,
+    "height": 724
+  },
+  "cityWinterDay": {
+    "path": "assets/environment/city-winter-day.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "winter",
+    "time": "day",
+    "width": 2172,
+    "height": 724
+  },
+  "cityWinterEvening": {
+    "path": "assets/environment/city-winter-evening.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "winter",
+    "time": "evening",
+    "width": 2172,
+    "height": 724
+  },
+  "cityWinterNight": {
+    "path": "assets/environment/city-winter-night.webp",
+    "kind": "generated-panoramic-scenery",
+    "tool": "built-in imagegen",
+    "date": "2026-11-11",
+    "season": "winter",
+    "time": "night",
+    "width": 2172,
+    "height": 724
+  }
+}

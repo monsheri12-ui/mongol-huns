@@ -1,0 +1,77 @@
+{
+  "version": "1.8.2",
+  "type": "one saved game-day promotion, rotating after a completed shift",
+  "reference_date": "2026-11-11",
+  "design_reference": "https://www.mycart.mn/branches/nomin-naadam1",
+  "design_observed": "Grey struck-through old price, larger red current price, separate percentage badge. Warm yellow shelf field is adapted to the existing cream/green game.",
+  "pricing_note": "Normal prices below use the exact photographed packages. Offers rotate by saved game day and are game promotions, not a statement that the retailer currently sells every item at that reduced price. Other goods retain the earlier fictional refund rates. All102 pre-existing goods keep their rates.",
+  "products": [
+    {
+      "id": "canned-corn",
+      "amount": 150,
+      "unit": "g",
+      "regular": 7299,
+      "game_sale_price": 5839,
+      "source_page": "https://nomin.mn/p/1060062",
+      "note": "Bonduelle Goldmais150g; distinct from other corn tin sizes."
+    },
+    {
+      "id": "canned-red-beans",
+      "amount": 425,
+      "unit": "g",
+      "regular": 3518,
+      "game_sale_price": 2814,
+      "source_page": "https://nomin.mn/p/1187137",
+      "note": "Ace425g; not Bonduelle from the sample promotion row."
+    },
+    {
+      "id": "rolled-oats",
+      "amount": 400,
+      "unit": "g",
+      "regular": 2958,
+      "game_sale_price": 2514,
+      "source_page": "https://nomin.mn/p/1150559",
+      "note": "Слава400g;4+pack price is a wholesale condition and is not used as a unit sale price."
+    },
+    {
+      "id": "paprika",
+      "amount": 10,
+      "unit": "g",
+      "regular": 1278,
+      "game_sale_price": 1086,
+      "source_page": "https://nomin.mn/p/1116706",
+      "note": "Приправыч10g;10+wholesale condition not substituted for ordinary price."
+    },
+    {
+      "id": "mozzarella",
+      "amount": 200,
+      "unit": "g",
+      "regular": 19580,
+      "game_sale_price": 15664,
+      "source_page": "https://nomin.mn/p/1123790",
+      "note": "Arla200g. The source card reports out of stock; the game simulates a stocked shelf."
+    },
+    {
+      "id": "canned-coffee",
+      "amount": 240,
+      "unit": "ml",
+      "regular": 3548,
+      "game_sale_price": 2836,
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "note": "Exact image match to nomin-352901 Pokka double espresso black with sugar240ml; same two price values were visible in the retailer catalogue."
+    }
+  ],
+  "rotation": {
+    "cycle": [
+      "rolled-oats",
+      "paprika",
+      "mozzarella",
+      "canned-corn",
+      "canned-red-beans",
+      "canned-coffee"
+    ],
+    "boundary": "completed full shift or completed selected-level shift",
+    "persistence": "saved ordinal game day; pause, browser reload and wall-clock date do not rotate offers",
+    "inactive_prices": "all other cycle products use their regular prices"
+  }
+}

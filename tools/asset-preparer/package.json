@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "description": "Optional build-time image tools; generated previews are checked in, so normal game builds need no native image tools.",
+  "dependencies": {"sharp": "0.35.5", "@napi-rs/canvas": "0.1.100"}
+}

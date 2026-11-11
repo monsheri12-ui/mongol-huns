@@ -1,0 +1,989 @@
+{
+  "version": "1.8.0",
+  "retailer_catalogue_examined": 1071,
+  "catalogue_source": "https://www.mycart.mn/branches/nomin-naadam1",
+  "previous_products": 102,
+  "added_products": 95,
+  "total_products": 197,
+  "recorded_order_pool": 91,
+  "recorded_orders": 200,
+  "categories_added": {
+    "alcohol": 2,
+    "bread": 7,
+    "canned": 9,
+    "dairy": 12,
+    "drinks": 1,
+    "frozen": 4,
+    "household": 5,
+    "meat": 8,
+    "pantry": 14,
+    "produce": 23,
+    "ready": 2,
+    "sweets": 8
+  },
+  "method": "Compare distinct food and routine household types in primary Mongolian grocery catalogues. Check name, photo identity, net mass or piece count, and chilled/frozen placement. Keep original photographs and source links.",
+  "corrections": [
+    "Seaweed photographed pack30g overrides inconsistent35g retailer card.",
+    "Cream is20% Домик в деревне; conflicting8.2% catalogue text omitted.",
+    "Ghee150g and closed4-piece burger buns replace mismatched candidate photos.",
+    "Existing dried-curd29g is dried aarts; separate aaruul450g is retained."
+  ],
+  "limitations": [
+    "Game dates are simulated batches; they are not real current manufacturer expiry dates.",
+    "21 new loose produce types use a1kg weighing reference, not a factory pack.",
+    "Neutral berry punnets and raw-fillet trays are game presentation around original retailer photos.",
+    "No new speech has been generated for these95 additions; previous200 recordings remain exact."
+  ],
+  "products": [
+    {
+      "id": "rolled-oats",
+      "nameMN": "Овьёос",
+      "nameRU": "Овсяные хлопья",
+      "category": "pantry",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1150559",
+      "sha256": "2126d5617dba5c617e0ccfb01ae923f4db3e47fdf025371cdc31df7b4e50dc20"
+    },
+    {
+      "id": "millet",
+      "nameMN": "Шар будаа",
+      "nameRU": "Пшено",
+      "category": "pantry",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1185575",
+      "sha256": "8d193773cd0b12323394101f8f87e603ff6538bae8c29a49631e7a4f98f9b167"
+    },
+    {
+      "id": "pearl-barley",
+      "nameMN": "Хөц будаа",
+      "nameRU": "Перловая крупа",
+      "category": "pantry",
+      "pack": 800,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1293629",
+      "sha256": "23fd241295592e5aaf9f0daf4833e5d4483552ea8f74e82156f9ad45d45dc1a1"
+    },
+    {
+      "id": "red-lentils",
+      "nameMN": "Улаан сэвэг зарам",
+      "nameRU": "Красная чечевица",
+      "category": "pantry",
+      "pack": 350,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1157357",
+      "sha256": "14967bd2954103bf7231a85f93531dbb26fa28eb75aca2b3682011affe000494"
+    },
+    {
+      "id": "honey",
+      "nameMN": "Зөгийн бал",
+      "nameRU": "Мёд",
+      "category": "canned",
+      "pack": 250,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1134122",
+      "sha256": "0e1cd1b11e5ba3517af44a6414cc622a8673f5b4cb0162bf1880f3a4b76f264d"
+    },
+    {
+      "id": "tomato-paste",
+      "nameMN": "Улаан лоолийн паста",
+      "nameRU": "Томатная паста",
+      "category": "canned",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1152915",
+      "sha256": "64e48e53fe6d76155cdfff8f2755cf3f42889b8fcf8a54b8e166675cc07d2eae"
+    },
+    {
+      "id": "canned-peas",
+      "nameMN": "Нөөшилсөн ногоон вандуй",
+      "nameRU": "Консервированный зелёный горошек",
+      "category": "canned",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1124172",
+      "sha256": "1e543529d1891f43005bc7b0ce4cfc303fc602cb74d8437943df37d180df6b6e"
+    },
+    {
+      "id": "canned-corn",
+      "nameMN": "Нөөшилсөн амтат эрдэнэшиш",
+      "nameRU": "Консервированная кукуруза",
+      "category": "canned",
+      "pack": 150,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1060062",
+      "sha256": "6d79405bd43b67785d4864aaf94c3991e0e9332da145ad6fa1866d74db4c1fe3"
+    },
+    {
+      "id": "canned-red-beans",
+      "nameMN": "Лаазалсан улаан шош",
+      "nameRU": "Консервированная красная фасоль",
+      "category": "canned",
+      "pack": 425,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1187137",
+      "sha256": "4b982077499438a5fb966dd5f262eb039316efe2320ce35e123ebfe56be68bc5"
+    },
+    {
+      "id": "canned-mushrooms",
+      "nameMN": "Лаазалсан бүхэл мөөг",
+      "nameRU": "Консервированные шампиньоны",
+      "category": "canned",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1140387",
+      "sha256": "96564ce7b3a1e554f5a5c6ef27b12d0636a2e06956a0e6bf3047e8696260b624"
+    },
+    {
+      "id": "apple-vinegar",
+      "nameMN": "Алимны цуу",
+      "nameRU": "Яблочный уксус",
+      "category": "canned",
+      "pack": 900,
+      "measure": "volume",
+      "source_page": "https://nomin.mn/p/1181242",
+      "sha256": "105071c6b64ca824b2514d73572da9c418639185bf701a44ee82440cc40acbd5"
+    },
+    {
+      "id": "paprika",
+      "nameMN": "Нунтагласан паприка",
+      "nameRU": "Молотая паприка",
+      "category": "pantry",
+      "pack": 10,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1116706",
+      "sha256": "754a392200f7bb680d90b498cc5ecdc1ce050ab8f91e984ecfdd703d806e5a50"
+    },
+    {
+      "id": "garlic-powder",
+      "nameMN": "Нунтаг сармис",
+      "nameRU": "Сушёный молотый чеснок",
+      "category": "pantry",
+      "pack": 10,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1116741",
+      "sha256": "fd1b7f4584ff4f61237ae406659ad63301d9d8ccc4d80c218d5a4c39e13291a8"
+    },
+    {
+      "id": "potato-starch",
+      "nameMN": "Төмсний цардуул",
+      "nameRU": "Картофельный крахмал",
+      "category": "pantry",
+      "pack": 70,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1116663",
+      "sha256": "b0d2aedbd8537c0c106f12313c818999a7ccb5f5424cfe447ad3fee5064be432"
+    },
+    {
+      "id": "dry-yeast",
+      "nameMN": "Хуурай исгэгч",
+      "nameRU": "Сухие дрожжи",
+      "category": "pantry",
+      "pack": 10,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1135139",
+      "sha256": "8edef03c3cd329e5f6b2cb03ba986cd0164f52bffec8178f04079dfb723b1474"
+    },
+    {
+      "id": "glass-noodles",
+      "nameMN": "Амтат төмсний пүнтүүз",
+      "nameRU": "Лапша из крахмала батата",
+      "category": "pantry",
+      "pack": 300,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1153713",
+      "sha256": "580b272c12abf183f1724014828e657d011199dd015a31d64cb380c81f7b2207"
+    },
+    {
+      "id": "kimchi",
+      "nameMN": "Кимчи",
+      "nameRU": "Кимчи",
+      "category": "ready",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1135847",
+      "sha256": "bf3805c305f98d016c8dc36e7e5dc5a9de640d1474c528e18bd0b8bdf01fb76d"
+    },
+    {
+      "id": "marinated-tofu",
+      "nameMN": "Амталсан дүпү",
+      "nameRU": "Маринованный тофу",
+      "category": "ready",
+      "pack": 200,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1129489",
+      "sha256": "90afc4ce8d67c6c890577101ba50b2c5131d4f595b17360977efde42790f4665"
+    },
+    {
+      "id": "roasted-seaweed",
+      "nameMN": "Шарж амталсан далайн байцаа",
+      "nameRU": "Обжаренные листы нори",
+      "category": "canned",
+      "pack": 30,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1128660",
+      "sha256": "d1bcaf1149c87a45de0e3c3de948a5b012e8a437e1fc215c6de09febc17271de"
+    },
+    {
+      "id": "mini-khuushuur",
+      "nameMN": "Үхрийн махтай мини хуушуур",
+      "nameRU": "Мини хуушууры с говядиной",
+      "category": "frozen",
+      "pack": 900,
+      "measure": "weight",
+      "source_page": "https://goodpricemarket.mn/mn/product/ukhriin-makhtai-mini-khuushuur-900gr-8656021232634",
+      "sha256": "ca48226922746c6c8c5e054c3cb98dc5f67c194fd5884e9681f3f8bd5565a61d"
+    },
+    {
+      "id": "frozen-fries",
+      "nameMN": "Хөлдөөсөн шарсан төмс",
+      "nameRU": "Замороженный картофель фри",
+      "category": "frozen",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/620623",
+      "sha256": "569f74363ff6f97fa869e7fd301a4973cddd6818dc7496da16b595e4592155c6"
+    },
+    {
+      "id": "frozen-broccoli",
+      "nameMN": "Хөлдөөсөн брокколи",
+      "nameRU": "Замороженная брокколи",
+      "category": "frozen",
+      "pack": 2500,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/196227",
+      "sha256": "1cf33204a8dea12a25f82501ae03230200e5640b57e3a6bd272039a570c23e2d"
+    },
+    {
+      "id": "frozen-peas",
+      "nameMN": "Хөлдөөсөн ногоон вандуй",
+      "nameRU": "Замороженный зелёный горошек",
+      "category": "frozen",
+      "pack": 450,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/196189",
+      "sha256": "f9abe6e1190089601e60d023c2a148ac9aded0e9a6ae42743e822efc73fa0ae9"
+    },
+    {
+      "id": "semolina",
+      "nameMN": "Хүүхдийн будаа",
+      "nameRU": "Манная крупа",
+      "category": "pantry",
+      "pack": 700,
+      "measure": "weight",
+      "source_page": "https://erp.afta.mn/shop/55010026-700-1144-103644?page=6&category=173&order=list_price+desc",
+      "sha256": "c22b7f355e7e925ce37d779c29fa59ca5fe28cb89d3fbbe2e8b00755bd753a6a"
+    },
+    {
+      "id": "split-peas",
+      "nameMN": "Хуваасан вандуй",
+      "nameRU": "Горох колотый",
+      "category": "pantry",
+      "pack": 800,
+      "measure": "weight",
+      "source_page": "https://goodpricemarket.mn/en/product/gudvill-vandui-gorokh-khuvaasan-800gr-4607120230957",
+      "sha256": "cced0bf37c3f33c8762f0afa207b8fce5a7bed075118e05a85a75ee2a9034f83"
+    },
+    {
+      "id": "cream",
+      "nameMN": "Сүүн крем",
+      "nameRU": "Сливки",
+      "category": "dairy",
+      "pack": 480,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "80fdc96ead958237df13eb8f2ad69c8429c5282709279daff623991c193ff013"
+    },
+    {
+      "id": "fresh-curds",
+      "nameMN": "Ээдэм",
+      "nameRU": "Свежий творог (ээдэм)",
+      "category": "dairy",
+      "pack": 100,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "679b9e860d7c65ecd6d789a1989d07930be1f75419990ecb5b015ddc8d521f0d"
+    },
+    {
+      "id": "urum",
+      "nameMN": "Өрөм",
+      "nameRU": "Молочная пенка (өрөм)",
+      "category": "dairy",
+      "pack": 300,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "e7cf0bf8a5ed869fbdd0366fb802be5b5a91075aa04d01f97a3a07d1a3c1209e"
+    },
+    {
+      "id": "margarine",
+      "nameMN": "Маргарин",
+      "nameRU": "Маргарин",
+      "category": "dairy",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "7c7ff0366ebc64a06be2299d3fb16a7c5bad7c4a3e0b57b0abd90aa7ad2ad112"
+    },
+    {
+      "id": "cream-cheese",
+      "nameMN": "Крем бяслаг",
+      "nameRU": "Сливочный творожный сыр",
+      "category": "dairy",
+      "pack": 200,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1223224",
+      "sha256": "ccbe17f205e7c2a12e36204ce2fc81b0b4bdd3408a8a3ca7c69573690fce36fb"
+    },
+    {
+      "id": "processed-cheese",
+      "nameMN": "Хайлмал бяслаг",
+      "nameRU": "Плавленый сыр",
+      "category": "dairy",
+      "pack": 150,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1123983",
+      "sha256": "ebe2d0560fba2e7b49cbc1976444216e3be61d065eba7ae98e31dfcb34e0cb57"
+    },
+    {
+      "id": "feta",
+      "nameMN": "Фета бяслаг",
+      "nameRU": "Сыр фета",
+      "category": "dairy",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "48fc4ddb1bd06623724d8940c6b02dd3d2076c9530dbcb1221e908e3ca44a4d9"
+    },
+    {
+      "id": "quail-eggs",
+      "nameMN": "Бөднө шувууны өндөг",
+      "nameRU": "Перепелиные яйца",
+      "category": "dairy",
+      "pack": 30,
+      "measure": "pieces",
+      "source_page": "https://nomin.mn/p/1152171",
+      "sha256": "8398b252a3180c2c4f79435a9099b4688d917a092e43de9ee43de724f33aed8d"
+    },
+    {
+      "id": "sausages",
+      "nameMN": "Зайдас",
+      "nameRU": "Сосиски",
+      "category": "meat",
+      "pack": 415,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1133145",
+      "sha256": "fd658d5f9beeaf235762dd1ecd0e0137fe48592344facb23a8d5b29532005ce2"
+    },
+    {
+      "id": "boiled-sausage",
+      "nameMN": "Чанамал хиам",
+      "nameRU": "Варёная колбаса",
+      "category": "meat",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1170931",
+      "sha256": "e8ce6a97eb04f4712d8805bb67c8146490b06a18e137b4dbe24703dff2716651"
+    },
+    {
+      "id": "meat-aspic",
+      "nameMN": "Царцаамаг",
+      "nameRU": "Холодец",
+      "category": "meat",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1180590",
+      "sha256": "f9971b975aabe1fc4143a784cd7ce55dd7d3ce705f39c7fe755af5dddb4d5853"
+    },
+    {
+      "id": "bacon",
+      "nameMN": "Гахайн утсан алаг мах",
+      "nameRU": "Копчёная свиная грудинка",
+      "category": "meat",
+      "pack": 200,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "10973ef0ab9008084e74851c64bc4e8d32a1a5162f2bdb8bc3376aa78f277df0"
+    },
+    {
+      "id": "salted-herring",
+      "nameMN": "Давсалсан май загас",
+      "nameRU": "Слабосолёная сельдь",
+      "category": "meat",
+      "pack": 250,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1138028",
+      "sha256": "308db5757d1a8fb0f9821a8a74267aaf31c6328055b4ecf90a6a556c6c28c5c9"
+    },
+    {
+      "id": "salmon-roe",
+      "nameMN": "Улаан түрс",
+      "nameRU": "Красная икра",
+      "category": "meat",
+      "pack": 90,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "0d9f220d3f4c66930d2dcd518a956d4ddc37a53430df66acc95f0c57e65118f7"
+    },
+    {
+      "id": "boortsog",
+      "nameMN": "Боорцог",
+      "nameRU": "Боорцог (жареная выпечка)",
+      "category": "bread",
+      "pack": 750,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1141545",
+      "sha256": "cd2f798356af47ef8ca3be77fa95699febd29913324d9a0e552e86114424ee04"
+    },
+    {
+      "id": "garlic-baguette",
+      "nameMN": "Сармистай багет талх",
+      "nameRU": "Багет с чесноком",
+      "category": "bread",
+      "pack": 250,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "eb6b12e072f3cfefb558b3e13e385e56d0eb4b20264cc4d00601107426c51fc3"
+    },
+    {
+      "id": "crispbread",
+      "nameMN": "Хатаасан талх",
+      "nameRU": "Хлебцы",
+      "category": "bread",
+      "pack": 250,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "dec7c8bde9b4c2df27520a552ae9ab70158518241ae78f6f5ce5b680dee6a536"
+    },
+    {
+      "id": "burger-buns",
+      "nameMN": "Гамбургерын талх",
+      "nameRU": "Булочки для бургеров",
+      "category": "bread",
+      "pack": 4,
+      "measure": "pieces",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "52f28d8255690098e0d71e2e334fb8735054189368f6658f2cd3931b6f7ff3b8"
+    },
+    {
+      "id": "cream-pastry",
+      "nameMN": "Цөцгийтэй хөмөл боов",
+      "nameRU": "Сливочная выпечка (хөмөл боов)",
+      "category": "bread",
+      "pack": 600,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "6bbf1920c84c6e879962470f20a257ba7bb8f14cf99399293c573fba683f6528"
+    },
+    {
+      "id": "yeeven",
+      "nameMN": "Үзэмтэй еэвэн",
+      "nameRU": "Еэвэн с изюмом",
+      "category": "bread",
+      "pack": 1,
+      "measure": "pieces",
+      "source_page": "https://nomin.mn/p/1141657",
+      "sha256": "1dc4cc61895850a60c8993b95cccf1ffb4106c97df753e1fb1d0893ae1a5213b"
+    },
+    {
+      "id": "ciabatta",
+      "nameMN": "Чиабатта талх",
+      "nameRU": "Чиабатта",
+      "category": "bread",
+      "pack": 6,
+      "measure": "pieces",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "915ceec780291715aa2f60ce4d6a89bcd3c4639079f1bb044cd21748be5c956f"
+    },
+    {
+      "id": "mozzarella",
+      "nameMN": "Моцарелла бяслаг",
+      "nameRU": "Сыр моцарелла",
+      "category": "dairy",
+      "pack": 200,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/1123790",
+      "sha256": "631d427eb267970b199724766c68a4ae226efd113c5884a2657b8212dc9c8235"
+    },
+    {
+      "id": "ghee",
+      "nameMN": "Шар тос",
+      "nameRU": "Топлёное масло",
+      "category": "dairy",
+      "pack": 150,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "d374e99427478e785adfea1d6dbd41cf90ef8648e6d5b10cfbfba90c0afb5a10"
+    },
+    {
+      "id": "aarts",
+      "nameMN": "Аарц",
+      "nameRU": "Аарц (творожная масса)",
+      "category": "dairy",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/4000150",
+      "sha256": "85864dd0b056d507dafb10fc3c05d6271536fe7dafccde759daf4ada9bebe1ff"
+    },
+    {
+      "id": "chicken-breast",
+      "nameMN": "Тахианы цээж мах",
+      "nameRU": "Куриная грудка",
+      "category": "meat",
+      "pack": 2000,
+      "measure": "weight",
+      "source_page": "https://buudai-tuv.mn/products/607580",
+      "sha256": "830fac52d303bb31591ce20ed68c2c1449c904e174b190402248c745276bd706"
+    },
+    {
+      "id": "chicken-wings",
+      "nameMN": "Тахианы далавч",
+      "nameRU": "Куриные крылья",
+      "category": "meat",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://buudai-tuv.mn/products/590336",
+      "sha256": "545ec93db5966cec7558f31cbef70df874cb757daf0ff6b8618852b0f4a71dd9"
+    },
+    {
+      "id": "aaruul",
+      "nameMN": "Ааруул",
+      "nameRU": "Сушёный творог (ааруул)",
+      "category": "dairy",
+      "pack": 450,
+      "measure": "weight",
+      "source_page": "https://nomin.mn/p/4000125",
+      "sha256": "021f2785c740810128d90ff764435fc8829fade4f2d4060093b8c9e76e138745"
+    },
+    {
+      "id": "garlic",
+      "nameMN": "Сармис",
+      "nameRU": "Чеснок",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188722",
+      "sha256": "efeb5d7e84de32761fa092497f55636df32e9cdafdedd71ef86a835083dfbac2"
+    },
+    {
+      "id": "beetroot",
+      "nameMN": "Хүрэн манжин",
+      "nameRU": "Свёкла",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "e5aa1e65d1fe9ab01d97795fb4f734498e85d56f316fa55ff6a1665523503d5c"
+    },
+    {
+      "id": "bell-pepper",
+      "nameMN": "Ногоон амтат чинжүү",
+      "nameRU": "Зелёный сладкий перец",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/177072",
+      "sha256": "cf34c86a73872cfd6f69781fa3b1c861e6c12205cc10507574e9c689e8757483"
+    },
+    {
+      "id": "lettuce",
+      "nameMN": "Салатны навч",
+      "nameRU": "Листовой салат",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188717",
+      "sha256": "d3f1a4f03c5fa02fa0cd2d872e1db0aeeae8d161ee19395d186db81a828c0327"
+    },
+    {
+      "id": "broccoli",
+      "nameMN": "Брокколи",
+      "nameRU": "Брокколи",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/176991",
+      "sha256": "69d35dbea8c2d121a6ba774e90f3175bb464a28224b424811552dec4b355787f"
+    },
+    {
+      "id": "cauliflower",
+      "nameMN": "Цэцэгт байцаа",
+      "nameRU": "Цветная капуста",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188621",
+      "sha256": "a8d4a552016b1e848659779550981335f884fcd624393d04a1b92439e30c6a4e"
+    },
+    {
+      "id": "zucchini",
+      "nameMN": "Ногоон хулуу",
+      "nameRU": "Кабачки",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/177095",
+      "sha256": "acb9bf6a2b7c5c22c6d27654e19b064527316494aeb8f89b26b596fa3bfd11c9"
+    },
+    {
+      "id": "mushroom",
+      "nameMN": "Бор мөөг",
+      "nameRU": "Шампиньоны",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188638",
+      "sha256": "0e66f32f582bec214175b11a83327438b814e4a3ce4f3c0baa30f74a11772e7b"
+    },
+    {
+      "id": "ginger",
+      "nameMN": "Цагаан гаа",
+      "nameRU": "Имбирь",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188744",
+      "sha256": "66b0d898e9bbca8227695d28e019df30e963229acabb699d065c3e08f569f059"
+    },
+    {
+      "id": "pumpkin",
+      "nameMN": "Шар хулуу",
+      "nameRU": "Тыква",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188742",
+      "sha256": "554f76392aeab2d7a00f06d8e2001108a17ddb38a5fc1fb805a9d75e33b022d7"
+    },
+    {
+      "id": "spring-onion",
+      "nameMN": "Ногоон сонгино",
+      "nameRU": "Зелёный лук",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188733",
+      "sha256": "1cd9826768125993fdfc14c564acb78895779e8865bcbf79a1f5d37a239bd2d2"
+    },
+    {
+      "id": "parsley",
+      "nameMN": "Яншуй",
+      "nameRU": "Петрушка",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/188753",
+      "sha256": "0ef348048882d77103a0cdae15ae8aaf78e35b6400df99a7d38675dc94dc0778"
+    },
+    {
+      "id": "lemon",
+      "nameMN": "Нимбэг",
+      "nameRU": "Лимоны",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "30f53c6fe1fbf7608858acf26cfd52423f50b09ad76495910b42dc962fcf7494"
+    },
+    {
+      "id": "mandarin",
+      "nameMN": "Мандарин",
+      "nameRU": "Мандарины",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/61357",
+      "sha256": "26878548a0f27125b0023659b20794f8c6c6adc948e0ad280feb9339f338f6a0"
+    },
+    {
+      "id": "pear",
+      "nameMN": "Лийр",
+      "nameRU": "Груши",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "65745fbcea2382af120053e97e74275b1a241bc5dc7c4e5819e26d7294d50c96"
+    },
+    {
+      "id": "grape",
+      "nameMN": "Усан үзэм",
+      "nameRU": "Виноград",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "280a5d7c48dd53b3544fd784258c77d959b8c041d3a5ca5704b4cf974996792a"
+    },
+    {
+      "id": "kiwi",
+      "nameMN": "Киви",
+      "nameRU": "Киви",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "065d5503c8b92e8f9b4e414718e9dc14a0ded4d541e1ed0b94346dc1e8908a3b"
+    },
+    {
+      "id": "peach",
+      "nameMN": "Тоор",
+      "nameRU": "Персики",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "03937e68dbd875f08c6a167aebc57b5af4dddd15e021ac11382bbd7c725cf060"
+    },
+    {
+      "id": "pineapple",
+      "nameMN": "Ханборгоцой",
+      "nameRU": "Ананасы",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "20e3322f6479a2309c01239ff96883b903d73f058fcbcc8edd3163dec9b13a63"
+    },
+    {
+      "id": "mango",
+      "nameMN": "Манго",
+      "nameRU": "Манго",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "faeeedc7fea5cca5ac5397954608526b9c7742eed95eaa13c9d07b0ca4ab1f7e"
+    },
+    {
+      "id": "avocado",
+      "nameMN": "Авокадо",
+      "nameRU": "Авокадо",
+      "category": "produce",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "478b2b0b58ad1a7309e018e9f9204fd70b2236e3f093a44e103f478b0f12c1b1"
+    },
+    {
+      "id": "strawberry",
+      "nameMN": "Гүзээлзгэнэ",
+      "nameRU": "Клубника",
+      "category": "produce",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "a1e57b903d571be6146794c1f548169c9feb8bb929ff8f426935c22bab502f96"
+    },
+    {
+      "id": "blueberry",
+      "nameMN": "Нэрс",
+      "nameRU": "Голубика",
+      "category": "produce",
+      "pack": 125,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "04d8af42be13d85ccb11b6e75655e1ac7539264bf9a6727ec1e980813a0dc5e0"
+    },
+    {
+      "id": "peanuts",
+      "nameMN": "Хуурсан газрын самар",
+      "nameRU": "Жареный арахис",
+      "category": "sweets",
+      "pack": 1130,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "4053b12be877cd85b178bb56db2dace46f341a609252f8d4ee1330c85460ea2b"
+    },
+    {
+      "id": "walnuts",
+      "nameMN": "Хушга",
+      "nameRU": "Грецкие орехи",
+      "category": "sweets",
+      "pack": 454,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/622535",
+      "sha256": "d4d53a98f2e94845a83bdc0cf246c85bd36b588c96a3ddada75c15fe27955090"
+    },
+    {
+      "id": "almonds",
+      "nameMN": "Бүйлс",
+      "nameRU": "Миндаль",
+      "category": "sweets",
+      "pack": 1000,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/625119",
+      "sha256": "91a3f7092eae137f06c44df095d25321b5794b02e9d4a7638caaf473d3028c55"
+    },
+    {
+      "id": "raisins",
+      "nameMN": "Хатаасан үзэм",
+      "nameRU": "Изюм",
+      "category": "sweets",
+      "pack": 454,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/622529",
+      "sha256": "75dc70438e3a3413bac7117a22938e1538c24963748b7d60276650a93e9b64e1"
+    },
+    {
+      "id": "dried-apricots",
+      "nameMN": "Хатаасан чангаанз",
+      "nameRU": "Курага",
+      "category": "sweets",
+      "pack": 500,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/622533",
+      "sha256": "b47c7941e1d402f3c16d50a4d21539bc80b7289d6e3011fae3878aabe5f1497e"
+    },
+    {
+      "id": "potato-chips",
+      "nameMN": "Төмсний чипс",
+      "nameRU": "Картофельные чипсы",
+      "category": "sweets",
+      "pack": 140,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "c65c2b82d894651aa661352e1255a6f8ecfe5cc0a7f04e6ec1f31f7611557771"
+    },
+    {
+      "id": "dark-chocolate",
+      "nameMN": "Хар шоколад",
+      "nameRU": "Тёмный шоколад",
+      "category": "sweets",
+      "pack": 100,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "b59dc3c14a3c8c4ccce703f0dd058dc02b22e60cf2d185200e50e17a0addd7bb"
+    },
+    {
+      "id": "chocolate-bar",
+      "nameMN": "Самартай шоколадан батончик",
+      "nameRU": "Шоколадный батончик с арахисом",
+      "category": "sweets",
+      "pack": 45,
+      "measure": "weight",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "94d5f8c784bff3af5a142963a48c407d9e8d20799bcf3df26df818d911e19ca7"
+    },
+    {
+      "id": "canned-coffee",
+      "nameMN": "Лаазтай хар кофе",
+      "nameRU": "Чёрный кофе в банке",
+      "category": "drinks",
+      "pack": 240,
+      "measure": "volume",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "09310d34dfcaea04e65587b949d0371784ef18f42a7a9f5e339461a8aa4c65e2"
+    },
+    {
+      "id": "black-tea",
+      "nameMN": "Хар цай",
+      "nameRU": "Чёрный чай",
+      "category": "pantry",
+      "pack": 250,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/457152",
+      "sha256": "dbc4898eb20dc1d6afe2edcd4666ae8e9ea6f01ec537c640cf9da251e5fe65c4"
+    },
+    {
+      "id": "cocoa-powder",
+      "nameMN": "Какаоны нунтаг",
+      "nameRU": "Какао-порошок",
+      "category": "pantry",
+      "pack": 50,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/42046",
+      "sha256": "d05b6b005e66cebce306ab4f96305f6768e01f4d17a5b764833cc3f51a8831bd"
+    },
+    {
+      "id": "coffee-beans",
+      "nameMN": "Үрлэн кофе",
+      "nameRU": "Кофе в зёрнах",
+      "category": "pantry",
+      "pack": 1130,
+      "measure": "weight",
+      "source_page": "https://amtatmall.mn/product/417562",
+      "sha256": "9f493416f1d2615b2740406a80c8963880c0aedf7dc9c80baa6ae31f691da504"
+    },
+    {
+      "id": "wet-wipes",
+      "nameMN": "Нойтон салфетка",
+      "nameRU": "Влажные салфетки",
+      "category": "household",
+      "pack": 72,
+      "measure": "pieces",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "7b48089f86f84f438ccb6bd5780f26f20436b8fc45f98a90f96416f305886c6f"
+    },
+    {
+      "id": "toothpaste",
+      "nameMN": "Шүдний оо",
+      "nameRU": "Зубная паста",
+      "category": "household",
+      "pack": 125,
+      "measure": "volume",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "438ec73ae7bed5cbf9c1a0c3ae238e85e10ebc557a9059091780f474d56c8f3d"
+    },
+    {
+      "id": "toothbrush",
+      "nameMN": "Шүдний сойз",
+      "nameRU": "Зубная щётка",
+      "category": "household",
+      "pack": 1,
+      "measure": "pieces",
+      "source_page": "https://www.mycart.mn/branches/nomin-naadam1",
+      "sha256": "4f03190c42ff81fbb2ceac13162702087575d1a406ee66992f2b1d3aacf88520"
+    },
+    {
+      "id": "toilet-paper",
+      "nameMN": "Ариун цэврийн цаас",
+      "nameRU": "Туалетная бумага",
+      "category": "household",
+      "pack": 10,
+      "measure": "pieces",
+      "source_page": "https://nomin.mn/p/1117690",
+      "sha256": "ca3f3adb408dcd17046b29bbbe0ec90972d5f013f4362f532c4997ed7b0a47f5"
+    },
+    {
+      "id": "laundry-detergent",
+      "nameMN": "Угаалгын нунтаг",
+      "nameRU": "Стиральный порошок",
+      "category": "household",
+      "pack": 400,
+      "measure": "weight",
+      "source_page": "https://namuun.mn/products/469",
+      "sha256": "5957f74fb95cdc89fda5b6902767e81d58f8e92746955cefb9976b16ce91562e"
+    },
+    {
+      "id": "vodka",
+      "nameMN": "Цагаан архи",
+      "nameRU": "Водка",
+      "category": "alcohol",
+      "pack": 500,
+      "measure": "volume",
+      "source_page": "https://nomin.mn/p/1118023",
+      "sha256": "66b799135b0721ff871a9e3a5f2645dd92d47ae0fc131f95553bee8a1e703a3e"
+    },
+    {
+      "id": "whisky",
+      "nameMN": "Виски",
+      "nameRU": "Виски",
+      "category": "alcohol",
+      "pack": 700,
+      "measure": "volume",
+      "source_page": "https://www.e-afta.mn/shop/53030002-jack-daniels-whiskey-700-105910?category=1340",
+      "sha256": "cbf57e2c70b6b37a48788b8c1c979f7cfda58408397c3eb755f27896c431d7ca"
+    },
+    {
+      "id": "stewed-beef",
+      "nameMN": "Үхрийн жигнэсэн мах",
+      "nameRU": "Тушёнка из говядины",
+      "category": "canned",
+      "pack": 430,
+      "measure": "weight",
+      "source_page": "https://www.khatansuikh.mn/product/8286",
+      "sha256": "4dce8e84c3cc8e9ffe3f83014a233e8b5076ba32133c08fb6fb64d2e54cad29f"
+    }
+  ]
+}

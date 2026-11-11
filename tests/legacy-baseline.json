@@ -1,0 +1,3934 @@
+[
+  {
+    "order": {
+      "id": 1,
+      "customer": "Номин",
+      "title": "Өглөөний цай",
+      "message": "Өглөөний цайны хүнсээ захиалъя.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "milk",
+          "amount": 1000
+        },
+        {
+          "productId": "white-bread",
+          "amount": 1
+        },
+        {
+          "productId": "eggs",
+          "amount": 6
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o1-l9",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0144"
+      },
+      {
+        "id": "o1-l2",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0185"
+      },
+      {
+        "id": "o1-l17",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-18",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0140"
+      },
+      {
+        "id": "o1-l15",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0166"
+      },
+      {
+        "id": "o1-l23",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0162"
+      },
+      {
+        "id": "o1-l7",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0170"
+      },
+      {
+        "id": "o1-l27",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-15",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0110"
+      },
+      {
+        "id": "o1-l18",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0177"
+      },
+      {
+        "id": "o1-l3",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0122"
+      },
+      {
+        "id": "o1-l8",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0107"
+      },
+      {
+        "id": "o1-l1",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0148"
+      },
+      {
+        "id": "o1-l19",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0114"
+      },
+      {
+        "id": "o1-l11",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0118"
+      },
+      {
+        "id": "o1-l24",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0199"
+      },
+      {
+        "id": "o1-l25",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0136"
+      },
+      {
+        "id": "o1-l22",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-23",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0125"
+      },
+      {
+        "id": "o1-l13",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0192"
+      },
+      {
+        "id": "o1-l21",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-22",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0188"
+      },
+      {
+        "id": "o1-l14",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0129"
+      },
+      {
+        "id": "o1-l26",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0173"
+      },
+      {
+        "id": "o1-l16",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0103"
+      },
+      {
+        "id": "o1-l28",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-29",
+        "expires": "2026-12-07",
+        "stock": 3,
+        "batch": "0147"
+      },
+      {
+        "id": "o1-l5",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0196"
+      },
+      {
+        "id": "o1-l4",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0159"
+      },
+      {
+        "id": "o1-l6",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0133"
+      },
+      {
+        "id": "o1-l20",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0151"
+      },
+      {
+        "id": "o1-l10",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0181"
+      },
+      {
+        "id": "o1-l12",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0155"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 2,
+      "customer": "Ану",
+      "title": "Жимсний сагс",
+      "message": "Жимс, тараг авъя.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "red-apple",
+          "amount": 1000
+        },
+        {
+          "productId": "banana",
+          "amount": 1000
+        },
+        {
+          "productId": "yogurt",
+          "amount": 1000
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o2-l13",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0203"
+      },
+      {
+        "id": "o2-l3",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0233"
+      },
+      {
+        "id": "o2-l21",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0299"
+      },
+      {
+        "id": "o2-l23",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0273"
+      },
+      {
+        "id": "o2-l1",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0259"
+      },
+      {
+        "id": "o2-l22",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0236"
+      },
+      {
+        "id": "o2-l9",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0255"
+      },
+      {
+        "id": "o2-l26",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0284"
+      },
+      {
+        "id": "o2-l19",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-20",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0225"
+      },
+      {
+        "id": "o2-l28",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-29",
+        "expires": "2026-12-07",
+        "stock": 3,
+        "batch": "0258"
+      },
+      {
+        "id": "o2-l11",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0229"
+      },
+      {
+        "id": "o2-l25",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0247"
+      },
+      {
+        "id": "o2-l5",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0207"
+      },
+      {
+        "id": "o2-l6",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0244"
+      },
+      {
+        "id": "o2-l4",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0270"
+      },
+      {
+        "id": "o2-l20",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0262"
+      },
+      {
+        "id": "o2-l16",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0214"
+      },
+      {
+        "id": "o2-l18",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0288"
+      },
+      {
+        "id": "o2-l7",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0281"
+      },
+      {
+        "id": "o2-l24",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0210"
+      },
+      {
+        "id": "o2-l15",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0277"
+      },
+      {
+        "id": "o2-l8",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0218"
+      },
+      {
+        "id": "o2-l14",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-02",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0240"
+      },
+      {
+        "id": "o2-l10",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0292"
+      },
+      {
+        "id": "o2-l27",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0221"
+      },
+      {
+        "id": "o2-l12",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0266"
+      },
+      {
+        "id": "o2-l17",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0251"
+      },
+      {
+        "id": "o2-l2",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0296"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 3,
+      "customer": "Бат",
+      "title": "Ногооны захиалга",
+      "message": "Шөл хийх ногоо хэрэгтэй байна.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "potato",
+          "amount": 2000
+        },
+        {
+          "productId": "carrot",
+          "amount": 1000
+        },
+        {
+          "productId": "onion",
+          "amount": 1000
+        },
+        {
+          "productId": "cabbage",
+          "amount": 1000
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o3-l2",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0307"
+      },
+      {
+        "id": "o3-l25",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0358"
+      },
+      {
+        "id": "o3-l23",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-22",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0384"
+      },
+      {
+        "id": "o3-l13",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0314"
+      },
+      {
+        "id": "o3-l27",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0332"
+      },
+      {
+        "id": "o3-l20",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0373"
+      },
+      {
+        "id": "o3-l19",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0336"
+      },
+      {
+        "id": "o3-l12",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0377"
+      },
+      {
+        "id": "o3-l15",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-14",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0388"
+      },
+      {
+        "id": "o3-l18",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0399"
+      },
+      {
+        "id": "o3-l22",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0347"
+      },
+      {
+        "id": "o3-l21",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0310"
+      },
+      {
+        "id": "o3-l5",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0318"
+      },
+      {
+        "id": "o3-l1",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0370"
+      },
+      {
+        "id": "o3-l14",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0351"
+      },
+      {
+        "id": "o3-l24",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-23",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0321"
+      },
+      {
+        "id": "o3-l26",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0395"
+      },
+      {
+        "id": "o3-l17",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-03",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0362"
+      },
+      {
+        "id": "o3-l29",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-28",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0306"
+      },
+      {
+        "id": "o3-l7",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0392"
+      },
+      {
+        "id": "o3-l16",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0325"
+      },
+      {
+        "id": "o3-l3",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0344"
+      },
+      {
+        "id": "o3-l4",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0381"
+      },
+      {
+        "id": "o3-l28",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0369"
+      },
+      {
+        "id": "o3-l6",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0355"
+      },
+      {
+        "id": "o3-l9",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0366"
+      },
+      {
+        "id": "o3-l8",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0329"
+      },
+      {
+        "id": "o3-l11",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0340"
+      },
+      {
+        "id": "o3-l10",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0303"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 4,
+      "customer": "Саруул",
+      "title": "Өдрийн хоол",
+      "message": "Өдрийн хоолны хүнсээ авъя.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "rice",
+          "amount": 1000
+        },
+        {
+          "productId": "tomato",
+          "amount": 1000
+        },
+        {
+          "productId": "cucumber",
+          "amount": 1000
+        },
+        {
+          "productId": "water",
+          "amount": 2000
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o4-l14",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0462"
+      },
+      {
+        "id": "o4-l28",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0480"
+      },
+      {
+        "id": "o4-l6",
+        "productId": "tomato",
+        "pack": 500,
+        "manufactured": "2026-11-10",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0466"
+      },
+      {
+        "id": "o4-l10",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0414"
+      },
+      {
+        "id": "o4-l26",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0406"
+      },
+      {
+        "id": "o4-l8",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0440"
+      },
+      {
+        "id": "o4-l4",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0492"
+      },
+      {
+        "id": "o4-l12",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0488"
+      },
+      {
+        "id": "o4-l25",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0469"
+      },
+      {
+        "id": "o4-l33",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0465"
+      },
+      {
+        "id": "o4-l22",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0458"
+      },
+      {
+        "id": "o4-l29",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0417"
+      },
+      {
+        "id": "o4-l2",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0418"
+      },
+      {
+        "id": "o4-l24",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0432"
+      },
+      {
+        "id": "o4-l16",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0436"
+      },
+      {
+        "id": "o4-l20",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0484"
+      },
+      {
+        "id": "o4-l18",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0410"
+      },
+      {
+        "id": "o4-l19",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0447"
+      },
+      {
+        "id": "o4-l9",
+        "productId": "cucumber",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0477"
+      },
+      {
+        "id": "o4-l30",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-25",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0454"
+      },
+      {
+        "id": "o4-l23",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0495"
+      },
+      {
+        "id": "o4-l7",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0403"
+      },
+      {
+        "id": "o4-l31",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-26",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0491"
+      },
+      {
+        "id": "o4-l13",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0425"
+      },
+      {
+        "id": "o4-l1",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0481"
+      },
+      {
+        "id": "o4-l3",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0455"
+      },
+      {
+        "id": "o4-l15",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0499"
+      },
+      {
+        "id": "o4-l21",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0421"
+      },
+      {
+        "id": "o4-l27",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0443"
+      },
+      {
+        "id": "o4-l32",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0428"
+      },
+      {
+        "id": "o4-l11",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0451"
+      },
+      {
+        "id": "o4-l5",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0429"
+      },
+      {
+        "id": "o4-l17",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0473"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 5,
+      "customer": "Энхжин",
+      "title": "Хоёр литр сүү",
+      "message": "Хоёр литр сүү авахаа мартуузай.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "milk",
+          "amount": 2000
+        },
+        {
+          "productId": "butter",
+          "amount": 200
+        },
+        {
+          "productId": "brown-bread",
+          "amount": 1
+        },
+        {
+          "productId": "cheese",
+          "amount": 200
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o5-l2",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0529"
+      },
+      {
+        "id": "o5-l15",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0510"
+      },
+      {
+        "id": "o5-l4",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0503"
+      },
+      {
+        "id": "o5-l26",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0517"
+      },
+      {
+        "id": "o5-l7",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0514"
+      },
+      {
+        "id": "o5-l8",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0551"
+      },
+      {
+        "id": "o5-l10",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0525"
+      },
+      {
+        "id": "o5-l9",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0588"
+      },
+      {
+        "id": "o5-l29",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-24",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0528"
+      },
+      {
+        "id": "o5-l17",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0584"
+      },
+      {
+        "id": "o5-l12",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0599"
+      },
+      {
+        "id": "o5-l16",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0547"
+      },
+      {
+        "id": "o5-l6",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-28",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0577"
+      },
+      {
+        "id": "o5-l1",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0592"
+      },
+      {
+        "id": "o5-l14",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0573"
+      },
+      {
+        "id": "o5-l22",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0569"
+      },
+      {
+        "id": "o5-l5",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0540"
+      },
+      {
+        "id": "o5-l24",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0543"
+      },
+      {
+        "id": "o5-l33",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0576"
+      },
+      {
+        "id": "o5-l28",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0591"
+      },
+      {
+        "id": "o5-l23",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-18",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0506"
+      },
+      {
+        "id": "o5-l21",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-03",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0532"
+      },
+      {
+        "id": "o5-l25",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0580"
+      },
+      {
+        "id": "o5-l31",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0502"
+      },
+      {
+        "id": "o5-l30",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0565"
+      },
+      {
+        "id": "o5-l32",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0539"
+      },
+      {
+        "id": "o5-l13",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0536"
+      },
+      {
+        "id": "o5-l3",
+        "productId": "milk",
+        "pack": 500,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 5,
+        "batch": "0566"
+      },
+      {
+        "id": "o5-l18",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0521"
+      },
+      {
+        "id": "o5-l11",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0562"
+      },
+      {
+        "id": "o5-l19",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-14",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0558"
+      },
+      {
+        "id": "o5-l27",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0554"
+      },
+      {
+        "id": "o5-l20",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0595"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 6,
+      "customer": "Тэмүүлэн",
+      "title": "Жигнэмэг хийх өдөр",
+      "message": "Өнөөдөр жигнэмэг хийнэ.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "flour",
+          "amount": 2000
+        },
+        {
+          "productId": "sugar",
+          "amount": 1000
+        },
+        {
+          "productId": "eggs",
+          "amount": 12
+        },
+        {
+          "productId": "butter",
+          "amount": 400
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o6-l23",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0617"
+      },
+      {
+        "id": "o6-l14",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0684"
+      },
+      {
+        "id": "o6-l4",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0614"
+      },
+      {
+        "id": "o6-l19",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0669"
+      },
+      {
+        "id": "o6-l2",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0640"
+      },
+      {
+        "id": "o6-l18",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0632"
+      },
+      {
+        "id": "o6-l13",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0647"
+      },
+      {
+        "id": "o6-l16",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0658"
+      },
+      {
+        "id": "o6-l12",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0610"
+      },
+      {
+        "id": "o6-l7",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0625"
+      },
+      {
+        "id": "o6-l15",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0621"
+      },
+      {
+        "id": "o6-l5",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0651"
+      },
+      {
+        "id": "o6-l6",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-10-28",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0688"
+      },
+      {
+        "id": "o6-l3",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0677"
+      },
+      {
+        "id": "o6-l8",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0662"
+      },
+      {
+        "id": "o6-l28",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0602"
+      },
+      {
+        "id": "o6-l20",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-02",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0606"
+      },
+      {
+        "id": "o6-l29",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-24",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0639"
+      },
+      {
+        "id": "o6-l10",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0636"
+      },
+      {
+        "id": "o6-l24",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0654"
+      },
+      {
+        "id": "o6-l33",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-15",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0687"
+      },
+      {
+        "id": "o6-l9",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0699"
+      },
+      {
+        "id": "o6-l22",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0680"
+      },
+      {
+        "id": "o6-l26",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0628"
+      },
+      {
+        "id": "o6-l21",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0643"
+      },
+      {
+        "id": "o6-l1",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0603"
+      },
+      {
+        "id": "o6-l11",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0673"
+      },
+      {
+        "id": "o6-l30",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-25",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0676"
+      },
+      {
+        "id": "o6-l25",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-20",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0691"
+      },
+      {
+        "id": "o6-l32",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0650"
+      },
+      {
+        "id": "o6-l31",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0613"
+      },
+      {
+        "id": "o6-l17",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0695"
+      },
+      {
+        "id": "o6-l27",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0665"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 7,
+      "customer": "Хулан",
+      "title": "Оройн хоол",
+      "message": "Орой гоймон хийж иднэ.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "pasta",
+          "amount": 1000
+        },
+        {
+          "productId": "tomato",
+          "amount": 1000
+        },
+        {
+          "productId": "oil",
+          "amount": 1000
+        },
+        {
+          "productId": "salt",
+          "amount": 1000
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o7-l21",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-03",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0754"
+      },
+      {
+        "id": "o7-l4",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0725"
+      },
+      {
+        "id": "o7-l31",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-26",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0724"
+      },
+      {
+        "id": "o7-l20",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0717"
+      },
+      {
+        "id": "o7-l6",
+        "productId": "tomato",
+        "pack": 500,
+        "manufactured": "2026-11-10",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0799"
+      },
+      {
+        "id": "o7-l8",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0773"
+      },
+      {
+        "id": "o7-l27",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0776"
+      },
+      {
+        "id": "o7-l16",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0769"
+      },
+      {
+        "id": "o7-l13",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0758"
+      },
+      {
+        "id": "o7-l28",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-23",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0713"
+      },
+      {
+        "id": "o7-l22",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0791"
+      },
+      {
+        "id": "o7-l26",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0739"
+      },
+      {
+        "id": "o7-l30",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0787"
+      },
+      {
+        "id": "o7-l18",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0743"
+      },
+      {
+        "id": "o7-l25",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0702"
+      },
+      {
+        "id": "o7-l32",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0761"
+      },
+      {
+        "id": "o7-l14",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0795"
+      },
+      {
+        "id": "o7-l5",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0762"
+      },
+      {
+        "id": "o7-l17",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0706"
+      },
+      {
+        "id": "o7-l19",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0780"
+      },
+      {
+        "id": "o7-l24",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0765"
+      },
+      {
+        "id": "o7-l33",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-28",
+        "expires": "2026-12-06",
+        "stock": 3,
+        "batch": "0798"
+      },
+      {
+        "id": "o7-l10",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0747"
+      },
+      {
+        "id": "o7-l15",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0732"
+      },
+      {
+        "id": "o7-l2",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0751"
+      },
+      {
+        "id": "o7-l11",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0784"
+      },
+      {
+        "id": "o7-l9",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0710"
+      },
+      {
+        "id": "o7-l29",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0750"
+      },
+      {
+        "id": "o7-l3",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0788"
+      },
+      {
+        "id": "o7-l23",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0728"
+      },
+      {
+        "id": "o7-l12",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0721"
+      },
+      {
+        "id": "o7-l7",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0736"
+      },
+      {
+        "id": "o7-l1",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0714"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 8,
+      "customer": "Дөлгөөн",
+      "title": "Ногоон алим",
+      "message": "Ногоон алим авъя.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "green-apple",
+          "amount": 1000
+        },
+        {
+          "productId": "orange",
+          "amount": 1000
+        },
+        {
+          "productId": "banana",
+          "amount": 1000
+        },
+        {
+          "productId": "water",
+          "amount": 1000
+        },
+        {
+          "productId": "yogurt",
+          "amount": 500
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o8-l8",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0884"
+      },
+      {
+        "id": "o8-l9",
+        "productId": "banana",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0821"
+      },
+      {
+        "id": "o8-l34",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-26",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0846"
+      },
+      {
+        "id": "o8-l29",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0861"
+      },
+      {
+        "id": "o8-l4",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0836"
+      },
+      {
+        "id": "o8-l10",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0858"
+      },
+      {
+        "id": "o8-l11",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0895"
+      },
+      {
+        "id": "o8-l17",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0817"
+      },
+      {
+        "id": "o8-l16",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0880"
+      },
+      {
+        "id": "o8-l18",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0854"
+      },
+      {
+        "id": "o8-l14",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0806"
+      },
+      {
+        "id": "o8-l22",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0802"
+      },
+      {
+        "id": "o8-l6",
+        "productId": "orange",
+        "pack": 500,
+        "manufactured": "2026-11-10",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0810"
+      },
+      {
+        "id": "o8-l5",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0873"
+      },
+      {
+        "id": "o8-l30",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0898"
+      },
+      {
+        "id": "o8-l35",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-11-14",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0883"
+      },
+      {
+        "id": "o8-l12",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0832"
+      },
+      {
+        "id": "o8-l3",
+        "productId": "green-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0899"
+      },
+      {
+        "id": "o8-l1",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0825"
+      },
+      {
+        "id": "o8-l27",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0887"
+      },
+      {
+        "id": "o8-l33",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-25",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0809"
+      },
+      {
+        "id": "o8-l24",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0876"
+      },
+      {
+        "id": "o8-l20",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0828"
+      },
+      {
+        "id": "o8-l7",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0847"
+      },
+      {
+        "id": "o8-l2",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0862"
+      },
+      {
+        "id": "o8-l19",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0891"
+      },
+      {
+        "id": "o8-l26",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-18",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0850"
+      },
+      {
+        "id": "o8-l32",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0872"
+      },
+      {
+        "id": "o8-l13",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0869"
+      },
+      {
+        "id": "o8-l23",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-02",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0839"
+      },
+      {
+        "id": "o8-l31",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0835"
+      },
+      {
+        "id": "o8-l15",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0843"
+      },
+      {
+        "id": "o8-l28",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0824"
+      },
+      {
+        "id": "o8-l25",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0813"
+      },
+      {
+        "id": "o8-l21",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0865"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 9,
+      "customer": "Мөнх",
+      "title": "Амралтын өдрийн хүнс",
+      "message": "Гэр бүлээрээ хоол хийнэ.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "rice",
+          "amount": 2000
+        },
+        {
+          "productId": "potato",
+          "amount": 2000
+        },
+        {
+          "productId": "onion",
+          "amount": 1000
+        },
+        {
+          "productId": "milk",
+          "amount": 2000
+        },
+        {
+          "productId": "eggs",
+          "amount": 6
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o9-l7",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "0958"
+      },
+      {
+        "id": "o9-l4",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0947"
+      },
+      {
+        "id": "o9-l2",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0973"
+      },
+      {
+        "id": "o9-l28",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-20",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "0935"
+      },
+      {
+        "id": "o9-l8",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "0995"
+      },
+      {
+        "id": "o9-l18",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0965"
+      },
+      {
+        "id": "o9-l19",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0902"
+      },
+      {
+        "id": "o9-l29",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "0972"
+      },
+      {
+        "id": "o9-l27",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "0998"
+      },
+      {
+        "id": "o9-l12",
+        "productId": "milk",
+        "pack": 500,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 5,
+        "batch": "0943"
+      },
+      {
+        "id": "o9-l16",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0991"
+      },
+      {
+        "id": "o9-l20",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "0939"
+      },
+      {
+        "id": "o9-l14",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "0917"
+      },
+      {
+        "id": "o9-l23",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-02",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "0950"
+      },
+      {
+        "id": "o9-l32",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-24",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "0983"
+      },
+      {
+        "id": "o9-l24",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-03",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "0987"
+      },
+      {
+        "id": "o9-l33",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "0920"
+      },
+      {
+        "id": "o9-l13",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "0980"
+      },
+      {
+        "id": "o9-l15",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0954"
+      },
+      {
+        "id": "o9-l9",
+        "productId": "onion",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "0932"
+      },
+      {
+        "id": "o9-l26",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-18",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "0961"
+      },
+      {
+        "id": "o9-l35",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-27",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "0994"
+      },
+      {
+        "id": "o9-l30",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "0909"
+      },
+      {
+        "id": "o9-l5",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "0984"
+      },
+      {
+        "id": "o9-l22",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "0913"
+      },
+      {
+        "id": "o9-l34",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "0957"
+      },
+      {
+        "id": "o9-l11",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "0906"
+      },
+      {
+        "id": "o9-l17",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0928"
+      },
+      {
+        "id": "o9-l10",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0969"
+      },
+      {
+        "id": "o9-l25",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "0924"
+      },
+      {
+        "id": "o9-l31",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "0946"
+      },
+      {
+        "id": "o9-l21",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "0976"
+      },
+      {
+        "id": "o9-l6",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-10",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "0921"
+      },
+      {
+        "id": "o9-l3",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "0910"
+      },
+      {
+        "id": "o9-l1",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "0936"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 10,
+      "customer": "Марал",
+      "title": "Зочид ирнэ",
+      "message": "Өнөөдөр манайд зочид ирнэ.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "white-bread",
+          "amount": 2
+        },
+        {
+          "productId": "cheese",
+          "amount": 400
+        },
+        {
+          "productId": "cucumber",
+          "amount": 1000
+        },
+        {
+          "productId": "red-apple",
+          "amount": 1000
+        },
+        {
+          "productId": "icecream",
+          "amount": 120
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o10-l2",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "1084"
+      },
+      {
+        "id": "o10-l7",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "1069"
+      },
+      {
+        "id": "o10-l15",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1065"
+      },
+      {
+        "id": "o10-l8",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "1006"
+      },
+      {
+        "id": "o10-l6",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-28",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "1032"
+      },
+      {
+        "id": "o10-l20",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1050"
+      },
+      {
+        "id": "o10-l28",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-11-07",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "1046"
+      },
+      {
+        "id": "o10-l21",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1087"
+      },
+      {
+        "id": "o10-l13",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1091"
+      },
+      {
+        "id": "o10-l14",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "1028"
+      },
+      {
+        "id": "o10-l32",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "1094"
+      },
+      {
+        "id": "o10-l24",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "1098"
+      },
+      {
+        "id": "o10-l9",
+        "productId": "cucumber",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1043"
+      },
+      {
+        "id": "o10-l16",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1002"
+      },
+      {
+        "id": "o10-l4",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1058"
+      },
+      {
+        "id": "o10-l30",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-22",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "1020"
+      },
+      {
+        "id": "o10-l22",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "1024"
+      },
+      {
+        "id": "o10-l35",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-27",
+        "expires": "2026-12-05",
+        "stock": 3,
+        "batch": "1005"
+      },
+      {
+        "id": "o10-l10",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "1080"
+      },
+      {
+        "id": "o10-l19",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1013"
+      },
+      {
+        "id": "o10-l12",
+        "productId": "red-apple",
+        "pack": 500,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1054"
+      },
+      {
+        "id": "o10-l25",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-11-04",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "1035"
+      },
+      {
+        "id": "o10-l1",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "1047"
+      },
+      {
+        "id": "o10-l3",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1021"
+      },
+      {
+        "id": "o10-l26",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "1072"
+      },
+      {
+        "id": "o10-l33",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-25",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "1031"
+      },
+      {
+        "id": "o10-l18",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1076"
+      },
+      {
+        "id": "o10-l29",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "1083"
+      },
+      {
+        "id": "o10-l23",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-02",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "1061"
+      },
+      {
+        "id": "o10-l11",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1017"
+      },
+      {
+        "id": "o10-l34",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-26",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "1068"
+      },
+      {
+        "id": "o10-l27",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "1009"
+      },
+      {
+        "id": "o10-l17",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1039"
+      },
+      {
+        "id": "o10-l31",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-10",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "1057"
+      },
+      {
+        "id": "o10-l5",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "1095"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 11,
+      "customer": "Билгүүн",
+      "title": "Долоо хоногийн хүнс",
+      "message": "Жагсаалтын дагуу бэлтгэж өгнө үү.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "milk",
+          "amount": 3000
+        },
+        {
+          "productId": "brown-bread",
+          "amount": 2
+        },
+        {
+          "productId": "eggs",
+          "amount": 12
+        },
+        {
+          "productId": "rice",
+          "amount": 2000
+        },
+        {
+          "productId": "carrot",
+          "amount": 1000
+        },
+        {
+          "productId": "oil",
+          "amount": 1000
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o11-l17",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "1150"
+      },
+      {
+        "id": "o11-l13",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1102"
+      },
+      {
+        "id": "o11-l4",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1169"
+      },
+      {
+        "id": "o11-l32",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "1105"
+      },
+      {
+        "id": "o11-l34",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-23",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "1179"
+      },
+      {
+        "id": "o11-l21",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1198"
+      },
+      {
+        "id": "o11-l9",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1154"
+      },
+      {
+        "id": "o11-l31",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-20",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "1168"
+      },
+      {
+        "id": "o11-l14",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "1139"
+      },
+      {
+        "id": "o11-l1",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 4,
+        "batch": "1158"
+      },
+      {
+        "id": "o11-l26",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "1183"
+      },
+      {
+        "id": "o11-l22",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1135"
+      },
+      {
+        "id": "o11-l18",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1187"
+      },
+      {
+        "id": "o11-l37",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "1190"
+      },
+      {
+        "id": "o11-l6",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-28",
+        "expires": "2026-11-18",
+        "stock": 3,
+        "batch": "1143"
+      },
+      {
+        "id": "o11-l20",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1161"
+      },
+      {
+        "id": "o11-l2",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-23",
+        "expires": "2026-11-13",
+        "stock": 4,
+        "batch": "1195"
+      },
+      {
+        "id": "o11-l7",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "1180"
+      },
+      {
+        "id": "o11-l12",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1165"
+      },
+      {
+        "id": "o11-l30",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-19",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "1131"
+      },
+      {
+        "id": "o11-l35",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "1116"
+      },
+      {
+        "id": "o11-l24",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1109"
+      },
+      {
+        "id": "o11-l16",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "1113"
+      },
+      {
+        "id": "o11-l28",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "1157"
+      },
+      {
+        "id": "o11-l23",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-12",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1172"
+      },
+      {
+        "id": "o11-l33",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-22",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "1142"
+      },
+      {
+        "id": "o11-l8",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "1117"
+      },
+      {
+        "id": "o11-l11",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1128"
+      },
+      {
+        "id": "o11-l10",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "1191"
+      },
+      {
+        "id": "o11-l3",
+        "productId": "milk",
+        "pack": 500,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 7,
+        "batch": "1132"
+      },
+      {
+        "id": "o11-l25",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "1146"
+      },
+      {
+        "id": "o11-l36",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-12",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "1153"
+      },
+      {
+        "id": "o11-l15",
+        "productId": "carrot",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1176"
+      },
+      {
+        "id": "o11-l29",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-18",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "1194"
+      },
+      {
+        "id": "o11-l27",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "1120"
+      },
+      {
+        "id": "o11-l19",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1124"
+      },
+      {
+        "id": "o11-l5",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "1106"
+      }
+    ]
+  },
+  {
+    "order": {
+      "id": 12,
+      "customer": "Солонго",
+      "title": "Сүүлийн захиалга",
+      "message": "Бүх барааны тоо, хэмжээг сайн шалгаарай.",
+      "day": "2026-11-09",
+      "lines": [
+        {
+          "productId": "green-apple",
+          "amount": 1500
+        },
+        {
+          "productId": "milk",
+          "amount": 2000
+        },
+        {
+          "productId": "flour",
+          "amount": 1000
+        },
+        {
+          "productId": "butter",
+          "amount": 400
+        },
+        {
+          "productId": "cucumber",
+          "amount": 1000
+        },
+        {
+          "productId": "icecream",
+          "amount": 240
+        }
+      ]
+    },
+    "inventory": [
+      {
+        "id": "o12-l6",
+        "productId": "milk",
+        "pack": 500,
+        "manufactured": "2026-10-28",
+        "expires": "2026-11-18",
+        "stock": 5,
+        "batch": "1254"
+      },
+      {
+        "id": "o12-l7",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 3,
+        "batch": "1291"
+      },
+      {
+        "id": "o12-l2",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 4,
+        "batch": "1206"
+      },
+      {
+        "id": "o12-l13",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1213"
+      },
+      {
+        "id": "o12-l18",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 5,
+        "batch": "1298"
+      },
+      {
+        "id": "o12-l34",
+        "productId": "cabbage",
+        "pack": 1000,
+        "manufactured": "2026-11-23",
+        "expires": "2026-12-01",
+        "stock": 3,
+        "batch": "1290"
+      },
+      {
+        "id": "o12-l4",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1280"
+      },
+      {
+        "id": "o12-l12",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1276"
+      },
+      {
+        "id": "o12-l8",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-25",
+        "expires": "2026-11-15",
+        "stock": 3,
+        "batch": "1228"
+      },
+      {
+        "id": "o12-l3",
+        "productId": "green-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1243"
+      },
+      {
+        "id": "o12-l25",
+        "productId": "brown-bread",
+        "pack": 1,
+        "manufactured": "2026-11-01",
+        "expires": "2026-11-22",
+        "stock": 3,
+        "batch": "1257"
+      },
+      {
+        "id": "o12-l28",
+        "productId": "potato",
+        "pack": 1000,
+        "manufactured": "2026-11-17",
+        "expires": "2026-11-25",
+        "stock": 3,
+        "batch": "1268"
+      },
+      {
+        "id": "o12-l14",
+        "productId": "cucumber",
+        "pack": 1000,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-13",
+        "stock": 3,
+        "batch": "1250"
+      },
+      {
+        "id": "o12-l16",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-16",
+        "expires": "2026-11-06",
+        "stock": 5,
+        "batch": "1224"
+      },
+      {
+        "id": "o12-l21",
+        "productId": "rice",
+        "pack": 1000,
+        "manufactured": "2026-10-17",
+        "expires": "2026-11-07",
+        "stock": 3,
+        "batch": "1209"
+      },
+      {
+        "id": "o12-l24",
+        "productId": "white-bread",
+        "pack": 1,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1220"
+      },
+      {
+        "id": "o12-l15",
+        "productId": "cucumber",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-11-21",
+        "stock": 3,
+        "batch": "1287"
+      },
+      {
+        "id": "o12-l19",
+        "productId": "red-apple",
+        "pack": 1000,
+        "manufactured": "2026-11-08",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1235"
+      },
+      {
+        "id": "o12-l23",
+        "productId": "water",
+        "pack": 1000,
+        "manufactured": "2026-10-30",
+        "expires": "2026-11-20",
+        "stock": 3,
+        "batch": "1283"
+      },
+      {
+        "id": "o12-l1",
+        "productId": "green-apple",
+        "pack": 500,
+        "manufactured": "2026-10-31",
+        "expires": "2026-11-08",
+        "stock": 4,
+        "batch": "1269"
+      },
+      {
+        "id": "o12-l20",
+        "productId": "oil",
+        "pack": 1000,
+        "manufactured": "2026-10-27",
+        "expires": "2026-11-17",
+        "stock": 3,
+        "batch": "1272"
+      },
+      {
+        "id": "o12-l33",
+        "productId": "sugar",
+        "pack": 1000,
+        "manufactured": "2026-11-09",
+        "expires": "2026-11-30",
+        "stock": 3,
+        "batch": "1253"
+      },
+      {
+        "id": "o12-l22",
+        "productId": "cheese",
+        "pack": 200,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1246"
+      },
+      {
+        "id": "o12-l26",
+        "productId": "carrot",
+        "pack": 1000,
+        "manufactured": "2026-11-15",
+        "expires": "2026-11-23",
+        "stock": 3,
+        "batch": "1294"
+      },
+      {
+        "id": "o12-l27",
+        "productId": "onion",
+        "pack": 1000,
+        "manufactured": "2026-11-16",
+        "expires": "2026-11-24",
+        "stock": 3,
+        "batch": "1231"
+      },
+      {
+        "id": "o12-l32",
+        "productId": "tomato",
+        "pack": 1000,
+        "manufactured": "2026-11-21",
+        "expires": "2026-11-29",
+        "stock": 3,
+        "batch": "1216"
+      },
+      {
+        "id": "o12-l10",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-18",
+        "expires": "2026-11-08",
+        "stock": 3,
+        "batch": "1202"
+      },
+      {
+        "id": "o12-l31",
+        "productId": "orange",
+        "pack": 1000,
+        "manufactured": "2026-11-20",
+        "expires": "2026-11-28",
+        "stock": 3,
+        "batch": "1279"
+      },
+      {
+        "id": "o12-l5",
+        "productId": "milk",
+        "pack": 1000,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 3,
+        "batch": "1217"
+      },
+      {
+        "id": "o12-l11",
+        "productId": "butter",
+        "pack": 200,
+        "manufactured": "2026-10-26",
+        "expires": "2026-11-16",
+        "stock": 3,
+        "batch": "1239"
+      },
+      {
+        "id": "o12-l37",
+        "productId": "pasta",
+        "pack": 500,
+        "manufactured": "2026-11-13",
+        "expires": "2026-12-04",
+        "stock": 3,
+        "batch": "1201"
+      },
+      {
+        "id": "o12-l9",
+        "productId": "flour",
+        "pack": 1000,
+        "manufactured": "2026-10-29",
+        "expires": "2026-11-19",
+        "stock": 3,
+        "batch": "1265"
+      },
+      {
+        "id": "o12-l30",
+        "productId": "salt",
+        "pack": 1000,
+        "manufactured": "2026-11-06",
+        "expires": "2026-11-27",
+        "stock": 3,
+        "batch": "1242"
+      },
+      {
+        "id": "o12-l29",
+        "productId": "eggs",
+        "pack": 6,
+        "manufactured": "2026-11-05",
+        "expires": "2026-11-26",
+        "stock": 3,
+        "batch": "1205"
+      },
+      {
+        "id": "o12-l35",
+        "productId": "yogurt",
+        "pack": 500,
+        "manufactured": "2026-11-11",
+        "expires": "2026-12-02",
+        "stock": 3,
+        "batch": "1227"
+      },
+      {
+        "id": "o12-l17",
+        "productId": "icecream",
+        "pack": 60,
+        "manufactured": "2026-10-24",
+        "expires": "2026-11-14",
+        "stock": 5,
+        "batch": "1261"
+      },
+      {
+        "id": "o12-l36",
+        "productId": "banana",
+        "pack": 1000,
+        "manufactured": "2026-11-25",
+        "expires": "2026-12-03",
+        "stock": 3,
+        "batch": "1264"
+      }
+    ]
+  }
+]

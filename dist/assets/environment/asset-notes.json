@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-11",
+  "tool": "built-in imagegen",
+  "use_case": "lighting-weather",
+  "edit_target": "city-dusk.png",
+  "invariants": "Same 3:1 panorama, camera, horizon, skyline, buildings, mountains and road; preserve detailed lightly illustrated realistic style; no window frames, text or panels.",
+  "variants": {
+    "summer-morning": "Early morning warm gold on facades, cool lavender shadows, peach and pale blue sky, leafy trees, lights mostly off.",
+    "summer-day": "Bright neutral overhead midday sun, pale blue sky with white clouds, short shadows, green trees, street and apartment lights off.",
+    "summer-evening": "Existing approved dusk panorama preserved.",
+    "summer-night": "Full darkness, navy sky, small crescent moon and faint stars, dark mountains, irregular warm apartment lights, streetlights and headlights.",
+    "winter-morning": "Snow on roofs, ground, mountains, cars and bare branches; all deciduous trees leafless, no green or autumn foliage; cool pale blue and gold sunrise, lights mostly off.",
+    "winter-day": "Snowy winter midday, cold pale blue sky, white clouds, short cool shadows, snow-covered roofs, ground and bare branches, lights off.",
+    "winter-evening": "Snowy sunset, peach and mauve sky, violet-blue snow shadows, bare snowy branches, lights just turning on.",
+    "winter-night": "Snowy full night, navy cloudy sky and moonlit opening, blue moonlight and warm streetlights reflected on snow, bare snowy branches."
+  },
+  "postprocessing": "Lossy WebP compression only, original generated composition and dimensions retained.",
+  "precipitation": "Not baked into scenery. Irregular layered shader snow and refracting rain beads animate only inside window planes.",
+  "rain_reference": "https://www.pexels.com/photo/droplets-on-window-11175927/"
+}

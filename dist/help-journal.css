@@ -1,0 +1,11 @@
+.help-game-formats{display:grid;gap:13px;margin:20px 0 26px}
+.help-game-formats article{padding:18px 20px;border:1px solid #d3cfb3;border-radius:13px;background:#f6f3e4}
+.help-game-formats h3{font:700 18px/1.45 Arial,sans-serif;color:#3f6045;margin:0 0 10px}
+.help-game-formats p,.help-game-formats li{font:400 15px/1.7 Arial,sans-serif;color:#667057}
+.help-game-formats p{margin:0}.help-game-formats ol{margin:0;padding-left:22px}.help-game-formats li+li{margin-top:8px}
+.journal-total-label{font:600 14px/1.5 Arial,sans-serif;color:#718063;margin:18px 0 9px}
+.journal-stats{padding:17px 12px;border:1px solid #c8cba5;border-radius:13px;background:#ecf0d9;margin-bottom:22px}
+.journal-stats b{font:750 29px/1.2 Georgia,serif;color:#3e694a}
+.journal-stats small{font:600 15px/1.5 Arial,sans-serif;color:#5f7052;margin-top:7px;white-space:normal}
+.world-mode .order-float{grid-template-rows:auto minmax(0,1fr) auto}
+@media(max-width:620px){.help-game-formats article{padding:15px}.help-game-formats h3{font-size:17px}.help-game-formats p,.help-game-formats li{font-size:15px}.journal-stats{padding:15px 8px;gap:6px}.journal-stats b{font-size:27px}.journal-stats small{font-size:13px}.journal-total-label{font-size:13px}}

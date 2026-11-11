@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#315849">
+  <meta name="description" content="Хүнсний захиалгаа бэлтгэж, тоо хэмжээ болон хэрэглэх хугацааг шалгаарай. Монгол хэлний тоглоом.">
+  <title>Захиалга бэлэн үү? · Монгол хэлний тоглоом</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23315849'/%3E%3Cpath d='M17 24h30l3 29H14l3-29zm9 0v-6a6 6 0 0 1 12 0v6' fill='none' stroke='%23f7f1df' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=186-66">
+  <link rel="stylesheet" href="world.css?v=186-66">
+  <link rel="stylesheet" href="settings.css?v=186-66">
+  <link rel="stylesheet" href="phone.css?v=186-66">
+  <link rel="stylesheet" href="boot.css?v=186-66">
+  <link rel="stylesheet" href="mobile.css?v=186-66">
+  <link rel="stylesheet" href="scale.css?v=186-66">
+  <link rel="stylesheet" href="session.css?v=186-66">
+  <link rel="stylesheet" href="workflow.css?v=186-66">
+  <link rel="stylesheet" href="readability.css?v=186-66">
+  <link rel="stylesheet" href="shift.css?v=186-66">
+  <link rel="stylesheet" href="welcome-readability.css?v=186-66">
+  <link rel="stylesheet" href="achievements.css?v=186-66">
+  <link rel="stylesheet" href="welcome-launch.css?v=186-66">
+  <link rel="stylesheet" href="scale-hints.css?v=186-66">
+  <link rel="stylesheet" href="help-journal.css?v=186-66">
+  <link rel="stylesheet" href="phone-readability.css?v=186-66">
+  <link rel="stylesheet" href="packing-readability.css?v=186-66">
+  <link rel="stylesheet" href="compact-hud.css?v=186-66">
+  <link rel="stylesheet" href="scrollbar.css?v=186-66">
+  <script src="classic-orders.js?v=186-66" defer></script>
+  <script src="profile.js?v=186-66" defer></script>
+  <script src="basic-assortment.js?v=186-66" defer></script>
+  <script src="game-core.js?v=186-66" defer></script>
+  <script src="text-orders.js?v=186-66" defer></script>
+  <script src="prices.js?v=186-66" defer></script>
+  <script src="fulfilment.js?v=186-66" defer></script>
+  <script src="order-rotation.js?v=186-66" defer></script>
+  <script src="play-session.js?v=186-66" defer></script>
+  <script src="egg-art.js?v=186-66" defer></script>
+  <script src="fast-assets.js?v=186-66" defer></script>
+  <script src="bag-assets.js?v=186-66" defer></script>
+  <script src="produce-bag.js?v=186-66" defer></script>
+  <script src="photos.js?v=186-66" defer></script>
+  <script src="produce-assets.js?v=186-66" defer></script>
+  <script src="environment-assets.js?v=186-66" defer></script>
+  <script src="audio-orders.js?v=186-66" defer></script>
+  <script src="ru-hints.js?v=186-66" defer></script>
+  <script src="interface-language.js?v=186-66" defer></script>
+  <script src="art.js?v=186-66" defer></script>
+  <script src="phone.js?v=186-66" defer></script>
+  <script src="client-messages.js?v=186-66" defer></script>
+  <script src="preparation.js?v=186-66" defer></script>
+  <script src="choice-art.js?v=186-66" defer></script>
+  <script src="boot.js?v=186-66" defer></script>
+  <script src="input-policy.js?v=186-66" defer></script>
+  <script src="achievements.js?v=186-66" defer></script>
+  <script src="achievement-art.js?v=186-66" defer></script>
+  <script src="achievements-ui.js?v=186-66" defer></script>
+  <script src="app.js?v=186-66" defer></script>
+  <script src="world.js?v=186-66" defer></script>
+</head>
+<body class="world-mode">
+  <main id="world" aria-label="Хүнсний дэлгүүр">
+    <canvas id="world-canvas" tabindex="0" aria-label="Дэлгүүрээр алхах: W A S D, эргэх: зүүн, баруун сум. Барааны шошго харах: E."></canvas>
+    <div class="scene-vignette" aria-hidden="true"></div>
+    <div id="world-loading" class="world-loading" role="status" aria-live="polite"><div class="loading-emblem" aria-hidden="true">✦</div><span class="loading-kicker">ХҮНСНИЙ ХҮРГЭЛТ</span><h1>Дэлгүүрээ нээж байна…</h1><p id="loading-caption">Дэлгүүрээ бэлтгэж байна…</p><progress id="loading-progress" max="100" value="0" aria-label="Дэлгүүр ачаалах явц"></progress><span id="loading-percent">0%</span><button id="loading-retry" class="secondary-button" hidden>Дахин ачаалах</button></div>
+    <div id="world-error" class="world-error" hidden><h1>3D дэлгүүрийг нээж чадсангүй.</h1><p>WebGL дэмждэг шинэ хөтчөөр дахин нээгээрэй.</p></div>
+    <header class="world-hud">
+      <button type="button" id="home-button" class="brand cream-plaque home-button" aria-label="Үндсэн цэс рүү буцах"><span class="brand-mark" data-icon="back"></span><span class="brand-title">Үндсэн цэс рүү буцах</span><span class="compact-menu-label">Цэс</span></button>
+      <div class="location-plaque cream-plaque" hidden><span data-icon="leaf"></span><div><strong id="location-name">ДЭЛГҮҮРИЙН ҮҮД</strong></div></div>
+      <div class="world-header-actions"><button id="phone-button" class="cream-plaque hud-button" aria-label="Захиалгын утас"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4m-3 14h2"/></svg><span>Утас</span></button><button id="map-button" class="cream-plaque hud-button" aria-label="Чиглэл"><span data-icon="grid"></span><span>Чиглэл</span></button><button id="bag-button" class="cream-plaque hud-button"><span data-icon="bag"></span><span>Уут</span><b id="header-bag-count">0</b></button><button id="sound-button" class="cream-plaque icon-button" aria-label="Дуу асаах" aria-pressed="false"><span data-icon="mute"></span></button></div>
+    </header>
+    <aside class="ticket-column order-float" aria-label="Хэрэглэгчийн захиалга"><button id="ticket-toggle" class="ticket-toggle" aria-expanded="true"><span class="ticket-toggle-title">Захиалга <b id="ticket-compact-number"></b></span><span class="ticket-toggle-chevron">⌃</span></button><section id="order-ticket" class="order-ticket"></section></aside>
+    <div class="world-reticle" aria-hidden="true"></div>
+    <div id="world-prompt" class="world-prompt"><p id="world-hint">Тавиурт ойртож, бараан дээр дараарай.</p><button id="interact-button" class="primary-button" hidden>Шошго харах</button></div>
+    <div class="walk-controls" aria-label="Алхах удирдлага"><span class="walk-caption">АЛХАХ</span><div class="walk-pad"><button class="walk-forward" data-walk="KeyW" aria-label="Урагш алхах">↑</button><button class="walk-left" data-walk="KeyA" aria-label="Зүүн тийш алхах">←</button><button class="walk-back" data-walk="KeyS" aria-label="Хойш алхах">↓</button><button class="walk-right" data-walk="KeyD" aria-label="Баруун тийш алхах">→</button></div><div class="turn-pad"><button data-walk="ArrowLeft" aria-label="Зүүн тийш эргэх">↶</button><span>ХАРАХ</span><button data-walk="ArrowRight" aria-label="Баруун тийш эргэх">↷</button></div><span class="keyboard-hint">W A S D · ← →<br>Чирж эргэн тойрноо харна уу.</span></div>
+    <aside id="nearby-panel" class="nearby-panel" hidden><button type="button" id="nearby-toggle" class="nearby-toggle" aria-expanded="false" aria-controls="nearby-products">Ойр байгаа бараа</button><h2>Ойр байгаа бараа <small>Шошгыг нь харна уу.</small></h2><div id="nearby-products"></div></aside>
+
+  </main>
+  <dialog id="packing-dialog" class="packing-dialog" aria-labelledby="packing-title"><button class="dialog-close icon-button" data-close="packing-dialog" aria-label="Хаах"><span data-icon="close"></span></button><aside id="packing" class="packing-panel" aria-label="Захиалгын уут">
+          <div class="packing-heading"><div><span class="eyebrow">БЭЛТГЭХ ХЭСЭГ</span><h2 id="packing-title">Таны уут</h2></div></div>
+          <div id="bag-illustration" class="bag-scene" aria-hidden="true"></div>
+          <div id="packing-steps" class="packing-steps"></div><div id="service-summary" class="service-summary"></div><div id="cart-contents" class="cart-contents"></div>
+          <button type="button" id="packing-waste" class="packing-waste secondary-button">Муудсан барааны сав</button>
+          <div class="self-check"><span data-icon="check"></span><p>Нэр, тоо хэмжээ, хугацааг<br><strong>өөрөө нэг шалгаарай.</strong></p></div>
+          <div id="pack-location" class="pack-location"><p>Бэлтгэх ширээнд очиж захиалгаа шалгаарай.</p><button class="secondary-button" data-destination="packing">Ширээ рүү очих →</button></div><div id="feedback" class="feedback" aria-live="polite" aria-atomic="true" hidden></div>
+          <button id="check-button" class="primary-button check-button"><span data-icon="check"></span>Захиалга шалгах</button>
+          <button id="pack-items-button" class="primary-button" hidden>Бүх барааг уутлах</button><button id="seal-bag-button" class="primary-button" hidden>Уутаа боох</button><button id="unpack-button" class="secondary-button" hidden>Барааг сагсанд буцаах</button><button id="dispatch-button" class="primary-button dispatch-button" hidden><span data-icon="truck"></span>Захиалгыг өгөх</button>
+          <span class="packing-footnote">Бэлэн болсон үедээ шалгаарай.</span>
+        </aside></dialog>
+  <dialog id="prep-dialog" class="prep-dialog" aria-labelledby="prep-title"><header class="workflow-header"><div><span class="eyebrow">ЗАХИАЛГАА АВААД БЭЛТГЭЕ</span><h2 id="prep-title">Захиалга бэлтгэхийн өмнө</h2></div><span id="prep-step" class="small-pill">1 / 3</span><button class="icon-button" data-close="prep-dialog" aria-label="Хаах"><span data-icon="close"></span></button></header><div id="prep-reference" class="prep-reference"></div><div id="prep-illustration" class="prep-illustration" aria-hidden="true"></div><section data-prep-stage="0" class="prep-stage"><h3>Бүтээгдэхүүний уут аваарай.</h3><p id="prep-bags-status"></p><div class="prep-take-actions"><button type="button" data-prep-return class="secondary-button">Нэг уутыг буцаах</button><button type="button" data-prep-take class="primary-button">Нэг уут авах</button></div><button type="button" data-prep-next class="primary-button prep-next">Уутаа хаяглах</button></section><section data-prep-stage="1" class="prep-stage" hidden><h3>Уут бүрийг хаяглаарай.</h3><form id="prep-label-form"><label>Захиалгын дугаар<input id="prep-number" inputmode="numeric" autocomplete="off" maxlength="40" required></label><label>Захиалагчийн нэр<input id="prep-customer" lang="mn" data-learning autocomplete="off" maxlength="100" required></label><div class="workflow-actions"><button type="button" class="secondary-button" data-prep-back>Буцах</button><button type="submit" class="primary-button">Хаяглаад үргэлжлүүлэх</button></div></form></section><section data-prep-stage="2" class="prep-stage" hidden><h3>Сагс эсвэл тэрэг сонгоорой.</h3><p id="prep-volume"></p><div class="transport-choices"><button type="button" data-prep-transport="basket" aria-pressed="false"><span data-icon="basket"></span><strong>Сагс</strong><small>6 хүртэл савлагаа</small></button><button type="button" data-prep-transport="cart" aria-pressed="false"><span data-icon="cart"></span><strong>Тэрэг</strong><small>7 ба түүнээс олон савлагаа</small></button></div><div class="workflow-actions"><button type="button" class="secondary-button" data-prep-back>Буцах</button><button type="button" class="primary-button" data-prep-finish>Бараагаа цуглуулах</button></div></section><p id="prep-feedback" class="prep-feedback" role="status" aria-live="polite"></p></dialog>
+  <dialog id="settings-dialog" class="settings-dialog" aria-labelledby="settings-title"><button class="dialog-close icon-button" data-close="settings-dialog" aria-label="Хаах"><span data-icon="close"></span></button><span class="eyebrow">ӨӨРИЙН ХЭМНЭЛЭЭР ТОГЛОЁ</span><h2 id="settings-title">Тоглоомын тохиргоо</h2><p class="dialog-lead">Түвшин бүрд 5–50 захиалга сонгоорой. Тоог өөрчилсөн ч дууссан захиалгын одууд хадгалагдана.</p><div id="settings-levels"></div><div class="settings-summary"><strong id="settings-total">Нийт 20 захиалга</strong><span>Бүтээгдэхүүн, тоо хэмжээ, хүсэлтээрээ давхцах захиалга байхгүй.</span></div><label class="interface-language-choice">Интерфейсийн хэл<select id="settings-language"><option value="mn">Монгол</option><option value="ru">Русский</option></select></label><label class="settings-delivery">Захиалга хүлээн авах хэлбэр<select id="settings-delivery"><option value="audio">Утсанд ирэх дуут зурвас</option><option value="text">Бичвэрээр унших</option></select></label><label class="russian-mode-choice"><input id="settings-russian" type="checkbox"><span lang="ru"><strong>Русская подсказка</strong><small>Перевод заказа и названий — по кнопке</small></span></label><label class="settings-scale-hints"><input id="settings-scale-hints" type="checkbox" role="switch" aria-describedby="settings-scale-hints-help" checked><span><strong>Жинг үсгээр бичих тусламж</strong><small id="settings-scale-hints-help">Жинг монголоор хэрхэн бичихийг харуулна. Хүсвэл унтрааж болно.</small></span></label><label class="settings-sound"><input id="settings-sound" type="checkbox">Бараа нэмэх, хүргэлтийн дохио</label><button id="settings-apply" class="primary-button">Хадгалаад тоглох <span data-icon="arrow"></span></button><p id="settings-feedback" class="settings-feedback" role="status" aria-live="polite"></p><div class="settings-bottom"><button id="settings-classic" hidden>Өмнөх тоглолтоо үргэлжлүүлэх</button><button id="settings-legacy" hidden>Өмнөх 12 захиалгаа харах</button></div></dialog>
+  <dialog id="main-menu-dialog" class="main-menu-dialog" aria-labelledby="main-menu-title">
+    <button class="dialog-close icon-button" data-close="main-menu-dialog" aria-label="Үргэлжлүүлэн тоглох"><span data-icon="close"></span></button>
+    <span class="eyebrow">ТОГЛООМ ТҮР ЗОГССОН</span><h2 id="main-menu-title">Үндсэн цэс</h2>
+    <p class="menu-session" id="menu-session" data-learning></p>
+    <p class="menu-save-note">Захиалга болон цуглуулсан бараа хадгалагдсан.</p>
+
+    <div class="menu-actions"><button id="menu-resume" class="primary-button">Үргэлжлүүлэн тоглох</button><button id="settings-button" class="secondary-button"><span data-icon="settings"></span>Тохиргоо</button><button id="orders-button" class="secondary-button menu-journal"><span>Захиалга бэлтгэгчийн тэмдэглэл</span><b id="progress-count">0/20</b></button><button id="help-button" class="secondary-button"><span data-icon="help"></span>Хэрхэн тоглох вэ?</button><button class="secondary-button" data-achievements-open data-learning>Амжилтууд</button><button id="menu-finish" class="secondary-button menu-finish">Тоглоомыг дуусгах</button></div>
+  </dialog>
+  <dialog id="map-dialog" class="map-dialog" aria-labelledby="map-title"><button class="dialog-close icon-button" data-close="map-dialog" aria-label="Хаах"><span data-icon="close"></span></button><span class="eyebrow">ДЭЛГҮҮРИЙН ЗУРАГ</span><h2 id="map-title">Аль хэсэг рүү явах вэ?</h2><p class="dialog-lead controls-desktop">Хэсгээ сонговол тийшээ алхана. Та өөрөө ч сум эсвэл W A S D товчоор явж болно.</p><p class="dialog-lead controls-touch">Хэсгээ сонговол тийшээ алхана. Дэлгэцийн сумаар өөрөө мөн алхаж болно.</p><div class="map-layout"><div class="map-preview-card"><div class="shop-map store-map-preview" aria-label="Таны байршил"><canvas id="store-map-canvas" class="store-map-canvas" width="1024" height="832" aria-label="Дэлгүүрийг дээрээс харах"></canvas><span class="map-zone" data-map-zone="meat" aria-hidden="true">01</span><span class="map-zone" data-map-zone="dairy" aria-hidden="true">02</span><span class="map-zone" data-map-zone="bread" aria-hidden="true">03</span><span class="map-zone" data-map-zone="pantry" aria-hidden="true">04</span><span class="map-zone" data-map-zone="canned" aria-hidden="true">05</span><span class="map-zone" data-map-zone="frozen" aria-hidden="true">06</span><span class="map-zone" data-map-zone="cold" aria-hidden="true">07</span><span class="map-zone" data-map-zone="household" aria-hidden="true">08</span><span class="map-zone" data-map-zone="drinks" aria-hidden="true">09</span><span class="map-zone" data-map-zone="sweets" aria-hidden="true">10</span><span class="map-zone" data-map-zone="alcohol" aria-hidden="true">11</span><span class="map-zone" data-map-zone="produce" aria-hidden="true">12</span><span class="map-zone" data-map-zone="ready" aria-hidden="true">13</span><span class="map-zone" data-map-zone="packing" aria-hidden="true">14</span><span class="map-zone" data-map-zone="frozen-meat" aria-hidden="true">15</span><span class="map-zone" data-map-zone="pantry-2" aria-hidden="true">16</span><span id="map-player" class="map-player" aria-label="Та энд байна">▲</span></div><div class="map-preview-caption"><span>Дэлгүүрийг дээрээс харах</span><span class="map-you-key"><i aria-hidden="true"></i>Та энд байна</span></div></div><div class="zone-links"><button type="button" data-destination="meat"><span class="map-directory-number">01</span><span class="zone-label" data-learning>Мах, загас</span><span aria-hidden="true">→</span></button><button type="button" data-destination="dairy"><span class="map-directory-number">02</span><span class="zone-label" data-learning>Сүү, өндөг</span><span aria-hidden="true">→</span></button><button type="button" data-destination="bread"><span class="map-directory-number">03</span><span class="zone-label" data-learning>Талх</span><span aria-hidden="true">→</span></button><button type="button" data-destination="pantry"><span class="map-directory-number">04</span><span class="zone-label" data-learning>Хүнс, цай</span><span aria-hidden="true">→</span></button><button type="button" data-destination="canned"><span class="map-directory-number">05</span><span class="zone-label" data-learning>Лаазалсан хүнс, соус</span><span aria-hidden="true">→</span></button><button type="button" data-destination="frozen"><span class="map-directory-number">06</span><span class="zone-label" data-learning>Хөлдөөсөн хүнс</span><span aria-hidden="true">→</span></button><button type="button" data-destination="cold"><span class="map-directory-number">07</span><span class="zone-label" data-learning>Ус, зайрмаг</span><span aria-hidden="true">→</span></button><button type="button" data-destination="household"><span class="map-directory-number">08</span><span class="zone-label" data-learning>Ахуйн бараа</span><span aria-hidden="true">→</span></button><button type="button" data-destination="drinks"><span class="map-directory-number">09</span><span class="zone-label" data-learning>Ундаа, жүүс</span><span aria-hidden="true">→</span></button><button type="button" data-destination="sweets"><span class="map-directory-number">10</span><span class="zone-label" data-learning>Амттан</span><span aria-hidden="true">→</span></button><button type="button" data-destination="alcohol"><span class="map-directory-number">11</span><span class="zone-label" data-learning>Согтууруулах ундаа</span><span aria-hidden="true">→</span></button><button type="button" data-destination="produce"><span class="map-directory-number">12</span><span class="zone-label" data-learning>Жимс, ногоо</span><span aria-hidden="true">→</span></button><button type="button" data-destination="ready"><span class="map-directory-number">13</span><span class="zone-label" data-learning>Бэлэн хоол</span><span aria-hidden="true">→</span></button><button type="button" data-destination="packing"><span class="map-directory-number">14</span><span class="zone-label" data-learning>Бэлтгэх ширээ</span><span aria-hidden="true">→</span></button><button type="button" data-destination="frozen-meat"><span class="map-directory-number">15</span><span class="zone-label" data-learning>Хөлдөөсөн мах</span><span aria-hidden="true">→</span></button><button type="button" data-destination="pantry-2"><span class="map-directory-number">16</span><span class="zone-label" data-learning>Хүнс, амтлагч</span><span aria-hidden="true">→</span></button><button type="button" data-destination="frozen-dumplings">Бууз, банш</button><button type="button" data-destination="frozen-bakery">Хөлдөөсөн гурилан бүтээгдэхүүн</button><button type="button" data-destination="frozen-vegetables">Хөлдөөсөн ногоо</button></div></div></dialog>
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-title"><button class="dialog-close icon-button" data-close="photo-dialog" aria-label="Хаах"><span data-icon="close"></span></button><h2 id="photo-title"></h2><div id="photo-stage" class="photo-stage"></div></dialog>
+  <dialog id="scale-dialog" class="scale-dialog" aria-labelledby="scale-title">
+    <header class="scale-header"><div><span class="eyebrow">ЖИНЛҮҮР · ЗАДГАЙ БАРАА</span><h2 id="scale-title"></h2><p id="scale-product-ru" class="scale-product-ru" lang="ru"></p></div><button class="icon-button" data-close="scale-dialog" aria-label="Жинлүүрийг хаах"><span data-icon="close"></span></button></header>
+    <div id="scale-order-context" class="scale-order-context"></div><section class="scale-bag-step"><h3 class="scale-step"><b>1</b><span>Тунгалаг уут аваарай</span></h3><button type="button" id="scale-take-bag" class="secondary-button">Уут авах</button><p id="scale-bag-status" role="status"></p></section>
+    <div class="scale-body">
+      <section class="scale-station" aria-labelledby="scale-step-one"><h3 id="scale-step-one" class="scale-step"><b>2</b><span>Хэрэгтэй жингээ нэмээрэй</span></h3>
+        <div id="scale-sample" hidden></div><div id="scale-contents" class="scale-contents" aria-hidden="true"></div>
+        <div class="scale-base"><div class="scale-display"><output id="scale-weight" aria-label="Цэвэр жин, килограмм" aria-live="polite">0</output><span>кг</span></div><p class="scale-unit">ЦЭВЭР ЖИН · КИЛОГРАММ</p></div>
+        <p id="scale-readable" class="scale-readable" data-learning></p><p id="scale-amount" class="scale-amount" role="status"></p>
+        <div id="scale-controls" class="scale-controls"></div><button id="scale-clear" class="scale-clear">Бүгдийг буцаах</button>
+      </section>
+      <section class="scale-console" aria-labelledby="scale-step-two"><h3 id="scale-step-two" class="scale-step"><b>3</b><span>Жинг монгол үсгээр бичээрэй.</span></h3><p class="scale-read-explainer">1.250 кг = 1 кг 250 г. Жинг өөрчилбөл бичлэгээ дахин шалгана.</p>
+        <form id="scale-spelling-form" class="scale-spelling"><div id="scale-writing-help" class="scale-writing-help"><button type="button" id="scale-hint-button" aria-expanded="false" aria-controls="scale-word-hint"><span data-icon="help"></span><span class="scale-hint-copy"><strong>Жинг монголоор хэрхэн бичихийг харахын тулд дарна уу.</strong></span><span class="scale-hint-chevron" aria-hidden="true">⌄</span></button><p id="scale-word-hint" class="scale-word-hint" lang="mn" data-learning hidden></p></div><label for="scale-answer">Жинг үсгээр бичээрэй <strong id="scale-form-reading" data-learning></strong></label><textarea id="scale-answer" rows="3" lang="mn" data-learning autocomplete="off" spellcheck="false" placeholder="нэг килограмм…"></textarea><div class="scale-answer-actions"><button type="submit">Бичлэгээ шалгах</button></div><p id="scale-answer-feedback" class="scale-answer-feedback" role="status" aria-live="polite"></p></form>
+        <p id="scale-empty-message" class="scale-empty-message">Эхлээд «+» товчоор бараа нэмээрэй.</p><section class="scale-tie-step"><h3 class="scale-step"><b>4</b><span>Уутаа зангидаарай</span></h3><p id="scale-tie-status"></p><div class="scale-tie-actions"><button type="button" id="scale-tie-bag" class="secondary-button">Уут зангидах</button><button type="button" id="scale-untie-bag" class="secondary-button" hidden>Уутыг задлах</button></div></section><div class="scale-last-step"><h3 class="scale-step"><b>5</b><span>Сагсанд хийх</span></h3><p id="scale-commit-help"></p></div>
+        <details id="scale-russian" class="scale-russian ru-help" lang="ru" hidden><summary>Русская подсказка</summary><p>Возьмите прозрачный пакет и положите в него продукты. Кнопки «−» убирают лишнее. «Вернуть всё» очищает пакет. Запишите вес словами по-монгольски и проверьте запись. Завяжите пакет, затем положите его в корзину.</p></details>
+      </section>
+    </div><footer class="scale-actions"><button class="secondary-button" data-close="scale-dialog">Буцах</button><button id="scale-commit" class="primary-button">Уутанд хийх</button></footer>
+  </dialog>
+
+  <dialog id="waste-dialog" class="waste-dialog" aria-labelledby="waste-title"><header class="waste-header"><span class="eyebrow">ЧАНАРЫН ХЯНАЛТ</span><h2 id="waste-title">Муудсан барааны сав</h2></header><div id="waste-content" class="waste-content"></div><footer class="waste-actions"><button type="button" id="waste-back" class="secondary-button" data-close="waste-dialog">Буцах</button><button type="button" id="waste-confirm" class="primary-button">Саванд хийх</button></footer></dialog>
+  <dialog id="inspect-dialog" class="inspect-dialog" aria-labelledby="inspect-title"><div id="inspect-content"></div></dialog>
+  <dialog id="help-dialog" class="help-dialog" aria-labelledby="help-title">
+    <button class="dialog-close icon-button" data-close="help-dialog" aria-label="Хаах"><span data-icon="close"></span></button>
+    <h2 id="help-title">Хэрхэн тоглох вэ?</h2>
+    <p class="dialog-lead">Та хүнсний хүргэлтийн захиалга бэлтгэнэ. Бүх захиалгыг зөв бэлтгэж дуусгаарай.</p>
+    <section class="help-game-formats"><article><h3>Ээлжийг хэрхэн сонгох вэ?</h3><p>Бүтэн ээлжийг сонговол дөрвөн түвшнийг дарааллаар нь тоглоно. Нэг түвшнийг сонговол зөвхөн тэр түвшний захиалгуудыг цуглуулна. Сонгосон бүх захиалгаа дуусгахад ээлж дуусна. Дараагийн ээлж шинэ өдөр эхэлнэ.</p></article><article><h3>Түвшнүүд юугаараа ялгаатай вэ?</h3><ol><li>Эхний түвшинд гурван бараатай энгийн захиалга цуглуулж, нэрийг нь сурна.</li><li>Хоёр дахь түвшинд ижил барааны хугацааг харьцуулж, шинэ бараа сонгоно.</li><li>Гурав дахь түвшинд хэд хэдэн савлагаанаас эсвэл жинлүүр дээр хэрэгтэй хэмжээг бүрдүүлнэ.</li><li>Дөрөв дэх түвшинд хэрэглэгчийн хүссэн төрөл, маркийг сонгоно.</li></ol></article><article><h3>Захиалгаа унших эсвэл сонсох</h3><p>Бичвэр захиалгад барааны нэр, тоо хэмжээ шууд харагдана. Дуут захиалга утсанд зурвасаар ирнэ. Зурвасаа сонсоод ямар барааг хэр их авахыг тогтоогоорой. Хэдэн ч удаа дахин сонсож болно. Хэцүү байвал бичвэрийг нь нээгээрэй.</p></article></section>
+    <ol class="help-steps">
+      <li><b>1</b><div><strong>Захиалгаа аваарай.</strong><p>Дуут зурвасаа сонсож эсвэл жагсаалтаа уншаарай. Зурвасаа давтан сонсож, удаашруулж болно.</p></div></li>
+      <li><b>2</b><div><strong>Уут, сагсаа бэлтгээрэй.</strong><p>Уут авч, захиалгын дугаар болон захиалагчийн нэрийг бичээрэй. 6 хүртэл савлагаанд сагс, түүнээс олон бол тэрэг авна.</p></div></li>
+      <li><b>3</b><div><strong>Дэлгүүрээс бараагаа олоорой.</strong><p class="controls-desktop">W A S D эсвэл сумтай товчоор алхана. Хулганаар дэлгэцийг чирж эргэн тойрноо хараарай.</p><p class="controls-touch">Дэлгэцийн сумыг дарж алхана. Чирж эргэн тойрноо харна. Хэрэгтэй хэсгээ газрын зургаас сонгож болно.</p><p>Сагс, тэрэг шошгыг халхалж байвал «Тавиурыг үзэх» товчийг дараарай. Дахин алхахад сагс, тэргээ авна.</p></div></li>
+      <li><b>4</b><div><strong>Гадна байдал, шошгыг шалгаарай.</strong><p>Задгай жимс, ногоог гадна байдлаар нь шалгана. Огноо зөвхөн шошгон дээр байна. «Хугацааг шалгах» товчийг дарж, өнөөдрийн огноотой харьцуулаарай.</p></div></li>
+      <li><b>5</b><div><strong>Жинлээд үсгээр бичээрэй.</strong><p>Эхлээд тунгалаг уут аваад, дотор нь бараагаа хийнэ. Ууттай нь жинлэнэ. Уутны жинг автоматаар хасна. Жинг монголоор үсгээр бичиж шалгаад, уутаа зангидан сагсанд хийнэ. Илүү жинг хасаж болно.</p><p>Жинг хэрхэн бичихээ мэдэхгүй байвал тусламжийн товчийг дараарай. Жинлүүрийн заалт монголоор үсгээр гарна. Энэ тусламжийг үндсэн цэсний тохиргооноос унтрааж болно.</p></div></li>
+      <li><b>6</b><div><strong>Жагсаалтын тэмдгийг хараарай.</strong><p>Хэрэгтэй тоо хэмжээг бүрэн цуглуулбал ногоон тэмдэг гарна. Илүү барааг сагснаас буцааж болно.</p></div></li>
+      <li><b>7</b><div><strong>Захиалгаа хүргэлтэд гаргаарай.</strong><p>Бэлтгэх ширээнд очоод барааг уутанд хийж, уутаа боогоод захиалгыг өгнө. Дутуу бараанд торгууль тооцно.</p></div></li>
+      <li><b>8</b><div><strong>Хэрэглэгчийн зурвасыг шийдээрэй.</strong><p>Хугацаа нь дууссан бараа ирсэн бол шинэ бараагаар сольж өгөх эсвэл зөвхөн тэр барааны мөнгийг буцаана. Хүсэлтийг шийдсэний дараа дараагийн захиалгаа нээнэ.</p></div></li>
+          <li><b>9</b><div><strong>Түр зогсоох эсвэл дуусгах.</strong><p>Үндсэн цэсийг нээвэл тоглоом түр зогсоно. Үргэлжлүүлэн тоглож эсвэл тохиргоогоо өөрчилж болно. Тоглоомыг дуусгасан ч захиалга, ахиц хадгалагдана.</p></div></li>
+    </ol>
+    <div class="help-note"><span data-icon="star"></span><p>Эхний шалгалтаар зөв бол 3 од, хоёр дахь шалгалтаар 2 од, түүнээс олон шалгасан бол 1 од авна. Хэрэглэгч гомдол гаргасан бол дээд тал нь 2 од, дутуу захиалгад хамгийн ихдээ 1 од авна. Хугацаа хязгааргүй.</p></div>
+    <button id="help-start" class="primary-button">Цэс рүү буцах <span data-icon="back"></span></button>
+  </dialog>
+  <dialog id="orders-dialog" class="orders-dialog" aria-labelledby="orders-title">
+    <button class="dialog-close icon-button" data-close="orders-dialog" aria-label="Хаах"><span data-icon="close"></span></button>
+    <span class="eyebrow">ТАНЫ АЖЛЫН ӨДӨР</span><h2 id="orders-title">Захиалга бэлтгэгчийн тэмдэглэл</h2><p class="dialog-lead">Энд одоогийн ээлжийн захиалга, авсан одууд байна. Дууссан захиалгаа дахин тоглож болно.</p><p class="journal-total-label">Тоглосон бүх хугацааны дүн</p><div class="shift-stats journal-stats" data-shift-stats aria-label="Ээлжийн дүн"></div><div id="order-level-tabs" class="order-level-tabs" role="group" aria-label="Түвшин сонгох"></div><div id="order-grid" class="order-grid"></div>
+  </dialog>
+  <dialog id="switch-dialog" class="switch-dialog" aria-labelledby="switch-title">
+    <span class="eyebrow">ЗАХИАЛГА СОЛИХ</span><h2 id="switch-title">Өөр захиалга нээх үү?</h2><p class="dialog-lead">Уутанд байгаа бараанууд болон дууссан захиалгын одууд хадгалагдана.</p><div class="dialog-actions"><button class="secondary-button" data-close="switch-dialog">Үргэлжлүүлэх</button><button id="switch-confirm" class="primary-button">Өөр захиалга нээх</button></div>
+  </dialog>
+  <dialog id="success-dialog" class="success-dialog" aria-labelledby="success-title"><div id="success-content"></div></dialog>
+
+  <dialog id="controls-tutorial-dialog" class="controls-tutorial-dialog" aria-labelledby="controls-tutorial-title" aria-describedby="controls-tutorial-lead">
+    <header class="controls-tutorial-header"><span class="eyebrow">ТОГЛООМЫН БОГИНО ЗААВАР</span><h2 id="controls-tutorial-title">Дэлгүүрээр хэрхэн явах вэ?</h2><p id="controls-tutorial-lead">Эхний захиалгаа авахаас өмнө удирдлагатай танилцаарай.</p></header>
+    <div class="controls-tutorial-body">
+      <ol class="controls-tutorial-steps">
+        <li><b class="controls-step-number" aria-hidden="true">1</b><div><h3>Алхах</h3><div class="controls-desktop"><div class="controls-keycaps" aria-hidden="true"><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><span>W A S D</span></div><p>↑, ↓ — урагш, хойш алхана. ←, → — эргэнэ. W, A, S, D товчоор бас алхаж болно.</p></div><div class="controls-touch"><div class="controls-keycaps" aria-hidden="true"><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd></div><p>Дэлгэцийн сумыг дарж эсвэл удаан дарж алхана. ↶, ↷ товчоор эргэнэ.</p></div></div></li>
+        <li><b class="controls-step-number" aria-hidden="true">2</b><div><h3>Чирж харах</h3><p class="controls-desktop">Хулганаар дэлгэцийг чирж эргэн тойрноо хараарай.</p><p class="controls-touch">Хуруугаараа дэлгэцийг чирж эргэн тойрноо хараарай.</p></div></li>
+        <li><b class="controls-step-number" aria-hidden="true">3</b><div><h3>Бараа сонгох</h3><p>Тавиурт ойртоод бараа эсвэл үнийн шошгон дээр дараарай. Захиалгаа утсаар дахин нээж болно.</p></div></li>
+        <li><b class="controls-step-number" aria-hidden="true">4</b><div><h3>Хугацаа, чанарыг шалгах</h3><p>Шошгыг нээгээд «Хугацааг шалгах» товчийг дараарай. Задгай жимс, ногоог гадна байдлаар нь шалгана. Муудсан барааг тусгай саванд хийж, захиалгад шинээр нь аваарай.</p></div></li>
+      </ol>
+      <p class="controls-tutorial-note">Дэлгэрэнгүй зааврыг үндсэн цэсний «Хэрхэн тоглох вэ?» хэсгээс үзээрэй.</p>
+    </div>
+    <footer class="controls-tutorial-actions"><button type="button" class="secondary-button" data-close="controls-tutorial-dialog">Алгасах</button><button type="button" class="primary-button" data-close="controls-tutorial-dialog">Ойлголоо, эхэлье</button></footer>
+  </dialog>
+  <dialog id="welcome-dialog" class="welcome-dialog" aria-labelledby="welcome-title">
+    <div class="welcome-art" aria-hidden="true"><div class="welcome-halo"></div><div class="welcome-bag-handle"></div><img class="welcome-bread" src="assets/fast/white-bread.58432c2a95eb6f74.320.webp" alt=""><img class="welcome-milk" src="assets/fast/milk.f1086292fe20d4db.320.webp" alt=""><img class="welcome-apples" src="assets/fast/green-apple.a58c20ffa601f799.320.webp" alt=""><div class="welcome-paper-bag"><span>ХҮНС</span><i>хүргэлт</i></div></div>
+    <div class="welcome-content">
+      <label class="interface-language-choice welcome-language"><span class="welcome-language-copy"><span>Интерфейсийн хэл</span><small lang="ru" data-learning>Нажмите, чтобы сменить язык</small></span><select id="welcome-language"><option value="mn">🇲🇳 Монгол</option><option value="ru">🇷🇺 Русский</option></select></label>
+      <div class="welcome-intro"><h2 id="welcome-title">Захиалга бэлэн үү?</h2><p class="welcome-lead" id="welcome-short-lead" data-learning>Бараагаа олоод, чанарыг нь шалгаж, хүргэлтэд бэлтгээрэй.</p></div>
+      <section class="welcome-shift welcome-choices" aria-labelledby="welcome-shift-title">
+        <h3 id="welcome-shift-title">Тоглох горим</h3>
+        <div class="welcome-choice-row"><label class="welcome-select-field"><span>Тоглох горим</span><span class="welcome-icon-select"><span class="welcome-select-visual" aria-hidden="true"></span><select id="welcome-scope"><option value="all">Бүтэн ээлж</option><option value="level">Нэг түвшин</option></select></span></label><label class="welcome-select-field"><span>Захиалгын хэлбэр</span><span class="welcome-icon-select"><span class="welcome-select-visual" aria-hidden="true"></span><select id="welcome-order-format"></select></span></label></div>
+        <div class="welcome-level-field" id="welcome-level-field" hidden><label class="welcome-select-field"><span>Тоглох түвшин</span><span class="welcome-icon-select"><span class="welcome-select-visual" aria-hidden="true"></span><select id="welcome-level"></select></span></label></div>
+      </section>
+      <div class="welcome-play-actions">
+      <button id="welcome-start" class="primary-button">Ээлжээ эхлэх</button>
+      <button type="button" id="welcome-resume" class="secondary-button" hidden>Үргэлжлүүлэн тоглох</button>
+      </div>
+      <p id="welcome-shift-summary" class="welcome-shift-summary" data-learning></p>
+      <div class="welcome-secondary-actions"><button type="button" id="welcome-guide" class="welcome-secondary-button"><span data-icon="help"></span><span>Хэрхэн тоглох вэ?</span></button><button type="button" class="welcome-secondary-button" data-achievements-open data-learning>Амжилтууд</button></div>
+      <details class="welcome-details" id="welcome-details"><summary id="welcome-details-title" data-learning>Түвшин, захиалгын тухай</summary><div class="welcome-details-content"><label class="russian-mode-choice welcome-russian"><input id="welcome-russian" type="checkbox"><span lang="ru"><strong>Русская подсказка</strong><small>Открывать перевод по желанию</small></span></label><button id="welcome-archive" class="text-button" hidden>Өмнөх тоглолтоо үргэлжлүүлэх</button></div></details>
+      <div class="welcome-audio-note" id="welcome-audio-note"><span id="welcome-speech-short" data-learning>Дууг автоматаар үүсгэсэн; дуудлага нь ойролцоо.</span><details class="speech-details"><summary id="welcome-speech-details" data-learning>Дуудлагын тухай</summary><p id="speech-disclaimer">Энэхүү дуу оруулгыг автоматаар үүсгэсэн бөгөөд дуудлагыг зөвхөн ойролцоогоор илэрхийлнэ. Зөв дуудлагыг монгол хэлээр төрөлхөөсөө ярьдаг хүнээс лавлана уу.</p></details></div>
+    </div>
+  </dialog>
+  <dialog id="achievements-dialog" class="achievements-dialog" aria-labelledby="achievements-title" data-learning>
+    <header class="achievements-header"><div class="achievements-heading"><span class="eyebrow" id="achievements-kicker"></span><h2 id="achievements-title"></h2><p id="achievements-lead"></p></div><button type="button" class="icon-button" id="achievements-close" aria-label="Хаах"><span data-icon="close"></span></button></header>
+    <section class="achievement-overview"><div class="achievement-total" id="achievement-total"></div><div class="achievement-overview-copy"><span id="achievements-total-label"></span><progress id="achievement-overall" max="50" value="0"></progress></div></section>
+    <div class="achievement-controls"><div class="achievement-filters" role="group" aria-label="Шүүлтүүр"><button type="button" data-achievement-filter="all" aria-pressed="true"></button><button type="button" data-achievement-filter="earned" aria-pressed="false"></button><button type="button" data-achievement-filter="locked" aria-pressed="false"></button></div><label><span id="achievement-category-label"></span><select id="achievement-category"></select></label></div>
+    <div class="achievement-grid" id="achievement-grid"></div><footer class="achievements-footer"><p id="achievements-save-note"></p><button type="button" class="secondary-button" id="achievements-back">Буцах</button></footer>
+  </dialog>
+  <div id="achievement-notice" class="achievement-notice" popover="manual" role="status" aria-live="polite" data-learning hidden></div>
+  <div id="legacy-shelf" hidden><div id="categories"></div><div id="shelves"></div><span id="shelf-count"></span><button id="mobile-bag-link"></button><button id="mobile-order-button"></button><button id="mobile-cart-button"></button><span id="mobile-cart-count"></span></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <noscript>Тоглохын тулд хөтчийн JavaScript тохиргоог асаана уу.</noscript>
+</body></html>

@@ -1,0 +1,94 @@
+{
+  "common": "Use case: illustration-story. Asset type: production game achievement sticker SPRITE SHEET. Create one elegant, funny, premium hand-painted cartoon illustration sheet with EXACTLY TEN SEPARATE stickers in a STRICT 5-COLUMN by 2-ROW evenly spaced grid, read left-to-right, top row then bottom row. Wide landscape composition. Each of the ten characters is centered in its own cell with generous transparent margins; nothing crosses a cell boundary, no sticker touches another. Transparent background, no shared floor or scene, no text, letters, numerals, labels, logos, watermarks, UI or outer frame. Style: warm charming little grocery mascots for a cozy Mongolian supermarket language-learning game; whimsical clever visual comedy, expressive brows, cute tiny arms and legs, appealing chunky shapes, soft painterly gouache shading and polished sticker edges, excellent readability at 96px. Consistent palette: forest green, warm cream, honey gold, rich natural fruit colors, subtle soft contact shadows only inside each sticker. Friendly collectible art for adults too; no flat generic pictograms, no scary expressions. Every subject must be visibly different while belonging to one coherent art family. Characters have no brand or printed packaging text. Exact ten cells:",
+  "records": [
+    {
+      "sheet": 1,
+      "subjects": [
+        "A bashful brown grocery paper bag in tiny sneakers, one green apple peeking out, shy first-day wave.",
+        "A relaxed shopping basket mascot enjoying a smooth ride on tiny wheels, jaunty scarf.",
+        "A smiling grocery paper bag juggling a milk carton, a loaf of bread and a carton of eggs, comically focused.",
+        "A reliable grocery bag wearing a little hard hat and proudly holding a tidy clipboard.",
+        "A delighted athletic grocery bag balancing a comically tall but tidy stack of groceries, celebratory gold sparkles.",
+        "A noble grocery bag wearing a honey-gold little crown and holding a grocery trophy.",
+        "A triumphant paper grocery bag in a tiny royal cape surrounded by a little fleet of grocery baskets.",
+        "A rosy apple carefully polishing three golden stars, proud bashful face.",
+        "A cool milk carton wearing little sunglasses, presenting golden star badges like a showman.",
+        "A broccoli bodybuilder joyfully lifting three oversized golden stars."
+      ],
+      "file": "sheet-1.png"
+    },
+    {
+      "sheet": 2,
+      "subjects": [
+        "A beaming grocery bag astronaut with a tiny star-patterned space helmet, golden star sparkles.",
+        "Five small cheerful apples marching neatly together beneath one green checked flag, a unified single sticker.",
+        "A milk carton Sherlock detective with a magnifying glass examining a blank little date label, comically serious.",
+        "A sausage detective in a small trench coat, inspecting a tiny clock with a magnifying glass.",
+        "A wise cheese professor with monocle and a gold pocket watch, knowingly raising one brow.",
+        "An open egg carton mascot with six intact eggs huddling together, one bashfully peeking over the lid.",
+        "An egg carton with cheerful intact eggs wearing little protective helmets, proudly being inspected.",
+        "An overripe spotted banana looking theatrically tired while gently sliding into a designated quality-rejection bin, cute not gross.",
+        "A heroic broccoli janitor in an apron carefully sweeping wilted produce into a little rejection bin.",
+        "A proud paper bag quality inspector holding a clipboard of green checkmark symbols, tiny milk and apple companions."
+      ],
+      "file": "sheet-2.png"
+    },
+    {
+      "sheet": 3,
+      "subjects": [
+        "A meticulous paper bag inspector with enormous reading glasses and a tidy stack of checkmarked clipboards.",
+        "A surprised red apple sitting on a friendly electronic kitchen scale, feet dangling.",
+        "A round orange in a knotted transparent produce bag on electronic scales, looking delighted.",
+        "A banana acrobat perfectly balancing on electronic scales, arms extended.",
+        "A wise potato wizard with a little green hat and electronic scales as a magic staff, gold sparkles.",
+        "A carrot earnestly writing a weight with an oversized pencil on a blank tag, tongue out in concentration, no written text.",
+        "A broccoli professor pointing at a little blank chalkboard with an abacus and scales, no letters or numerals.",
+        "A cheerful apple and a carrot cuddled inside a clear knotted produce bag on scales.",
+        "Two happy wrapped candies celebrating inside a clear bag on electronic scales, rich colorful wrappers without text.",
+        "An attentive little egg wearing absurdly large comfortable headphones, pleased expression."
+      ],
+      "file": "sheet-3.png"
+    },
+    {
+      "sheet": 4,
+      "subjects": [
+        "A carrot DJ with headphones and a tiny turntable, gently nodding to an audio message.",
+        "A wedge of cheese with big attentive ears and a little listening gesture, eyebrows concentrated.",
+        "A milk carton audio expert with elegant studio headphones and a little gold microphone.",
+        "A friendly smartphone showing only a simple voice waveform icon, with a grocery bag mascot answering the call.",
+        "A confident banana courier wearing a headset and carrying a neatly packed small grocery bag.",
+        "A thoughtful carrot with closed eyes and headphones, listening carefully, one hand cupping an ear.",
+        "A broccoli music conductor with headphones and a baton, joyfully mastering listening.",
+        "A green apple explorer with a little hat and folded shop map without words.",
+        "A paper grocery bag treasure hunter looking at fresh groceries through a magnifying glass.",
+        "A cheese scholar surrounded by a few tiny food-shaped books, spectacles and delighted face."
+      ],
+      "file": "sheet-4-v2.png"
+    },
+    {
+      "sheet": 5,
+      "subjects": [
+        "A majestic milk carton encyclopedia wizard with many tiny food icons and a green academic cap.",
+        "A paper bag cartographer holding a small folded supermarket map, clever adventurous smile.",
+        "A joyful grocery basket traveler wearing a little backpack and surrounded by a ring of diverse miniature foods.",
+        "A little green apple in reading glasses carefully reading a grocery list with plain checkbox symbols only.",
+        "A banana librarian with glasses balancing little books and a grocery checklist, no text.",
+        "A baby grocery paper bag taking its first confident step with a little loaf of bread.",
+        "A milk carton detective triumphantly holding a gold watch and a green checked label.",
+        "A potato mathematician with a tiny abacus and electronic scales, thinking hard, no text or numerals.",
+        "An elegant apple gourmet with a monocle comparing a green apple and red apple, playful picky expression.",
+        "A paper grocery bag, milk carton, loaf and egg carton team celebrating the end of a shift together, little apron and warm sunset-gold sparkles, unified single sticker."
+      ],
+      "file": "sheet-5.png"
+    }
+  ],
+  "tool": "Built-in image_gen",
+  "transparent_background": true,
+  "edits": [
+    {
+      "input": "sheet-4.png",
+      "output": "sheet-4-v2.png",
+      "prompt": "Edit this exact 5-column by 2-row achievement sticker sheet. Remove ONLY the white/off-white paper background and replace it with genuine fully transparent alpha, not a white or checkerboard imitation. Preserve the same ten characters, the exact 5 by 2 grid order, their poses, faces, colors, outlines, props, proportions and spacing. Keep all ten complete characters within their current separate cells. Preserve the green/mustard cozy gouache art style and all details, with clean antialiased cutout edges. Do not add, redraw or remove subjects, text or symbols. The areas BETWEEN the ten stickers and the outer margins must have alpha zero. This is a transparency correction to match the other four sheets."
+    }
+  ]
+}

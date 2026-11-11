@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import * as THREE from 'three';
+import {createProducePouch} from '../src/produce-pouch.js';
+const width=.18,height=.35,depth=.12,epsilon=1e-7,texture=new THREE.Texture(),pouch=createProducePouch(texture,width,height,depth);
+pouch.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(pouch),size=bounds.getSize(new THREE.Vector3());
+assert.ok(size.z>=depth*.8,'The package has actual depth when viewed from above');
+assert.ok(bounds.min.x>=-width*.5-epsilon&&bounds.max.x<=width*.5+epsilon,'Contours and film fit the carrier slot');
+assert.ok(bounds.min.y>=-epsilon&&bounds.max.y<=height+epsilon,'The new volume cannot rise into the order panel');
+assert.ok(bounds.min.z>=-depth*.5-epsilon&&bounds.max.z<=depth*.5+epsilon,'Bulging film stays inside the slot depth');
+const parts=pouch.children.filter(o=>o.isMesh||o.isLine);
+assert.ok(parts.length<=3,'The bag uses a bounded number of draw calls');
+assert.ok(parts.every(o=>!o.material.transmission),'No expensive second transmission scene render is introduced');
+assert.ok(parts.every(o=>o.geometry.userData.owned&&o.material.userData.owned),'Changing orders can dispose every added resource');
+assert.ok(parts.reduce((total,o)=>total+o.geometry.attributes.position.count,0)<400,'Low-poly film stays cheap on a phone');
+console.log('PASS: 8 produce-bag volume, containment, disposal and rendering-cost checks.');
