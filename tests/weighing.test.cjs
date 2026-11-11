@@ -50,7 +50,7 @@ for(const productId of ['chocolate-box','curd-candy']){
  check(G.adjustPortion(fresh,G.adjustPortion(fresh,100,-10),-5)===85,'Candy controls can remove a small excess');
 }
 const beginner=G.createInventory(G.createCampaign()[1]);
-check(beginner.filter(l=>!l.hidden&&G.isBulk(l)).every(l=>!G.isUnfit(l)),'First level keeps the beginner fresh-stock rule');
+check(beginner.filter(l=>!l.hidden&&G.isBulk(l)&&G.isUnfit(l)).length<=1,'First level can include one optional spoiled loose product');
 const sandbox={window:{}};vm.runInNewContext(fs.readFileSync(require.resolve('../dist/produce-assets.js'),'utf8'),sandbox);
 const photos=sandbox.window.ProducePhotos;
 vm.runInNewContext(fs.readFileSync(require.resolve('../dist/photos.js'),'utf8'),sandbox);

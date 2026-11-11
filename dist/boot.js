@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   const $ = id => document.getElementById(id);
-  let ready=false,starting=false,mode='audio',scope='all',selectedLevel=0,optionLanguage='',choiceScrollTop=null,choiceScrollBaseline=0,choiceScrollRevision=0;
+  let ready=false,starting=false,mode='audio',scope='all',selectedLevel=0,timerMode='off',optionLanguage='',choiceScrollTop=null,choiceScrollBaseline=0,choiceScrollRevision=0;
   const ui=(mn,ru)=>window.GroceryLanguage?.isRussian()?ru:mn;
   const preparation={room:['Дэлгүүрээ бэлтгэж байна…','Готовим магазин к открытию…'],stock:['Бараагаа тавиур дээр өрж байна…','Раскладываем товары по стеллажам…'],cold:['Хөргөгч, хөлдөөгчөө дүүргэж байна…','Наполняем холодильники и морозильники…'],bags:['Захиалгын уутаа бэлтгэж байна…','Готовим пакеты для заказов…'],ready:['Дэлгүүр бэлэн боллоо!','Магазин готов!']};
   let preparationStage='room';
@@ -19,21 +19,7 @@
     ui('Хэрэгтэй тоо хэмжээг цуглуулаарай.','Собирайте нужное количество товара.'),
     ui('Хэрэглэгчийн хүссэн төрөл, маркийг сонгоорой.','Выбирайте вид и марку товара по просьбе клиента.')
   ][i];
-  function renderChoiceIcons(){
-    const chosen=[['welcome-scope',scope==='all'?'full-shift':'orders-1'],['welcome-order-format',mode==='audio'?'audio-orders-1':'text-orders-1'],['welcome-level',scope==='all'?'full-shift':'level-'+selectedLevel]];
-    for(const [id,illustration] of chosen){
-      const select=$(id),visual=select.closest('.welcome-icon-select')?.querySelector('.welcome-select-visual');if(!visual)continue;
-      const label=select.selectedOptions[0]?.textContent||'',key=illustration+'|'+label;
-      if(visual.dataset.choice===key)continue;
-      visual.dataset.choice=key;
-      visual.replaceChildren();
-      const atlas=window.GroceryChoiceArt,cell=atlas?.items[illustration];
-      if(cell){const art=document.createElement('span');art.className='welcome-choice-art';art.style.backgroundImage=`url("${atlas.src}")`;art.style.backgroundSize=`${atlas.columns*100}% ${atlas.rows*100}%`;art.style.backgroundPosition=`${cell[0]*100/(atlas.columns-1)}% ${cell[1]*100/(atlas.rows-1)}%`;visual.append(art);}
-      else{const source=window.GroceryAchievementArt?.[illustration];if(source){const image=document.createElement('img');image.src=source.path;image.alt='';image.width=image.height=52;image.decoding='async';visual.append(image);}}
-      const caption=document.createElement('span');caption.textContent=label;visual.append(caption);
-      const arrow=document.createElement('span');arrow.className='welcome-select-chevron';arrow.textContent='⌄';visual.append(arrow);
-    }
-  }
+  function renderChoiceIcons(){window.GroceryChoices?.refresh();}
   function renderShift(){
     const G=window.GroceryGame,session=window.GrocerySession,progress=session?.shiftProgress?.(mode),day=session?.marketDay?.();
     const language=window.GroceryLanguage?.current()||'mn',refreshOptions=optionLanguage!==language;
@@ -55,6 +41,7 @@
     const entries=progress?.levels||[],chosen=entries.filter(e=>scope==='all'||e.level===selectedLevel),done=chosen.reduce((sum,e)=>sum+e.done,0),total=chosen.reduce((sum,e)=>sum+e.total,0);
     $('welcome-shift-summary').textContent=scope==='all'?ui(`4 түвшин · ${total} захиалга`,`4 уровня · ${total} заказов`):ui(`${selectedLevel+1}-р түвшин · ${total} захиалга`,`Уровень ${selectedLevel+1} · ${total} заказов`);
     if(done)$('welcome-shift-summary').textContent+=ui(` · ${done} дууссан`,` · выполнено ${done}`);
+    if(refreshOptions)$('welcome-timer').innerHTML=`<option value="off">${ui('Цаггүй','Без таймера')}</option><option value="timer">${ui('Таймер','Таймер')}</option><option value="challenge">${ui('Таймер-челленж','Таймер-челлендж')}</option>`;$('welcome-timer').value=timerMode;
     renderChoiceIcons();
   }
   // Native pickers may scroll a focused select when their popup closes. Keep
@@ -65,7 +52,7 @@
     const restore=()=>{if(dialog.open&&revision===choiceScrollRevision){dialog.scrollTop=top;choiceScrollBaseline=top;}};
     restore();requestAnimationFrame(()=>{restore();requestAnimationFrame(restore);});
   }
-  for(const id of ['welcome-scope','welcome-level','welcome-order-format','welcome-language']){
+  for(const id of ['welcome-scope','welcome-level','welcome-order-format','welcome-language','welcome-timer']){
     const select=$(id),remember=()=>{choiceScrollTop=choiceScrollBaseline;};
     select.addEventListener('pointerdown',remember,{capture:true});
     select.addEventListener('keydown',event=>{if(['ArrowUp','ArrowDown','Home','End','PageUp','PageDown','Enter',' '].includes(event.key))choiceScrollTop=$('welcome-dialog').scrollTop;},{capture:true});
@@ -78,12 +65,13 @@
   $('welcome-scope').addEventListener('change',()=>{scope=$('welcome-scope').value;renderChoiceChange();});
   $('welcome-level').addEventListener('change',()=>{const value=$('welcome-level').value;scope=value==='all'?'all':'level';if(scope==='level')selectedLevel=Number(value);renderChoiceChange();});
   $('welcome-order-format').addEventListener('change',()=>{mode=$('welcome-order-format').value;renderChoiceChange();});
+  $('welcome-timer').addEventListener('change',()=>{timerMode=$('welcome-timer').value;renderChoiceChange();});
   window.addEventListener('grocery:language',()=>{preparationCaption();if(ready)renderChoiceChange();});
   function welcome(){
     if(!ready)return;
     const session=window.GrocerySession;$('welcome-archive').hidden=!session?.archiveAvailable;
     $('welcome-russian').checked=session?.russianHints?.()===true;
-    selectedLevel=session?.shift?.().level??session?.currentLevel?.()??0;scope=session?.shift?.().scope||'all';mode=session?.deliveryMode?.()==='text'?'text':'audio';renderShift();
+    timerMode=session?.timerMode?.()||'off';selectedLevel=session?.shift?.().level??session?.currentLevel?.()??0;scope=session?.shift?.().scope||'all';mode=session?.deliveryMode?.()==='text'?'text':'audio';renderShift();
     if(!$('welcome-dialog').open){$('welcome-details').open=false;$('welcome-dialog').showModal();$('welcome-dialog').scrollTop=0;choiceScrollBaseline=0;}
   }
   window.addEventListener('grocery:prepare', event => {
@@ -102,7 +90,7 @@
   $('welcome-dialog').addEventListener('cancel', event => event.preventDefault());
   async function start(archive = false, resume = false) {
     if(starting||!ready)return;
-    starting=true;
+    starting=true;window.GroceryChoices?.close();
     const dialog=$('welcome-dialog'),button=$(archive?'welcome-archive':resume?'welcome-resume':'welcome-start');
     const controls=[...dialog.querySelectorAll('button,select,input')],disabled=controls.map(e=>e.disabled),caption=button.textContent;
     controls.forEach(e=>e.disabled=true);dialog.setAttribute('aria-busy','true');
@@ -111,7 +99,7 @@
     await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));
     try{
       dialog.close();document.body.classList.add('game-started');
-      window.dispatchEvent(new CustomEvent('grocery:start', { detail: { mode,archive,resume,scope,level:selectedLevel,russianHints:$('welcome-russian').checked } }));
+      window.dispatchEvent(new CustomEvent('grocery:start', { detail: { mode,archive,resume,scope,level:selectedLevel,timerMode,russianHints:$('welcome-russian').checked } }));
       if (mode === 'text' || archive) $('world-canvas').focus({ preventScroll: true });
     }finally{
       controls.forEach((e,i)=>e.disabled=disabled[i]);button.textContent=caption;dialog.removeAttribute('aria-busy');starting=false;

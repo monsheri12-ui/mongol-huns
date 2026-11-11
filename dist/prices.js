@@ -14,9 +14,14 @@
   const PACK_PRICES={'frozen-corn':13900,'frozen-mixed':6900,'frozen-mushrooms':7900,'frozen-spinach':6900,'frozen-green-beans':6350};
   const PROMOTION_CYCLE=['rolled-oats','paprika','mozzarella','canned-corn','canned-red-beans','canned-coffee'];
   const normalizeDay=day=>Number.isSafeInteger(day)&&day>=1?day:1;
-  let activeDay=1;
-  function setDay(day){activeDay=normalizeDay(day);return activeDay;}
-  function offerForDay(day=activeDay){const d=normalizeDay(day),productId=PROMOTION_CYCLE[(d-1)%PROMOTION_CYCLE.length];return {day:d,productId,...OFFERS[productId]};}
+  let activeDay=1,activeSeed=0;
+  function setDay(day,seed=activeSeed){activeDay=normalizeDay(day);activeSeed=Number.isSafeInteger(seed)&&seed>=0?seed>>>0:0;return activeDay;}
+  function offerForDay(day=activeDay,seed=activeSeed){
+    const d=normalizeDay(day);let roll=(Math.imul((seed>>>0)^d,1597334677)+3812015801)>>>0;roll^=roll>>>16;roll>>>=0;
+    // Zero preserves old advertised prices for archived rate calculations.
+    if(seed&&roll%100>=60)return {day:d,productId:null,available:false};
+    const productId=PROMOTION_CYCLE[(d-1+((seed>>>0)%PROMOTION_CYCLE.length))%PROMOTION_CYCLE.length];return {day:d,productId,available:true,...OFFERS[productId]};
+  }
   const money=value=>`${Math.round(value).toLocaleString('en-US')} ₮`;
   function baseValue(product,amount){
     const p=typeof product==='string'?G.BY_ID[product]:product;if(!p||!Number.isSafeInteger(amount)||amount<=0)return 0;

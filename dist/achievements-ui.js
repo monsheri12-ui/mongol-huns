@@ -21,11 +21,7 @@
     $('achievement-total').innerHTML=`<b>${unlocked}</b><span>/ ${total}</span>`;
     $('achievement-overall').max=total;$('achievement-overall').value=unlocked;$('achievement-overall').setAttribute('aria-label',ui(`Авсан амжилт: ${unlocked} / ${total}`,`Получено достижений: ${unlocked} из ${total}`));
     $('achievements-total-label').textContent=ui('Авсан амжилт','Получено наград');
-    const labels={all:ui('Бүгд','Все'),earned:ui('Авсан','Получены'),locked:ui('Урагшлах','Впереди')};
-    dialog.querySelector('.achievement-filters').setAttribute('aria-label',ui('Шүүлтүүр','Фильтр достижений'));
-    for(const b of dialog.querySelectorAll('[data-achievement-filter]')){const key=b.dataset.achievementFilter;b.textContent=labels[key]+` · ${key==='all'?total:key==='earned'?unlocked:total-unlocked}`;b.setAttribute('aria-pressed',String(key===filter));}
-    $('achievement-category-label').textContent=ui('Сэдэв','Тема');
-    $('achievement-category').innerHTML=`<option value="all">${ui('Бүх сэдэв','Все темы')}</option>`+A.GROUPS.map(g=>`<option value="${g.id}">${ui(g.mn,g.ru)}</option>`).join('');$('achievement-category').value=group;
+    for(const b of dialog.querySelectorAll('[data-achievement-filter]')){const earned=b.dataset.achievementFilter==='earned';b.textContent=(earned?ui('Авсан','Получены'):ui('Бүгд','Все'))+' · '+(earned?unlocked:total);b.setAttribute('aria-pressed',String(b.dataset.achievementFilter===filter));}
     const shown=rows.filter(d=>(group==='all'||d.group===group)&&(filter==='all'||(filter==='earned'?d.unlocked:!d.unlocked)));
     $('achievement-grid').innerHTML=shown.length?shown.map(d=>{
       const category=A.GROUPS.find(g=>g.id===d.group);
@@ -44,7 +40,6 @@
   }
   document.addEventListener('click',event=>{const b=event.target.closest('[data-achievements-open]');if(!b)return;returnTo=b;hideNotice();render();if(!dialog.open)dialog.showModal();});
   dialog.addEventListener('click',event=>{const b=event.target.closest('[data-achievement-filter]');if(b){filter=b.dataset.achievementFilter;render();}});
-  $('achievement-category').addEventListener('change',event=>{group=event.target.value;render();});
   for(const id of ['achievements-close','achievements-back'])$(id).addEventListener('click',()=>dialog.close());
   dialog.addEventListener('close',()=>{if(returnTo?.isConnected)returnTo.focus({preventScroll:true});});
   root.addEventListener('grocery:language',()=>{hideNotice();entries();if(dialog.open)render();});

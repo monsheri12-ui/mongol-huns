@@ -13,7 +13,7 @@ const service={...F.emptyService(),complaints:claims,originalCart:cart,hadCompla
 ok(!F.hasPending(F.refundComplaint(service,claims[0].id)),'Carton refund resolves complaint');
 let replacement=F.beginReplacement(service,claims[0].id);replacement=F.finishReplacement(replacement,claims[0].id,{[fresh.id]:1},true);ok(!F.hasPending(replacement),'Fresh carton replacement resolves complaint');
 eq(F.sanitizeEggInspections({[bad.id]:true,[fresh.id]:false,fake:true},inventory),{[bad.id]:true},'Shell checks persist only for real checked egg lots');
-const beginner=G.createInventory(G.createCampaign()[0]);ok(beginner.filter(G.isDamaged).every(l=>l.hidden),'Damaged cartons stay out of first-level training');
+const beginnerOrder=G.createCampaign()[0],beginner=G.createInventory(beginnerOrder);ok(beginner.filter(l=>!l.hidden&&G.isUnfit(l,beginnerOrder.day)).length<=1,'First-level damage is optional and bounded to one bad lot');ok(beginner.some(l=>l.productId==='eggs'&&!l.hidden&&!G.isUnfit(l,beginnerOrder.day)),'Intact eggs remain available even if a damaged carton appears');
 const apple=inventory.find(l=>l.productId==='red-apple'&&G.isBulk(l)&&!G.isUnfit(l)),packed=inventory.find(l=>l.productId==='red-apple'&&!G.isBulk(l)&&!G.isUnfit(l));
 const weighedOrder={...order,lines:[{productId:'red-apple',amount:2000}]};
 const plan=F.scalePlan(weighedOrder,inventory,{[apple.id]:300,[packed.id]:1},apple,1200);

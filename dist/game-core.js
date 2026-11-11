@@ -1010,6 +1010,18 @@
     });
     // A sealed egg carton looks the same outside. Open it to check the shells.
     lots.push({id:`o${order.id}-eggs-damaged`,productId:'eggs',pack:6,stock:3,condition:'damaged',manufactured:addDays(order.day,-2),expires:addDays(order.day,8),batch:`E${order.id}-C`,...(levelIndex===0?{hidden:true}:{})});
+    // Beginners can encounter one bad pack, or none anywhere in the shop.
+    // Keep it deterministic for a saved shift so reloading cannot reroll it.
+    if(levelIndex===0&&!order.legacy&&!order.classic){
+      let roll=(Math.imul((order.qualitySeed>>>0)^order.id,1597334677)+3812015801)>>>0;roll^=roll>>>16;roll>>>=0;
+      if(roll%100<30){
+        const requested=new Set((order.qualityLines||order.lines).map(l=>l.productId));
+        const dated=lots.filter(l=>!l.hidden&&l.expires&&!isUnfit(l,order.day)&&requested.has(l.productId));
+        const bad=lots.filter(l=>l.hidden&&(isSpoiled(l)||isDamaged(l)));
+        if((roll>>>8)%3===0&&dated.length){const source=dated[(roll>>>16)%dated.length];lots.push({...source,id:`o${order.id}-beginner-expired-${source.productId}`,stock:2,manufactured:addDays(order.day,-22),expires:addDays(order.day,-1),batch:source.batch+'-B'});}
+        else if(bad.length){const relevant=bad.filter(l=>requested.has(l.productId)),choices=relevant.length?relevant:bad;delete choices[(roll>>>16)%choices.length].hidden;}
+      }
+    }
     return shuffle(lots, order.id * 998 + 42);
   }
   function sanitizeCart(cart, inventory) {

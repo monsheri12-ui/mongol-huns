@@ -1,0 +1,37 @@
+{
+  "mode": "built-in image generation",
+  "prompts": [
+    {
+      "id": "expiry",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a delighted dumpling detective with a tiny magnifying glass inspecting a small blank date label, mischievous knowing raised eyebrow and huge satisfied grin, a green detective cap; clearly a plump dumpling with folded dough edge"
+    },
+    {
+      "id": "shelf",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a happy banana wearing a tiny green store apron, proudly carrying a small cereal box back onto a small wooden shelf, funny determined expression"
+    },
+    {
+      "id": "fine",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a tomato with a comically shocked open mouth and raised eyebrows discovering a long blank receipt unfurling from its hands, coins escaping from a little empty purse, warm playful not sad"
+    },
+    {
+      "id": "salary",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a delighted golden loaf of bread in a neat green bow tie hugging a fabric purse overflowing with shiny gold coins, laughing joyfully, proud first paycheck"
+    },
+    {
+      "id": "positive",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a cute smiling strawberry with tiny arms hugging a smartphone showing a big heart and sparkles, laughing and blushing at a lovely review"
+    },
+    {
+      "id": "negative",
+      "prompt": "Use case: stylized-concept. Asset type: premium achievement sticker for a cozy grocery learning game. Create ONE funny anthropomorphic food product character, warm painterly 3D storybook illustration with sophisticated soft shading, cream and forest-green accessories, clean silhouette, appealing playful adult-friendly humor, expressive face, little arms and legs. Full body centered with generous transparent margins, genuine alpha transparent background. No text, numbers, letters, logos, watermarks, frame, pedestal, or backdrop. All details readable as a 128px badge. Subject: a funny round potato wearing reading glasses, looking at a smartphone with a tiny storm cloud on its screen, embarrassed raised eyebrow and crooked sheepish smile, determined to do better"
+    },
+    {
+      "id": "timer",
+      "prompt": "Use case: stylized-concept. Asset type: a premium illustrated game UI button mascot on a genuine transparent background. Create ONE beautifully rendered, round ripe red tomato laughing joyfully, front-facing, with an elegant green leafy crown, delighted closed crescent eyes, a wide cheerful laughing mouth, softly blushed cheeks, and a tactile softly shaded surface. It is a playful Pomodoro reference for a cozy Mongolian grocery shopping learning game. Match a warm cream, forest jade, honey gold storybook grocery aesthetic: polished painterly 3D illustration, gentle warm studio light, subtle highlights, clean confident contour, appealing and funny, friendly to adults, not a flat emoji. The tomato itself is the entire button silhouette, compact and very readable at 72px; center it with small transparent margins and keep all leaves fully in the image. No text, numbers, clock face, arms, legs, props, border, pedestal, circular background, cast shadow outside the silhouette, or watermark. Real alpha transparency."
+    },
+    {
+      "id": "challenge",
+      "prompt": "Edit the referenced approved smiling tomato game-button mascot. Make ONLY its eyes look on fire: replace the two happy closed crescent eyes with bright, expressive orange-gold flames with small glowing yellow cores. The result should look comically eager and excited for a speed challenge, while the wide laughing mouth and joyful personality remain. Keep the exact tomato shape, green leafy crown, red surface texture, warm painterly 3D rendering, original proportions, composition and real transparent background. Keep all flames within the existing tomato silhouette; retain the friendly laughing mouth. No text, numbers, clock, props, arms, legs, dark scary mood, background, frame or watermark."
+    }
+  ]
+}

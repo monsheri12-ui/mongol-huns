@@ -2,7 +2,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),{createHash}=require('node:crypto');
 const A=require('../dist/achievements.js'),G=require('../dist/game-core.js'),P=require('../dist/profile.js');
 let checks=0;const eq=(a,b,m)=>{checks++;assert.deepEqual(a,b,m);},ok=(v,m)=>{checks++;assert.ok(v,m);};
-eq(A.DEFINITIONS.length,51,'The general date achievement extends the collection to 51');eq(new Set(A.DEFINITIONS.map(d=>d.id)).size,51,'Identifiers are unique');
+eq(A.DEFINITIONS.length,83,'There are 83 quality, timer, earnings and feedback achievements');eq(new Set(A.DEFINITIONS.map(d=>d.id)).size,83,'Identifiers are unique');
 for(const d of A.DEFINITIONS){ok(d.mn&&d.ru&&d.descriptionMn&&d.descriptionRu,'Every reward has a full bilingual condition');ok(d.target>0&&Number.isSafeInteger(d.target),'Every progress goal is finite and positive');ok(A.GROUPS.some(g=>g.id===d.group),'Each achievement has a valid category');}
 let s=A.normalize();const event=(type,key,detail={})=>{const before=JSON.stringify(s),result=A.record(s,{type,key,day:1,...detail},1000);eq(JSON.stringify(s),before,'Recording is immutable');s=result.state;return result.newly;};
 eq(event('date','1:campaign:1:dumplings',{productId:'dumplings',category:'frozen'}),['dates-any-1'],'Dumplings unlock the general date reward');
@@ -51,14 +51,33 @@ for(let i=0;i<50;i++)event('date',`1:campaign:1:lot-${i}`,{productId:i===49?'mil
 for(let i=0;i<10;i++){event('egg',`1:campaign:1:egg-${i}`);event('discard',`1:campaign:1:bad-${i}`);}
 for(let i=0;i<50;i++)event('weigh',`1:campaign:1:bulk-${i}`,{grams:500,tied:true,spelled:true,withoutHint:true,category:i<25?'produce':'sweets'});
 for(let i=0;i<200;i++)event('complete',`1:campaign:${i}`,{stars:3,clean:true,checked:true,format:i<100?'audio':'text',heard:true,revealed:false,products:[G.PRODUCTS[i%G.PRODUCTS.length].id],categories:[G.PRODUCTS[i%G.PRODUCTS.length].category],levels:i===199?[0,1,2,3]:[],fullShift:i===199});
-eq(Object.keys(s.earned).length,51,'All 51 achievements are attainable through actual supported event types');
+for(let i=0;i<25;i++)event('timed',`timer-${i}`,{timed:true,timingMode:'challenge',elapsedMs:1000,limitMs:10000,stars:3,clean:true,orderKey:'time-order-'+i});
+for(let i=0;i<20;i++)event('shelf-return','return-'+i);
+for(let i=0;i<501;i++)event('salary','pay-'+i,{amount:1000});
+event('fine','fine-large',{amount:100001,reason:'disorder'});
+for(let i=0;i<100;i++){event('review','positive-'+i,{reviewType:'positive'});event('review','negative-'+i,{reviewType:'negative'});}
+eq(Object.keys(s.earned).length,83,'All 83 achievements are attainable through actual supported event types');
 for(const row of A.progress(s)){eq(row.current,row.target,'Every earned progress bar reaches its goal');ok(row.unlocked,'Every earned reward stays unlocked');}
 const serialized=JSON.stringify(s);ok(serialized.length<100000,'The ledger stays small after all milestones');
 eq(A.normalize(JSON.parse(serialized)),s,'All rewards and deduplication survive a reload');
-for(const value of [null,[],{counters:{delivered:Infinity,dates:-1,eggs:'100'}},{earned:{invented:123},products:['x','x','<script>'],categories:['all','fake']},false]){const safe=A.normalize(value);ok(A.progress(safe).length===51&&Object.values(safe.counters).every(Number.isFinite),'Malformed saved fields cannot break the collection');}
-const art=require('../dist/assets/achievement-art-manifest.json'),artHashes=new Set();
-eq(Object.keys(art).length,50,'All 50 achievements have an individual illustration');
-for(const d of A.DEFINITIONS){const r=art[d.id];if(d.id==='dates-any-1'){ok(!r&&A.GROUPS.find(g=>g.id===d.group).icon==='check','The general date award uses the quality-check vector badge');continue;}ok(!!r&&r.width===256&&r.height===256,'Each existing sticker has a responsive 256px image');const bytes=fs.readFileSync(path.join(__dirname,'../dist',r.path)),hash=createHash('sha256').update(bytes).digest('hex');eq(hash,r.sha256,'The image matches its manifest');ok(r.path.includes(hash.slice(0,16)),'Sticker URLs support safe immutable caching');artHashes.add(hash);ok(fs.existsSync(path.join(__dirname,'..',r.source)),'Original generated art is retained in the source');}
-eq(artHashes.size,50,'The collection uses 50 distinct images, not copies of one badge');
-ok(Object.values(art).reduce((n,r)=>n+r.bytes,0)<2000000,'The entire collection is below 2MB and thumbnails load on demand');
-console.log(`PASS: ${checks} achievement thresholds, all-51 reachability, dairy/general date separation, duplicate protection, quality/audio conditions and profile persistence checks.`);
+for(const value of [null,[],{counters:{delivered:Infinity,dates:-1,eggs:'100'}},{earned:{invented:123},products:['x','x','<script>'],categories:['all','fake']},false]){const safe=A.normalize(value);ok(A.progress(safe).length===83&&Object.values(safe.counters).every(Number.isFinite),'Malformed saved fields cannot break the collection');}
+const art=require('../dist/assets/achievement-art-manifest.json'),artHashes=new Map();
+eq(Object.keys(art).length,83,'All 83 achievements have generated artwork, without vector fallbacks');
+const originalArt=Object.entries(art).filter(([,r])=>/^art\/achievement-stickers\/sheet-[1-5](?:-v2)?\.png$/.test(r.source)&&r.cell&&r.crop);
+eq(originalArt.length,50,'The original 50 approved sheet illustrations remain separate');
+const originalDigest=createHash('sha256').update(JSON.stringify(originalArt.sort(([a],[b])=>a.localeCompare(b)).map(([id,r])=>[id,r.sha256,r.source,r.cell,r.crop]))).digest('hex');
+eq(originalDigest,'7f1b75edd07010d3b9e0c91d795976261316c943482f5ade87bc04bab5ea7d94','Original sticker identities, image hashes, sheet cells and crops remain byte-for-byte approved');
+const runtimeText=fs.readFileSync(path.join(__dirname,'../dist/achievement-art.js'),'utf8').trim(),runtimeMatch=runtimeText.match(/^window\.GroceryAchievementArt=(\{.*\});$/s);
+ok(runtimeMatch,'Runtime artwork is one complete JSON mapping');const runtime=JSON.parse(runtimeMatch[1]);eq(Object.keys(runtime).length,83,'All 83 drawings are available to the game');
+for(const d of A.DEFINITIONS){
+  const r=art[d.id];ok(!!r&&r.width===256&&r.height===256,'Each sticker has a responsive 256px image: '+d.id);ok(r.generated===true,'Every illustration is explicitly generated');
+  const bytes=fs.readFileSync(path.join(__dirname,'../dist',r.path)),hash=createHash('sha256').update(bytes).digest('hex');
+  eq(hash,r.sha256,'The image matches its manifest');eq(bytes.length,r.bytes,'Manifest byte count matches the actual image');ok(r.path.includes(hash.slice(0,16)),'Sticker URLs support safe immutable caching');
+  eq(bytes.toString('ascii',0,4),'RIFF','Sticker is a real WebP');eq(bytes.toString('ascii',8,16),'WEBPVP8X','Sticker includes its canvas metadata');eq([bytes.readUIntLE(24,3)+1,bytes.readUIntLE(27,3)+1],[256,256],'Actual WebP dimensions are 256px');
+  artHashes.set(hash,r.bytes);eq(runtime[d.id],{path:r.path},'Runtime and audit manifest use the same illustration');ok(fs.existsSync(path.join(__dirname,'..',r.source)),'Original generated art is retained in the source');
+  if(r.aliasOf){ok(A.DEFINITIONS.some(d=>d.id===r.aliasOf)&&!art[r.aliasOf].aliasOf,'Milestone artwork aliases point directly to a primary award');eq([r.path,r.sha256,r.source,r.family],[art[r.aliasOf].path,art[r.aliasOf].sha256,art[r.aliasOf].source,art[r.aliasOf].family],'Every alias transparently shares its family artwork');}
+}
+eq(artHashes.size,58,'The collection contains 50 original drawings, six new families and two tomatoes');
+eq(new Set(originalArt.map(([,r])=>r.sha256)).size,50,'All original 50 illustrations stay distinct');
+ok([...artHashes.values()].reduce((n,bytes)=>n+bytes,0)<2000000,'The 58 unique drawings stay below 2MB and shared milestones do not duplicate downloads');
+console.log(`PASS: ${checks} achievement thresholds, all-83 reachability, dairy/general date separation, duplicate protection, quality/audio conditions and profile persistence checks.`);
