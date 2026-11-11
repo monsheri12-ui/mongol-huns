@@ -1,6 +1,7 @@
 (function(root){
   'use strict';
   const A=root.GroceryAchievements,art=root.GroceryArt,$=id=>document.getElementById(id);
+  const total=A.DEFINITIONS.length;
   const ui=(mn,ru)=>root.GroceryLanguage?.isRussian()?ru:mn;
   const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let state=A.normalize(),filter='all',group='all',noticeTimer,returnTo;
@@ -8,8 +9,8 @@
   function entries(){
     const count=Object.keys(state.earned).length;
     document.querySelectorAll('[data-achievements-open]').forEach(button=>{
-      button.innerHTML=`${art.icon('trophy')}<span>${ui('Амжилтууд','Достижения')}</span><b>${count}<small>/50</small></b>`;
-      button.setAttribute('aria-label',ui(`Амжилтууд: ${count} / 50`,`Достижения: получено ${count} из 50`));
+      button.innerHTML=`${art.icon('trophy')}<span>${ui('Амжилтууд','Достижения')}</span><b>${count}<small>/${total}</small></b>`;
+      button.setAttribute('aria-label',ui(`Амжилтууд: ${count} / ${total}`,`Достижения: получено ${count} из ${total}`));
     });
   }
   function render(){
@@ -17,12 +18,12 @@
     $('achievements-title').textContent=ui('Таны амжилтууд','Ваши достижения');
     $('achievements-kicker').textContent=ui('ЗАХИАЛГА БЭЛТГЭГЧИЙН ЦУГЛУУЛГА','КОЛЛЕКЦИЯ СБОРЩИКА');
     $('achievements-lead').textContent=ui('Бараагаа таньж, нямбай шалгаж, улам сайн цуглуулаарай.','Узнавайте продукты, проверяйте качество и собирайте заказы всё увереннее.');
-    $('achievement-total').innerHTML=`<b>${unlocked}</b><span>/ 50</span>`;
-    $('achievement-overall').value=unlocked;$('achievement-overall').setAttribute('aria-label',ui(`Авсан амжилт: ${unlocked} / 50`,`Получено достижений: ${unlocked} из 50`));
+    $('achievement-total').innerHTML=`<b>${unlocked}</b><span>/ ${total}</span>`;
+    $('achievement-overall').max=total;$('achievement-overall').value=unlocked;$('achievement-overall').setAttribute('aria-label',ui(`Авсан амжилт: ${unlocked} / ${total}`,`Получено достижений: ${unlocked} из ${total}`));
     $('achievements-total-label').textContent=ui('Авсан амжилт','Получено наград');
     const labels={all:ui('Бүгд','Все'),earned:ui('Авсан','Получены'),locked:ui('Урагшлах','Впереди')};
     dialog.querySelector('.achievement-filters').setAttribute('aria-label',ui('Шүүлтүүр','Фильтр достижений'));
-    for(const b of dialog.querySelectorAll('[data-achievement-filter]')){const key=b.dataset.achievementFilter;b.textContent=labels[key]+` · ${key==='all'?50:key==='earned'?unlocked:50-unlocked}`;b.setAttribute('aria-pressed',String(key===filter));}
+    for(const b of dialog.querySelectorAll('[data-achievement-filter]')){const key=b.dataset.achievementFilter;b.textContent=labels[key]+` · ${key==='all'?total:key==='earned'?unlocked:total-unlocked}`;b.setAttribute('aria-pressed',String(key===filter));}
     $('achievement-category-label').textContent=ui('Сэдэв','Тема');
     $('achievement-category').innerHTML=`<option value="all">${ui('Бүх сэдэв','Все темы')}</option>`+A.GROUPS.map(g=>`<option value="${g.id}">${ui(g.mn,g.ru)}</option>`).join('');$('achievement-category').value=group;
     const shown=rows.filter(d=>(group==='all'||d.group===group)&&(filter==='all'||(filter==='earned'?d.unlocked:!d.unlocked)));

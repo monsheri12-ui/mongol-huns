@@ -412,7 +412,7 @@
       $('inspect-expiry').disabled = true;
       $('inspect-expiry-hint').hidden = true;
       inspections[lot.id]=true;checked=checked&&packingResult().canSend;if(!packingResult().canSend)packingStage='collecting';save();renderPacking();worldChanged();refreshDisposalAction();
-      achievementEvent('date',lot.id);save();
+      achievementEvent('date',lot.id,{productId:p.id,category:p.category});save();
       const ruDates = $('inspect-content').querySelector('[data-ru-expiry]');
       if (ruDates) ruDates.innerHTML = 'Даты находятся на этикетке. Сравните их с игровой датой.';
     });

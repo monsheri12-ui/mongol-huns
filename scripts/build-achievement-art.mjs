@@ -8,6 +8,9 @@ const require=createRequire(dep>=0?path.resolve(process.argv[dep+1],'package.jso
 const sharp=require('sharp'),A=createRequire(import.meta.url)('../dist/achievements.js');
 const source=path.join(root,'art/achievement-stickers'),out=path.join(root,'dist/assets/achievements');await fs.mkdir(out,{recursive:true});
 const manifest={},runtime={},keep=new Set(),tiles=[];
+// The later general date award uses the quality-check vector badge. Keep the
+// original 50 sheet positions stable when rebuilding their approved artwork.
+const stickerDefinitions=A.DEFINITIONS.filter(d=>d.id!=='dates-any-1');
 for(let sheet=1;sheet<=5;sheet++){
   const sourceName=`sheet-${sheet}${sheet===4?'-v2':''}.png`,file=path.join(source,sourceName),metadata=await sharp(file).metadata(),stats=await sharp(file).stats();
   if(!metadata.hasAlpha||stats.channels[3].min!==0)throw Error(`Sheet ${sheet} must have real transparent margins`);
@@ -28,7 +31,7 @@ for(let sheet=1;sheet<=5;sheet++){
   }
   const rowCuts=[cutsForRow(0),cutsForRow(1)];
   for(let cell=0;cell<10;cell++){
-    const d=A.DEFINITIONS[(sheet-1)*10+cell],column=cell%5,row=Math.floor(cell/5),left=rowCuts[row][column],top=Math.round(row*metadata.height/2),width=rowCuts[row][column+1]-left,height=Math.round((row+1)*metadata.height/2)-top;
+    const d=stickerDefinitions[(sheet-1)*10+cell],column=cell%5,row=Math.floor(cell/5),left=rowCuts[row][column],top=Math.round(row*metadata.height/2),width=rowCuts[row][column+1]-left,height=Math.round((row+1)*metadata.height/2)-top;
     const buffer=await sharp(file).extract({left,top,width,height}).resize(240,240,{fit:'contain',background:{r:0,g:0,b:0,alpha:0}}).extend({top:8,bottom:8,left:8,right:8,background:{r:0,g:0,b:0,alpha:0}}).webp({quality:86,alphaQuality:100,effort:5}).toBuffer();
     const sha256=createHash('sha256').update(buffer).digest('hex'),name=`${d.id}.${sha256.slice(0,16)}.256.webp`;keep.add(name);await fs.writeFile(path.join(out,name),buffer);
     runtime[d.id]={path:'assets/achievements/'+name};manifest[d.id]={...runtime[d.id],width:256,height:256,bytes:buffer.length,sha256,source:`art/achievement-stickers/${sourceName}`,cell:{column,row,columns:5,rows:2},crop:{left,top,width,height},generated:true};

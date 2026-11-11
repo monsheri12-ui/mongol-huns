@@ -16,7 +16,9 @@
   milestones('orders','orders','delivered',[1,5,10,25,50,100,200],[['Эхний захиалга','Первый заказ'],['Ажилдаа даслаа','Вошли в ритм'],['Эхний арав','Первая десятка'],['Найдвартай бэлтгэгч','Надёжный сборщик'],['Тавин хүргэлт','Полсотни доставок'],['Зуун захиалга','Сотня заказов'],['Эрхэмсэг уут','Пакетное величество']],n=>[`${n} захиалгыг гүйцэтгээрэй.`,n===1?'Завершите первый заказ.':`Завершите ${n} заказов.`]);
   milestones('stars','orders','perfect',[1,10,25,50],[['Гурван од','Три звезды'],['Одтой арав','Звёздная десятка'],['Тогтмол сайн','Стабильный результат'],['Сансарт гарсан уут','Пакет в космосе']],n=>[`${n} захиалгад гурван од аваарай.`,`Получите три звезды за ${n===1?'один заказ':n+' разных заказов'}.`]);
   add('clean-streak','orders','streak',5,'Таван цэвэр захиалга','Пять без промаха','Торгууль, гомдолгүй 5 захиалгыг дараалан гүйцэтгээрэй.','Завершите подряд пять заказов без штрафов и жалоб.');
-  milestones('dates','quality','dates',[1,10,50],[['Сүүн мөрдөгч','Молочный детектив'],['Хиамны мөрдлөг','Колбасное следствие'],['Цаг мэддэг бяслаг','Сыр знает время']],n=>[`${n} өөр савлагааны хугацааг шалгаарай.`,`Проверьте срок годности у ${n===1?'одной упаковки':n+' разных упаковок'}.`]);
+  add('dates-any-1','quality','dates',1,'Хугацааг шалгалаа','Срок проверен','Нэг савлагааны хэрэглэх хугацааг шалгаарай.','Проверьте срок годности у любой упаковки.');
+  add('dates-1','quality','dairyDates',1,'Сүүн мөрдөгч','Молочный детектив','Сүү эсвэл сүүн бүтээгдэхүүний нэг савлагааны хугацааг шалгаарай.','Проверьте срок годности у одной упаковки молока или молочного продукта.');
+  milestones('dates','quality','dates',[10,50],[['Хиамны мөрдлөг','Колбасное следствие'],['Цаг мэддэг бяслаг','Сыр знает время']],n=>[`${n} өөр савлагааны хугацааг шалгаарай.`,`Проверьте срок годности у ${n} разных упаковок.`]);
   milestones('eggs','quality','eggs',[1,10],[['Бүтэн өндөг','Целая коробка'],['Өндөгний хамгаалалт','Яйца под защитой']],n=>[`${n} өөр хайрцгийг нээж өндөгний хальсыг шалгаарай.`,`Откройте и проверьте скорлупу в ${n===1?'одной коробке яиц':n+' разных коробках яиц'}.`]);
   milestones('disposal','quality','disposals',[1,10],[['Тэтгэвэрт гарсан гадил','Банан в отставке'],['Чанарыг хамгаална','На страже качества']],n=>[`${n} өөр муудсан барааны багцыг зориулалтын саванд хийгээрэй.`,`Отправьте в брак ${n===1?'одну испорченную партию':n+' разных испорченных партий'}.`]);
   milestones('checked','quality','checkedOrders',[1,10],[['Бүгдийг шалгалаа','Проверено всё'],['Чанартай арван захиалга','Десять проверенных заказов']],n=>[`${n} захиалгын бүх барааг үзэж, шаардлагатай огноо болон өндгийг шалгаад торгууль, гомдолгүй өгөөрэй.`,`В ${n===1?'одном заказе':n+' заказах'} осмотрите все товары, проверьте даты и яйца, затем завершите заказ без штрафа и жалоб.`]);
@@ -35,11 +37,20 @@
   const BY_ID=Object.fromEntries(DEFINITIONS.map(d=>[d.id,d]));
   const LIMITS=Object.fromEntries(DEFINITIONS.filter(d=>!['products','categories'].includes(d.metric)&&!d.metric.startsWith('level')).map(d=>[d.metric,Math.max(d.target,...DEFINITIONS.filter(e=>e.metric===d.metric).map(e=>e.target))]));
   const CATEGORIES=['dairy','bread','produce','pantry','cold','meat','frozen','canned','ready','drinks','sweets','alcohol','household'];
+  const NON_DAIRY=new Set(['eggs','quail-eggs','margarine']);
   const number=(v,max=1e9)=>Number.isSafeInteger(v)&&v>=0?Math.min(max,v):0;
   const strings=(v,max=250)=>[...new Set((Array.isArray(v)?v:[]).filter(s=>typeof s==='string'&&/^[a-z0-9:-]{1,160}$/.test(s)))].slice(0,max);
   function normalize(input={}){
     const v=input&&typeof input==='object'?input:{};
-    return {version:1,day:number(v.day)||1,counters:Object.fromEntries(Object.entries(LIMITS).map(([key,max])=>[key,number(v.counters?.[key],max)])),products:strings(v.products),categories:strings(v.categories).filter(s=>CATEGORIES.includes(s)),heardKeys:strings(v.heardKeys),levels:[...new Set((Array.isArray(v.levels)?v.levels:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],earned:Object.fromEntries(Object.entries(v.earned||{}).filter(([key,n])=>BY_ID[key]&&Number.isSafeInteger(n)&&n>0)),seen:strings(v.seen,2000)};
+    const counters=Object.fromEntries(Object.entries(LIMITS).map(([key,max])=>[key,number(v.counters?.[key],max)]));
+    const earned=Object.fromEntries(Object.entries(v.earned||{}).filter(([key,n])=>BY_ID[key]&&Number.isSafeInteger(n)&&n>0));
+    if(v.version!==2){
+      // Older date events did not identify the product: retain their general
+      // award, and require a proven dairy check for the specialist award.
+      if(earned['dates-1'])earned['dates-any-1']=earned['dates-any-1']||earned['dates-1'];
+      delete earned['dates-1'];counters.dairyDates=0;
+    }
+    return {version:2,day:number(v.day)||1,counters,products:strings(v.products),categories:strings(v.categories).filter(s=>CATEGORIES.includes(s)),heardKeys:strings(v.heardKeys),levels:[...new Set((Array.isArray(v.levels)?v.levels:[]).filter(n=>Number.isInteger(n)&&n>=0&&n<4))],earned,seen:strings(v.seen,2000)};
   }
   function value(state,definition){const m=definition.metric;return m==='products'?state.products.length:m==='categories'?state.categories.length:m.startsWith('level')?Number(state.levels.includes(Number(m.slice(5)))):state.counters[m]||0;}
   function unlock(state,now=Date.now()){
@@ -72,6 +83,7 @@
       const recording=event.recording||event.key;
       if(metric!=='heard'||!state.heardKeys.includes(recording)){inc(metric);relevant=true;if(metric==='heard')state.heardKeys=strings([...state.heardKeys,recording]);}
     }
+    if(event.type==='date'&&event.category==='dairy'&&typeof event.productId==='string'&&!NON_DAIRY.has(event.productId)&&state.counters.dairyDates<LIMITS.dairyDates){inc('dairyDates');relevant=true;}
     if(event.type==='weigh'&&event.grams>0&&event.tied===true&&event.spelled===true){
       relevant=['weighed','weightWords','produceWeighed','sweetsWeighed'].some(k=>state.counters[k]<LIMITS[k]);
       inc('weighed');if(event.withoutHint)inc('weightWords');if(event.category==='produce')inc('produceWeighed');if(event.category==='sweets')inc('sweetsWeighed');
