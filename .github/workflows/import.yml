@@ -1,0 +1,45 @@
+name: Import verified game bundle
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Download and verify prepared source
+        env:
+          BUNDLE_URL: https://github.com/monsheri12-ui/mongol-huns/releases/download/source-v1.8.6/game-source-v1.8.6.tar.gz
+          BUNDLE_SHA256: e9dcbe597631115f46dd75e5cc21a5f237aaf499a0c2b522b85b4775d12d0463
+        run: |
+          curl --fail --location --retry 3 "$BUNDLE_URL" --output "$RUNNER_TEMP/game-source.tgz"
+          printf '%s  %s\n' "$BUNDLE_SHA256" "$RUNNER_TEMP/game-source.tgz" | sha256sum --check -
+          tar -xzf "$RUNNER_TEMP/game-source.tgz" -C "$GITHUB_WORKSPACE"
+      - name: Commit complete game and assets
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add --all
+          git commit -m 'Import verified grocery game v1.8.6 with all assets'
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+  deploy:
+    needs: import
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
