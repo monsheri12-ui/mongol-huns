@@ -149,7 +149,7 @@
   function save() {
     drafts[orderKey(order.id)] = { cart: { ...cart }, disposals:{...disposals}, attempts, checked, delivered, preparation:{...preparation}, inspections:{...inspections},eggInspections:{...eggInspections},service,packingStage,fineReceipt,achievementRun };
     activeByMode[mode] = order.id;
-    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, catalogVersion: window.GroceryProfile.CATALOG_VERSION, classicAvailable, counts, seed, mode, playShift, market, orderRotation,bestById, drafts, activeByMode, introSeen, controlsTutorialDay, sound, deliveryMode, revealed, heard, russianHints,scaleHints,stats,achievements,uiLanguage:L?.current()||'mn' })); } catch (_) { /* Gameplay also works without storage. */ }
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, catalogVersion: window.GroceryProfile.CATALOG_VERSION, classicAvailable, counts, seed, mode, playShift, market, orderRotation,bestById, drafts, activeByMode, introSeen, controlsTutorialDay, sound, deliveryMode, revealed, heard, russianHints,scaleHints,stats,achievements,uiLanguage:L?.current()||'ru',uiLanguageChosen:L?.wasChosen?.()===true })); } catch (_) { /* Gameplay also works without storage. */ }
   }
   const photoFor = lot => window.ProducePhotos?.[G.photoKey(lot)] || window.ProductPhotos?.[G.photoKey(lot)] || window.ProductPhotos?.[lot.productId];
   const productArt = (lot, extra = '', original=false) => {
@@ -194,7 +194,9 @@
     return mode === 'campaign' && record?.signature === G.orderSignature(order) ? { ...record, hintRu: russianHints ? R.orderText(G,order) : '', bilingual:L?.isRussian()===true } : null;
   }
   function syncPhone() {
-    if (!phone) return;
+    // Receiving an order starts with the shift, not while the shop is loading.
+    // This also avoids fetching audio metadata before the learner presses Start.
+    if (!phone || !document.body.classList.contains('game-started')) return;
     phone.setOrder(mode === 'campaign' && deliveryMode === 'audio' ? { ...order, signature: G.orderSignature(order) } : null, audioRecord());
     syncMessages();
   }
@@ -454,8 +456,9 @@
   function sealBag(){if(shipping||delivered||!canPack||packingStage!=='packed'||!packingResult().canSend)return;packingStage='sealed';save();renderAll();worldChanged();$('dispatch-button').focus({preventScroll:true});}
   function unpackBag(){if(shipping||delivered)return;packingStage='collecting';checked=false;feedback=null;save();renderAll();worldChanged();}
   function syncMessages() {
-    clientMessages?.setContext(order,service);
-    const available=mode==='campaign'&&deliveryMode==='audio'||service.hadComplaint;
+    const started=document.body.classList.contains('game-started');
+    if(started)clientMessages?.setContext(order,service);
+    const available=started&&(mode==='campaign'&&deliveryMode==='audio'||service.hadComplaint);
     $('phone-button').hidden=!available;
     $('phone-button').disabled=!available;
   }
