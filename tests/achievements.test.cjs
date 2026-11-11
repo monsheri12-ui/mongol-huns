@@ -2,12 +2,21 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs'),path=require('node:path'),{createHash}=require('node:crypto');
 const A=require('../dist/achievements.js'),G=require('../dist/game-core.js'),P=require('../dist/profile.js');
 let checks=0;const eq=(a,b,m)=>{checks++;assert.deepEqual(a,b,m);},ok=(v,m)=>{checks++;assert.ok(v,m);};
-eq(A.DEFINITIONS.length,50,'There are exactly 50 achievements');eq(new Set(A.DEFINITIONS.map(d=>d.id)).size,50,'Identifiers are unique');
+eq(A.DEFINITIONS.length,51,'The general date achievement extends the collection to 51');eq(new Set(A.DEFINITIONS.map(d=>d.id)).size,51,'Identifiers are unique');
 for(const d of A.DEFINITIONS){ok(d.mn&&d.ru&&d.descriptionMn&&d.descriptionRu,'Every reward has a full bilingual condition');ok(d.target>0&&Number.isSafeInteger(d.target),'Every progress goal is finite and positive');ok(A.GROUPS.some(g=>g.id===d.group),'Each achievement has a valid category');}
 let s=A.normalize();const event=(type,key,detail={})=>{const before=JSON.stringify(s),result=A.record(s,{type,key,day:1,...detail},1000);eq(JSON.stringify(s),before,'Recording is immutable');s=result.state;return result.newly;};
-eq(event('date','1:campaign:1:milk'),['dates-1'],'Checking one date unlocks the first date reward');
-eq(event('date','1:campaign:1:milk'),[],'Repeating the same date check gives no reward');eq(s.counters.dates,1,'Repeated clicks do not increase progress');
-s=A.normalize(JSON.parse(JSON.stringify(s)));event('date','1:campaign:1:milk');eq(s.counters.dates,1,'Reload preserves deduplication');
+eq(event('date','1:campaign:1:dumplings',{productId:'dumplings',category:'frozen'}),['dates-any-1'],'Dumplings unlock the general date reward');
+eq(s.counters.dairyDates,0,'Checking dumplings does not count as a dairy inspection');
+for(const [productId,category] of [['beef','meat'],['eggs','dairy'],['quail-eggs','dairy'],['margarine','dairy']])event('date','1:campaign:1:'+productId,{productId,category});
+eq(s.counters.dairyDates,0,'Meat, eggs and margarine do not count as dairy products');
+eq(event('date','1:campaign:1:milk',{productId:'milk',category:'dairy'}),['dates-1'],'Checking milk unlocks the dairy-specific reward');
+eq(event('date','1:campaign:1:milk',{productId:'milk',category:'dairy'}),[],'Repeating the same date check gives no reward');eq(s.counters.dates,6,'Repeated clicks do not increase progress');
+s=A.normalize(JSON.parse(JSON.stringify(s)));event('date','1:campaign:1:milk',{productId:'milk',category:'dairy'});eq(s.counters.dates,6,'Reload preserves deduplication');eq(s.counters.dairyDates,1,'Reload preserves the proven dairy check');
+for(const productId of ['yogurt','cheese','lactose-free-milk','cream','airag']){const dairy=A.record(A.normalize(),{type:'date',day:1,key:productId,category:'dairy',productId},1000);ok(dairy.newly.includes('dates-1'),'Other dairy products also qualify: '+productId);}
+let capped=A.normalize();for(let i=0;i<50;i++)capped=A.record(capped,{type:'date',key:'other-'+i,day:1,category:'frozen',productId:'dumplings'},1000).state;
+const lateDairy=A.record(capped,{type:'date',key:'late-milk',day:1,category:'dairy',productId:'milk'},1001);eq(lateDairy.newly,['dates-1'],'Dairy reward remains attainable after the general counter reaches its cap');eq(lateDairy.state.counters.dates,50,'The general date counter remains bounded');
+const legacy=A.hydrate({version:1,counters:{dates:7},earned:{'dates-1':500,'orders-1':400},seen:['date:old-lot']});
+eq(legacy.version,2,'Date conditions have an explicit migration version');eq(legacy.earned['dates-any-1'],500,'An old general date award keeps its original timestamp');ok(!legacy.earned['dates-1'],'Unproven historical dairy awards are converted to the general award');eq(legacy.counters.dates,7,'Historical date-check progress is retained');eq(legacy.earned['orders-1'],400,'Other earned achievements are preserved');eq(legacy.seen,['date:old-lot'],'Existing duplicate protection survives migration');eq(A.normalize(legacy),legacy,'The achievement migration runs only once');
 event('egg','1:campaign:1:eggs');eq(s.counters.eggs,1,'Opening the egg box is separate from checking its date');
 event('weigh','1:campaign:1:apple',{grams:1000,tied:false,spelled:true});eq(s.counters.weighed,0,'An untied bag does not count');
 event('weigh','1:campaign:1:apple',{grams:1000,tied:true,spelled:false});eq(s.counters.weighed,0,'Unverified spelling does not count');
@@ -38,18 +47,18 @@ eq(A.record(h,{type:'complete',day:2,key:'2:campaign:1',stars:3,clean:true}).sta
 // Reach every award using supported game events, rather than directly setting counters.
 s=A.normalize();
 for(let i=0;i<100;i++)event('heard',`1:campaign:${i}`,{recording:'campaign:'+i});
-for(let i=0;i<50;i++)event('date',`1:campaign:1:lot-${i}`);
+for(let i=0;i<50;i++)event('date',`1:campaign:1:lot-${i}`,{productId:i===49?'milk':'dumplings',category:i===49?'dairy':'frozen'});
 for(let i=0;i<10;i++){event('egg',`1:campaign:1:egg-${i}`);event('discard',`1:campaign:1:bad-${i}`);}
 for(let i=0;i<50;i++)event('weigh',`1:campaign:1:bulk-${i}`,{grams:500,tied:true,spelled:true,withoutHint:true,category:i<25?'produce':'sweets'});
 for(let i=0;i<200;i++)event('complete',`1:campaign:${i}`,{stars:3,clean:true,checked:true,format:i<100?'audio':'text',heard:true,revealed:false,products:[G.PRODUCTS[i%G.PRODUCTS.length].id],categories:[G.PRODUCTS[i%G.PRODUCTS.length].category],levels:i===199?[0,1,2,3]:[],fullShift:i===199});
-eq(Object.keys(s.earned).length,50,'All 50 achievements are attainable through actual supported event types');
+eq(Object.keys(s.earned).length,51,'All 51 achievements are attainable through actual supported event types');
 for(const row of A.progress(s)){eq(row.current,row.target,'Every earned progress bar reaches its goal');ok(row.unlocked,'Every earned reward stays unlocked');}
 const serialized=JSON.stringify(s);ok(serialized.length<100000,'The ledger stays small after all milestones');
 eq(A.normalize(JSON.parse(serialized)),s,'All rewards and deduplication survive a reload');
-for(const value of [null,[],{counters:{delivered:Infinity,dates:-1,eggs:'100'}},{earned:{invented:123},products:['x','x','<script>'],categories:['all','fake']},false]){const safe=A.normalize(value);ok(A.progress(safe).length===50&&Object.values(safe.counters).every(Number.isFinite),'Malformed saved fields cannot break the collection');}
+for(const value of [null,[],{counters:{delivered:Infinity,dates:-1,eggs:'100'}},{earned:{invented:123},products:['x','x','<script>'],categories:['all','fake']},false]){const safe=A.normalize(value);ok(A.progress(safe).length===51&&Object.values(safe.counters).every(Number.isFinite),'Malformed saved fields cannot break the collection');}
 const art=require('../dist/assets/achievement-art-manifest.json'),artHashes=new Set();
 eq(Object.keys(art).length,50,'All 50 achievements have an individual illustration');
-for(const d of A.DEFINITIONS){const r=art[d.id];ok(!!r&&r.width===256&&r.height===256,'Each sticker has a responsive 256px image');const bytes=fs.readFileSync(path.join(__dirname,'../dist',r.path)),hash=createHash('sha256').update(bytes).digest('hex');eq(hash,r.sha256,'The image matches its manifest');ok(r.path.includes(hash.slice(0,16)),'Sticker URLs support safe immutable caching');artHashes.add(hash);ok(fs.existsSync(path.join(__dirname,'..',r.source)),'Original generated art is retained in the source');}
+for(const d of A.DEFINITIONS){const r=art[d.id];if(d.id==='dates-any-1'){ok(!r&&A.GROUPS.find(g=>g.id===d.group).icon==='check','The general date award uses the quality-check vector badge');continue;}ok(!!r&&r.width===256&&r.height===256,'Each existing sticker has a responsive 256px image');const bytes=fs.readFileSync(path.join(__dirname,'../dist',r.path)),hash=createHash('sha256').update(bytes).digest('hex');eq(hash,r.sha256,'The image matches its manifest');ok(r.path.includes(hash.slice(0,16)),'Sticker URLs support safe immutable caching');artHashes.add(hash);ok(fs.existsSync(path.join(__dirname,'..',r.source)),'Original generated art is retained in the source');}
 eq(artHashes.size,50,'The collection uses 50 distinct images, not copies of one badge');
 ok(Object.values(art).reduce((n,r)=>n+r.bytes,0)<2000000,'The entire collection is below 2MB and thumbnails load on demand');
-console.log(`PASS: ${checks} achievement thresholds, all-50 reachability, duplicate protection, quality/audio conditions and profile persistence checks.`);
+console.log(`PASS: ${checks} achievement thresholds, all-51 reachability, dairy/general date separation, duplicate protection, quality/audio conditions and profile persistence checks.`);
