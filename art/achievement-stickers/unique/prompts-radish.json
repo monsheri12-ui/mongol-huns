@@ -1,0 +1,9 @@
+{
+  "mode": "built-in image generation",
+  "prompts": [
+    {
+      "id": "timed-orders-1",
+      "prompt": "Use case: stylized-concept. Asset: one premium funny grocery-game achievement sticker, real alpha transparent background. Subject: a lively plump pink-and-white RADISH with a vivid leafy green crown, tiny sneakers and little arms, laughing joyfully as it sprints through and breaks a narrow forest-green finish-line ribbon held by two small simple pegs. Funny determined raised eyebrows, delightfully energetic victory pose, one foot raised, a tiny gold stopwatch in its hand without numbers. Make the radish unmistakable and the entire silhouette/pose distinct from a round tomato face. Warm cream and forest-green painterly 3D storybook illustration, premium tactile shading, clean contour, gentle golden light, full body centered, generous transparent margins, compact readable composition at128px. No text, letters, numerals, logos, watermark, border, pedestal, frame, ground plane or opaque backdrop. Keep all character parts/ribbon within frame."
+    }
+  ]
+}
