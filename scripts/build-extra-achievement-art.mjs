@@ -7,8 +7,10 @@ import {createHash} from 'node:crypto';
 const A=createRequire(import.meta.url)('../dist/achievements.js');
 const FAMILIES=['expiry','shelf','fine','salary','positive','negative','timer','challenge'];
 const PRIMARY=new Set(['dates-any-1','shelf-return-1','first-fine','first-salary','positive-review-1','negative-review-1','challenge-1']);
+export const REVISED_IDS=new Set(['eggs-10','without-text-1','level-1','checked-10','text-orders-1']);
 const uniqueSource=d=>`art/achievement-stickers/unique/${d.id}.png`;
 function familyFor(d){
+  if(REVISED_IDS.has(d.id))return 'revised';
   if(d.id==='dates-any-1')return 'expiry';
   if(d.group==='timing')return d.id.startsWith('challenge-')?'challenge':'timer';
   if(d.id.startsWith('shelf-return-'))return 'shelf';
@@ -19,7 +21,7 @@ function familyFor(d){
   throw Error('Missing generated art family for '+d.id);
 }
 export async function assertExtraSources(root,sharp){
-  const sources=[...FAMILIES.map(f=>'art/achievement-stickers/extra/'+f+'.png'),...A.DEFINITIONS.filter(d=>!PRIMARY.has(d.id)&&['timing','quality','orders'].includes(d.group)&&/^(timed-|challenge-|shelf-return-|large-fine-|biggest-fine|disorder-fine|earnings-|earnings-big|positive-review-|negative-review-)/.test(d.id)).map(uniqueSource)];
+  const sources=[...FAMILIES.map(f=>'art/achievement-stickers/extra/'+f+'.png'),...A.DEFINITIONS.filter(d=>!PRIMARY.has(d.id)&&['timing','quality','orders'].includes(d.group)&&/^(timed-|challenge-|shelf-return-|large-fine-|biggest-fine|disorder-fine|earnings-|earnings-big|positive-review-|negative-review-)/.test(d.id)).map(uniqueSource),...Array.from(REVISED_IDS,id=>'art/achievement-stickers/revised/'+id+'.png')];
   for(const relative of sources){
     const source=path.join(root,relative),metadata=await sharp(source).metadata(),stats=await sharp(source).stats();
     if(metadata.format!=='png'||!metadata.hasAlpha||stats.channels[3].min!==0)throw Error(`Generated ${relative} must be a PNG with real transparent margins.`);
@@ -30,7 +32,7 @@ export async function buildExtraAchievementArt({root,sharp,manifest,runtime,keep
   if(!timerMatch)throw Error('Expected a JSON timer artwork mapping.');const timerArt=JSON.parse(timerMatch[1]);
   for(const d of A.DEFINITIONS){
     if(manifest[d.id])continue;
-    const family=familyFor(d),primary=PRIMARY.has(d.id),source=primary?`art/achievement-stickers/extra/${family}.png`:uniqueSource(d),isTimer=primary&&(family==='timer'||family==='challenge');
+    const family=familyFor(d),primary=PRIMARY.has(d.id),source=REVISED_IDS.has(d.id)?`art/achievement-stickers/revised/${d.id}.png`:primary?`art/achievement-stickers/extra/${family}.png`:uniqueSource(d),isTimer=primary&&(family==='timer'||family==='challenge');
     const buffer=isTimer?await fs.readFile(path.join(root,'dist',timerArt[family==='timer'?'normal':'challenge'])):await sharp(path.join(root,source)).trim({background:'#00000000',threshold:1}).resize(240,240,{fit:'contain',background:{r:0,g:0,b:0,alpha:0}}).extend({top:8,bottom:8,left:8,right:8,background:{r:0,g:0,b:0,alpha:0}}).webp({quality:90,alphaQuality:100,effort:5}).toBuffer();
     const sha256=createHash('sha256').update(buffer).digest('hex'),name=`${d.id}.${sha256.slice(0,16)}.256.webp`,runtimePath=isTimer?timerArt[family==='timer'?'normal':'challenge']:'assets/achievements/'+name;
     const metadata=await sharp(buffer).metadata();if(metadata.width!==256||metadata.height!==256)throw Error('Achievement art must be 256 × 256: '+d.id);
@@ -50,9 +52,10 @@ export async function writeAchievementArt({root,manifest,runtime,keep}){
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
   const root=path.resolve(import.meta.dirname,'..'),dep=process.argv.indexOf('--dependencies'),require=createRequire(dep>=0?path.resolve(process.argv[dep+1],'package.json'):path.join(root,'tools/asset-preparer/package.json')),sharp=require('sharp');
   await assertExtraSources(root,sharp);
-  const approved=JSON.parse(await fs.readFile(path.join(root,'dist/assets/achievement-art-manifest.json'),'utf8')),manifest=Object.fromEntries(Object.entries(approved).filter(([,r])=>/^art\/achievement-stickers\/sheet-[1-5](?:-v2)?\.png$/.test(r.source)&&r.cell&&r.crop));
-  if(Object.keys(manifest).length!==50)throw Error('Keep the approved 50 original sheet illustrations.');
-  const runtime=Object.fromEntries(Object.entries(manifest).map(([id,r])=>[id,{path:r.path}])),keep=new Set(Object.values(manifest).map(r=>path.basename(r.path)));
+  const approved=JSON.parse(await fs.readFile(path.join(root,'art/achievement-stickers/original-manifest.json'),'utf8'));
+  if(Object.keys(approved).length!==50)throw Error('Keep the original 50 accepted sheet positions in the source archive.');
+  const manifest=Object.fromEntries(Object.entries(approved).filter(([id])=>!REVISED_IDS.has(id)));
+  const runtime=Object.fromEntries(Object.entries(manifest).map(([id,r])=>[id,{path:r.path}])),keep=new Set(Object.values(approved).map(r=>path.basename(r.path)));
   await fs.mkdir(path.join(root,'dist/assets/achievements'),{recursive:true});
   await buildExtraAchievementArt({root,sharp,manifest,runtime,keep});await writeAchievementArt({root,manifest,runtime,keep});
   console.log(JSON.stringify({stickers:Object.keys(manifest).length,uniqueIllustrations:new Set(Object.values(manifest).map(r=>r.sha256)).size}));

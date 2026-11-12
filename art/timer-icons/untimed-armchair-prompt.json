@@ -1,0 +1,8 @@
+{
+  "mode": "built-in image generation",
+  "prompt": "Use case: stylized-concept. Edit the referenced approved red tomato mascot into ONE illustrated draft menu icon for 'Without timer', clearly calm and unhurried. Keep its recognizable plump red tomato body, green leafy crown, warm cream/forest-green/honey-gold grocery aesthetic, tactile polished painterly 3D shading and friendly expressive face. You may add tiny arms and legs for the requested pose. Shift the wide excited laugh into a content relaxed smile; no flames in the eyes. Entire compact scene centered with generous genuine alpha transparent margins, all character and prop parts fully inside the image; the tomato itself should dominate and remain readable as a72px icon. No text, letters, numerals, clock, stopwatch, speed lines, border, frame, pedestal, floor or opaque backdrop. Exact variant: the tomato reclines comfortably in a small rounded cream armchair with forest-green trim, tiny hands behind its head, feet casually relaxed out front, satisfied gentle grin and peaceful crescent eyes. Only the tomato and chair, a simple clear silhouette, funny cozy leisure mood.",
+  "source": "art/timer-icons/untimed-armchair.png",
+  "runtime": "assets/ui/tomato-untimed.719d97468dee1a82.256.webp",
+  "bytes": 24366,
+  "sha256": "719d97468dee1a82a0275bcc33e28995ae2c2ea48738b22adf16e32f112ccccc"
+}

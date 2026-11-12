@@ -19,6 +19,6 @@ for(const d of A.DEFINITIONS){const row=manifest[d.id];ok(row.generated===true,'
  ok(typeof row.source==='string'&&!path.isAbsolute(row.source)&&fs.existsSync(path.join(root,row.source)),'Generated source art is retained: '+d.id);sources.add(row.source);unique.add(row.path);
  ok(!row.aliasOf,'Every achievement has its own drawing rather than a milestone alias: '+d.id);
 }
-eq(unique.size,ids.length,'Every achievement has a different illustration URL');eq(new Set(Object.values(manifest).map(r=>r.sha256)).size,ids.length,'Every achievement has different actual image bytes');eq(sources.size,38,'Five original sheets and thirty-three individual character sources are retained');
+eq(unique.size,ids.length,'Every achievement has a different illustration URL');eq(new Set(Object.values(manifest).map(r=>r.sha256)).size,ids.length,'Every achievement has different actual image bytes');eq(sources.size,43,'Five original sheets and thirty-eight individual character sources are retained');
 const uniqueBytes=[...unique].reduce((n,file)=>n+fs.statSync(path.join(root,'dist',file)).size,0);ok(uniqueBytes<2500000,'All unique award images stay below 2.5 MB and can load on demand');
 console.log(`PASS: ${checks} all-${ids.length} runtime illustrations, generated sources, encoded alpha, dimensions, content hashes and no repeated illustrations checks.`);

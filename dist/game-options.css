@@ -7,7 +7,6 @@
 .language-icon-select .welcome-select-visual>.choice-caption{font-size:15px!important}
 .welcome-select-visual>.choice-flag{width:29px!important;height:20px!important;object-fit:cover;border:1px solid #c7b893;border-radius:3px;flex:none;box-shadow:0 1px 2px #31443122}
 .welcome-select-visual>.choice-tomato{width:58px;height:58px;object-fit:contain;flex:none;filter:drop-shadow(0 2px 2px #77442c18)}
-.choice-tomato.is-resting{opacity:.65}
 .welcome-timer-field{margin-top:13px}.welcome-timer-field .welcome-icon-select{min-height:78px}
 .game-choice-menu{position:fixed;inset:auto;margin:0;padding:7px;border:1px solid #c7b17d;border-radius:17px;background:#fff8e7;color:#31533d;box-shadow:0 16px 50px #183b3540;overflow-y:auto;overscroll-behavior:contain;box-sizing:border-box;z-index:10000;scrollbar-gutter:stable}
 .game-choice-menu[hidden]{display:none!important}
