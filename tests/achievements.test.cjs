@@ -75,9 +75,9 @@ for(const d of A.DEFINITIONS){
   eq(hash,r.sha256,'The image matches its manifest');eq(bytes.length,r.bytes,'Manifest byte count matches the actual image');ok(r.path.includes(hash.slice(0,16)),'Sticker URLs support safe immutable caching');
   eq(bytes.toString('ascii',0,4),'RIFF','Sticker is a real WebP');eq(bytes.toString('ascii',8,16),'WEBPVP8X','Sticker includes its canvas metadata');eq([bytes.readUIntLE(24,3)+1,bytes.readUIntLE(27,3)+1],[256,256],'Actual WebP dimensions are 256px');
   artHashes.set(hash,r.bytes);eq(runtime[d.id],{path:r.path},'Runtime and audit manifest use the same illustration');ok(fs.existsSync(path.join(__dirname,'..',r.source)),'Original generated art is retained in the source');
-  if(r.aliasOf){ok(A.DEFINITIONS.some(d=>d.id===r.aliasOf)&&!art[r.aliasOf].aliasOf,'Milestone artwork aliases point directly to a primary award');eq([r.path,r.sha256,r.source,r.family],[art[r.aliasOf].path,art[r.aliasOf].sha256,art[r.aliasOf].source,art[r.aliasOf].family],'Every alias transparently shares its family artwork');}
+  ok(!r.aliasOf,'Every achievement has a separate drawing; milestone aliases are disallowed');
 }
-eq(artHashes.size,58,'The collection contains 50 original drawings, six new families and two tomatoes');
+eq(artHashes.size,83,'All 83 achievements have different actual illustrations');
 eq(new Set(originalArt.map(([,r])=>r.sha256)).size,50,'All original 50 illustrations stay distinct');
-ok([...artHashes.values()].reduce((n,bytes)=>n+bytes,0)<2000000,'The 58 unique drawings stay below 2MB and shared milestones do not duplicate downloads');
+ok([...artHashes.values()].reduce((n,bytes)=>n+bytes,0)<2500000,'The 83 unique drawings stay below 2.5MB and load only when needed');
 console.log(`PASS: ${checks} achievement thresholds, all-83 reachability, dairy/general date separation, duplicate protection, quality/audio conditions and profile persistence checks.`);

@@ -1060,69 +1060,64 @@
     "family": "expiry"
   },
   "timed-orders-1": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-orders-1.69d99ee1c04d4e5f.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 29328,
+    "sha256": "69d99ee1c04d4e5f2be3d669c56578b44494741688711ea9b4f083f8200e0dbe",
+    "source": "art/achievement-stickers/unique/timed-orders-1.png",
     "generated": true,
     "family": "timer"
   },
   "timed-orders-5": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-orders-5.57f40a269603c898.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 31064,
+    "sha256": "57f40a269603c8986a148d5cfea88cc3fa6253461daacdc21370c16e344ff9c5",
+    "source": "art/achievement-stickers/unique/timed-orders-5.png",
     "generated": true,
-    "family": "timer",
-    "aliasOf": "timed-orders-1"
+    "family": "timer"
   },
   "timed-orders-25": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-orders-25.dd10313f2762ccac.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 28550,
+    "sha256": "dd10313f2762ccacb4ced2eaab457866fd59e7aec6a93bb6c4a0976c52006a5d",
+    "source": "art/achievement-stickers/unique/timed-orders-25.png",
     "generated": true,
-    "family": "timer",
-    "aliasOf": "timed-orders-1"
+    "family": "timer"
   },
   "timed-perfect": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-perfect.c52fa354e1897c2c.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 24350,
+    "sha256": "c52fa354e1897c2c9d109cc558f600f4370376d20b648676f21f4ae5ca9be732",
+    "source": "art/achievement-stickers/unique/timed-perfect.png",
     "generated": true,
-    "family": "timer",
-    "aliasOf": "timed-orders-1"
+    "family": "timer"
   },
   "timed-reserve": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-reserve.a681b17379d31560.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 22748,
+    "sha256": "a681b17379d31560ee46aab7e188301faf8410b948fb856ecd57ea9f98b110fe",
+    "source": "art/achievement-stickers/unique/timed-reserve.png",
     "generated": true,
-    "family": "timer",
-    "aliasOf": "timed-orders-1"
+    "family": "timer"
   },
   "timed-streak": {
-    "path": "assets/ui/tomato-normal.d037131003773fed.256.webp",
+    "path": "assets/achievements/timed-streak.f235cb0556e86cf9.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20954,
-    "sha256": "d037131003773feddbb2b6c1f7a3ff22a41163bc6dab26ce2cd6401c42577d81",
-    "source": "art/achievement-stickers/extra/timer.png",
+    "bytes": 32350,
+    "sha256": "f235cb0556e86cf943453253fcd248d8e41248385fcee3ae2950705b24ca64e2",
+    "source": "art/achievement-stickers/unique/timed-streak.png",
     "generated": true,
-    "family": "timer",
-    "aliasOf": "timed-orders-1"
+    "family": "timer"
   },
   "challenge-1": {
     "path": "assets/ui/tomato-challenge.d6e0e0c634d20f89.256.webp",
@@ -1135,15 +1130,14 @@
     "family": "challenge"
   },
   "challenge-5": {
-    "path": "assets/ui/tomato-challenge.d6e0e0c634d20f89.256.webp",
+    "path": "assets/achievements/challenge-5.e1937574f8786b80.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 22988,
-    "sha256": "d6e0e0c634d20f89a4562258be109f78f40be81c224d764ab2bd6cb30f86e1fa",
-    "source": "art/achievement-stickers/extra/challenge.png",
+    "bytes": 34656,
+    "sha256": "e1937574f8786b80e5f09662019ca70da202624494c5ff7b3a7329749f99bfc9",
+    "source": "art/achievement-stickers/unique/challenge-5.png",
     "generated": true,
-    "family": "challenge",
-    "aliasOf": "challenge-1"
+    "family": "challenge"
   },
   "shelf-return-1": {
     "path": "assets/achievements/shelf-return-1.fac3c4360cadcf77.256.webp",
@@ -1156,26 +1150,24 @@
     "family": "shelf"
   },
   "shelf-return-5": {
-    "path": "assets/achievements/shelf-return-1.fac3c4360cadcf77.256.webp",
+    "path": "assets/achievements/shelf-return-5.55b4691db937e53a.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 23338,
-    "sha256": "fac3c4360cadcf77c4a83ae8d545bde54ed90cfff6b5b6aaf7c601da09fc67be",
-    "source": "art/achievement-stickers/extra/shelf.png",
+    "bytes": 27186,
+    "sha256": "55b4691db937e53aa09aad391e0006bde18f95b6b80d4ba52a48f6093ab3dca1",
+    "source": "art/achievement-stickers/unique/shelf-return-5.png",
     "generated": true,
-    "family": "shelf",
-    "aliasOf": "shelf-return-1"
+    "family": "shelf"
   },
   "shelf-return-20": {
-    "path": "assets/achievements/shelf-return-1.fac3c4360cadcf77.256.webp",
+    "path": "assets/achievements/shelf-return-20.90a546cda8f7ea41.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 23338,
-    "sha256": "fac3c4360cadcf77c4a83ae8d545bde54ed90cfff6b5b6aaf7c601da09fc67be",
-    "source": "art/achievement-stickers/extra/shelf.png",
+    "bytes": 23940,
+    "sha256": "90a546cda8f7ea4130c5ba494f78f175adb7a1bd738a9218e030ebe2716c0a9f",
+    "source": "art/achievement-stickers/unique/shelf-return-20.png",
     "generated": true,
-    "family": "shelf",
-    "aliasOf": "shelf-return-1"
+    "family": "shelf"
   },
   "first-fine": {
     "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
@@ -1188,59 +1180,54 @@
     "family": "fine"
   },
   "large-fine-5001": {
-    "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
+    "path": "assets/achievements/large-fine-5001.31b372ece45d540d.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 27398,
-    "sha256": "ab1fa868ded5b08f14cb9a51ba5a956d269654eda8883b22cd5252833e8cc77b",
-    "source": "art/achievement-stickers/extra/fine.png",
+    "bytes": 24394,
+    "sha256": "31b372ece45d540d4f68753394c8910d3a5ba26fb03319428cea0ad7da6079b2",
+    "source": "art/achievement-stickers/unique/large-fine-5001.png",
     "generated": true,
-    "family": "fine",
-    "aliasOf": "first-fine"
+    "family": "fine"
   },
   "large-fine-15001": {
-    "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
+    "path": "assets/achievements/large-fine-15001.f960253a91024062.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 27398,
-    "sha256": "ab1fa868ded5b08f14cb9a51ba5a956d269654eda8883b22cd5252833e8cc77b",
-    "source": "art/achievement-stickers/extra/fine.png",
+    "bytes": 21532,
+    "sha256": "f960253a9102406255db0d6f18d70ea7b97a9bd15aaa6f51b43e3f4ab06956d4",
+    "source": "art/achievement-stickers/unique/large-fine-15001.png",
     "generated": true,
-    "family": "fine",
-    "aliasOf": "first-fine"
+    "family": "fine"
   },
   "large-fine-50001": {
-    "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
+    "path": "assets/achievements/large-fine-50001.7f0215b9711c33ed.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 27398,
-    "sha256": "ab1fa868ded5b08f14cb9a51ba5a956d269654eda8883b22cd5252833e8cc77b",
-    "source": "art/achievement-stickers/extra/fine.png",
+    "bytes": 19590,
+    "sha256": "7f0215b9711c33ed71ab53191eb934f7f4907076275876d563c61cfc9e488988",
+    "source": "art/achievement-stickers/unique/large-fine-50001.png",
     "generated": true,
-    "family": "fine",
-    "aliasOf": "first-fine"
+    "family": "fine"
   },
   "biggest-fine": {
-    "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
+    "path": "assets/achievements/biggest-fine.220dbdf1ceaaaccb.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 27398,
-    "sha256": "ab1fa868ded5b08f14cb9a51ba5a956d269654eda8883b22cd5252833e8cc77b",
-    "source": "art/achievement-stickers/extra/fine.png",
+    "bytes": 26384,
+    "sha256": "220dbdf1ceaaaccb8c57725974fbfb8fe267bde804c4a4be91819fdddada0219",
+    "source": "art/achievement-stickers/unique/biggest-fine.png",
     "generated": true,
-    "family": "fine",
-    "aliasOf": "first-fine"
+    "family": "fine"
   },
   "disorder-fine": {
-    "path": "assets/achievements/first-fine.ab1fa868ded5b08f.256.webp",
+    "path": "assets/achievements/disorder-fine.e6b6cea50fa2be73.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 27398,
-    "sha256": "ab1fa868ded5b08f14cb9a51ba5a956d269654eda8883b22cd5252833e8cc77b",
-    "source": "art/achievement-stickers/extra/fine.png",
+    "bytes": 28760,
+    "sha256": "e6b6cea50fa2be7350feebebc075373b56ac9459a3b21badb614231fc7f5cc39",
+    "source": "art/achievement-stickers/unique/disorder-fine.png",
     "generated": true,
-    "family": "fine",
-    "aliasOf": "first-fine"
+    "family": "fine"
   },
   "first-salary": {
     "path": "assets/achievements/first-salary.be1f7946daf09ede.256.webp",
@@ -1253,48 +1240,44 @@
     "family": "salary"
   },
   "earnings-5001": {
-    "path": "assets/achievements/first-salary.be1f7946daf09ede.256.webp",
+    "path": "assets/achievements/earnings-5001.592bcbdc713e36a2.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 24062,
-    "sha256": "be1f7946daf09ede8e44d988b733845d483d9d46d36580c52bbb3699da8ba4cf",
-    "source": "art/achievement-stickers/extra/salary.png",
+    "bytes": 16684,
+    "sha256": "592bcbdc713e36a20526d54e6fce43067ade76408747b78d9cbcec6925de0b65",
+    "source": "art/achievement-stickers/unique/earnings-5001.png",
     "generated": true,
-    "family": "salary",
-    "aliasOf": "first-salary"
+    "family": "salary"
   },
   "earnings-25001": {
-    "path": "assets/achievements/first-salary.be1f7946daf09ede.256.webp",
+    "path": "assets/achievements/earnings-25001.4221a8cadffdc1b8.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 24062,
-    "sha256": "be1f7946daf09ede8e44d988b733845d483d9d46d36580c52bbb3699da8ba4cf",
-    "source": "art/achievement-stickers/extra/salary.png",
+    "bytes": 22682,
+    "sha256": "4221a8cadffdc1b8408ccbb78bad001ef0225deb5aebd526032b71f636e990ae",
+    "source": "art/achievement-stickers/unique/earnings-25001.png",
     "generated": true,
-    "family": "salary",
-    "aliasOf": "first-salary"
+    "family": "salary"
   },
   "earnings-100001": {
-    "path": "assets/achievements/first-salary.be1f7946daf09ede.256.webp",
+    "path": "assets/achievements/earnings-100001.84c49c0903ef5ef6.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 24062,
-    "sha256": "be1f7946daf09ede8e44d988b733845d483d9d46d36580c52bbb3699da8ba4cf",
-    "source": "art/achievement-stickers/extra/salary.png",
+    "bytes": 23898,
+    "sha256": "84c49c0903ef5ef6771997974dd8e4f49c47ac931d1e59534f33c7c6dea86fb5",
+    "source": "art/achievement-stickers/unique/earnings-100001.png",
     "generated": true,
-    "family": "salary",
-    "aliasOf": "first-salary"
+    "family": "salary"
   },
   "earnings-big": {
-    "path": "assets/achievements/first-salary.be1f7946daf09ede.256.webp",
+    "path": "assets/achievements/earnings-big.e57cba4d3e68ca44.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 24062,
-    "sha256": "be1f7946daf09ede8e44d988b733845d483d9d46d36580c52bbb3699da8ba4cf",
-    "source": "art/achievement-stickers/extra/salary.png",
+    "bytes": 27340,
+    "sha256": "e57cba4d3e68ca44ff4ce779428fae19252ca6ded33405ba862d77bb96b9a30f",
+    "source": "art/achievement-stickers/unique/earnings-big.png",
     "generated": true,
-    "family": "salary",
-    "aliasOf": "first-salary"
+    "family": "salary"
   },
   "positive-review-1": {
     "path": "assets/achievements/positive-review-1.2ffde011f0e77586.256.webp",
@@ -1307,48 +1290,44 @@
     "family": "positive"
   },
   "positive-review-5": {
-    "path": "assets/achievements/positive-review-1.2ffde011f0e77586.256.webp",
+    "path": "assets/achievements/positive-review-5.2163677c58b40762.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 21694,
-    "sha256": "2ffde011f0e77586dbe58b3c739b82c3e1cd12c2f4ebc304a1ecd59d1093195f",
-    "source": "art/achievement-stickers/extra/positive.png",
+    "bytes": 30870,
+    "sha256": "2163677c58b407625c09b4fa7b23e4d59624d26072b8c9c5f14c75b6d09377a9",
+    "source": "art/achievement-stickers/unique/positive-review-5.png",
     "generated": true,
-    "family": "positive",
-    "aliasOf": "positive-review-1"
+    "family": "positive"
   },
   "positive-review-20": {
-    "path": "assets/achievements/positive-review-1.2ffde011f0e77586.256.webp",
+    "path": "assets/achievements/positive-review-20.1c3ccf6507f90555.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 21694,
-    "sha256": "2ffde011f0e77586dbe58b3c739b82c3e1cd12c2f4ebc304a1ecd59d1093195f",
-    "source": "art/achievement-stickers/extra/positive.png",
+    "bytes": 30316,
+    "sha256": "1c3ccf6507f90555227a27cf36f2504ba2a72ea068912ade4d59135c67a06418",
+    "source": "art/achievement-stickers/unique/positive-review-20.png",
     "generated": true,
-    "family": "positive",
-    "aliasOf": "positive-review-1"
+    "family": "positive"
   },
   "positive-review-50": {
-    "path": "assets/achievements/positive-review-1.2ffde011f0e77586.256.webp",
+    "path": "assets/achievements/positive-review-50.64d09a05e05428bf.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 21694,
-    "sha256": "2ffde011f0e77586dbe58b3c739b82c3e1cd12c2f4ebc304a1ecd59d1093195f",
-    "source": "art/achievement-stickers/extra/positive.png",
+    "bytes": 35302,
+    "sha256": "64d09a05e05428bf720b4c7a32d0a8cfc84e1fe4d71abe229300e43682eb5bde",
+    "source": "art/achievement-stickers/unique/positive-review-50.png",
     "generated": true,
-    "family": "positive",
-    "aliasOf": "positive-review-1"
+    "family": "positive"
   },
   "positive-review-100": {
-    "path": "assets/achievements/positive-review-1.2ffde011f0e77586.256.webp",
+    "path": "assets/achievements/positive-review-100.f5cbf776d00e505c.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 21694,
-    "sha256": "2ffde011f0e77586dbe58b3c739b82c3e1cd12c2f4ebc304a1ecd59d1093195f",
-    "source": "art/achievement-stickers/extra/positive.png",
+    "bytes": 27904,
+    "sha256": "f5cbf776d00e505c06def38ba6b8b36e32bf7c0c5d3a6e035e532a86eabe6f4c",
+    "source": "art/achievement-stickers/unique/positive-review-100.png",
     "generated": true,
-    "family": "positive",
-    "aliasOf": "positive-review-1"
+    "family": "positive"
   },
   "negative-review-1": {
     "path": "assets/achievements/negative-review-1.0eb84544ba724032.256.webp",
@@ -1361,47 +1340,43 @@
     "family": "negative"
   },
   "negative-review-5": {
-    "path": "assets/achievements/negative-review-1.0eb84544ba724032.256.webp",
+    "path": "assets/achievements/negative-review-5.4b2b162c1d6c0c54.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20150,
-    "sha256": "0eb84544ba7240328df21602172b4e2982d2b5de7ebdc5d90ae9593bc33cdfa9",
-    "source": "art/achievement-stickers/extra/negative.png",
+    "bytes": 21376,
+    "sha256": "4b2b162c1d6c0c546e14acbeeaf853efcd1783a1649aff26e3264dbfbe31ebb8",
+    "source": "art/achievement-stickers/unique/negative-review-5.png",
     "generated": true,
-    "family": "negative",
-    "aliasOf": "negative-review-1"
+    "family": "negative"
   },
   "negative-review-20": {
-    "path": "assets/achievements/negative-review-1.0eb84544ba724032.256.webp",
+    "path": "assets/achievements/negative-review-20.36a275d60da03481.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20150,
-    "sha256": "0eb84544ba7240328df21602172b4e2982d2b5de7ebdc5d90ae9593bc33cdfa9",
-    "source": "art/achievement-stickers/extra/negative.png",
+    "bytes": 18886,
+    "sha256": "36a275d60da03481c5a0550edcb3e15f44cb8249b38a177666f9315ac51987f3",
+    "source": "art/achievement-stickers/unique/negative-review-20.png",
     "generated": true,
-    "family": "negative",
-    "aliasOf": "negative-review-1"
+    "family": "negative"
   },
   "negative-review-50": {
-    "path": "assets/achievements/negative-review-1.0eb84544ba724032.256.webp",
+    "path": "assets/achievements/negative-review-50.d9a5f7d6b3d7df47.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20150,
-    "sha256": "0eb84544ba7240328df21602172b4e2982d2b5de7ebdc5d90ae9593bc33cdfa9",
-    "source": "art/achievement-stickers/extra/negative.png",
+    "bytes": 22626,
+    "sha256": "d9a5f7d6b3d7df47e80762c76b3ee9363e6478970b8f9c680d5c717ac187f692",
+    "source": "art/achievement-stickers/unique/negative-review-50.png",
     "generated": true,
-    "family": "negative",
-    "aliasOf": "negative-review-1"
+    "family": "negative"
   },
   "negative-review-100": {
-    "path": "assets/achievements/negative-review-1.0eb84544ba724032.256.webp",
+    "path": "assets/achievements/negative-review-100.9d284ced76efbae9.256.webp",
     "width": 256,
     "height": 256,
-    "bytes": 20150,
-    "sha256": "0eb84544ba7240328df21602172b4e2982d2b5de7ebdc5d90ae9593bc33cdfa9",
-    "source": "art/achievement-stickers/extra/negative.png",
+    "bytes": 18642,
+    "sha256": "9d284ced76efbae98447628d8b9a51409bffdf689de7565dd8b986018d5d7a28",
+    "source": "art/achievement-stickers/unique/negative-review-100.png",
     "generated": true,
-    "family": "negative",
-    "aliasOf": "negative-review-1"
+    "family": "negative"
   }
 }
