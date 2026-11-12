@@ -9,7 +9,7 @@
   function title(id){return ({'welcome-language':ui('Интерфейсийн хэл','Язык интерфейса'),'settings-language':ui('Интерфейсийн хэл','Язык интерфейса'),'welcome-scope':ui('Тоглох горим','Режим игры'),'welcome-order-format':ui('Захиалгын хэлбэр','Формат заказа'),'welcome-level':ui('Тоглох түвшин','Сложность'),'welcome-timer':ui('Цагийн горим','Таймер')})[id];}
   function art(id,value){
     if(id.endsWith('language')){const image=doc.createElement('img');image.src='assets/ui/flag-'+(value==='mn'?'mn':'ru')+'.svg';image.alt='';image.width=30;image.height=20;image.className='choice-flag';return image;}
-    if(id==='welcome-timer'){const image=doc.createElement('img');image.src=root.GroceryTimerArt?.[value==='challenge'?'challenge':'normal']||'';image.alt='';image.width=image.height=58;image.className='choice-tomato'+(value==='off'?' is-resting':'');return image;}
+    if(id==='welcome-timer'){const image=doc.createElement('img');image.src=root.GroceryTimerArt?.[value==='off'?'untimed':value==='challenge'?'challenge':'normal']||'';image.alt='';image.width=image.height=58;image.className='choice-tomato';return image;}
     const key=id==='welcome-scope'?(value==='all'?'full-shift':'orders-1'):id==='welcome-order-format'?(value==='audio'?'audio-orders-1':'text-orders-1'):(value==='all'?'full-shift':'level-'+value);
     const atlas=root.GroceryChoiceArt,cell=atlas?.items[key],icon=doc.createElement('span');icon.className='welcome-choice-art';
     if(cell){icon.style.backgroundImage=`url("${atlas.src}")`;icon.style.backgroundSize=`${atlas.columns*100}% ${atlas.rows*100}%`;icon.style.backgroundPosition=`${cell[0]*100/(atlas.columns-1)}% ${cell[1]*100/(atlas.rows-1)}%`;}

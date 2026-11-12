@@ -64,8 +64,11 @@ for(const value of [null,[],{counters:{delivered:Infinity,dates:-1,eggs:'100'}},
 const art=require('../dist/assets/achievement-art-manifest.json'),artHashes=new Map();
 eq(Object.keys(art).length,83,'All 83 achievements have generated artwork, without vector fallbacks');
 const originalArt=Object.entries(art).filter(([,r])=>/^art\/achievement-stickers\/sheet-[1-5](?:-v2)?\.png$/.test(r.source)&&r.cell&&r.crop);
-eq(originalArt.length,50,'The original 50 approved sheet illustrations remain separate');
-const originalDigest=createHash('sha256').update(JSON.stringify(originalArt.sort(([a],[b])=>a.localeCompare(b)).map(([id,r])=>[id,r.sha256,r.source,r.cell,r.crop]))).digest('hex');
+eq(originalArt.length,45,'Only five visually similar sheet illustrations are deliberately replaced');
+const originalArchive=Object.entries(require('../art/achievement-stickers/original-manifest.json'));
+eq(originalArchive.length,50,'All fifty original source positions remain archived');
+for(const [id,row] of originalArt)eq(row.sha256,Object.fromEntries(originalArchive)[id].sha256,'Unrevised source illustration remains unchanged: '+id);
+const originalDigest=createHash('sha256').update(JSON.stringify(originalArchive.sort(([a],[b])=>a.localeCompare(b)).map(([id,r])=>[id,r.sha256,r.source,r.cell,r.crop]))).digest('hex');
 eq(originalDigest,'7f1b75edd07010d3b9e0c91d795976261316c943482f5ade87bc04bab5ea7d94','Original sticker identities, image hashes, sheet cells and crops remain byte-for-byte approved');
 const runtimeText=fs.readFileSync(path.join(__dirname,'../dist/achievement-art.js'),'utf8').trim(),runtimeMatch=runtimeText.match(/^window\.GroceryAchievementArt=(\{.*\});$/s);
 ok(runtimeMatch,'Runtime artwork is one complete JSON mapping');const runtime=JSON.parse(runtimeMatch[1]);eq(Object.keys(runtime).length,83,'All 83 drawings are available to the game');
@@ -78,6 +81,6 @@ for(const d of A.DEFINITIONS){
   ok(!r.aliasOf,'Every achievement has a separate drawing; milestone aliases are disallowed');
 }
 eq(artHashes.size,83,'All 83 achievements have different actual illustrations');
-eq(new Set(originalArt.map(([,r])=>r.sha256)).size,50,'All original 50 illustrations stay distinct');
+eq(new Set(originalArt.map(([,r])=>r.sha256)).size,45,'All forty-five retained sheet illustrations stay distinct');
 ok([...artHashes.values()].reduce((n,bytes)=>n+bytes,0)<2500000,'The 83 unique drawings stay below 2.5MB and load only when needed');
 console.log(`PASS: ${checks} achievement thresholds, all-83 reachability, dairy/general date separation, duplicate protection, quality/audio conditions and profile persistence checks.`);
